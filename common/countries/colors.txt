@@ -176,8 +176,8 @@ KUW = {
 
 #GERMANIA WORLD
 GGR = {
-	color = rgb { 100 0 0 }
-	color_ui = rgb { 100 0 0 }
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
 }
 SSB = {
     color = rgb { 31 31 31 }
