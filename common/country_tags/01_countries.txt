@@ -1,1 +1,12 @@
-GGR = "countries/IIIReich.txt"
+GGR = "countries/IIIReich.txt" #Greater German Reich
+RGO = "countries/IIIReich.txt" #ReichskommissariatGotenland
+SBA = "countries/IIIReich.txt" #WestBanat
+ROS = "countries/IIIReich.txt" #ReichskommissariatOstland
+RUK = "countries/IIIReich.txt" #ReichskommissariatUkraine
+RMO = "countries/IIIReich.txt" #ReichskommissariatMoskowien
+RKA = "countries/IIIReich.txt" #ReichskommissariatKaukasien
+RTU = "countries/IIIReich.txt" #ReichskommissariatTurkestan
+RFA = "countries/IIIReich.txt" #ReichskommissariatFranken
+MTA = "countries/IIIReich.txt" #Mittelafrika
+GGP = "countries/IIIReich.txt" #Generalgovernment
+SSB = "countries/IIIReich.txt" #SS-Staat Burgund
