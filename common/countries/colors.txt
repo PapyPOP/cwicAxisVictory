@@ -174,8 +174,8 @@ KUW = {
 	color_ui = rgb { 170 200 70 }
 }
 GGR = {
-	color = rgb { 199 0 0 }
-	color_ui = rgb { 199 0 0 }
+	color = rgb { 100 0 0 }
+	color_ui = rgb { 100 0 0 }
 }
 
 #VANILLA COUNTRIES
