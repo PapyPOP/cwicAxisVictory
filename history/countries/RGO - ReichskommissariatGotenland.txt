@@ -1,4 +1,10 @@
-capital = 742
+﻿capital = 137
+
+set_research_slots = 1
+#######################
+# Language
+#######################
+set_country_flag = german_language
 if = {
 	limit = {
 		not = {
@@ -177,8 +183,8 @@ set_variable = {
 
 set_popularities = {
 	democratic = 0
-	communism = 0
-	fascism = 100
+	communism = 15
+	fascism = 75
 	nationalist = 0
 	monarchism = 0
 	neutrality = 0
@@ -190,21 +196,157 @@ set_popularities = {
 	Liberal_Conservatism = 0
 	conservative = 0
 	Christian_Democratic = 0
-	socialist = 0
+	socialist = 10
 	centrist = 0
 	liberal = 0
 	trotskyism = 0
 	maoism = 0
 }
 
+add_political_power = 0
+set_country_flag = ss_nation
+set_convoys = 50
 set_politics = {
 	ruling_party = fascism
-	election_frequency = 0
+	last_election = "1935.6.9"
+	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
-	ideology = neo_nazism
+add_ideas = {
+	service_by_requirement
+	export_focus
+	war_economy
+	GER_RK_repression
+	fanatical_dictatorship
+	RGO_gotische_tourism_industry
+	RGO_absolute_loyalty
+	RGO_memories_of_crimea
+	###Cabinet###
+	HoG_Alfred_Frauenfeld
+	RGO_FM_Edmund_Veesenmayer
+	RGO_MoS_Herbert_Kappler
+	RGO_AM_Georg_Lorner
+	RGO_CoS_Friedrich_Jeckeln
+	RGO_CoArmy_Hermann_Priess
+	RGO_CoNavy_Helmuth_Brinkmann
+	RGO_CoAir_Friedrich_Alpers
+	industrialised_nation
 }
+
+create_country_leader = {
+	name = "Reinhard Heydrich"
+	desc = "POLITICS_HEYDRICH_DESC"
+	picture = "Reinhard_Heydrich.dds"
+	expire = "1964.2.26"
+	ideology = neo_nazism
+	traits = {
+		god_of_death
+	}
+}
+
+create_country_leader = {
+	name = "Mustafa Edige Kirimal"
+	desc = "Mustafa_Edige_Kirimal_DESC"
+	picture = "Mustafa_Edige_Kirimal.dds"
+	expire = "1964.2.26"
+	ideology = third_positionism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Herbert Otto Gille"
+	picture = "Herbert_Otto_Gille.dds"
+	traits = {
+		ss_general
+		armor_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Theodor Eicke"
+	picture = "Theodor_Eicke.dds"
+	traits = {
+		ss_general
+		infantry_leader
+		harsh_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Werner Ostendorff"
+	picture = "Werner_Ostendorff.dds"
+	traits = {
+		ss_general
+		panzer_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Karl Topp"
+	picture = "Karl_Topp.dds"
+	traits = {
+		seawolf
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Helmuth Brinkmann"
+	picture = "Helmuth_Brinkmann.dds"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Helmut Rosenbaum"
+	picture = "Helmut_Rosenbaum.dds"
+	traits = {
+		seawolf
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Clemens Schöler"
+	picture = "Clemens_Scholer.dds"
+	traits = {
+		seawolf
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+add_manpower = 50000

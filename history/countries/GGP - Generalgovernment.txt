@@ -1,56 +1,9 @@
-capital = 742
-if = {
-	limit = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_technology = {
-		ww_screens_proletariat = 1
-		frigate_0 = 1
-		destroyer_0 = 1
-		cruiser_0 = 1
-		ww_capitals_proletariat = 1
-		carrier_0 = 1
-		ww_submarines_proletariat = 1
-		attack_submarine_0 = 1
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		countermeasures_0 = 1
-		subkiller_0 = 1
-		subkiller_1 = 1
-		maritime_sonar_0 = 1
-		detection_ww = 1
-		radar_naval_0 = 1
-		radar_aa_0 = 1
-		ww_armaments = 1
-		ship_armament_light_0 = 1
-		ship_armament_light_1 = 1
-		ship_armament_medium_0 = 1
-		ship_armament_heavy_0 = 1
-		ww_capitals = 1
-		battle_hull_medium_0 = 1
-		ww_carriers = 1
-		battle_hull_medium_0 = 1
-		carrier_hull_0 = 1
-		ww_submarines = 1
-		torpedo_ww = 1
-		sub_hull_large_single_0 = 1
-		sub_hull_small_single_1 = 1
-		torpedo_small_0 = 1
-		ww_screens = 1
-		screen_hull_heavy_0 = 1
-		screen_hull_medium_0 = 1
-		battle_hull_light_0 = 1
-	}
-}
-
+﻿capital = 10
+set_research_slots = 1
+##########
+#LANGUAGE#
+##########
+set_country_flag = german_language
 set_technology = {
 	##### INFRA #####
 	ww_infra = 1
@@ -168,11 +121,14 @@ set_technology = {
 	NBC_research = 1
 }
 
-set_convoys = 10
-init_influence = yes
-set_variable = {
-	var = domestic_influence_amount
-	value = 100000
+set_country_flag = german_and_germanrk
+add_political_power = 0
+set_convoys = 50
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.6.9"
+	election_frequency = 0
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -197,14 +153,53 @@ set_popularities = {
 	maoism = 0
 }
 
-set_politics = {
-	ruling_party = fascism
-	election_frequency = 0
-	elections_allowed = no
+add_ideas = {
+	extensive_conscription
+	export_focus
+	war_economy
+	GER_RK_repression
+	kleptocratic_regime
+	semi_industrialised_nation
 }
 
+set_stability = 0.2
+####################################################
+# GGP Leaders
+####################################################
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Adolf Strauss"
+	desc = "Adolf_Strauss_DESC"
+	picture = "Adolf_Strauss.dds"
+	expire = "1961.2.19"
 	ideology = neo_nazism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Adolf Strauss"
+	picture = "Adolf_Strauss.dds"
+	traits = {
+		old_guard
+		offensive_doctrine
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Rudolf-Christoph von Gersdorff"
+	picture = "Rudolf-Christoph_von_Gersdorff.dds"
+	traits = {
+		trait_cautious
+		inflexible_strategist
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }

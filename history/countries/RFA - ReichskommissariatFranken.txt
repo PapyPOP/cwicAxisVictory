@@ -1,4 +1,9 @@
-capital = 742
+﻿capital = 14
+set_research_slots = 1
+#######################
+# Language
+#######################
+set_country_flag = french_language
 if = {
 	limit = {
 		not = {
@@ -178,7 +183,7 @@ set_variable = {
 set_popularities = {
 	democratic = 0
 	communism = 0
-	fascism = 100
+	fascism = 60
 	nationalist = 0
 	monarchism = 0
 	neutrality = 0
@@ -189,22 +194,39 @@ set_popularities = {
 	Salafism = 0
 	Liberal_Conservatism = 0
 	conservative = 0
-	Christian_Democratic = 0
-	socialist = 0
-	centrist = 0
+	Christian_Democratic = 15
+	socialist = 15
+	centrist = 10
 	liberal = 0
 	trotskyism = 0
 	maoism = 0
 }
 
+add_political_power = 0
+set_convoys = 50
+set_country_flag = german_and_germanrk
 set_politics = {
 	ruling_party = fascism
-	election_frequency = 0
+	last_election = "1935.6.9"
+	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	volunteer_only
+	export_focus
+	war_economy
+	GER_RK_repression
+	kleptocratic_regime
+	industrialised_nation
+}
+
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Neven Hénaff"
+	desc = "Celestin_Laine_DESC"
+	picture = "Celestin_Laine.dds"
+	expire = "1965.1.1"
 	ideology = neo_nazism
+	traits = {
+	}
 }

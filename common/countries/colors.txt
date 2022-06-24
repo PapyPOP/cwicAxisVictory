@@ -173,9 +173,55 @@ KUW = {
 	color = rgb { 180 190 80 }
 	color_ui = rgb { 170 200 70 }
 }
+
+#GERMANIA WORLD
 GGR = {
 	color = rgb { 100 0 0 }
 	color_ui = rgb { 100 0 0 }
+}
+SSB = {
+    color = rgb { 31 31 31 }
+    color_ui = rgb { 185 170 167 }
+}
+GGP = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+ROS = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+RUK = {
+	color = rgb { 110 110 110 }
+	color_ui = rgb { 185 170 167 }
+}
+RMO = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+RKA = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+RTU = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+RFA = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+RGO = {
+    color = rgb { 31 31 31 }
+    color_ui = rgb { 185 170 167 }
+}
+MTA = {
+    color = rgb { 110 110 110 }
+    color_ui = rgb { 185 170 167 }
+}
+SBA = {
+	color = rgb { 31 31 31 }
+	color_ui = rgb { 185 170 167 }
 }
 
 #VANILLA COUNTRIES

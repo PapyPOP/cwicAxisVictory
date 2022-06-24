@@ -1,4 +1,9 @@
-capital = 742
+﻿capital = 141
+set_research_slots = 1
+##########
+#LANGUAGE#
+##########
+set_country_flag = german_language
 if = {
 	limit = {
 		not = {
@@ -177,8 +182,8 @@ set_variable = {
 
 set_popularities = {
 	democratic = 0
-	communism = 0
-	fascism = 100
+	communism = 15
+	fascism = 75
 	nationalist = 0
 	monarchism = 0
 	neutrality = 0
@@ -190,21 +195,38 @@ set_popularities = {
 	Liberal_Conservatism = 0
 	conservative = 0
 	Christian_Democratic = 0
-	socialist = 0
+	socialist = 10
 	centrist = 0
 	liberal = 0
 	trotskyism = 0
 	maoism = 0
 }
 
+add_political_power = 0
+set_convoys = 50
 set_politics = {
 	ruling_party = fascism
-	election_frequency = 0
+	last_election = "1935.6.9"
+	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	volunteer_only
+	export_focus
+	war_economy
+	GER_RK_repression
+	kleptocratic_regime
+	agrarian_nation
+}
+
+set_country_flag = german_and_germanrk
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Hartmann Lauterbacher"
+	desc = "Hartmann_Lauterbacher_DESC"
+	picture = "Hartmann_Lauterbacher.dds"
+	expire = "1973.5.3"
 	ideology = neo_nazism
+	traits = {
+	}
 }
