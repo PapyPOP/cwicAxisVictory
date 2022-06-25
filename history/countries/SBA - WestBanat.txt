@@ -1,4 +1,5 @@
-capital = 742
+﻿capital = 772
+set_research_slots = 1
 if = {
 	limit = {
 		not = {
@@ -177,8 +178,8 @@ set_variable = {
 
 set_popularities = {
 	democratic = 0
-	communism = 0
-	fascism = 100
+	communism = 15
+	fascism = 75
 	nationalist = 0
 	monarchism = 0
 	neutrality = 0
@@ -190,21 +191,78 @@ set_popularities = {
 	Liberal_Conservatism = 0
 	conservative = 0
 	Christian_Democratic = 0
-	socialist = 0
+	socialist = 10
 	centrist = 0
 	liberal = 0
 	trotskyism = 0
 	maoism = 0
 }
 
+add_political_power = 0
+add_manpower = 7500
+set_country_flag = ss_nation
+set_convoys = 0
 set_politics = {
 	ruling_party = fascism
+	last_election = "1935.6.9"
 	election_frequency = 0
 	elections_allowed = no
 }
 
+add_ideas = {
+	SBA_Sepp_Janko
+	SBA_FM_Felix_Benzler
+	SBA_MoS_August_Meyszner
+	SBA_AM_Franz_Neuhausen
+	SBA_CoS_Artur_Phleps
+	SBA_CoA_Otto_Kumm
+	SBA_CoNavy_Vacant
+	SBA_CoAi_Josef_Kammhuber
+	service_by_requirement
+	export_focus
+	war_economy
+	GER_RK_repression
+	fanatical_dictatorship
+	SBA_miserable_locals
+	SBA_ss_aristocracy
+	SBA_unorganised_ss_bandits
+	agrarian_nation
+}
+
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Sepp Janko"
+	desc = "sepp_desc"
+	picture = "Sepp_Janko.dds"
+	expire = "1964.2.26"
 	ideology = neo_nazism
+	traits = {
+		volksgruppenfuhrer
+	}
+}
+
+create_field_marshal = {
+	name = "Otto Kumm"
+	picture = "Otto_Kumm.dds"
+	traits = {
+		ss_general
+		harsh_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "August Schmidhuber"
+	picture = "August_Schmidhuber.dds"
+	traits = {
+		ss_general
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
