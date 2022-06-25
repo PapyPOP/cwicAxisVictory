@@ -1,4 +1,10 @@
-capital = 742
+﻿capital = 202
+set_research_slots = 1
+add_manpower = 100000
+#######################
+# Language
+#######################
+set_country_flag = german_language
 if = {
 	limit = {
 		not = {
@@ -177,8 +183,8 @@ set_variable = {
 
 set_popularities = {
 	democratic = 0
-	communism = 0
-	fascism = 100
+	communism = 15
+	fascism = 75
 	nationalist = 0
 	monarchism = 0
 	neutrality = 0
@@ -190,21 +196,195 @@ set_popularities = {
 	Liberal_Conservatism = 0
 	conservative = 0
 	Christian_Democratic = 0
-	socialist = 0
+	socialist = 10
 	centrist = 0
 	liberal = 0
 	trotskyism = 0
 	maoism = 0
 }
 
+add_political_power = 0
+set_convoys = 50
+set_country_flag = german_and_germanrk
 set_politics = {
 	ruling_party = fascism
-	election_frequency = 0
+	last_election = "1935.6.9"
+	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	volunteer_only
+	export_focus
+	war_economy
+	GER_RK_repression
+	RUK_focus_on_food_export
+	ROS_ethnic_tensions
+	RUK_Ukrainian_Serfdom
+	RUK_timebomb
+	RUK_active_resistance
+	semi_industrialised_nation
+	#####Cabinet####
+	RUK_HoG_Ernst_Ludwig_Leyser
+	RUK_FM_Ewald_Oppermann
+	RUK_MoS_Hans-Adolf_Prutzmann
+	RUK_AM_Waldemar_Magunia
+	RUK_CoS_Fritz_Freitag
+	RUK_CoA_Sylvester_Stadler
+	RUK_CoAi_Karl_Kitzinger
+	RUK_CoAi_Karl_Bergelt
+	kleptocratic_regime
+}
+
+set_stability = 0.2
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Erich Koch"
+	desc = "KOCH_DESC"
+	picture = "Germany_NS_Erich_Koch.dds"
+	expire = "1986.11.12"
 	ideology = neo_nazism
+	traits = {
+		paranoid_powermonger
+	}
+}
+
+create_country_leader = {
+	name = "Friedrich Schulz"
+	desc = "Friedrich_Schulz_DESC"
+	picture = "Friedrich_Schulz.dds"
+	expire = "1986.11.12"
+	ideology = fascism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Karl Kitzinger"
+	picture = "UKR_Karl_Kitzinger.dds"
+	traits = {
+		old_guard
+		defensive_doctrine
+	}
+	skill = 4
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Friedrich Schulz"
+	picture = "Friedrich_Schulz.dds"
+	traits = {
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Wilhelm Hasse"
+	picture = "Wilhelm_Hasse.dds"
+	traits = {
+		infantry_officer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Erich-Heinrich Clößner"
+	picture = "Erich-Heinrich_Closner.dds"
+	traits = {
+		old_guard
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Rudolf Demme"
+	picture = "Rudolf_Demme.dds"
+	traits = {
+		commando
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Theodor Kretschmer"
+	picture = "Theodor_Kretschmer.dds"
+	traits = {
+		panzer_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Albert Brux"
+	picture = "Albert_Brux.dds"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Fritz Freitag"
+	picture = "Fritz_Freitag.dds"
+	traits = {
+		cavalry_officer
+		ss_general
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sylvester Stadler"
+	picture = "Sylvester_Stadler.dds"
+	traits = {
+		ss_general
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nikolaus Heilmann"
+	picture = "Nikolaus_Heilmann.dds"
+	traits = {
+		ss_general
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }

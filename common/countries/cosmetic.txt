@@ -692,3 +692,19 @@ SIK_PRC_liberation= {
 	color = rgb {  245 12 55 }
 	color_ui = rgb { 178 34 60}
 }
+RKA_SS = {
+    color = rgb { 31 31 31 }
+    color_ui = rgb { 185 170 167 }
+}
+ROS_SS = {
+    color = rgb { 31 31 31 }
+    color_ui = rgb { 185 170 167 }
+}
+RMO_SS = {
+    color = rgb { 31 31 31 }
+    color_ui = rgb { 185 170 167 }
+}
+RUK_SS = {
+    color = rgb { 31 31 31 }
+    color_ui = rgb { 185 170 167 }
+}

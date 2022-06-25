@@ -1,4 +1,5 @@
-capital = 742
+﻿capital = 267
+
 if = {
 	limit = {
 		not = {
@@ -197,14 +198,26 @@ set_popularities = {
 	maoism = 0
 }
 
-set_politics = {
+set_politics = {	
 	ruling_party = fascism
+	last_election = "1935.6.9"
 	election_frequency = 0
 	elections_allowed = no
 }
 
+add_ideas = {
+	kleptocratic_regime
+	agrarian_nation
+	GER_RK_repression
+	RK_Heia_Safari
+	RK_African_Unrest
+}
+
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Walther Nehring" 
+	desc = "Walther_Nehring_DESC" 
+	picture = "Walther_Nehring.dds"
+	expire = "1973.5.3" 
 	ideology = neo_nazism
+	traits = { }
 }

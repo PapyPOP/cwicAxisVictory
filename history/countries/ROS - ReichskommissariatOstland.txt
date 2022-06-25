@@ -1,4 +1,10 @@
-capital = 742
+﻿capital = 1017
+set_research_slots = 1
+add_manpower = 32000
+#######################
+# Language
+#######################
+set_country_flag = german_language
 if = {
 	limit = {
 		not = {
@@ -177,8 +183,8 @@ set_variable = {
 
 set_popularities = {
 	democratic = 0
-	communism = 0
-	fascism = 100
+	communism = 15
+	fascism = 75
 	nationalist = 0
 	monarchism = 0
 	neutrality = 0
@@ -190,21 +196,190 @@ set_popularities = {
 	Liberal_Conservatism = 0
 	conservative = 0
 	Christian_Democratic = 0
-	socialist = 0
+	socialist = 10
 	centrist = 0
 	liberal = 0
 	trotskyism = 0
 	maoism = 0
 }
 
+add_political_power = 0
+set_convoys = 50
+set_war_support = 0.06
+set_stability = 0.2
 set_politics = {
 	ruling_party = fascism
-	election_frequency = 0
+	last_election = "1935.6.9"
+	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	service_by_requirement
+	limited_exports
+	war_economy
+	GER_RK_repression
+	ROS_ethnic_tensions
+	ROS_agrarian_society
+	ROS_baltic_germans
+	kleptocratic_regime
+	###Cabinet###
+	ROS_HoG_Hinrich_Lohse
+	ROS_FM_Karl_Siegmund_Litzmann
+	ROS_MoS_Wilhelm_Kube
+	ROS_AM_Karl_Saur
+	ROS_CoS_Walter_Braemer
+	ROS_CoArmy_Gerhard_Engel
+	ROS_CoNavy_Theodor_Burchardi
+	ROS_CoAir_Klaus_Uebe
+	semi_industrialised_nation
+}
+
+set_country_flag = german_and_germanrk
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Hinrich Lohse"
+	desc = "POLITICS_HINRICH_LOHSE_DESC"
+	picture = "Germany_NS_Hinrich_Lohse.dds"
+	expire = "1964.2.26"
 	ideology = neo_nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Karl Friedrich von der Meden"
+	desc = "Karl_Friedrich_von_der_Meden_DESC"
+	picture = "OST_Karl_Friedrich_von_der_Meden.dds"
+	expire = "1964.2.26"
+	ideology = fascism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Karl-Friedrich von der Meden"
+	picture = "OST_Karl_Friedrich_von_der_Meden.dds"
+	traits = {
+		old_guard
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Fridolin von Senger und Etterlin"
+	picture = "Fridolin_von_Senger.dds"
+	traits = {
+		cavalry_leader
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gerhard Engel"
+	picture = "OST_Gerhard_Engel.dds"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Maximilian von Edelsheim"
+	picture = "OST_Maximilian_Edelsheim.dds"
+	traits = {
+		panzer_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "August Schmidt"
+	picture = "OST_August_Schmidt.dds"
+	traits = {
+		infantry_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hans Traut"
+	picture = "OST_Hans_Traut.dds"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Curt Badinski"
+	picture = "OST_Curt_Badinski.dds"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Walter Kruger"
+	picture = "OST_Walter_KrΒger.dds"
+	traits = {
+		ss_general
+		old_guard
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Friedrich-Wilhelm Bock"
+	picture = "Friedrich_Wilhelm_Bock.dds"
+	traits = {
+		ss_general
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Werner Ostendorff"
+	picture = "Werner_Ostendorff.dds"
+	traits = {
+		ss_general
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 }
