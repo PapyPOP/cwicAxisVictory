@@ -277,6 +277,10 @@ create_import = {
 		target = SLO
 		autonomous_state = autonomy_reichsprotectorate
 	}
+	set_autonomy = {
+		target = GGP
+		autonomous_state = autonomy_reichsprotectorate
+	}
 
 #######################
 # Leaders
