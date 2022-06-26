@@ -7,7 +7,7 @@ state =
 	
 	history =
 	{
-		owner = GGR
+		owner = DEN
 		set_state_flag = temperate
 		set_state_flag = basic
 		set_state_flag = micro
@@ -21,7 +21,6 @@ state =
 				naval_base = 1
 			}
 		}
-		add_core_of = GGR
 		add_core_of = DEN
 		victory_points = { 13003 5 }
 		set_state_flag = HDI4

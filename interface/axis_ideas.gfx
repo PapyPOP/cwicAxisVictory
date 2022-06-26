@@ -1,0 +1,190 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_SBA_miserable_locals"
+		texturefile = "gfx/interface/ideas/idea_SBA_miserable_locals.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SBA_unorganised_ss_bandits"
+		texturefile = "gfx/interface/ideas/idea_SBA_unorganised_ss_bandits.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SBA_ss_aristocracy"
+		texturefile = "gfx/interface/ideas/idea_SBA_ss_aristocracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SBA_prinz_eugen_land"
+		texturefile = "gfx/interface/ideas/idea_SBA_prinz_eugen_land.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RGO_absolute_loyalty"
+		texturefile = "gfx/interface/ideas/idea_RGO_absolute_loyalty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RGO_gotische_tourism_industry"
+		texturefile = "gfx/interface/ideas/idea_RGO_gotische_tourism_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RGO_memories_of_crimea"
+		texturefile = "gfx/interface/ideas/idea_RGO_memories_of_crimea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RGO_lufthansa"
+		texturefile = "gfx/interface/ideas/idea_RGO_lufthansa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RK_facade_freedom"
+		texturefile = "gfx/interface/ideas/idea_RK_facade_freedom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RK_repression"
+		texturefile = "gfx/interface/ideas/idea_RK_repression.dds"
+		}
+	spriteType = {
+		name = "GFX_idea_RK_man_made_famine"
+		texturefile = "gfx/interface/ideas/idea_RK_man_made_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUK_OUN_falling_apart"
+		texturefile = "gfx/interface/ideas/idea_RUK_OUN_falling_apart.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUK_ukrainian_nationalism"
+		texturefile = "gfx/interface/ideas/idea_RUK_ukrainian_nationalism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUK_food_focus"
+		texturefile = "gfx/interface/ideas/idea_RUK_food_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKA_oil_focus"
+		texturefile = "gfx/interface/ideas/idea_RKA_oil_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROS_disease"
+		texturefile = "gfx/interface/ideas/idea_ROS_disease.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROS_baltic_germans"
+		texturefile = "gfx/interface/ideas/idea_ROS_baltic_germans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RMO_slave_factories"
+		texturefile = "gfx/interface/ideas/idea_RMO_slave_factories.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dictatorship"
+		texturefile = "gfx/interface/ideas/idea_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kleptocratic_regime"
+		texturefile = "gfx/interface/ideas/idea_kleptocratic_regime.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fanatical_dictatorship"
+		texturefile = "gfx/interface/ideas/idea_fanatical_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_established_democracy"
+		texturefile = "gfx/interface/ideas/idea_established_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_facade_democracy"
+		texturefile = "gfx/interface/ideas/idea_facade_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_authoritarian_system"
+		texturefile = "gfx/interface/ideas/idea_authoritarian_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_ss_volks"
+		texturefile = "gfx/interface/ideas/idea_GER_ss_volks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_emergency_army.dds"
+		texturefile = "gfx/interface/ideas/idea_GER_emergency_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_dig_or_die"
+		texturefile = "gfx/interface/ideas/idea_GER_dig_or_die.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_gcw_raging"
+		texturefile = "gfx/interface/ideas/idea_GER_gcw_raging.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_broken_eagle"
+		texturefile = "gfx/interface/ideas/idea_GER_broken_eagle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Lufthansa"
+		texturefile = "gfx/interface/ideas/idea_GER_Lufthansa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_spying"
+		texturefile = "gfx/interface/ideas/idea_GER_spying.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_germanic_pride"
+		texturefile = "gfx/interface/ideas/idea_GER_germanic_pride.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_heros_day"
+		texturefile = "gfx/interface/ideas/idea_GER_heros_day.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_RK_incomes"
+		texturefile = "gfx/interface/ideas/idea_GER_RK_incomes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_heer_pride"
+		texturefile = "gfx/interface/ideas/idea_GER_heer_pride.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_praise_hitler"
+		texturefile = "gfx/interface/ideas/idea_GER_praise_hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_forever_enemy"
+		texturefile = "gfx/interface/ideas/idea_GER_forever_enemy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_forget_goering"
+		texturefile = "gfx/interface/ideas/idea_GER_forget_goering.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_overgrown_officer_corps"
+		texturefile = "gfx/interface/ideas/idea_GER_overgrown_officer_corps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_nazi_recruitment_system"
+		texturefile = "gfx/interface/ideas/idea_GER_nazi_recruitment_system.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_officer_hat"
+		texturefile = "gfx/interface/ideas/idea_GER_officer_hat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_nazi_drive"
+		texturefile = "gfx/interface/ideas/idea_GER_nazi_drive.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_heer_staff_defiance"
+		texturefile = "gfx/interface/ideas/idea_GER_heer_staff_defiance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_disarmament"
+		texturefile = "gfx/interface/ideas/idea_GER_disarmament.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_grand_power_struggles"
+		texturefile = "gfx/interface/ideas/idea_GER_grand_power_struggles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_engineering_advances"
+		texturefile = "gfx/interface/ideas/idea_GER_engineering_advances.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_for_the_reich"
+		texturefile = "gfx/interface/ideas/idea_GER_for_the_reich.dds"
+	}
+}

@@ -175,6 +175,16 @@ set_variable = {
 	value = 100000
 }
 
+#######################
+# Politics
+#######################
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
 set_popularities = {
 	democratic = 0
 	communism = 0
@@ -197,14 +207,991 @@ set_popularities = {
 	maoism = 0
 }
 
-set_politics = {
-	ruling_party = fascism
-	election_frequency = 0
-	elections_allowed = no
+add_ideas = {
+	limited_exports
+	limited_conscription
+
+	#ministers#
+	GER_HoG_Martin_Bormann
+	GER_FM_Joachim_von_Ribbentrop
+	GER_MoS_Heinrich_Himmler
+	GER_AM_Walther_Funk
+	GER_CoAi_Hermann_Goering
+	GER_CoN_Karl_Doenitz
+	GER_CoA_Wilhelm_Keitel
+	GER_CoS_Alfred_Jodl
+
+	GER_overgrown_officer_corps
+	GER_oversized_fleet
+	GER_nazi_recruitment_system
+	GER_economic_stagnation
+	GER_SS_Infightings
+	
+	fanatical_dictatorship
+	industrialised_nation
 }
 
+#######################
+# Diplomacy
+#######################
+create_faction = "Neue Ordnung"
+add_to_faction = GGR
+create_import = {
+	resource = tungsten
+	factories = 1
+	exporter = SWE
+}
+	set_autonomy = {
+		target = ROS
+		autonomous_state = autonomy_reichskommissariat
+	}
+	set_autonomy = {
+		target = RUK
+		autonomous_state = autonomy_reichskommissariat
+	}
+	set_autonomy = {
+		target = RKA
+		autonomous_state = autonomy_reichskommissariat
+	}
+	set_autonomy = {
+		target = RMO
+		autonomous_state = autonomy_reichskommissariat
+	}
+	set_autonomy = {
+		target = RGO
+		autonomous_state = autonomy_SS_Ordenstaat
+	}
+	set_autonomy = {
+		target = SBA
+		autonomous_state = autonomy_SS_Ordenstaat
+	}
+	set_autonomy = {
+		target = DEN
+		autonomous_state = autonomy_reichsprotectorate
+	}
+	set_autonomy = {
+		target = NOR
+		autonomous_state = autonomy_reichsprotectorate
+	}
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_reichsprotectorate
+	}
+	set_autonomy = {
+		target = GGP
+		autonomous_state = autonomy_reichsprotectorate
+	}
+
+#######################
+# Leaders
+#######################
+# National Socialism
 create_country_leader = {
-	name = "Jean de Lattre de Tassigny"
-	picture = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	name = "Adolf Hitler"
+	desc = "POLITICS_HITLER_DESC"
+	picture = "Germany_F_Adolf_Hitler_OLD.dds"
+	expire = "1965.1.1"
 	ideology = neo_nazism
+	traits = {dictator}
+}
+
+#######################
+# Generals
+#######################
+create_field_marshal = {
+	name = "Erich von Manstein"
+	picture = "Erich_von_Manstein.dds"
+	traits = { infantry_officer brilliant_strategist old_guard media_personality offensive_doctrine heer_staff }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+	id = 901
+}
+
+create_field_marshal = {
+	name = "Walter Model"
+	picture = "Walter_Model.dds"
+	traits = { defensive_doctrine armor_officer inflexible_strategist }
+	skill = 5
+	id = 902
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Erwin Rommel"
+	picture = "Erwin_Rommel.dds"
+	traits = { trait_reckless war_hero armor_officer media_personality heer_staff }
+	skill = 4
+	id = 903
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Ferdinand Schörner"
+	picture = "ferdinand_schorner.dds"
+	traits = { trait_reckless politically_connected harsh_leader }
+	skill = 3
+	id = 904
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Paul Ludwig Ewald von Kleist"
+	picture = "Von_Kleist.dds"
+	traits = { trait_reckless harsh_leader armor_officer }
+	skill = 3
+	id = 905
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Hasso von Manteuffel"
+	picture = "Hasso_von_Manteuffel.dds"
+	traits = { trait_reckless harsh_leader armor_officer heer_staff }
+	skill = 3
+	id = 906
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Fedor von Bock" #Maybe should die soon 72 yrs old
+	picture = "fedor_von_bock.dds"
+	traits = { old_guard infantry_officer fast_planner }
+	skill = 3
+	id = 907
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Günther von Kluge" #maybe should die soon 70 yrs old
+	picture = "Von_Kluge.dds"
+	traits = { brilliant_strategist infantry_officer offensive_doctrine heer_staff }
+	skill = 4
+	id = 908
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Albert Kesselring"
+	picture = "albert_kesselring.dds"
+	traits = { inflexible_strategist infantry_officer }
+	skill = 3
+	id = 909
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Friedrich Paulus"
+	picture = "friedrich_paulus.dds"
+	traits = { old_guard politically_connected trait_cautious }
+	skill = 2
+	id = 910
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Erwin von Witzleben"
+	picture = "Erwin_von_Witzleben.dds"
+	traits = { trait_cautious armor_officer }
+	skill = 4
+	id = 911
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Wilhelm List" #72 yrs old
+	picture = "Wilhem_List.dds"
+	traits = { trait_cautious offensive_doctrine heer_staff }
+	skill = 4
+	id = 912
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Wilhelm Keitel"
+	picture = "Wilhelm_Keitel.dds"
+	traits = { politically_connected offensive_doctrine harsh_leader }
+	skill = 3
+	id = 913
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alfred Jodl"
+	picture = "Alfred_Jodl.dds"
+	traits = { trait_cautious organizer }
+	skill = 3
+	id = 914
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Heinz Guderian"
+	picture = "Guderian.dds"
+	traits = { trickster panzer_leader armor_officer combined_arms_expert media_personality heer_staff }
+	skill = 5
+	id = 915
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hermann Hoth"
+	picture = "Hermann_Hoth.dds"
+	traits = { panzer_leader armor_officer }
+	skill = 4
+	id = 916
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Georg von Küchler"
+	picture = "georg_von_kuchler.dds"
+	traits = { armor_officer harsh_leader }
+	skill = 3
+	id = 917
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Georg-Hans Reinhardt"
+	picture = "Reinhardt.dds"
+	traits = { armor_officer panzer_leader urban_assault_specialist harsh_leader }
+	skill = 3
+	id = 918
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Johannes Blaskowitz"
+	picture = "Johannes_Blaskowitz.dds"
+	traits = { harsh_leader infantry_leader heer_staff }
+	skill = 3
+	id = 919
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Claus von Stauffenberg"
+	picture = "Von_Stauffenberg.dds"
+	traits = { trickster heer_staff }
+	skill = 2
+	id = 920
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Friedrich Olbricht"
+	picture = "Olbricht.dds"
+	traits = { infantry_leader organizer heer_staff }
+	skill = 3
+	id = 921
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Otto Ernst Remer"
+	picture = "Otto_Ernst_Remer.dds"
+	traits = { armor_officer panzer_leader }
+	skill = 3
+	id = 922
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Friedrich Fromm"
+	picture = "Fromm.dds"
+	traits = { infantry_officer infantry_leader heer_staff }
+	skill = 3
+	id = 923
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Leo Geyr von Schweppenburg"
+	picture = "Leo_Geyr_von_Schweppenburg.dds"
+	traits = { organizer panzer_leader armor_officer }
+	skill = 2
+	id = 924
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Lothar Rendulic"
+	picture = "Lothar_Rendulic.dds"
+	traits = { career_officer trait_mountaineer }
+	skill = 3
+	id = 925
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Gotthard Heinrici"
+	picture = "gotthard_heinrici.dds"
+	traits = { panzer_leader }
+	skill = 3
+	id = 926
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Sepp Dietrich"
+	picture = "Sepp_Dietrich.dds"
+	traits = { ss_general panzer_leader politically_connected harsh_leader }
+	skill = 3
+	id = 927
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Paul Hausser"
+	picture = "Paul_Hausser.dds"
+	traits = { ss_general offensive_doctrine politically_connected harsh_leader }
+	skill = 4
+	id = 928
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Adelbert Schulz"
+	picture = "adelbert_schulz.dds"
+	traits = { panzer_leader }
+	skill = 2
+	id = 929
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Josef Harpe"
+	picture = "Josef_Harpe.dds"
+	traits = { panzer_leader }
+	skill = 2
+	id = 930
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Nikolaus von Falkenhorst"
+	picture = "Nikolaus_von_Falkenhorst.dds"
+	traits = { winter_specialist infantry_officer }
+	skill = 2
+	id = 931
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Otto Skorzeny"
+	picture = "Otto_Skorzeny.dds"
+	traits = { ss_general commando trickster }
+	skill = 3
+	id = 932
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Joachim Peiper"
+	picture = "Joachim_Peiper.dds"
+	traits = { ss_general panzer_leader media_personality }
+	skill = 3
+	id = 933
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Kurt Meyer"
+	picture = "Kurt_Meyer.dds"
+	traits = { ss_general panzer_leader harsh_leader }
+	skill = 3
+	id = 934
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Michael Wittmann"
+	picture = "Michael_Wittmann.dds"
+	traits = { ss_general panzer_leader politically_connected }
+	skill = 3
+	id = 935
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Heinz Harmel"
+	picture = "Heinz_Harmel.dds"
+	traits = { ss_general harsh_leader }
+	skill = 2
+	id = 936
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Oskar Dirlewanger"
+	picture = "Oskar_Dirlewanger.dds"
+	traits = { ss_general harsh_leader old_guard politically_connected }
+	skill = 1
+	id = 937
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 0
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Reinhard Gehlen"
+	picture = "Reinhard_Gehlen.dds"
+	traits = { trickster commando heer_staff }
+	skill = 3
+	id = 938
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Adolf Heusinger"
+	picture = "Adolf_Heusinger.dds"
+	traits = { career_officer organizer heer_staff }
+	skill = 3
+	id = 939
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hans Speidel"
+	picture = "Hans_Speidel.dds"
+	traits = { skilled_staffer trait_cautious heer_staff }
+	skill = 4
+	id = 940
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Albert Schnez"
+	picture = "Albert_Schnez.dds"
+	traits = { organizer }
+	skill = 2
+	id = 941
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Carl-Heinrich von Stülpnagel"
+	picture = "Carl_Heinrich_von_Stulpnagel.dds"
+	traits = { infantry_leader heer_staff }
+	skill = 3
+	id = 942
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Johann von Kielmansegg"
+	picture = "Johann_von_Kielmansegg.dds"
+	traits = { cavalry_leader organizer hidden_sympathies }
+	skill = 3
+	id = 943
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Ulrich de Maizière"
+	picture = "Ulrich_de_Maiziere.dds"
+	traits = { heer_staff hidden_sympathies }
+	skill = 2
+	id = 944
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Erich Fellgiebel"
+	picture = "Erich_Fellgiebel.dds"
+	traits = { trait_engineer old_guard heer_staff hidden_sympathies }
+	skill = 2
+	id = 945
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hermann Fegelein"
+	picture = "Hermann_Fegelein.dds"
+	traits = { politically_connected old_guard cavalry_leader ss_general }
+	skill = 2
+	id = 946
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Wilhelm Burgdorf"
+	picture = "Wilhelm_Burgdorf.dds"
+	traits = { politically_connected inflexible_strategist }
+	skill = 1
+	id = 947
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hans Krebs"
+	picture = "Hans_Krebs.dds"
+	traits = { infantry_officer infantry_leader politically_connected }
+	skill = 2
+	id = 948
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Wilhelm Mohnke"
+	picture = "Wilhelm_Mohnke.dds"
+	traits = { ss_general politically_connected harsh_leader }
+	skill = 2
+	id = 949
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Karl Eglseer"
+	picture = "Karl_Eglseer.dds"
+	traits = { ranger }
+	skill = 2
+	id = 950
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Franz Böhme"
+	picture = "Franz_Bohme.dds"
+	traits = { trait_mountaineer winter_expert }
+	skill = 3
+	id = 951
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Erhard Raus"
+	picture = "Erhard_Raus.dds"
+	traits = { panzer_leader trait_engineer }
+	skill = 3
+	id = 952
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Julius Ringel"
+	picture = "Julius_Ringel.dds"
+	traits = { trait_mountaineer }
+	skill = 2
+	id = 953
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Friedrich Materna"
+	picture = "Friedrich_Materna.dds"
+	traits = { infantry_leader old_guard }
+	skill = 2
+	id = 954
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Fritz Bayerlein"
+	picture = "Fritz_Bayerlein.dds"
+	traits = { armor_officer }
+	skill = 3
+	id = 955
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Eberhard von Mackensen"
+	picture = "Eberhard_von_Mackensen.dds"
+	traits = { heer_staff old_guard media_personality armor_officer }
+	skill = 2
+	id = 956
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Erich Hoepner"
+	picture = "Erich_Hoepner.dds"
+	traits = { armor_officer panzer_leader }
+	skill = 3
+	id = 957
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Kurt Zeitzler"
+	picture = "Kurt_Zeitzler.dds"
+	traits = { armor_officer inflexible_strategist }
+	skill = 3
+	id = 958
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Franz Halder"
+	picture = "Franz_Halder.dds"
+	traits = { career_officer organizer heer_staff }
+	skill = 3
+	id = 959
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Josias von Waldeck und Pyrmont"
+	picture = "Josias_von_Waldeck_und_Pyrmont.dds"
+	traits = { ss_general harsh_leader }
+	skill = 2
+	id = 960
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Curt von Gottberg"
+	picture = "Curt_von_Gottberg.dds"
+	traits = { ss_general harsh_leader }
+	skill = 1
+	id = 961
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Karl Demelhuber"
+	picture = "Karl_Demelhuber.dds"
+	traits = { ss_general trait_mountaineer }
+	skill = 2
+	id = 962
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Dietrich von Saucken"
+	picture = "Dietrich_von_Saucken.dds"
+	traits = { armor_officer cavalry_officer organizer heer_staff }
+	skill = 2
+	id = 963
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Felix Steiner"
+	picture = "felix_steiner.dds"
+	traits = { armor_officer ss_general inflexible_strategist }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+	id = 964
+}
+create_corps_commander = {
+	name = "Karl Schümers"
+	picture = "Karl_Schumers.dds"
+	traits = { ss_general infantry_officer }
+	skill = 2
+	id = 980
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+#######################
+# Admirals
+#######################
+create_navy_leader = {
+	name = "Karl Dönitz"
+	picture = "Karl_Donitz.dds"
+	traits = { seawolf superior_tactician navy_media_personality }
+	skill = 5
+	id = 965
+
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
+
+}
+create_navy_leader = {
+	name = "Günther Lütjens"
+	picture = "Gunther_Lutjens.dds"
+	traits = { ironside battleship_adherent }
+	skill = 4
+	id = 966
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+create_navy_leader = {
+	name = "Hans-Georg von Friedeburg"
+	picture = "Hans-Georg_von_Friedeburg.dds"
+	traits = { seawolf }
+	skill = 4
+	id = 967
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Oskar Kummetz"
+	picture = "Oskar_Kummetz.dds"
+	traits = { fleet_protector gunnery_expert }
+	skill = 4
+	id = 978
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Kurt-Caesar Hoffmann"
+	picture = "Kurt-Caesar_Hoffmann.dds"
+	traits = { fleet_protector }
+	skill = 3
+	id = 968
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Erich Bey"
+	picture = "Erich_Bey.dds"
+	traits = { spotter }
+	skill = 3
+	id = 969
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Otto Ciliax"
+	picture = "Otto_Ciliax.dds"
+	traits = { ironside old_guard_navy }
+	skill = 3
+	id = 970
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Theodor Krancke"
+	picture = "Theodor_Krancke.dds"
+	traits = { ironside bold ss_general }
+	skill = 3
+	id = 971
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Friedrich Ruge"
+	picture = "Friedrich_Ruge.dds"
+	traits = { chief_engineer heer_staff }
+	skill = 3
+	id = 972
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Otto Kretschmer"
+	picture = "Otto_Kretschmer.dds"
+	traits = { seawolf heer_staff }
+	skill = 3
+	id = 973
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Joachim Schepke"
+	picture = "Joachim_Schepke.dds"
+	traits = { seawolf cuts_corners politically_connected }
+	skill = 2
+	id = 974
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Günther Prien"
+	picture = "Gunther_Prien.dds"
+	traits = { seawolf blockade_runner }
+	skill = 2
+	id = 975
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Ernst Lindemann"
+	picture = "Otto_Ernst_Lindemann.dds"
+	traits = { fly_swatter }
+	skill = 2
+	id = 976
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Werner Henke"
+	picture = "Werner_Henke.dds"
+	traits = { seawolf }
+	skill = 2
+	id = 979
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Herbert Schultze"
+	picture = "Herbert_Schultze.dds"
+	traits = { gentlemanly seawolf heer_staff }
+	skill = 2
+	id = 977
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
