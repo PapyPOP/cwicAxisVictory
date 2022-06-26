@@ -36,6 +36,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_RK_facade_freedom.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_RK_repression"
+		texturefile = "gfx/interface/ideas/idea_RK_repression.dds"
+		}
+	spriteType = {
 		name = "GFX_idea_RK_man_made_famine"
 		texturefile = "gfx/interface/ideas/idea_RK_man_made_famine.dds"
 	}
