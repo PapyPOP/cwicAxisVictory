@@ -244,15 +244,6 @@ add_ideas = {
 	RMO_uneasy_collaboration
 	RMO_nordic_colonials
 	kleptocratic_regime
-	###Cabinet###
-	RMO_HoG_Graf_von_Helldorff
-	RMO_FM_Alfred_Meyer
-	RMO_MoS_Erich_von_dem_Bach-Zelewski
-	RMO_AM_Wilhelm_von_Allworden
-	RMO_CoS_Erich_Hoepner
-	RMO_CoArmy_Eccard_Freiherr_von_Gablenz
-	RMO_CoNavy_Hubert_Schmundt
-	RMO_CoAir_Hans_Seidemann
 	semi_industrialised_nation
 }
 

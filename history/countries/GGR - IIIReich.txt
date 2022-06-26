@@ -211,16 +211,6 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 
-	#ministers#
-	GER_HoG_Martin_Bormann
-	GER_FM_Joachim_von_Ribbentrop
-	GER_MoS_Heinrich_Himmler
-	GER_AM_Walther_Funk
-	GER_CoAi_Hermann_Goering
-	GER_CoN_Karl_Doenitz
-	GER_CoA_Wilhelm_Keitel
-	GER_CoS_Alfred_Jodl
-
 	GER_overgrown_officer_corps
 	GER_oversized_fleet
 	GER_nazi_recruitment_system

@@ -223,15 +223,6 @@ add_ideas = {
 	ROS_agrarian_society
 	ROS_baltic_germans
 	kleptocratic_regime
-	###Cabinet###
-	ROS_HoG_Hinrich_Lohse
-	ROS_FM_Karl_Siegmund_Litzmann
-	ROS_MoS_Wilhelm_Kube
-	ROS_AM_Karl_Saur
-	ROS_CoS_Walter_Braemer
-	ROS_CoArmy_Gerhard_Engel
-	ROS_CoNavy_Theodor_Burchardi
-	ROS_CoAir_Klaus_Uebe
 	semi_industrialised_nation
 }
 

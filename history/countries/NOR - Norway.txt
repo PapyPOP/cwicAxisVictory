@@ -224,14 +224,6 @@ add_ideas = {
 	NOR_The_GSSN
 	dictatorship
 	hos_tyranical_overseer
-	NOR_HoG_Rolf_Jorgen_Fuglesang
-	NOR_FM_Alf_Whistr
-	NOR_MoS_Albert_Viljam_Hagelin
-	NOR_AM_Thorstein_Fretheim
-	NOR_CoS_Hermann_Holter
-	NOR_CoA_Lothar_Rendulic
-	NOR_CoAi_Gunther_Scholz
-	NOR_CoN_Heinrich_Lehmann-Willenbrock
 }
 
 #######################
@@ -243,95 +235,7 @@ create_country_leader = {
 	desc = "Jonas_Lie_DESC"
 	picture = "Jonas_Lie.dds"
 	expire = "1965.1.1"
-	ideology = esoteric_national_socialism
-	traits = {
-	}
-}
-
-# Fascism
-create_country_leader = {
-	name = "Vidkun Quisling"
-	desc = "Quisling_DESC"
-	picture = "Quisling.dds"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-	}
-}
-
-# Paternal Autocracy
-create_country_leader = {
-	name = "Resistance Council"
-	desc = ""
-	picture = "Revolutionary_Council.dds"
-	expire = "1965.1.1"
-	ideology = transitional_regime
-	traits = {
-	}
-}
-
-# Conservatism
-create_country_leader = {
-	name = "Carl Joachim Hambro"
-	desc = ""
-	picture = "Carl_Joachim_Hambro.dds"
-	expire = "1965.1.1"
-	ideology = traditionalist_conservatism
-	traits = {
-	}
-}
-
-# Liberalism 
-create_country_leader = {
-	name = "Bent Røiseland"
-	desc = ""
-	picture = "Bent_Roiseland.dds"
-	expire = "1965.1.1"
-	ideology = social_liberalism
-	traits = {
-	}
-}
-
-# Social Democracy
-create_country_leader = {
-	name = "Einar Gerhardsen"
-	desc = ""
-	picture = "Einar_Gerhardsen.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = {
-	}
-}
-
-# Left-Wing Radicalism
-create_country_leader = {
-	name = "Nordahl Grieg"
-	desc = ""
-	picture = "Nordahl_Grieg.dds"
-	expire = "1965.1.1"
-	ideology = zhukovism
-	traits = {
-	}
-}
-
-# Bolshevik-Leninism
-# Marxism-Leninism
-create_country_leader = {
-	name = "Emil Løvlien"
-	desc = ""
-	picture = "Emil_Lovlien.dds"
-	expire = "1965.1.1"
-	ideology = neo-communism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Emil Løvlien"
-	desc = ""
-	picture = "Emil_Lovlien.dds"
-	expire = "1946.1.1"
-	ideology = marxism_leninism
+	ideology = neo_nazism
 	traits = {
 	}
 }

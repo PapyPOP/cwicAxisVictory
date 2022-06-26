@@ -221,15 +221,6 @@ add_ideas = {
 	RKA_the_loose_system
 	RKA_VSOU
 	kleptocratic_regime
-	###Cabinet###
-	RKA_Arno_Schickedanz
-	RKA_FM_Josef_Spacil
-	RKA_MoS_Richard_Glucks
-	RKA_AM_Hermann_Neubacher
-	RKA_CoS_Ewald_von_Kleist
-	RKA_CoArmy_Richard_Ruoff
-	RKA_CoNavy_Karl_Fleige
-	RKA_CoAir_Karl_Heinrich_Schulz
 	agrarian_nation
 }
 

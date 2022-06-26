@@ -215,14 +215,6 @@ add_ideas = {
 	DEN_unremarkable_industry
 	authoritarian_system
 	industrialised_nation
-	DEN_HoG_Werner_Best
-	DEN_FM_Georg_Ferdinand_Duckwitz
-	DEN_MoS_Gunther_Pancke
-	DEN_AM_Leo_Volk
-	DEN_CoS_Hermann_von_Hanneken
-	DEN_CoArmy_Georg_Lindemann
-	DEN_CoNavy_Hans_Heinrich_Wurmbach
-	DEN_CoAir_Sigismund_von_Falkenstein
 }
 
 #######################
@@ -230,89 +222,11 @@ add_ideas = {
 #######################
 # National Socialism
 create_country_leader = {
-	name = "Cay Lembcke"
-	desc = ""
-	picture = "Cay_Lembcke.dds"
-	expire = "1965.1.1"
-	ideology = fascism
-	traits = {
-	}
-}
-
-# Fascism
-create_country_leader = {
 	name = "Hermann von Hanneken"
 	desc = ""
 	picture = "Hermann_von_Hanneken.dds"
 	expire = "1965.1.1"
-	ideology = national_socialism
-	traits = {
-	}
-}
-
-# Paternal Autocracy
-create_country_leader = {
-	name = "-"
-	desc = ""
-	picture = ""
-	expire = "1965.1.1"
-	ideology = authoritarian_democracy
-	traits = {
-	}
-}
-
-# Conservatism
-create_country_leader = {
-	name = "John Christmas Møller"
-	desc = ""
-	picture = ".dds"
-	expire = "1965.1.1"
-	ideology = liberal_conservatism
-	traits = {
-	}
-}
-
-# Liberalism 
-create_country_leader = {
-	name = "Erik Scavenius"
-	desc = ""
-	picture = ".dds"
-	expire = "1965.1.1"
-	ideology = traditionalist_conservatism
-	traits = {
-	}
-}
-
-# Social Democracy
-create_country_leader = {
-	name = "Hans Hedtoft"
-	desc = ""
-	picture = "Hans_Hedtoft.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = {
-	}
-}
-
-# Left-Wing Radicalism
-# Bolshevik-Leninism
-create_country_leader = {
-	name = "Marie-Sophie Nielsen"
-	desc = ""
-	picture = ".dds"
-	expire = "1965.1.1"
-	ideology = platformism
-	traits = {
-	}
-}
-
-# Marxism-Leninism
-create_country_leader = {
-	name = "Aksel Larsen"
-	desc = ""
-	picture = ".dds"
-	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = neo_nazism
 	traits = {
 	}
 }

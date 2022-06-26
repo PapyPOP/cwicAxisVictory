@@ -1,4 +1,24 @@
 spriteTypes = {
+	#### GENERIC
+	spriteType = {
+		name = "GFX_idea_GENERIC_Russian_Militia"
+		texturefile = "gfx/interface/ideas/GENERIC_Russian_Militia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_chi_war_of_resistance3"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_chi_war_of_resistance2"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_chi_war_of_resistance"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
+	}
+	#### SBA
 	spriteType = {
 		name = "GFX_idea_SBA_miserable_locals"
 		texturefile = "gfx/interface/ideas/idea_SBA_miserable_locals.dds"
@@ -15,6 +35,7 @@ spriteTypes = {
 		name = "GFX_idea_SBA_prinz_eugen_land"
 		texturefile = "gfx/interface/ideas/idea_SBA_prinz_eugen_land.dds"
 	}
+	#### RGO
 	spriteType = {
 		name = "GFX_idea_RGO_absolute_loyalty"
 		texturefile = "gfx/interface/ideas/idea_RGO_absolute_loyalty.dds"
@@ -31,6 +52,7 @@ spriteTypes = {
 		name = "GFX_idea_RGO_lufthansa"
 		texturefile = "gfx/interface/ideas/idea_RGO_lufthansa.dds"
 	}
+	#### RK
 	spriteType = {
 		name = "GFX_idea_RK_facade_freedom"
 		texturefile = "gfx/interface/ideas/idea_RK_facade_freedom.dds"
@@ -38,11 +60,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_RK_repression"
 		texturefile = "gfx/interface/ideas/idea_RK_repression.dds"
-		}
+	}
 	spriteType = {
 		name = "GFX_idea_RK_man_made_famine"
 		texturefile = "gfx/interface/ideas/idea_RK_man_made_famine.dds"
 	}
+	#### RUK
 	spriteType = {
 		name = "GFX_idea_RUK_OUN_falling_apart"
 		texturefile = "gfx/interface/ideas/idea_RUK_OUN_falling_apart.dds"
@@ -56,9 +79,35 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_RUK_food_focus.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_RUK_serfdom"
+		texturefile = "gfx/interface/ideas/RUK_serfdom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUK_looming_collapse"
+		texturefile = "gfx/interface/ideas/RUK_looming_collapse.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUK_active_resistance"
+		texturefile = "gfx/interface/ideas/RUK_active_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUK_lesser_resistance"
+		texturefile = "gfx/interface/ideas/RUK_lesser_resistance.dds"
+	}
+	#### RKA
+	spriteType = {
 		name = "GFX_idea_RKA_oil_focus"
 		texturefile = "gfx/interface/ideas/idea_RKA_oil_focus.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_RKA_VSOU_icon"
+		texturefile = "gfx/interface/ideas/RKA_VSOU_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKA_rosenberg_system"
+		texturefile = "gfx/interface/ideas/RKA_rosenberg_system.dds"
+	}
+	#### ROS
 	spriteType = {
 		name = "GFX_idea_ROS_disease"
 		texturefile = "gfx/interface/ideas/idea_ROS_disease.dds"
@@ -68,9 +117,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ROS_baltic_germans.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_ROS_land_of_opportunity"
+		texturefile = "gfx/interface/ideas/ROS_land_of_opportunity.dds"
+	}
+	#### RMO
+	spriteType = {
 		name = "GFX_idea_RMO_slave_factories"
 		texturefile = "gfx/interface/ideas/idea_RMO_slave_factories.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_RMO_uneasy_collaboration"
+		texturefile = "gfx/interface/ideas/RMO_uneasy_collaboration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RMO_Nordic_Colonies"
+		texturefile = "gfx/interface/ideas/RMO_Nordic_Colonies.dds"
+	}
+	#### Regime
 	spriteType = {
 		name = "GFX_idea_dictatorship"
 		texturefile = "gfx/interface/ideas/idea_dictatorship.dds"
@@ -95,6 +158,7 @@ spriteTypes = {
 		name = "GFX_idea_authoritarian_system"
 		texturefile = "gfx/interface/ideas/idea_authoritarian_system.dds"
 	}
+	#### GER (GGR)
 	spriteType = {
 		name = "GFX_idea_GER_ss_volks"
 		texturefile = "gfx/interface/ideas/idea_GER_ss_volks.dds"

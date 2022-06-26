@@ -222,15 +222,6 @@ add_ideas = {
 	RGO_gotische_tourism_industry
 	RGO_absolute_loyalty
 	RGO_memories_of_crimea
-	###Cabinet###
-	HoG_Alfred_Frauenfeld
-	RGO_FM_Edmund_Veesenmayer
-	RGO_MoS_Herbert_Kappler
-	RGO_AM_Georg_Lorner
-	RGO_CoS_Friedrich_Jeckeln
-	RGO_CoArmy_Hermann_Priess
-	RGO_CoNavy_Helmuth_Brinkmann
-	RGO_CoAir_Friedrich_Alpers
 	industrialised_nation
 }
 

@@ -224,15 +224,6 @@ add_ideas = {
 	RUK_timebomb
 	RUK_active_resistance
 	semi_industrialised_nation
-	#####Cabinet####
-	RUK_HoG_Ernst_Ludwig_Leyser
-	RUK_FM_Ewald_Oppermann
-	RUK_MoS_Hans-Adolf_Prutzmann
-	RUK_AM_Waldemar_Magunia
-	RUK_CoS_Fritz_Freitag
-	RUK_CoA_Sylvester_Stadler
-	RUK_CoAi_Karl_Kitzinger
-	RUK_CoAi_Karl_Bergelt
 	kleptocratic_regime
 }
 
@@ -245,16 +236,6 @@ create_country_leader = {
 	ideology = neo_nazism
 	traits = {
 		paranoid_powermonger
-	}
-}
-
-create_country_leader = {
-	name = "Friedrich Schulz"
-	desc = "Friedrich_Schulz_DESC"
-	picture = "Friedrich_Schulz.dds"
-	expire = "1986.11.12"
-	ideology = fascism
-	traits = {
 	}
 }
 

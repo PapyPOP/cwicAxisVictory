@@ -210,14 +210,6 @@ set_politics = {
 }
 
 add_ideas = {
-	SBA_Sepp_Janko
-	SBA_FM_Felix_Benzler
-	SBA_MoS_August_Meyszner
-	SBA_AM_Franz_Neuhausen
-	SBA_CoS_Artur_Phleps
-	SBA_CoA_Otto_Kumm
-	SBA_CoNavy_Vacant
-	SBA_CoAi_Josef_Kammhuber
 	service_by_requirement
 	export_focus
 	war_economy
