@@ -24,6 +24,22 @@ spriteTypes = {
 		name = "GFX_idea_chi_war_of_resistance"
 		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_GENERIC_agrarian_nation"
+		texturefile = "gfx/interface/ideas/GENERIC_agrarian_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GENERIC_semi_industrialised_nation"
+		texturefile = "gfx/interface/ideas/GENERIC_semi_industrialised_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GENERIC_industrialised_nation"
+		texturefile = "gfx/interface/ideas/GENERIC_industrialised_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GENERIC_consumerist_economy"
+		texturefile = "gfx/interface/ideas/GENERIC_consumerist_economy.dds"
+	}
 	#### MTA
 	spriteType = {
 		name = "GFX_idea_MTA_Nazi_Colonies"
