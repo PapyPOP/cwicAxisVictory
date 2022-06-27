@@ -1357,10 +1357,6 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-			available = {
-				is_democratic = no
-				is_communist = no
-			}
 			picture = GER_ss_volks
 			removal_cost = -1
 			modifier = {
@@ -3260,15 +3256,39 @@ ideas = {
 			picture = man_five_year_plan_air
 			removal_cost = -1
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_interdictor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_jump_jet = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_naval_af = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_scout_plane = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_stratego_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_af_logistics = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -3290,15 +3310,39 @@ ideas = {
 			picture = man_five_year_plan_air
 			removal_cost = -1
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_interdictor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_jump_jet = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_naval_af = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_scout_plane = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_stratego_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_af_logistics = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -3321,15 +3365,39 @@ ideas = {
 			picture = man_five_year_plan_air
 			removal_cost = -1
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_interdictor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_jump_jet = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_naval_af = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_scout_plane = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_stratego_bomber = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				category_af_logistics = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -3387,9 +3455,15 @@ ideas = {
 			picture = GER_Special_Luftwaffe_Division
 			removal_cost = -1
 			research_bonus = {
-				light_air = -0.05
-				medium_air = -0.05
-				heavy_air = -0.05
+				category_cas = -0.05
+				category_fighter = -0.05
+				category_asf = -0.05
+				category_interdictor = -0.05
+				category_jump_jet = -0.05
+				category_naval_af = -0.05
+				category_scout_plane = -0.05
+				category_stratego_bomber = -0.05
+				category_af_logistics = -0.05
 			}
 		}
 		GER_luftwaffe_special_division_2 = {
@@ -3405,22 +3479,58 @@ ideas = {
 			picture = GER_Special_Luftwaffe_Division
 			removal_cost = -1
 			research_bonus = {
-				light_air = 0.05
-				medium_air = 0.05
-				heavy_air = 0.05
+				category_cas = -0.05
+				category_fighter = -0.05
+				category_asf = -0.05
+				category_interdictor = -0.05
+				category_jump_jet = -0.05
+				category_naval_af = -0.05
+				category_scout_plane = -0.05
+				category_stratego_bomber = -0.05
+				category_af_logistics = -0.05
 			}
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					reliability = 0.05
 					build_cost_ic = 0.05
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					reliability = 0.05
 					build_cost_ic = 0.05
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_interdictor = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_jump_jet = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_naval_af = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_scout_plane = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_stratego_bomber = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_af_logistics = {
 					reliability = 0.05
 					build_cost_ic = 0.05
 					instant = yes
@@ -3440,22 +3550,58 @@ ideas = {
 			picture = GER_Special_Luftwaffe_Division
 			removal_cost = -1
 			research_bonus = {
-				light_air = 0.05
-				medium_air = 0.05
-				heavy_air = 0.05
+				category_cas = -0.05
+				category_fighter = -0.05
+				category_asf = -0.05
+				category_interdictor = -0.05
+				category_jump_jet = -0.05
+				category_naval_af = -0.05
+				category_scout_plane = -0.05
+				category_stratego_bomber = -0.05
+				category_af_logistics = -0.05
 			}
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					reliability = 0.05
 					build_cost_ic = 0.05
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					reliability = 0.05
 					build_cost_ic = 0.05
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_interdictor = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_jump_jet = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_naval_af = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_scout_plane = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_stratego_bomber = {
+					reliability = 0.05
+					build_cost_ic = 0.05
+					instant = yes
+				}
+				category_af_logistics = {
 					reliability = 0.05
 					build_cost_ic = 0.05
 					instant = yes
@@ -5068,15 +5214,39 @@ ideas = {
 			picture = generic_airforce
 			removal_cost = -1
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_interdictor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_jump_jet = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_naval_af = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_scout_plane = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_stratego_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_af_logistics = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -5099,15 +5269,39 @@ ideas = {
 			picture = generic_airforce
 			removal_cost = -1
 			equipment_bonus = {
-				light_air = {
+				category_cas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				medium_air = {
+				category_fighter = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				heavy_air = {
+				category_asf = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_interdictor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_jump_jet = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_naval_af = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_scout_plane = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_stratego_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				category_af_logistics = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -5195,9 +5389,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.05
 				conservative_drift = 0.02
-				social_democrat_drift = 0.02
+				Social_Democratic_drift = 0.02
 				liberal_drift = 0.01
-				paternal_autocrat_drift = 0.01
 				political_power_factor = -0.25
 			}
 		}
@@ -5383,7 +5576,7 @@ ideas = {
 			picture = generic_sea_focused_navy
 			removal_cost = -1
 			equipment_bonus = {
-				dd_tech = {
+				screen_tech_hull = {
 					build_cost_ic = -0.1
 				}
 			}

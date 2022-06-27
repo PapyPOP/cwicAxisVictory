@@ -1,8 +1,9 @@
 ideas = {
 	country = {
 		RMO_slave_factories = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_slave_factories"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_slave_factories"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -10,21 +11,22 @@ ideas = {
 			picture = RMO_slave_factories
 			modifier = {
 				MONTHLY_POPULATION = -0.8
-				local_resources_factor = 0.10
+				local_resources_factor = 0.1
 				consumer_goods_factor = -0.05
 				stability_factor = -0.3
 			}
 			targeted_modifier = {
 				tag = GER
-				extra_trade_to_target_factor = 1.0
+				extra_trade_to_target_factor = 1
 			}
 		}
 		RMO_heavy_partisan_activity = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_heavy_partisan_activity"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_heavy_partisan_activity"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			picture = GENERIC_Russian_Militia
 			modifier = {
@@ -36,11 +38,12 @@ ideas = {
 			}
 		}
 		RMO_uneasy_collaboration = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uneasy_collaboration"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uneasy_collaboration"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			picture = RMO_uneasy_collaboration
 			modifier = {
@@ -50,11 +53,12 @@ ideas = {
 			}
 		}
 		RMO_nordic_colonials = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_nordic_colonials"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_nordic_colonials"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			picture = RMO_Nordic_Colonies
 			modifier = {
@@ -63,11 +67,12 @@ ideas = {
 			}
 		}
 		RMO_chaos_state_focus = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_state_focus"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_state_focus"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			picture = FRA_factory_strikes
 			modifier = {
@@ -79,11 +84,12 @@ ideas = {
 			}
 		}
 		RMO_chaos_state_focus2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_state_focus2"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_state_focus2"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			cancel = {
 				has_war = no
@@ -98,11 +104,12 @@ ideas = {
 			}
 		}
 		RMO_chaos_state_focus3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_state_focus3"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_state_focus3"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			picture = FRA_factory_strikes
 			modifier = {
@@ -114,22 +121,24 @@ ideas = {
 			}
 		}
 		RMO_chaos_uprising = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_uprising"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_chaos_uprising"
+			}
 			removal_cost = -1
 			allowed = {
-				always = no # Added via focus
+				always = no				# Added via focus
 			}
 			picture = tfv_can_conscription_crisis
 			modifier = {
 				political_power_gain = -0.2
-				stability_factor = -0.10
+				stability_factor = -0.1
 				production_factory_max_efficiency_factor = -0.2
 			}
 		}
 		RMO_uncertainty = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -142,8 +151,9 @@ ideas = {
 			}
 		}
 		RMO_Stand_and_Fight = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -156,8 +166,9 @@ ideas = {
 			}
 		}
 		RMO_Final_Stand = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -170,8 +181,9 @@ ideas = {
 			}
 		}
 		RMO_Terror_Tactics = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -183,8 +195,9 @@ ideas = {
 			}
 		}
 		RMO_Reichsautonomie = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -196,8 +209,9 @@ ideas = {
 			}
 		}
 		RMO_Slavic_Soldiers = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -213,25 +227,26 @@ ideas = {
 			}
 		}
 		RMO_Victory_in_Moscowien = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RKA_oil_extraction"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RKA_oil_extraction"
+			}
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
 			picture = nazi_influence
 			removal_cost = -1
-
 			modifier = {
 				stability_factor = 0.2
 				political_power_factor = 0.2
 			}
 		}
 		RMO_New_Government = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -243,8 +258,9 @@ ideas = {
 			}
 		}
 		RMO_Restored_Kommissariat = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -256,8 +272,9 @@ ideas = {
 			}
 		}
 		RMO_SS_Police = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -270,8 +287,9 @@ ideas = {
 			}
 		}
 		RMO_Autonomous_German_Communities = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -284,8 +302,9 @@ ideas = {
 			}
 		}
 		RMO_Minimalist_Government = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -297,8 +316,9 @@ ideas = {
 			}
 		}
 		RMO_Arisches_Schicksai = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncertainty"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -312,8 +332,9 @@ ideas = {
 			}
 		}
 		RMO_unloyal_servants = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_unloyal_servants"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_unloyal_servants"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -326,8 +347,9 @@ ideas = {
 			}
 		}
 		RMO_uncontrolled_corruption = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_uncontrolled_corruption"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_uncontrolled_corruption"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -339,8 +361,9 @@ ideas = {
 			}
 		}
 		RMO_Ivanov_Plan_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Ivanov_Plan_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Ivanov_Plan_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -351,8 +374,9 @@ ideas = {
 			}
 		}
 		RMO_Kaminski_Plan_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Kaminski_Plan_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Kaminski_Plan_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -363,8 +387,9 @@ ideas = {
 			}
 		}
 		RMO_Bach_Zelewski_Plan_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Bach_Zelewski_Plan_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Bach_Zelewski_Plan_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -375,8 +400,9 @@ ideas = {
 			}
 		}
 		RMO_Moderate_Solution_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Moderate_Solution_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Moderate_Solution_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -387,8 +413,9 @@ ideas = {
 			}
 		}
 		RMO_Hardliner_Solution_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Hardliner_Solution_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Hardliner_Solution_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -399,8 +426,9 @@ ideas = {
 			}
 		}
 		RMO_New_Bandenbekampfung_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_New_Bandenbekampfung_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_New_Bandenbekampfung_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -413,8 +441,9 @@ ideas = {
 			}
 		}
 		RMO_New_Bandenbekampfung_idea1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_New_Bandenbekampfung_idea1"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_New_Bandenbekampfung_idea1"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -427,8 +456,9 @@ ideas = {
 			}
 		}
 		RMO_Supreme_Soviet_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Supreme_Soviet_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Supreme_Soviet_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -439,8 +469,9 @@ ideas = {
 			}
 		}
 		RMO_Expanded_Conscription_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Expanded_Conscription_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Expanded_Conscription_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -451,8 +482,9 @@ ideas = {
 			}
 		}
 		RMO_Globocnik_Plan_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Globocnik_Plan_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Globocnik_Plan_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -463,8 +495,9 @@ ideas = {
 			}
 		}
 		RMO_Napalm_Usage_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Napalm_Usage_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Napalm_Usage_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -476,8 +509,9 @@ ideas = {
 			}
 		}
 		RMO_Napalm_Usage_idea_SMO = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Napalm_Usage_idea_SMO"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Napalm_Usage_idea_SMO"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -489,8 +523,9 @@ ideas = {
 			}
 		}
 		RMO_Inspiration_from_Chorny_Kot_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Inspiration_from_Chorny_Kot_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Inspiration_from_Chorny_Kot_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -501,26 +536,10 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
-		RMO_Enlarged_Einsatzgruppen_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Enlarged_Einsatzgruppen_idea"}
-			
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			picture = GER_Reformed_Officer_Corps
-			targeted_modifier = {
-				tag = SMO
-				attack_bonus_against = 0.15
-			}
-			targeted_modifier = {
-				tag = RMD
-				attack_bonus_against = 0.15
-			}
-		}
 		RMO_Cracking_the_Whip_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Cracking_the_Whip_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Cracking_the_Whip_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -531,8 +550,9 @@ ideas = {
 			}
 		}
 		RMO_War_is_Coming_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_War_is_Coming_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_War_is_Coming_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -544,8 +564,9 @@ ideas = {
 			}
 		}
 		RMO_Last_Stand_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Last_Stand_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Last_Stand_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -556,8 +577,9 @@ ideas = {
 			}
 		}
 		RMO_Anti_Communist_Fearmongering_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Anti_Communist_Fearmongering_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Anti_Communist_Fearmongering_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -569,8 +591,9 @@ ideas = {
 			}
 		}
 		RMO_Home_in_the_East_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Home_in_the_East_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Home_in_the_East_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -581,8 +604,9 @@ ideas = {
 			}
 		}
 		RMO_True_Model_Colony_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_True_Model_Colony_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_True_Model_Colony_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -590,42 +614,13 @@ ideas = {
 			picture = RMO_The_True_Model_Colony
 			modifier = {
 				conscription_factor = 0.05
-				global_building_slots_factor = 0.10
-			}
-		}
-		RMO_The_New_Baltic_Crusade_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_The_New_Baltic_Crusade_idea"}
-			
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			picture = RMO_The_Baltic_Crusade
-			targeted_modifier = {
-				tag = SMO
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = RMD
-				attack_bonus_against = 0.1
-			}
-		}
-		RMO_Fight_the_Disloyal_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Fight_the_Disloyal_idea"}
-			
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			picture = SPA_falangist_crackdown
-			targeted_modifier = {
-				tag = RMD
-				attack_bonus_against = 0.15
+				global_building_slots_factor = 0.1
 			}
 		}
 		RMO_Rally_the_People_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Rally_the_People_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Rally_the_People_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -636,22 +631,10 @@ ideas = {
 				attack_bonus_against = 0.15
 			}
 		}
-		RMO_No_to_the_Whites_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_No_to_the_Whites_idea"}
-			
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			picture = RMO_unloyal_collaborators
-			targeted_modifier = {
-				tag = RMD
-				attack_bonus_against = 0.15
-			}
-		}
 		RMO_Welfare_Programmes_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -662,8 +645,9 @@ ideas = {
 			}
 		}
 		RMO_Welfare_Programmes_idea1 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea1"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea1"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -674,8 +658,9 @@ ideas = {
 			}
 		}
 		RMO_Welfare_Programmes_idea2 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea2"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea2"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -687,8 +672,9 @@ ideas = {
 			}
 		}
 		RMO_Welfare_Programmes_idea3 = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea3"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Welfare_Programmes_idea3"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -700,8 +686,9 @@ ideas = {
 			}
 		}
 		RMO_Nordic_Propaganda_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Nordic_Propaganda_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Nordic_Propaganda_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -712,8 +699,9 @@ ideas = {
 			}
 		}
 		RMO_Colonial_Investment_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Colonial_Investment_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Colonial_Investment_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -726,8 +714,9 @@ ideas = {
 			}
 		}
 		RMO_Colonial_Taxes_Decreased_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Colonial_Taxes_Decreased_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Colonial_Taxes_Decreased_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -738,8 +727,9 @@ ideas = {
 			}
 		}
 		RMO_Settler_Self_Defence_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RMO_Settler_Self_Defence_idea"}
-			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RMO_Settler_Self_Defence_idea"
+			}
 			removal_cost = -1
 			allowed = {
 				always = no

@@ -1,7 +1,9 @@
 ideas = {
 	country = {
 		GGP_Corporate_Influence_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Corporate_Influence_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Corporate_Influence_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -10,14 +12,15 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				production_speed_arms_factory_factor = 0.15
 				production_speed_industrial_complex_factor = 0.15
 			}
 		}
 		GGP_Anti_Corruption_Drive_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Anti_Corruption_Drive_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Anti_Corruption_Drive_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -26,13 +29,14 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				consumer_goods_factor = 0.05
 			}
 		}
 		GGP_Well_Oiled_Machine_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Well_Oiled_Machine_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Well_Oiled_Machine_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -41,13 +45,14 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
 		}
 		GGP_Volksdeutsche_Administration_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Volksdeutsche_Administration_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Volksdeutsche_Administration_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -56,14 +61,15 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				political_power_gain = 0.15
 				stability_factor = 0.05
 			}
 		}
 		GGP_Agricultural_Drive_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Agricultural_Drive_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Agricultural_Drive_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -72,13 +78,14 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				monthly_population = 0.15
 			}
 		}
 		GGP_Polish_Collaborators_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Polish_Collaborators_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Polish_Collaborators_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -87,14 +94,15 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				stability_factor = 0.15
 				compliance_growth_on_our_occupied_states = 0.05
 			}
 		}
 		GGP_Volksdeutscher_Selbstschutz_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Volksdeutscher_Selbstschutz_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Volksdeutscher_Selbstschutz_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -103,14 +111,15 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				army_attack_factor = 0.1
 				stability_factor = -0.1
 			}
 		}
 		GGP_Conscripted_Forces_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Conscripted_Forces_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Conscripted_Forces_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -119,13 +128,14 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				conscription_factor = 0.025
 			}
 		}
 		GGP_Industrial_Maintenance_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Industrial_Maintenance_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Industrial_Maintenance_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -134,13 +144,14 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				industry_repair_factor = 0.025
 			}
 		}
 		GGP_The_Polish_Menace_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_The_Polish_Menace_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_The_Polish_Menace_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -149,14 +160,15 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			targeted_modifier = {
 				tag = POL
 				attack_bonus_against = 0.1
 			}
 		}
 		GGP_Death_to_Rebels_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Death_to_Rebels_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Death_to_Rebels_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -165,18 +177,15 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			targeted_modifier = {
 				tag = POL
 				attack_bonus_against = 0.05
 			}
-			targeted_modifier = {
-				tag = WUK
-				attack_bonus_against = 0.05
-			}
 		}
 		GGP_Germ_Warfare_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_Germ_Warfare_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_Germ_Warfare_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -185,13 +194,14 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				army_attack_factor = 0.05
 			}
 		}
 		GGP_POL_Germ_Warfare_idea = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GGP_POL_Germ_Warfare_idea"}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GGP_POL_Germ_Warfare_idea"
+			}
 			allowed = {
 				tag = GGP
 			}
@@ -200,7 +210,6 @@ ideas = {
 			}
 			#picture = 
 			removal_cost = -1
-
 			modifier = {
 				army_defence_factor = -0.05
 			}
