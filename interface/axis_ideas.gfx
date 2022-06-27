@@ -5,18 +5,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GENERIC_Russian_Militia.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_fish_industry"
+		texturefile = "gfx/interface/ideas/idea_fish_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GENERIC_oversized_fleet"
+		texturefile = "gfx/interface/ideas/idea_GENERIC_oversized_fleet.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_chi_war_of_resistance3"
 		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance3.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_idea_chi_war_of_resistance2"
 		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance2.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_idea_chi_war_of_resistance"
 		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
+	}
+	#### MTA
+	spriteType = {
+		name = "GFX_idea_MTA_Nazi_Colonies"
+		texturefile = "gfx/interface/ideas/MTA_Nazi_Colonies.dds"
 	}
 	#### SBA
 	spriteType = {
@@ -158,6 +169,16 @@ spriteTypes = {
 		name = "GFX_idea_authoritarian_system"
 		texturefile = "gfx/interface/ideas/idea_authoritarian_system.dds"
 	}
+	#### DEN
+	spriteType = {
+		name = "GFX_idea_DEN_nazi_puppet_regime"
+		texturefile = "gfx/interface/ideas/idea_DEN_nazi_puppet_regime.dds"
+	}
+	#### POR
+	spriteType = {
+		name = "GFX_idea_POR_status_of_africa"
+		texturefile = "gfx/interface/ideas/POR_status_of_africa.dds"
+	}
 	#### GER (GGR)
 	spriteType = {
 		name = "GFX_idea_GER_ss_volks"
@@ -250,5 +271,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GER_for_the_reich"
 		texturefile = "gfx/interface/ideas/idea_GER_for_the_reich.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Supplies_Issue_1"
+		texturefile = "gfx/interface/ideas/GER_Supplies_Issue_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Supplies_Issue_2"
+		texturefile = "gfx/interface/ideas/GER_Supplies_Issue_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Supplies_Issue_3"
+		texturefile = "gfx/interface/ideas/GER_Supplies_Issue_3.dds"
 	}
 }
