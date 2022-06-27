@@ -237,16 +237,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Karl Friedrich von der Meden"
-	desc = "Karl_Friedrich_von_der_Meden_DESC"
-	picture = "OST_Karl_Friedrich_von_der_Meden.dds"
-	expire = "1964.2.26"
-	ideology = fascism
-	traits = {
-	}
-}
-
 create_field_marshal = {
 	name = "Karl-Friedrich von der Meden"
 	picture = "OST_Karl_Friedrich_von_der_Meden.dds"

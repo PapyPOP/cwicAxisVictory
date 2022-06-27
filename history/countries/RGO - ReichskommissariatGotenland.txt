@@ -236,16 +236,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Mustafa Edige Kirimal"
-	desc = "Mustafa_Edige_Kirimal_DESC"
-	picture = "Mustafa_Edige_Kirimal.dds"
-	expire = "1964.2.26"
-	ideology = third_positionism
-	traits = {
-	}
-}
-
 create_field_marshal = {
 	name = "Herbert Otto Gille"
 	picture = "Herbert_Otto_Gille.dds"

@@ -235,16 +235,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Richard Ruoff"
-	desc = "Richard_Ruoff_DESC"
-	picture = "Richard_Ruoff.dds"
-	expire = "1961.2.19"
-	ideology = fascism
-	traits = {
-	}
-}
-
 create_field_marshal = {
 	name = "Richard Ruoff"
 	picture = "Richard_Ruoff.dds"
