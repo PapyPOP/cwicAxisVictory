@@ -284,4 +284,44 @@ spriteTypes = {
 		name = "GFX_idea_GER_Supplies_Issue_3"
 		texturefile = "gfx/interface/ideas/GER_Supplies_Issue_3.dds"
 	}
+	#### SLO
+	spriteType = {
+		name = "GFX_idea_SLO_CZE_Czechoslovakian_Resistance"
+		texturefile = "gfx/interface/ideas/SLO_CZE_Czechoslovakian_Resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SLO_Hlinka_Guards"
+		texturefile = "gfx/interface/ideas/SLO_Hlinka_Guards.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hol_caved_to_the_germans"
+		texturefile = "gfx/interface/ideas/idea_hol_caved_to_the_germans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SLO_german_debt"
+		texturefile = "gfx/interface/ideas/SLO_german_debt.dds"
+	}
+	#### NOR
+	spriteType = {
+		name = "GFX_idea_NOR_quisling_nazi_puppet"
+		texturefile = "gfx/interface/ideas/idea_NOR_quisling_nazi_puppet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOR_exile_government"
+		texturefile = "gfx/interface/ideas/idea_NOR_exile_government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOR_h7"
+		texturefile = "gfx/interface/ideas/idea_NOR_h7.dds"
+	}
+	#### SS
+	spriteType = {
+		name = "GFX_idea_powerful_ss"
+		texturefile = "gfx/interface/ideas/idea_powerful_ss.dds"
+	}
+	#### ENG
+	spriteType = {
+		name = "GFX_idea_ENG_limited_self_governance"
+		texturefile = "gfx/interface/ideas/idea_ENG_limited_self_governance.tga"
+	}
 }

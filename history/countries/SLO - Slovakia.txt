@@ -205,14 +205,6 @@ add_ideas = {
 	SLO_German_Influence
 	semi_industrialised_nation
 	SLO_Debt_To_The_Germans
-	SLO_HoG_Jozef_Tiso
-	SLO_FM_Jozef_Tiso
-	SLO_MoS_Alexander_Mach
-	SLO_AM_Gejza_Medricky
-	SLO_CoStaff_Ferdinand_Catlos
-	SLO_CoArmy_Ferdinand_Catlos
-	SLO_CoNavy_Vacant
-	SLO_CoAir_Jan_Reznak
 }
 
 # National Socialist
