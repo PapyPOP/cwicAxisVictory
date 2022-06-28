@@ -35,7 +35,7 @@ autonomy_state = {
 	}
 
 	allowed = {	
-		OVERLORD = { original_tag = GER }
+		OVERLORD = { original_tag = GGR }
 		### Is Eligable to be an SS-Ordenstaat, mainly for Burgundy, Gotenland and Banat
 		OR = {
 			original_tag = SSB
