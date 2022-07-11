@@ -218,7 +218,6 @@ add_ideas = {
 	GER_SS_Infightings
 	
 	fanatical_dictatorship
-	industrialised_nation
 }
 
 #######################

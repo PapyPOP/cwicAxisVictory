@@ -203,7 +203,6 @@ add_ideas = {
 	SLO_Remnants_of_Czechoslovakia
 	SLO_Hlinka_Influence
 	SLO_German_Influence
-	semi_industrialised_nation
 	SLO_Debt_To_The_Germans
 }
 

@@ -221,7 +221,6 @@ add_ideas = {
 	RKA_the_loose_system
 	RKA_VSOU
 	kleptocratic_regime
-	agrarian_nation
 }
 
 set_stability = 0.1

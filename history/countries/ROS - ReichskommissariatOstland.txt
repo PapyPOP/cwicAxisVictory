@@ -223,7 +223,6 @@ add_ideas = {
 	ROS_agrarian_society
 	ROS_baltic_germans
 	kleptocratic_regime
-	semi_industrialised_nation
 }
 
 set_country_flag = german_and_germanrk

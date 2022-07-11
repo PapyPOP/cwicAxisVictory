@@ -218,7 +218,6 @@ add_ideas = {
 	SBA_miserable_locals
 	SBA_ss_aristocracy
 	SBA_unorganised_ss_bandits
-	agrarian_nation
 }
 
 create_country_leader = {

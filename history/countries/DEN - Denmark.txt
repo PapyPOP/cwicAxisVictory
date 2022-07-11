@@ -214,7 +214,6 @@ add_ideas = {
 	DEN_nazi_regime
 	DEN_unremarkable_industry
 	authoritarian_system
-	industrialised_nation
 }
 
 #######################

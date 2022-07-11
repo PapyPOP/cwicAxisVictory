@@ -217,7 +217,6 @@ add_ideas = {
 	war_economy
 	GER_RK_repression
 	kleptocratic_regime
-	agrarian_nation
 }
 
 set_country_flag = german_and_germanrk

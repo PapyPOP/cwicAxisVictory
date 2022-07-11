@@ -223,7 +223,6 @@ add_ideas = {
 	RUK_Ukrainian_Serfdom
 	RUK_timebomb
 	RUK_active_resistance
-	semi_industrialised_nation
 	kleptocratic_regime
 }
 

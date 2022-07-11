@@ -214,7 +214,6 @@ add_ideas = {
 	war_economy
 	GER_RK_repression
 	fanatical_dictatorship
-	industrialised_nation
 }
 
 ####################################################

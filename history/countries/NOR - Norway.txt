@@ -216,7 +216,6 @@ set_popularities = {
 
 add_ideas = {
 	limited_conscription
-	industrialised_nation
 	NOR_quisling_nazi_puppet
 	NOR_illegitimate_government
 	NOR_the_london_exiles

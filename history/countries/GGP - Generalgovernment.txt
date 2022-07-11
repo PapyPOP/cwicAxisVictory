@@ -210,7 +210,6 @@ add_ideas = {
 	war_economy
 	GER_RK_repression
 	kleptocratic_regime
-	semi_industrialised_nation
 }
 
 set_stability = 0.2

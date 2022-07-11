@@ -222,7 +222,6 @@ add_ideas = {
 	RGO_gotische_tourism_industry
 	RGO_absolute_loyalty
 	RGO_memories_of_crimea
-	industrialised_nation
 }
 
 create_country_leader = {

@@ -207,7 +207,6 @@ set_politics = {
 
 add_ideas = {
 	kleptocratic_regime
-	agrarian_nation
 	GER_RK_repression
 	RK_Heia_Safari
 	RK_African_Unrest
