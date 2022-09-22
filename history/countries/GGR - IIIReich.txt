@@ -38,11 +38,11 @@ if = {
 		battle_hull_medium_0 = 1
 		ww_carriers = 1
 		battle_hull_medium_0 = 1
-		carrier_hull_0 = 1
+		carrier_hull_light_0 = 1
 		ww_submarines = 1
 		torpedo_ww = 1
 		sub_hull_large_single_0 = 1
-		sub_hull_small_single_1 = 1
+		sub_hull_small_single_0 = 1
 		torpedo_small_0 = 1
 		ww_screens = 1
 		screen_hull_heavy_0 = 1
@@ -55,6 +55,7 @@ set_technology = {
 	##### INFRA #####
 	ww_infra = 1
 	basic_train = 1
+	inframunicipal_I = 1
 	##Infantry##
 	infantry_equip_1 = 1
 	specialist_1 = 1
@@ -151,6 +152,13 @@ set_technology = {
 	##Helicopters##
 	##Engineering##
 	ww_pc = 1
+	hardware_I = 1
+	hardware_II = 1
+	supercomputer_I = 1
+	transistor_I = 1
+	transistor_II = 1
+	software_I = 1
+	software_II = 1
 	radio = 1
 	radar_0 = 1
 	##Industry##
@@ -161,11 +169,20 @@ set_technology = {
 	rocket_engines = 1
 	jet_engines = 1
 	advanced_rocket_engines = 1
+	prototype_aa = 1
+	prototype_agm = 1
+	atgm_0 = 1
+	agm_0 = 1
+	cruisemissile_0 = 1
+	srbm1 = 1
 	##Space##
-	#liquid_propelled_rocket = 1
+	woodmetal_frames = 1
+	pressure_vessel1 = 1
+	liquid_propellant = 1
 	##WMD##
 	atomic_research = 1
 	NBC_research = 1
+	nbc_biological_weapon_1 = 1
 }
 
 set_convoys = 10
