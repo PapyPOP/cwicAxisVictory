@@ -234,7 +234,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Rudolf Viest"
-	portrait_path = "gfx/leaders/SLO/Rudolf_Viest.dds"
+	portrait_path = "Rudolf_Viest.dds"
 	traits = {
 		politically_connected
 	}
