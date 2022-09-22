@@ -1,4 +1,8 @@
 version="0.1"
+dependencies={
+	"Cold War Iron Curtain: A World Divided"
+	"Cold War Iron Curtain: A Kuomintang Expansion"
+}
 tags={
 	"National Focuses"
 	"Alternative History"
