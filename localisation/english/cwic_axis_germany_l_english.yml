@@ -112,3 +112,8 @@ GER_european_trains:0 "European Standardization"
  GER_Research_Drive:0 "Research Drive"
 twrgermany.1.t:0 "Swabian Nights"
 twrgermany.1.d:0 "When Bismarck united the German peoples under one Empire, most dreamt of a grand state that could surpass Napoleon... However, only one man dared to put this dream into action - The Führer. After the swift victory on the Western Front, all eyes turned to the Red Menace in the East, where Germany's fury fell upon the Bolsheviks in full force. Kiev, Minsk, Sevastopol crumbled under the German might, meanwhile the Soviets found themselves isolated, standing alone as the world turned their back on them.\n\nSoon, Leningrad fell after a combined assault by the Luftwaffe, Kriegsmarine and Wehrmacht. As an all-out assault threatened Moscow, Stalin was forced to relocate his troops away from Stalingrad, opening the door for German intrusion into the Kaukasus oil fields. Stalingrad too fell after an encirclement bled the city dry. And finally, after millions of deaths on both sides, The German flag flew above Red Square.\n\nHowever, this victory was never official, as the Reds have relocated to Perm, with Stalin going missing during the chaos in Moscow."
+
+#AUTONOMY#
+autonomy_SS_Ordenstaat:0 "SS-Ordensstaat"
+autonomy_reichsprotectorate:0 "Reich Protectorate"
+autonomy_reichskommissariat:0 "Reich Kommissariat"
