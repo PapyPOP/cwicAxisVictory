@@ -7,5 +7,6 @@ tags={
 	"Gameplay"
 	"Map"
 }
-name="Cold War Iron Curtain : Axis Victory"
+name="Cold War Iron Curtain : Realistic Axis Victory"
 supported_version="1.11.12"
+replace_path="common/bookmarks"
