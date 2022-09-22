@@ -137,4 +137,8 @@ spriteTypes = {
 		name = "GFX_autonomy_SS_Ordenstaat_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_SS_Ordenstaat_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_autonomy_satellite_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
+	}
 }
