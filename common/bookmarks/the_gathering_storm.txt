@@ -138,23 +138,7 @@ bookmarks = {
 			}	
 			
 		}		
-			
-		"DDR" = {
-			minor = yes
-			history = "DDR_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				ddr_idea_industrial_corruption
-				ddr_idea_mass_emigration
-				Warsaw_Pact_Military_Restrictions	
-				comecon_member				
-			}
-			focuses = {
-			DDR_formally_establish_the_ddr
-			DDR_Cultural_Policies
-			DDR_Ulbricht_Consolidates_Power
-			}
-		}	
+				
 		"ISR" = {
 			minor = yes
 			history = "ISR_GATHERING_STORM_DESC"
@@ -170,7 +154,6 @@ bookmarks = {
 				ISR_Designate_Jerusalem_as_the_Capital
 			}
 		}
-		
 		
 		"EGY" = {
 			minor = yes
@@ -211,6 +194,7 @@ bookmarks = {
 
 			}
 		}
+
 		"RAJ" = {
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
@@ -226,6 +210,7 @@ bookmarks = {
 				IND_Communist_Party_of_India_Victory
 			}
 		}
+
 		"PAK" = {
 			minor = yes
 			history = "PAK_GATHERING_STORM_DESC"
@@ -240,6 +225,7 @@ bookmarks = {
 				PAK_Establish_PAEC
 			}
 		}
+
 		"PER" = {
 			minor = yes
 			history = "PER_GATHERING_STORM_DESC"
@@ -251,6 +237,7 @@ bookmarks = {
 
 			}
 		}
+
 		"CUB" = {
 			minor = yes
 			history = "CUB_GATHERING_STORM_DESC"
@@ -266,18 +253,7 @@ bookmarks = {
 			CUB_50s_cuban_casinos	
 			}
 		}
-		"BEL" = {
-			minor = yes
-			history = "BEL_GATHERING_STORM_DESC"
-			ideology = Christian_Democratic
-			ideas = {
-			}
-			focuses = {
-				BEL_The_Koningskwestie
-				BEL_The_1950_General_Strike
-				BEL_The_Second_School_War
-			}
-		}
+
 		"NGA" = {
 			minor = yes
 			history = "NGA_GATHERING_STORM_DESC"
@@ -293,6 +269,7 @@ bookmarks = {
 				NGA_1950_1956_petroleum_discovery
 			}
 		}
+
 		"YUG" = {
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
@@ -310,35 +287,7 @@ bookmarks = {
 				
 			}
 		}
-		"POL" = {
-			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				FRA_Reconstruction_Budget_Reorganization
-				fiscal_collapse_1
-			}
-			focuses = {
-				POL_The_Sovietization
-				POL_Secretary_Ochab
-				POL_The_Gomulka_Thaw
-			}
-		}
-		"CZE" = {
-			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				slovak_autonomy
-				state_corruption
-				agricultural_Mismanagement
-			}
-			focuses = {
-				CZE_General_Secretary_Gottwald
-				CZE_General_Secretary_Gustav_Husak
-				CZE_Rapid_Destalinization
-			}
-		}
+
 		"ROM" = {
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
@@ -354,6 +303,7 @@ bookmarks = {
 				ROM_Embrace_Destalinization
 			}
 		}
+
 		"HUN" = {
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
@@ -369,6 +319,7 @@ bookmarks = {
 				ROM_Embrace_Destalinization
 			}
 		}
+
 		"BUL" = {
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"
@@ -381,6 +332,7 @@ bookmarks = {
 				BUL_Crush_Internal_Opposition
 			}
 		}
+
 		"MON" = {
 			minor = yes
 			history = "MON_GATHERING_STORM_DESC"
@@ -392,6 +344,7 @@ bookmarks = {
 
 			}
 		}
+
 		"ALB" = {
 			minor = yes
 			history = "ALB_GATHERING_STORM_DESC"
@@ -404,6 +357,7 @@ bookmarks = {
 				ALB_Rehabilitie_Koci_Xoce
 			}
 		}
+
 		"PDG" = {
 			minor = yes
 			history = "PDG_GATHERING_STORM_DESC"
@@ -419,6 +373,7 @@ bookmarks = {
 				PDG_KKE_Reformist_Takeover
 			}
 		}
+
 		"GRE" = {
 			minor = yes
 			history = "GRE_GATHERING_STORM_DESC"
@@ -430,6 +385,7 @@ bookmarks = {
 			
 			}
 		}
+
 		"ITA" = {
 			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
@@ -442,6 +398,7 @@ bookmarks = {
 				
 			}
 		}
+
 		"SWE" = {
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
@@ -457,6 +414,7 @@ bookmarks = {
 				SWE_Continue_the_Post_War_Economic_Boom
 			}
 		}
+
 		"FIN" = {
 			minor = yes
 			history = "FIN_GATHERING_STORM_DESC"
@@ -473,6 +431,7 @@ bookmarks = {
 				FIN_The_Yopakkaset_Crisis
 			}
 		}
+
 		"TUR" = {
 			minor = yes
 			history = "TUR_GATHERING_STORM_DESC"
@@ -487,6 +446,7 @@ bookmarks = {
 				TUR_Mountain_Turks
 			}
 		}
+
 		"ETH" = {
 			minor = yes
 			history = "ETH_GATHERING_STORM_DESC"
@@ -502,6 +462,7 @@ bookmarks = {
 				ETH_50s_intervene_in_the_korean_war
 			}
 		}
+
 		"SPR" = {
 			minor = yes
 			history = "SPR_GATHERING_STORM_DESC"
@@ -513,6 +474,7 @@ bookmarks = {
 			
 			}
 		}
+
 		"JAP" = {
 			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
@@ -523,17 +485,7 @@ bookmarks = {
 				article_nine
 			}			
 		}
-		"WGR" = {
-			minor = yes
-			history = WGR_GATHERING_STORM_DESC
-			ideology = conservative
-			ideas = {
-				Occupation
-				NATO_Military_Restrictions
-				Scientific_Collapse
-				Disorganized_Navy
-			}
-		}
+
 		"AFG" = {
 			minor = yes
 			history = "AFG_GATHERING_STORM_DESC"
@@ -544,6 +496,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
+
 		"BRM" = {
 			minor = yes
 			history = "BRM_GATHERING_STORM_DESC"
@@ -557,6 +510,7 @@ bookmarks = {
 				MYR_National_United_Front_Victory
 			}
 		}
+
 		"BCP" = {
 			minor = yes
 			history = "BCP_GATHERING_STORM_DESC"
@@ -571,6 +525,7 @@ bookmarks = {
 				BCP_50s_NUF_Victory
 			}
 		}
+
 		"IRQ" = {
 			minor = yes
 			history = "IRQ_GATHERING_STORM_DESC"
@@ -585,6 +540,7 @@ bookmarks = {
 			
 			}
 		}
+
 		"SAU" = {
 			minor = yes
 			history = "SAU_GATHERING_STORM_DESC"
@@ -600,6 +556,7 @@ bookmarks = {
 				SAU_The_Saudi_Revolution
 			}
 		}
+
 		"JOR" = {
 			minor = yes
 			history = "JOR_GATHERING_STORM_DESC"
@@ -612,6 +569,7 @@ bookmarks = {
 				JOR_The_Jordanian_Revolution
 			}
 		}
+
 		"MOR" = {
 			minor = yes
 			history = "MOR_GATHERING_STORM_DESC"
@@ -626,6 +584,7 @@ bookmarks = {
 				MOR_Unrest_in_the_Rif
 			}
 		}
+
 		"YEM" = {
 			minor = yes
 			history = "YEM_GATHERING_STORM_DESC"
@@ -641,6 +600,7 @@ bookmarks = {
 				YEM_The_Fall_of_Ahmed_Bin_Yahya
 			}
 		}
+
 		"LEB" = {
 			minor = yes
 			history = "LEB_GATHERING_STORM_DESC"
@@ -655,6 +615,7 @@ bookmarks = {
 				LEB_President_Camille_Chamoun
 			}
 		}
+
 		"QAT" = {
 			minor = yes
 			history = "QAT_GATHERING_STORM_DESC"
@@ -670,6 +631,7 @@ bookmarks = {
 				QAT_Begin_Oil_Exports
 			}
 		}
+
 		"BHR" = {
 			minor = yes
 			history = "BHR_GATHERING_STORM_DESC"
@@ -685,6 +647,7 @@ bookmarks = {
 				QAT_Begin_Oil_Exports
 			}
 		}
+
 		"KEN" = {
 			minor = yes
 			history = "KEN_GATHERING_STORM_DESC"
@@ -698,6 +661,7 @@ bookmarks = {
 				KEN_50s_the_arrest_of_jomo_kenyatta
 			}
 		}
+
 		"MLA" = {
 			minor = yes
 			history = "MLA_GATHERING_STORM_DESC"
@@ -712,6 +676,7 @@ bookmarks = {
 				MLA_Fund_the_Khmer_Rouge
 			}
 		}
+
 		"DOM" = {
 			minor = yes
 			history = "DOM_GATHERING_STORM_DESC"
@@ -725,6 +690,7 @@ bookmarks = {
 				DOM_Hold_Batista_for_Ransom
 			}
 		}
+
 		"CAM" = {
 			minor = yes
 			history = "CAM_GATHERING_STORM_DESC"
@@ -740,6 +706,7 @@ bookmarks = {
 				CAM_The_Geneva_Conference
 			}
 		}
+
 		"SIA" = {
 			minor = yes
 			history = "SIA_GATHERING_STORM_DESC"
@@ -751,6 +718,7 @@ bookmarks = {
 
 			}
 		}
+
 		"PHI" = {
 			minor = yes
 			history = "PHI_GATHERING_STORM_DESC"
@@ -766,6 +734,7 @@ bookmarks = {
 				PHI_Manuel_Manahan_Victory
 			}
 		}
+
 		"SIK" = {
 			minor = yes
 			history = "SIK_GATHERING_STORM_DESC"
@@ -778,6 +747,7 @@ bookmarks = {
 				ETR_Yulnars_Consolidates_Power
 			}
 		}
+
 		"CAN" = {
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
@@ -805,6 +775,7 @@ bookmarks = {
 
 			}
 		}
+
 		"SYR" = {
 			minor = yes
 			history = "SYR_GATHERING_STORM_DESC"
@@ -820,6 +791,7 @@ bookmarks = {
 				SYR_hashemitemonarchy
 			}
 		}
+
 		"LBA" = {
 			minor = yes
 			history = "LBA_GATHERING_STORM_DESC"
@@ -834,6 +806,7 @@ bookmarks = {
 				LBA_adopt_the_1952_constitution
 			}
 		}
+
 		"ZIM" = {
 			minor = yes
 			history = "ZIM_GATHERING_STORM_DESC"
@@ -847,6 +820,7 @@ bookmarks = {
 				ZIM_Form_the_Central_African_Party
 			}
 		}
+
 		"UGA" = {
 			minor = yes
 			history = "UGA_GATHERING_STORM_DESC"
@@ -860,6 +834,7 @@ bookmarks = {
 				UGA_Side_with_the_Socialists
 			}
 		}
+		
 		"GHA" = {
 			minor = yes
 			history = "GHA_GATHERING_STORM_DESC"
