@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1949.5.23.12
 		picture = "GFX_1949_Bookmark"
-		default_country = "USA"
+		default_country = "GGR"
 		default = yes
 		
 		"USA" = {
