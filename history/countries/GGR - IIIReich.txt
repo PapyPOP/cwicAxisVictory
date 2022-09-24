@@ -190,15 +190,6 @@ set_technology = {
 	nbc_biological_weapon_1 = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	create_intelligence_agency = yes
-	add_ideas = Major_Power_Spy_Bonus
-	create_intelligence_agency = yes
-}
-
 set_convoys = 20
 init_influence = yes
 set_variable = {
