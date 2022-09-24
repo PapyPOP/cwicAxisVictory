@@ -35,7 +35,7 @@ GGR_INF_01 =
 {
 	name = "Infantry Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -107,7 +107,7 @@ GGR_ARM_01 =
 {
 	name = "Panzer Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -148,7 +148,7 @@ GGR_MEC_01 =
 {
 	name = "Mechanized Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -213,7 +213,7 @@ GGR_GAR_01 =
 {
 	name = "Garrison Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -288,7 +288,7 @@ GGR_MAR_01 =
 {
 	name = "Marine Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -321,7 +321,7 @@ GGR_MTN_01 =
 {
 	name = "Mountain Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -356,7 +356,7 @@ GGR_PAR_01 =
 {
 	name = "Paratrooper Divisions"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 
@@ -388,7 +388,7 @@ GGR_BGS_01 =
 {
 	name = "BGS Units"
 
-	for_countries = { WGR }
+	for_countries = { GGR }
 
 	can_use = { always = yes }
 

@@ -27,42 +27,42 @@ instant_effect = {
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
 		amount = 25000
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = auto_cannon_equipment_1
 		amount = 100
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = direct_fire_gun_equipment_1
 		amount = 100
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = artillery_equipment_1
 		amount = 25
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = light_artillery_equipment_1
 		amount = 25
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = heavy_artillery_equipment_1
 		amount = 25
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = support_equipment_1
 		amount = 1250
-		producer = WGR
+		producer = GGR
 	}
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_1
 		amount = 500
-		producer = WGR
+		producer = GGR
 	}	
 #Armor #West Germany had no tanks in 1949
 
