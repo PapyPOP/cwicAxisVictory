@@ -32,6 +32,7 @@ state = {
 			
 			air_base = 4
 		}
+		add_core_of = GGR
 		add_core_of = BEL
 		add_core_of = WAL
 		set_state_flag = HDI5
