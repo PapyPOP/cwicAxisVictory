@@ -1502,7 +1502,537 @@ instant_effect = {
 		amount = 500
 		producer = GGR
 	}	
-#Armor #West Germany had no tanks in 1949
+}
 
-#Air #West Germany had no airforce in 1949
+### Air Wings
+air_wings = {
+	##### Nazi Air Force #####
+	744 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	86 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	8 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	1565 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	53 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	50 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	28 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	34 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	958 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	735 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	51 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	35 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	7 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	36 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	1631 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	1632 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	1629 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	56 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	1633 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	58 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	1626 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	61 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	62 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
+	60 = {
+		CAS_equipment_4 = {
+			owner = "GGR"
+			amount = 100
+		}
+		jet_multirole_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_interceptor_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_tac_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		transport_plane_equipment_1 = {
+			owner = "GGR"
+			amount = 5
+		}
+	}
 }
