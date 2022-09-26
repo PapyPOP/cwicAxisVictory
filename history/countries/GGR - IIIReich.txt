@@ -2,6 +2,10 @@ capital = 742
 
 set_research_slots = 4
 
+#TECH CULTURE#
+set_country_flag = tech_gfx_western
+set_country_flag = tech_alignment_western
+
 #TECH/OOBS
 oob = "GGR_1949"
 
@@ -12,58 +16,6 @@ if = {
 	set_naval_oob = "GGR_1949_naval_mtg"
 	else = {
 		set_naval_oob = "GGR_1949_naval_legacy"
-	}
-}
-
-if = {
-	limit = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_technology = {
-		ww_screens_proletariat = 1
-		frigate_0 = 1
-		destroyer_0 = 1
-		cruiser_0 = 1
-		ww_capitals_proletariat = 1
-		carrier_0 = 1
-		ww_submarines_proletariat = 1
-		attack_submarine_0 = 1
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		countermeasures_0 = 1
-		subkiller_0 = 1
-		subkiller_1 = 1
-		maritime_sonar_0 = 1
-		detection_ww = 1
-		radar_naval_0 = 1
-		radar_aa_0 = 1
-		ww_armaments = 1
-		ship_armament_light_0 = 1
-		ship_armament_light_1 = 1
-		ship_armament_medium_0 = 1
-		ship_armament_heavy_0 = 1
-		ww_capitals = 1
-		battle_hull_medium_0 = 1
-		ww_carriers = 1
-		battle_hull_medium_0 = 1
-		carrier_hull_light_0 = 1
-		ww_submarines = 1
-		torpedo_ww = 1
-		sub_hull_large_single_0 = 1
-		sub_hull_small_single_0 = 1
-		torpedo_small_0 = 1
-		ww_screens = 1
-		screen_hull_heavy_0 = 1
-		screen_hull_medium_0 = 1
-		battle_hull_light_0 = 1
 	}
 }
 
@@ -1218,4 +1170,177 @@ create_navy_leader = {
 	defense_skill = 1
 	maneuvering_skill = 2
 	coordination_skill = 2
+}
+
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		ww_screens_proletariat = 1
+		frigate_0 = 1
+		destroyer_0 = 1
+		cruiser_0 = 1
+		ww_capitals_proletariat = 1
+		carrier_0 = 1
+		ww_submarines_proletariat = 1
+		attack_submarine_0 = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		countermeasures_0 = 1
+		subkiller_0 = 1
+		subkiller_1 = 1
+		maritime_sonar_0 = 1
+		detection_ww = 1
+		radar_naval_0 = 1
+		radar_aa_0 = 1
+		ww_armaments = 1
+		ship_armament_light_0 = 1
+		ship_armament_light_1 = 1
+		ship_armament_medium_0 = 1
+		ship_armament_heavy_0 = 1
+		ww_capitals = 1
+		battle_hull_medium_0 = 1
+		ww_carriers = 1
+		battle_hull_medium_0 = 1
+		carrier_hull_light_0 = 1
+		ww_submarines = 1
+		torpedo_ww = 1
+		sub_hull_large_single_0 = 1
+		sub_hull_small_single_0 = 1
+		torpedo_small_0 = 1
+		ww_screens = 1
+		screen_hull_heavy_0 = 1
+		screen_hull_medium_0 = 1
+		battle_hull_light_0 = 1
+	}
+
+	### Variants ###
+
+	create_equipment_variant = { #1935-1940
+		name = "Type IXC"
+		type = sub_hull_ww  
+		parent_version = 0
+		name_group = GGR_SS_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+            fixed_sonar_slot = sonar_ww
+            fixed_ship_engine_slot = sub_engine_ww
+            front_1_custom_slot = sub_torpedo_ww
+            mid_1_custom_slot = sub_torpedo_ww
+		}
+	}
+	create_equipment_variant = { #1940-1944
+		name = "Type VIIC"
+		type = sub_hull_large_single_0  
+		parent_version = 0
+		name_group = GGR_SS_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+            fixed_sonar_slot = sonar_ww
+            fixed_ship_engine_slot = sub_engine_ww
+            front_1_custom_slot = sub_torpedo_ww
+            mid_1_custom_slot = sub_torpedo_ww
+		}
+	}
+	create_equipment_variant = { #1944-1946
+		name = "Type XVIIB"
+		type = sub_hull_large_single_0  
+		parent_version = 0
+		name_group = GGR_SS_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_1
+			fixed_sonar_slot = maritime_sonar_0
+            fixed_ship_engine_slot = sub_engine_ww
+            front_1_custom_slot = sub_torpedo_ww
+            mid_1_custom_slot = sub_torpedo_ww
+		}
+	}
+	create_equipment_variant = { #1946
+		name = "Type XXI"
+		type = sub_hull_small_single_0  
+		parent_version = 0
+		name_group = GGR_SS_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_1
+			fixed_sonar_slot = maritime_sonar_0
+			fixed_ship_engine_slot = sub_engine_alpha_0
+			front_1_custom_slot = sub_torpedo_small_0
+			front_2_custom_slot = sub_torpedo_small_0
+		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1936A" # Destroyer 36
+		type = screen_hull_heavy_ww
+		parent_version = 0
+		name_group = GGR_DD_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+            fixed_sonar_slot = sonar_ww
+            fixed_ship_engine_slot = screen_engine_ww
+            fixed_ship_asw_slot = torpedo_ww
+            front_1_custom_slot = ship_armament_medium_ww
+            front_2_custom_slot = ship_AA_gun_1
+            mid_1_custom_slot = torpedo_ww
+            rear_1_custom_slot = ship_subkiller_0
+		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1936B" # Destroyer 36
+		type = screen_hull_heavy_ww
+		parent_version = 0
+		name_group = GGR_DD_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+            fixed_sonar_slot = sonar_ww
+            fixed_ship_engine_slot = screen_engine_ww
+            fixed_ship_asw_slot = torpedo_ww
+            front_1_custom_slot = ship_armament_medium_ww
+            front_2_custom_slot = ship_AA_gun_1
+            mid_1_custom_slot = torpedo_ww
+            rear_1_custom_slot = ship_subkiller_0
+		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1944" # Destroyer 44 
+		type = screen_hull_heavy_ww
+		parent_version = 0
+		name_group = GGR_DD_HISTORICAL
+		modules = {
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+            fixed_sonar_slot = sonar_ww
+            fixed_ship_engine_slot = screen_engine_ww
+            fixed_ship_asw_slot = torpedo_ww
+            front_1_custom_slot = ship_armament_medium_ww
+            front_2_custom_slot = ship_AA_gun_1
+            mid_1_custom_slot = torpedo_ww
+            rear_1_custom_slot = ship_subkiller_0
+		}
+	}
+	create_equipment_variant = {
+		name = "Zerstörer 1945" # Destroyer 45 
+		type = screen_hull_heavy_0
+		parent_version = 0
+		name_group = GGR_DD_HISTORICAL
+		modules = {
+            fixed_ship_air_radar_slot = A2A_navalradar_0
+            fixed_ship_surface_radar_slot = maritime_ta_fcs_1
+            fixed_sonar_slot = maritime_sonar_0
+            fixed_ship_engine_slot = screen_engine_0
+            fixed_ship_countermeasure_slot = countermeasures_0
+            fixed_ship_asw_slot = torpedo_ww
+            front_1_custom_slot = ship_armament_medium_0
+            front_2_custom_slot = ship_AA_gun_2
+            mid_1_custom_slot = torpedo_ww
+            rear_1_custom_slot = ship_subkiller_0
+		}
+	}
 }

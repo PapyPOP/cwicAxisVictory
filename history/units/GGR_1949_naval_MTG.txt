@@ -1,0 +1,408 @@
+﻿units= {
+	fleet = {
+		name = "Kieler Gruppe"			
+		naval_base = 1506 #South Holland
+		task_force = {		
+			name = "Kieler Begleitflotte"
+			location = 1506 #South Holland
+			ship = { name = "Gneisenau" definition = battle_hull_heavy equipment = { battle_hull_heavy_ww = { amount = 1 owner = GER } } }
+			ship = { name = "Kiel" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Friedrich der Große" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Prinz Eugen" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER  version_name = "Admiral Hipper Class" } } }
+			ship = { name = "Nürnberg" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER  version_name = "Leipzig Class" } } }			
+			ship = { name = "Schlachtkreuzer O" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER  version_name = "O-Class" } } }				
+		}
+		task_force = {
+			name = "Kieler Zerstörergruppe"
+			location = 1506 #South Holland
+			ship = { name = "Z 40" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }	
+			ship = { name = "Z 41" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }	
+			ship = { name = "Z 42" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }	
+			ship = { name = "Z 52" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+			ship = { name = "Z 53" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+			ship = { name = "Z 54" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+			ship = { name = "Z 55" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+			ship = { name = "Z 56" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+			ship = { name = "Z 57" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+			ship = { name = "Z 58" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1944" } } }
+		}
+		task_force = {
+			name = "1. Kieler U-Boot-Gruppe"
+			location = 1506 #South Holland
+			ship = { name = "U-1051" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1052" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1053" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1054" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1055" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1056" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1057" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1058" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1059" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1060" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1061" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1062" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1063" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1064" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1065" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1131" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1132" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+		}
+		task_force = {
+			name = "2. Kieler U-Boot-Gruppe"
+			location = 1506 #South Holland
+			ship = { name = "U-1301" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1302" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1303" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1304" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1305" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1306" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1307" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1308" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+		}
+	}
+	fleet = {
+		name = "Reserveflotte"			
+		naval_base = 195 #Leningrad
+		task_force = {		
+			name = "Wilhelmshaven Reservieren"
+			location = 195 #Leningrad
+			ship = { name = "Hinderburg" definition = battle_hull_heavy equipment = { battle_hull_heavy_ww = { amount = 1 owner = GER version_name = "Hinderburg Class" } } }
+			ship = { name = "Adolf Hitler" definition = battle_hull_heavy pride_of_the_fleet = yes equipment = { battle_hull_heavy_ww = { amount = 1 owner = GER version_name = "Hinderburg Class" } } }
+			ship = { name = "Leipzig" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER  version_name = "Leipzig Class" } } }	
+			ship = { name = "Frankfurt" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "München" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Hanover" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GER version_name = "P-Class" } } }
+			ship = { name = "Z 61" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 62" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 63" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 64" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 65" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 66" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 67" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 68" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 69" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 70" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 71" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 72" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 73" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 74" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 75" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 76" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 77" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 78" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 79" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 80" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 81" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 82" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 83" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 84" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 85" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 86" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 87" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 88" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 89" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 90" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 91" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 92" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 93" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 94" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 96" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 97" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+			ship = { name = "Z 98" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GER  version_name = "Zerstörer 1945" } } }
+		}
+		task_force = {		
+			name = "Wilhelmshaven Streikgruppe"
+			location = 195 #Leningrad
+			ship = { name = "U-1101" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }	
+			ship = { name = "U-1102" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1103" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1104" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1105" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1106" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1107" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1108" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1109" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1110" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+		}
+	}
+	fleet = {
+		name = "Hamburg Gruppe"			
+		naval_base = 59 #Hamburg
+		task_force = {		
+			name = "1. Kriegsmarine U-Boot-Flotte"
+			location = 59 #Hamburg
+			ship = { name = "U-951" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-952" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-953" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-954" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-955" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-956" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-957" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-958" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-959" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-960" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-961" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-962" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-963" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-964" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-965" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-966" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-967" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-968" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-969" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-970" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-971" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-972" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-973" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-974" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-975" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-976" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-977" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-978" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-979" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-980" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-981" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-982" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-983" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-984" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-985" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-986" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-987" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-988" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-989" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-990" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-991" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-992" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-993" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-994" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-995" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-996" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-997" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-998" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-999" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1000" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1001" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1002" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1003" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1004" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1005" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1006" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1007" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1008" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1009" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1010" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1011" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1012" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1013" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1014" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1015" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1016" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1017" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1018" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1019" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1020" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1021" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1022" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1023" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1024" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1025" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1026" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+		}
+		task_force = {		
+			name = "2. Kriegsmarine U-Boot-Flotte"
+			location = 59 #Hamburg
+			ship = { name = "U-2321" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2322" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2323" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2324" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2325" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2326" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2327" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2328" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2329" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2330" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2331" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2332" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2333" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2334" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2335" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2336" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2337" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2338" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2339" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2340" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2341" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2342" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2343" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2344" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2345" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2346" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2347" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2348" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2349" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2350" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2351" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2352" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2353" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2354" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2355" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2356" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2357" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2358" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2359" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2360" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2361" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2362" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2363" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2364" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2365" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2366" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2367" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2368" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2369" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2370" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2501" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2502" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2503" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2504" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2505" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2506" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2507" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2508" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2509" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2510" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-2511" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+		}
+		task_force = {		
+			name = "Reserve-U-Boot-Gruppe"
+			location = 59 #Hamburg
+			ship = { name = "U-1221" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1222" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1223" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1224" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1225" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1226" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1227" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1228" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1229" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1230" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1231" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1232" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1233" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1234" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1235" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1405" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type XVIIB" } } }
+			ship = { name = "U-1406" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type XVIIB" } } }
+			ship = { name = "U-1407" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type XVIIB" } } }
+		}
+	}
+	fleet = {
+		name = "Bremer Flotte"			
+		naval_base = 54 #Bremen
+		task_force = {		
+			name = "Nordsee-Zerstörergruppe"
+			location = 54 #Bremen
+			ship = { name = "Z 23" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }	
+			ship = { name = "Z 24" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 25" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 26" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 27" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 28" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 29" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 30" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936A" } } }
+			ship = { name = "Z 35" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }
+			ship = { name = "Z 36" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }
+			ship = { name = "Z 43" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }
+			ship = { name = "Z 44" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }
+			ship = { name = "Z 45" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GER  version_name = "Zerstörer 1936B" } } }
+		}
+		task_force = {		
+			name = "Nordsee-U-Boot-Gruppe"
+			location = 54 #Bremen
+			ship = { name = "U-879" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-880" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-881" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-882" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-883" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GER version_name = "Type IXC" } } }
+			ship = { name = "U-1271" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1272" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1273" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1274" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1275" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1276" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1277" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1278" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1279" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-3001" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3002" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3003" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3004" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3005" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3006" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3007" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3008" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3009" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3010" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3011" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3012" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3013" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3014" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3015" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3016" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+			ship = { name = "U-3017" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GER version_name = "Type XXI" } } }
+		}
+	}
+	fleet = {
+		name = "Danziger Flotte"			
+		naval_base = 85 #Danzig
+		task_force = {		
+			name = "Baltische U-Boot-Flotte"
+			location = 85 #Danzig
+			ship = { name = "U-901" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-903" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-904" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-907" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-921" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-922" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-923" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-924" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-925" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-926" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-927" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-928" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-929" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-930" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1161" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1162" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1163" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1164" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1165" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1166" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1167" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1168" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1169" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1170" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1171" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1172" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1191" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1192" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1193" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1194" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1195" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1196" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1197" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1198" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1199" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1200" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1201" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1202" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1203" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1204" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1205" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1206" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1208" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1209" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+			ship = { name = "U-1210" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GER version_name = "Type VIIC" } } }
+		}
+	}
+} 
