@@ -155,7 +155,7 @@ set_technology = {
 	nbc_biological_weapon_1 = 1
 }
 
-set_convoys = 100
+set_convoys = 150
 init_influence = yes
 set_variable = {
 	var = domestic_influence_amount
@@ -1343,4 +1343,44 @@ if = {
             rear_1_custom_slot = ship_subkiller_0
 		}
 	}
+	create_equipment_variant = {
+		name = "P-class" # Battle cruiser
+		type = battle_hull_medium_ww  
+		parent_version = 0
+		name_group = GGR_BB_HISTORICAL
+		modules = {
+			fixed_sonar_slot = sonar_ww
+			fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+			fixed_ship_engine_slot = capital_engine_ww
+			fixed_ship_countermeasure_slot = countermeasures_1
+			fixed_ship_asw_slot = torpedo_ww
+			front_1_custom_slot = ship_armament_heavy_ww
+			front_2_custom_slot = ship_AA_gun_1
+			mid_1_custom_slot = ship_AA_gun_1
+			mid_2_custom_slot = ship_armament_light_ww
+			rear_1_custom_slot = ship_armament_light_ww
+		}
+	}
+	create_equipment_variant = {
+        name = "Hinderburg Class" # Battleship
+        type = battle_hull_heavy_ww
+        parent_version = 0
+		name_group = GGR_BB_HISTORICAL
+        modules = {
+			fixed_ship_air_radar_slot = A2A_navalradar_0
+			fixed_ship_surface_radar_slot = maritime_ta_fcs_0
+			fixed_sonar_slot = sonar_ww
+			fixed_ship_asw_slot = torpedo_ww
+			fixed_ship_countermeasure_slot = countermeasures_0
+			fixed_ship_engine_slot = capital_engine_ww
+			front_1_custom_slot = ship_armament_heavy_1
+			front_2_custom_slot = countermeasures_0
+			front_3_custom_slot = countermeasures_0
+			mid_1_custom_slot = ship_AA_gun_2
+			mid_2_custom_slot = ship_AA_gun_2
+			mid_3_custom_slot = ship_armament_medium_1
+			rear_1_custom_slot = ship_armament_medium_1
+			rear_2_custom_slot = ship_armament_medium_1
+        }
+    }
 }

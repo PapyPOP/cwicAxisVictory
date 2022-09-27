@@ -1,20 +1,20 @@
 ﻿units= {
 	fleet = {
 		name = "Kieler Gruppe"			
-		naval_base = 1506 #South Holland
+		naval_base = 9498 #South Holland
 		task_force = {		
 			name = "Kieler Begleitflotte"
-			location = 1506 #South Holland
-			ship = { name = "Gneisenau" definition = battle_hull_heavy equipment = { battle_hull_heavy_ww = { amount = 1 owner = GGR } } }
-			ship = { name = "Kiel" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
-			ship = { name = "Friedrich der Große" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
-			ship = { name = "Prinz Eugen" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR  version_name = "Admiral Hipper Class" } } }
-			ship = { name = "Nürnberg" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR  version_name = "Leipzig Class" } } }			
-			ship = { name = "Schlachtkreuzer O" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR  version_name = "O-Class" } } }				
+			location = 9498 #South Holland
+			ship = { name = "Gneisenau" definition = battle_hull_heavy equipment = { battle_hull_heavy_ww = { amount = 1 owner = GGR version_name = "Hinderburg Class" } } }
+			ship = { name = "Kiel" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
+			ship = { name = "Friedrich der Große" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
+			ship = { name = "Prinz Eugen" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR  version_name = "P-Class" } } }
+			ship = { name = "Nürnberg" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR  version_name = "P-Class" } } }			
+			ship = { name = "Schlachtkreuzer O" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR  version_name = "P-Class" } } }				
 		}
 		task_force = {
 			name = "Kieler Zerstörergruppe"
-			location = 1506 #South Holland
+			location = 9498 #South Holland
 			ship = { name = "Z 40" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GGR  version_name = "Zerstörer 1936B" } } }	
 			ship = { name = "Z 41" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GGR  version_name = "Zerstörer 1936B" } } }	
 			ship = { name = "Z 42" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GGR  version_name = "Zerstörer 1936B" } } }	
@@ -28,7 +28,7 @@
 		}
 		task_force = {
 			name = "1. Kieler U-Boot-Gruppe"
-			location = 1506 #South Holland
+			location = 9498 #South Holland
 			ship = { name = "U-1051" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }	
 			ship = { name = "U-1052" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }	
 			ship = { name = "U-1053" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }	
@@ -49,7 +49,7 @@
 		}
 		task_force = {
 			name = "2. Kieler U-Boot-Gruppe"
-			location = 1506 #South Holland
+			location = 9498 #South Holland
 			ship = { name = "U-1301" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }	
 			ship = { name = "U-1302" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-1303" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
@@ -62,16 +62,16 @@
 	}
 	fleet = {
 		name = "Reserveflotte"			
-		naval_base = 195 #Leningrad
+		naval_base = 3151 #Leningrad
 		task_force = {		
 			name = "Wilhelmshaven Reservieren"
-			location = 195 #Leningrad
+			location = 3151 #Leningrad
 			ship = { name = "Hinderburg" definition = battle_hull_heavy equipment = { battle_hull_heavy_ww = { amount = 1 owner = GGR version_name = "Hinderburg Class" } } }
 			ship = { name = "Adolf Hitler" definition = battle_hull_heavy pride_of_the_fleet = yes equipment = { battle_hull_heavy_ww = { amount = 1 owner = GGR version_name = "Hinderburg Class" } } }
-			ship = { name = "Leipzig" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR  version_name = "Leipzig Class" } } }	
-			ship = { name = "Frankfurt" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
-			ship = { name = "München" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
-			ship = { name = "Hanover" definition = battle_hull_medium equipment = { battle_hull_light_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
+			ship = { name = "Leipzig" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR  version_name = "P-Class" } } }	
+			ship = { name = "Frankfurt" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
+			ship = { name = "München" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
+			ship = { name = "Hanover" definition = battle_hull_medium equipment = { battle_hull_medium_ww = { amount = 1 owner = GGR version_name = "P-Class" } } }
 			ship = { name = "Z 61" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GGR  version_name = "Zerstörer 1945" } } }
 			ship = { name = "Z 62" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GGR  version_name = "Zerstörer 1945" } } }
 			ship = { name = "Z 63" definition = screen_hull_heavy equipment = { screen_hull_heavy_0 = { amount = 1 owner = GGR  version_name = "Zerstörer 1945" } } }
@@ -112,7 +112,7 @@
 		}
 		task_force = {		
 			name = "Wilhelmshaven Streikgruppe"
-			location = 195 #Leningrad
+			location = 3151 #Leningrad
 			ship = { name = "U-1101" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }	
 			ship = { name = "U-1102" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-1103" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
@@ -127,10 +127,10 @@
 	}
 	fleet = {
 		name = "Hamburg Gruppe"			
-		naval_base = 59 #Hamburg
+		naval_base = 9347 #Hamburg
 		task_force = {		
 			name = "1. Kriegsmarine U-Boot-Flotte"
-			location = 59 #Hamburg
+			location = 9347 #Hamburg
 			ship = { name = "U-951" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-952" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-953" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
@@ -207,10 +207,13 @@
 			ship = { name = "U-1024" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-1025" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-1026" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
+			ship = { name = "U-1405" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type XVIIB" } } }
+			ship = { name = "U-1406" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type XVIIB" } } }
+			ship = { name = "U-1407" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type XVIIB" } } }
 		}
 		task_force = {		
 			name = "2. Kriegsmarine U-Boot-Flotte"
-			location = 59 #Hamburg
+			location = 9347 #Hamburg
 			ship = { name = "U-2321" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GGR version_name = "Type XXI" } } }
 			ship = { name = "U-2322" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GGR version_name = "Type XXI" } } }
 			ship = { name = "U-2323" definition = sub_hull_small_single equipment = { sub_hull_small_single_0 = { amount = 1 owner = GGR version_name = "Type XXI" } } }
@@ -275,7 +278,22 @@
 		}
 		task_force = {		
 			name = "Reserve-U-Boot-Gruppe"
-			location = 59 #Hamburg
+			location = 9347 #Hamburg
+			ship = { name = "U-221" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-222" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-223" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-224" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-225" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-226" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-227" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-228" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-229" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-230" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-231" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-232" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-233" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-234" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
+			ship = { name = "U-235" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-1221" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-1222" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-1223" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
@@ -291,17 +309,14 @@
 			ship = { name = "U-1233" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-1234" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-1235" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
-			ship = { name = "U-1405" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type XVIIB" } } }
-			ship = { name = "U-1406" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type XVIIB" } } }
-			ship = { name = "U-1407" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type XVIIB" } } }
 		}
 	}
 	fleet = {
 		name = "Bremer Flotte"			
-		naval_base = 54 #Bremen
+		naval_base = 13598 #Bremen
 		task_force = {		
 			name = "Nordsee-Zerstörergruppe"
-			location = 54 #Bremen
+			location = 13598 #Bremen
 			ship = { name = "Z 23" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GGR  version_name = "Zerstörer 1936A" } } }	
 			ship = { name = "Z 24" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GGR  version_name = "Zerstörer 1936A" } } }
 			ship = { name = "Z 25" definition = screen_hull_heavy equipment = { screen_hull_heavy_ww = { amount = 1 owner = GGR  version_name = "Zerstörer 1936A" } } }
@@ -318,7 +333,7 @@
 		}
 		task_force = {		
 			name = "Nordsee-U-Boot-Gruppe"
-			location = 54 #Bremen
+			location = 13598 #Bremen
 			ship = { name = "U-879" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-880" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
 			ship = { name = "U-881" definition = sub_hull_small_single equipment = { sub_hull_ww = { amount = 1 owner = GGR version_name = "Type IXC" } } }
@@ -354,10 +369,10 @@
 	}
 	fleet = {
 		name = "Danziger Flotte"			
-		naval_base = 85 #Danzig
+		naval_base = 362 #Danzig
 		task_force = {		
 			name = "Baltische U-Boot-Flotte"
-			location = 85 #Danzig
+			location = 362 #Danzig
 			ship = { name = "U-901" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-903" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
 			ship = { name = "U-904" definition = sub_hull_small_single equipment = { sub_hull_large_single_0 = { amount = 1 owner = GGR version_name = "Type VIIC" } } }
