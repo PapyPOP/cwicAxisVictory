@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+		greater_reich_building = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_office_park_factor = 0.35
+				production_speed_arms_factory_factor = -0.05
+			}
+		}
+		greater_reich_bank = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				production_speed_office_park_factor = 0.15
+			}
+		}
+		greater_reich_infra = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_infrastructure_factor = 0.25
+				production_speed_state_infrastructure_factor = 0.25
+				production_speed_water_infrastructure_factor = 0.25
+			}
+		}
+	}
+}

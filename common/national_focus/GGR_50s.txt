@@ -878,4 +878,334 @@ focus_tree = {
 			}
 		}
 	}
+	#### ECONOMY
+	focus = {
+		id = GGR_economy
+		icon = GFX_GGR_economy
+		cost = 10
+		x = 20
+		y = 0
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = GGR_reich_construction
+		icon = GFX_GGR_reich_construction
+		cost = 10
+		x = 20
+		y = 1
+		prerequisite = {
+			focus = GGR_economy
+		}
+		completion_reward = {
+			add_ideas = greater_reich_building
+		}
+	}
+	#### BANK
+	focus = {
+		id = GGR_economy_bank
+		icon = GFX_GGR_economy_bank
+		cost = 10
+		x = 15
+		y = 2
+		prerequisite = {
+			focus = GGR_reich_construction
+		}
+		completion_reward = {
+			add_ideas = greater_reich_bank
+			capital_scope = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = office_park
+					level = 5
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = 100
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_0
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 11
+		y = 3
+		prerequisite = {
+			focus = GGR_economy_bank
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_1
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 15
+		y = 3
+		prerequisite = {
+			focus = GGR_economy_bank
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_2
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 19
+		y = 3
+		prerequisite = {
+			focus = GGR_economy_bank
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_3
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = GGR_economy_bank_building_0
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_4
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 12
+		y = 4
+		prerequisite = {
+			focus = GGR_economy_bank_building_0
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_5
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 14
+		y = 4
+		prerequisite = {
+			focus = GGR_economy_bank_building_1
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_6
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 16
+		y = 4
+		prerequisite = {
+			focus = GGR_economy_bank_building_1
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_7
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 18
+		y = 4
+		prerequisite = {
+			focus = GGR_economy_bank_building_2
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_8
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 20
+		y = 4
+		prerequisite = {
+			focus = GGR_economy_bank_building_2
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_9
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 11
+		y = 5
+		prerequisite = {
+			focus = GGR_economy_bank_building_3
+		}
+		prerequisite = {
+			focus = GGR_economy_bank_building_4
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_10
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 15
+		y = 5
+		prerequisite = {
+			focus = GGR_economy_bank_building_5
+		}
+		prerequisite = {
+			focus = GGR_economy_bank_building_6
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_bank_building_11
+		icon = GFX_GGR_economy_bank_building
+		cost = 10
+		x = 19
+		y = 5
+		prerequisite = {
+			focus = GGR_economy_bank_building_7
+		}
+		prerequisite = {
+			focus = GGR_economy_bank_building_8
+		}
+		completion_reward = {
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#### INFRA
+	focus = {
+		id = GGR_economy_infra
+		icon = GFX_GGR_economy_infra
+		cost = 10
+		x = 25
+		y = 2
+		prerequisite = {
+			focus = GGR_reich_construction
+		}
+		completion_reward = {
+			add_ideas = greater_reich_infra
+			capital_scope = {
+				add_building_construction = {
+					type = state_infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = water_infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 }
