@@ -18,6 +18,7 @@ state = {
 			state_infrastructure = 1
 
 			agri_industrial_complex = 2
+			steel_factory = 3
 
 			anti_air_building = 2
 			

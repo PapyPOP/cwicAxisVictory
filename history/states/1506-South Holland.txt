@@ -16,6 +16,7 @@ state={
 			
 			industrial_complex = 2
 			arms_factory = 1
+			synthetic_refinery = 5
 			dockyard = 1
 			agri_industrial_complex = 2
 			office_park = 2

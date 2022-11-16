@@ -22,6 +22,7 @@ state = {
 			state_infrastructure = 2
 
 			arms_factory = 1
+			steel_factory = 3
 			industrial_complex = 1
 			air_base = 6
 

@@ -46,7 +46,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -30
 			CHI = {
-				add_stability = 0.01
+				add_stability = 0.05
 			}
 			add_opinion_modifier = {
 				target = CHI
@@ -68,6 +68,102 @@ focus_tree = {
 		y = 2
 		prerequisite = {
 			focus = GGR_chinese_civil_war_army_help
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100000
+			}
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100000
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					target = GGR
+					modifier = small_increase
+				}
+			}
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = 10
+			}
+		}
+	}
+	focus = {
+		id = GGR_chinese_civil_war_army_help_01
+		icon = GFX_GGR_chinese_civil_war_army_help_0
+		cost = 1
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = GGR_chinese_civil_war_army_help
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100000
+			}
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100000
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					target = GGR
+					modifier = small_increase
+				}
+			}
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = 10
+			}
+		}
+	}
+	focus = {
+		id = GGR_chinese_civil_war_army_help_02
+		icon = GFX_GGR_chinese_civil_war_army_help_0
+		cost = 1
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = GGR_chinese_civil_war_army_help_01
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100000
+			}
+			CHI = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100000
+				}
+			}
+			CHI = {
+				add_opinion_modifier = {
+					target = GGR
+					modifier = small_increase
+				}
+			}
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = 10
+			}
+		}
+	}
+	focus = {
+		id = GGR_chinese_civil_war_army_help_03
+		icon = GFX_GGR_chinese_civil_war_army_help_0
+		cost = 1
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = GGR_chinese_civil_war_army_help_02
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -361,7 +457,7 @@ focus_tree = {
 		id = GGR_chinese_civil_war_navy_help
 		icon = GFX_GGR_chinese_civil_war_navy_help
 		cost = 1
-		x = 5
+		x = 9
 		y = 1
 		prerequisite = {
 			focus = GGR_chinese_civil_war_help
@@ -369,7 +465,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -30
 			CHI = {
-				add_stability = 0.01
+				add_stability = 0.05
 			}
 			add_opinion_modifier = {
 				target = CHI
@@ -387,7 +483,7 @@ focus_tree = {
 		id = GGR_chinese_civil_war_navy_sub_0
 		icon = GFX_GGR_chinese_civil_war_navy_sub_0
 		cost = 1
-		x = 5
+		x = 9
 		y = 2
 		prerequisite = {
 			focus = GGR_chinese_civil_war_navy_help
@@ -480,7 +576,7 @@ focus_tree = {
 		id = GGR_chinese_civil_war_navy_sub_1
 		icon = GFX_GGR_chinese_civil_war_navy_sub_1
 		cost = 1
-		x = 5
+		x = 9
 		y = 3
 		prerequisite = {
 			focus = GGR_chinese_civil_war_navy_sub_0
@@ -573,7 +669,7 @@ focus_tree = {
 		id = GGR_chinese_civil_war_navy_sub_2
 		icon = GFX_GGR_chinese_civil_war_navy_sub_2
 		cost = 1
-		x = 5
+		x = 9
 		y = 4
 		prerequisite = {
 			focus = GGR_chinese_civil_war_navy_sub_1
@@ -666,7 +762,7 @@ focus_tree = {
 		id = GGR_chinese_civil_war_navy_sub_3
 		icon = GFX_GGR_chinese_civil_war_navy_sub_3
 		cost = 1
-		x = 5
+		x = 9
 		y = 5
 		prerequisite = {
 			focus = GGR_chinese_civil_war_navy_sub_2
@@ -738,7 +834,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -30
 			CHI = {
-				add_stability = 0.01
+				add_stability = 0.05
 			}
 			add_opinion_modifier = {
 				target = CHI
@@ -1026,7 +1122,7 @@ focus_tree = {
 		id = GGR_economy_bank_building_3
 		icon = GFX_GGR_economy_bank_building
 		cost = 4.4
-		x = 10
+		x = 11
 		y = 4
 		prerequisite = {
 			focus = GGR_economy_bank_building_0
@@ -1046,8 +1142,8 @@ focus_tree = {
 		id = GGR_economy_bank_building_4
 		icon = GFX_GGR_economy_bank_building
 		cost = 4.4
-		x = 12
-		y = 4
+		x = 13
+		y = 5
 		prerequisite = {
 			focus = GGR_economy_bank_building_0
 		}
@@ -1151,9 +1247,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GGR_economy_bank_building_3
 		}
-		prerequisite = {
-			focus = GGR_economy_bank_building_4
-		}
 		completion_reward = {
 			capital_scope = {
 				add_extra_state_shared_building_slots = 1
@@ -1209,6 +1302,305 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	#### ECONOMIC RECOVERY
+	focus = {
+		id = GGR_economy_recovery_idea_1
+		icon = GFX_GGR_economy_idea_stable
+		cost = 10
+		x = 19
+		y = 6
+		prerequisite = {
+			focus = GGR_economy_bank_building_9
+		}
+		prerequisite = {
+			focus = GGR_economy_bank_building_10
+		}
+		prerequisite = {
+			focus = GGR_economy_bank_building_11
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_economic_stagnation
+				}
+				remove_ideas = GER_economic_stagnation
+				add_ideas = GER_economic_recovery_1
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_1
+				}
+				remove_ideas = GER_economic_recovery_1
+				add_ideas = GER_economic_recovery_2
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_2
+				}
+				remove_ideas = GER_economic_recovery_2
+				add_ideas = GER_economic_recovery_3
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_3
+				}
+				remove_ideas = GER_economic_recovery_3
+				add_ideas = GER_economic_recovery_4
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_4
+				}
+				remove_ideas = GER_economic_recovery_4
+			}
+			else = {
+				remove_ideas = GER_economic_stagnation
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_recovery_idea_2
+		icon = GFX_GGR_economy_idea_stable
+		cost = 10
+		x = 31
+		y = 6
+		prerequisite = {
+			focus = GGR_economy_industrial_building_9
+		}
+		prerequisite = {
+			focus = GGR_economy_industrial_building_10
+		}
+		prerequisite = {
+			focus = GGR_economy_industrial_building_11
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_economic_stagnation
+				}
+				remove_ideas = GER_economic_stagnation
+				add_ideas = GER_economic_recovery_1
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_1
+				}
+				remove_ideas = GER_economic_recovery_1
+				add_ideas = GER_economic_recovery_2
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_2
+				}
+				remove_ideas = GER_economic_recovery_2
+				add_ideas = GER_economic_recovery_3
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_3
+				}
+				remove_ideas = GER_economic_recovery_3
+				add_ideas = GER_economic_recovery_4
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_4
+				}
+				remove_ideas = GER_economic_recovery_4
+			}
+			else = {
+				remove_ideas = GER_economic_stagnation
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_recovery_idea_3
+		icon = GFX_GGR_economy_idea_stable
+		cost = 10
+		x = 19
+		y = 8
+		prerequisite = {
+			focus = GGR_economy_infra_boom_0
+		}
+		prerequisite = {
+			focus = GGR_economy_infra_boom_1
+		}
+		prerequisite = {
+			focus = GGR_economy_recovery_idea_1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_economic_stagnation
+				}
+				remove_ideas = GER_economic_stagnation
+				add_ideas = GER_economic_recovery_1
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_1
+				}
+				remove_ideas = GER_economic_recovery_1
+				add_ideas = GER_economic_recovery_2
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_2
+				}
+				remove_ideas = GER_economic_recovery_2
+				add_ideas = GER_economic_recovery_3
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_3
+				}
+				remove_ideas = GER_economic_recovery_3
+				add_ideas = GER_economic_recovery_4
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_4
+				}
+				remove_ideas = GER_economic_recovery_4
+			}
+			else = {
+				remove_ideas = GER_economic_stagnation
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_recovery_idea_4
+		icon = GFX_GGR_economy_idea_stable
+		cost = 10
+		x = 31
+		y = 8
+		prerequisite = {
+			focus = GGR_economy_infra_boom_1
+		}
+		prerequisite = {
+			focus = GGR_economy_infra_boom_2
+		}
+		prerequisite = {
+			focus = GGR_economy_recovery_idea_2
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_economic_stagnation
+				}
+				remove_ideas = GER_economic_stagnation
+				add_ideas = GER_economic_recovery_1
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_1
+				}
+				remove_ideas = GER_economic_recovery_1
+				add_ideas = GER_economic_recovery_2
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_2
+				}
+				remove_ideas = GER_economic_recovery_2
+				add_ideas = GER_economic_recovery_3
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_3
+				}
+				remove_ideas = GER_economic_recovery_3
+				add_ideas = GER_economic_recovery_4
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_4
+				}
+				remove_ideas = GER_economic_recovery_4
+			}
+			else = {
+				remove_ideas = GER_economic_stagnation
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_recovery_idea_5
+		icon = GFX_GGR_economy_idea_stable
+		cost = 10
+		x = 25
+		y = 9
+		prerequisite = {
+			focus = GGR_economy_recovery_idea_3
+		}
+		prerequisite = {
+			focus = GGR_economy_recovery_idea_4
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_economic_stagnation
+				}
+				remove_ideas = GER_economic_stagnation
+				add_ideas = GER_economic_recovery_1
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_1
+				}
+				remove_ideas = GER_economic_recovery_1
+				add_ideas = GER_economic_recovery_2
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_2
+				}
+				remove_ideas = GER_economic_recovery_2
+				add_ideas = GER_economic_recovery_3
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_3
+				}
+				remove_ideas = GER_economic_recovery_3
+				add_ideas = GER_economic_recovery_4
+			}
+			else_if = {
+				limit = { 
+					has_idea = GER_economic_recovery_4
+				}
+				remove_ideas = GER_economic_recovery_4
+			}
+			else = {
+				remove_ideas = GER_economic_stagnation
+			}
+		}
+	}
+	focus = {
+		id = GGR_economy_war_rework_0
+		icon = GFX_GGR_economy_war_rework
+		cost = 10
+		x = 25
+		y = 10
+		prerequisite = {
+			focus = GGR_economy_recovery_idea_5
+		}
+		completion_reward = {
+			add_ideas = greater_reich_economy
+		}
+	}
+	focus = {
+		id = GGR_economy_war_rework_1
+		icon = GFX_GGR_economy_war_rework
+		cost = 10
+		x = 25
+		y = 11
+		prerequisite = {
+			focus = GGR_economy_war_rework_0
+		}
+		completion_reward = {
+			add_ideas = greater_reich_war_economy
 		}
 	}
 	#### INFRA
