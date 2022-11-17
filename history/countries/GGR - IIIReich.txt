@@ -59,11 +59,15 @@ set_technology = {
 	iw_armored_vehicles = 1
 	light_tanks_1 = 1
 	light_tanks_2 = 1
-	main_battle_tanks = 1
+	light_tanks_3 = 1
 	main_battle_tanks_1 = 1
+	main_battle_tanks_2 = 1
+	main_battle_tanks_3 = 1
 	heavy_tanks_1 = 1
 	heavy_tanks_2 = 1
+	heavy_tanks_3 = 1
 	super_heavy_tanks_1 = 1
+	super_heavy_tanks_2 = 1
 	mechanized_infantry = 1
 	mechanized_infantry2 = 1
 	mechanized_heavy_infantry = 1
@@ -217,46 +221,50 @@ create_import = {
 	factories = 1
 	exporter = SWE
 }
-	set_autonomy = {
-		target = ROS
-		autonomous_state = autonomy_reichskommissariat
-	}
-	set_autonomy = {
-		target = RUK
-		autonomous_state = autonomy_reichskommissariat
-	}
-	set_autonomy = {
-		target = RKA
-		autonomous_state = autonomy_reichskommissariat
-	}
-	set_autonomy = {
-		target = RMO
-		autonomous_state = autonomy_reichskommissariat
-	}
-	set_autonomy = {
-		target = RGO
-		autonomous_state = autonomy_SS_Ordenstaat
-	}
-	set_autonomy = {
-		target = SBA
-		autonomous_state = autonomy_SS_Ordenstaat
-	}
-	set_autonomy = {
-		target = DEN
-		autonomous_state = autonomy_reichsprotectorate
-	}
-	set_autonomy = {
-		target = NOR
-		autonomous_state = autonomy_reichsprotectorate
-	}
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_reichsprotectorate
-	}
-	set_autonomy = {
-		target = GGP
-		autonomous_state = autonomy_reichsprotectorate
-	}
+set_autonomy = {
+	target = ROS
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RUK
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RKA
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RMO
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RGO
+	autonomous_state = autonomy_SS_Ordenstaat
+}
+set_autonomy = {
+	target = SBA
+	autonomous_state = autonomy_SS_Ordenstaat
+}
+set_autonomy = {
+	target = DEN
+	autonomous_state = autonomy_reichsprotectorate
+}
+set_autonomy = {
+	target = NOR
+	autonomous_state = autonomy_reichsprotectorate
+}
+set_autonomy = {
+	target = SLO
+	autonomous_state = autonomy_reichsprotectorate
+}
+set_autonomy = {
+	target = GGP
+	autonomous_state = autonomy_reichsprotectorate
+}
+set_autonomy = {
+	target = ICE
+	autonomous_state = autonomy_reichsprotectorate
+}
 
 #######################
 # Leaders

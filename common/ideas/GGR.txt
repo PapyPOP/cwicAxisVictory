@@ -22,7 +22,9 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
+				consumer_goods_factor = 0.05
 				production_speed_office_park_factor = 0.15
+				office_park_income_adjustment = 0.25
 			}
 		}
 		greater_reich_infra = {
@@ -33,10 +35,22 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.05
 				production_speed_infrastructure_factor = 0.25
 				production_speed_state_infrastructure_factor = 0.25
 				production_speed_water_infrastructure_factor = 0.25
+			}
+		}
+		greater_reich_industrial = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.25
 			}
 		}
 		greater_reich_economy = {
@@ -62,6 +76,40 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.25
+			}
+		}
+		four_child_per_women = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				MONTHLY_POPULATION = 1
+			}
+		}
+		nazi_health = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				army_morale_factor = 0.1
+				recruitable_population_factor = -0.05
+			}
+		}
+		OGM_has_accepted = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			modifier = {
+				agricultural_complex_production_bonus = 1
 			}
 		}
 	}

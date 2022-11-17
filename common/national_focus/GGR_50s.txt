@@ -11,1003 +11,6 @@ focus_tree = {
 		x = 5
 		y = 0
 	}
-	#### CHINESE CIVIL WAR
-	focus = {
-		id = GGR_chinese_civil_war_help
-		icon = GFX_GGR_chinese_civil_war_help
-		cost = 1
-		x = 5
-		y = 0
-		completion_reward = {
-			add_political_power = -30
-			CHI = {
-				add_stability = 0.05
-				add_opinion_modifier = {
-					target = GGR
-					modifier = medium_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = CHI
-				modifier = medium_increase
-			}
-		}
-	}
-	#### ARMY CHI CIVIL WAR
-	focus = {
-		id = GGR_chinese_civil_war_army_help
-		icon = GFX_GGR_chinese_civil_war_army_help
-		cost = 1
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = GGR_chinese_civil_war_help
-		}
-		completion_reward = {
-			add_political_power = -30
-			CHI = {
-				add_stability = 0.05
-			}
-			add_opinion_modifier = {
-				target = CHI
-				modifier = small_increase
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_0
-		icon = GFX_GGR_chinese_civil_war_army_help_0
-		cost = 1
-		x = 3
-		y = 2
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -100000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 100000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_01
-		icon = GFX_GGR_chinese_civil_war_army_help_0
-		cost = 1
-		x = 5
-		y = 2
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -100000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 100000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_02
-		icon = GFX_GGR_chinese_civil_war_army_help_0
-		cost = 1
-		x = 5
-		y = 3
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_01
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -100000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 100000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_03
-		icon = GFX_GGR_chinese_civil_war_army_help_0
-		cost = 1
-		x = 5
-		y = 4
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_02
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -100000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 100000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_1
-		icon = GFX_GGR_chinese_civil_war_army_help_1
-		cost = 1
-		x = 3
-		y = 3
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_0
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -25000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 25000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_2
-		icon = GFX_GGR_chinese_civil_war_army_help_2
-		cost = 1
-		x = 3
-		y = 4
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_1
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -5000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 5000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_3
-		icon = GFX_GGR_chinese_civil_war_army_help_3
-		cost = 1
-		x = 3
-		y = 5
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_2
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = -1000
-			}
-			add_equipment_to_stockpile = {
-				type = light_artillery_equipment_1
-				amount = -2000
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 1000
-				}
-				add_equipment_to_stockpile = {
-					type = light_artillery_equipment_1
-					amount = 2000
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_4
-		icon = GFX_GGR_chinese_civil_war_army_help_4
-		cost = 1
-		x = 2
-		y = 6
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_3
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = auto_cannon_equipment_1
-				amount = -2500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = auto_cannon_equipment_1
-					amount = 2500
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_5
-		icon = GFX_GGR_chinese_civil_war_army_help_5
-		cost = 1
-		x = 4
-		y = 6
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_3
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = direct_fire_gun_equipment_1
-				amount = -2500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = direct_fire_gun_equipment_1
-					amount = 2500
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_6
-		icon = GFX_GGR_chinese_civil_war_army_help_6
-		cost = 1
-		x = 1
-		y = 3
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_0
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = mechanized_equipment_2
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment_2
-					amount = 500
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_7
-		icon = GFX_GGR_chinese_civil_war_army_help_7
-		cost = 1
-		x = 1
-		y = 4
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_6
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = mechanized_equipment_2
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment_2
-					amount = 500
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_army_help_8
-		icon = GFX_GGR_chinese_civil_war_army_help_8
-		cost = 1
-		x = 1
-		y = 5
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_7
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = mechanized_equipment_2
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment_2
-					amount = 500
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	#### NAVY CHI CIVIL WAR
-	focus = {
-		id = GGR_chinese_civil_war_navy_help
-		icon = GFX_GGR_chinese_civil_war_navy_help
-		cost = 1
-		x = 9
-		y = 1
-		prerequisite = {
-			focus = GGR_chinese_civil_war_help
-		}
-		completion_reward = {
-			add_political_power = -30
-			CHI = {
-				add_stability = 0.05
-			}
-			add_opinion_modifier = {
-				target = CHI
-				modifier = small_increase
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_navy_sub_0
-		icon = GFX_GGR_chinese_civil_war_navy_sub_0
-		cost = 1
-		x = 9
-		y = 2
-		prerequisite = {
-			focus = GGR_chinese_civil_war_navy_help
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				destroy_ships = {
-					type = sub_hull_ww
-					count = 10
-				}
-				CHI = {
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-221"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-222"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-223"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-224"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-225"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-226"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-227"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-228"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-229"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-230"
-					}
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 20
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_navy_sub_1
-		icon = GFX_GGR_chinese_civil_war_navy_sub_1
-		cost = 1
-		x = 9
-		y = 3
-		prerequisite = {
-			focus = GGR_chinese_civil_war_navy_sub_0
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				destroy_ships = {
-					type = sub_hull_ww
-					count = 10
-				}
-				CHI = {
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-231"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-232"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-233"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-234"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-235"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-236"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-237"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-238"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-239"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-240"
-					}
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 20
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_navy_sub_2
-		icon = GFX_GGR_chinese_civil_war_navy_sub_2
-		cost = 1
-		x = 9
-		y = 4
-		prerequisite = {
-			focus = GGR_chinese_civil_war_navy_sub_1
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				destroy_ships = {
-					type = sub_hull_ww
-					count = 10
-				}
-				CHI = {
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-241"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-242"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-243"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-244"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-245"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-246"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-247"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-248"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-249"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-250"
-					}
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 20
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_navy_sub_3
-		icon = GFX_GGR_chinese_civil_war_navy_sub_3
-		cost = 1
-		x = 9
-		y = 5
-		prerequisite = {
-			focus = GGR_chinese_civil_war_navy_sub_2
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				destroy_ships = {
-					type = sub_hull_ww
-					count = 5
-				}
-				CHI = {
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-251"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-252"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-253"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-254"
-					}
-					create_ship = {
-						type = sub_hull_ww
-						equipment_variant = "Type IXC"
-						creator = GGR
-						name = "U-255"
-					}
-				}
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 10
-			}
-		}
-	}
-	#### PLANE CHI CIVIL WAR
-	focus = {
-		id = GGR_chinese_civil_war_plane_help
-		icon = GFX_GGR_chinese_civil_war_plane_help
-		cost = 1
-		x = 7
-		y = 1
-		prerequisite = {
-			focus = GGR_chinese_civil_war_help
-		}
-		completion_reward = {
-			add_political_power = -30
-			CHI = {
-				add_stability = 0.05
-			}
-			add_opinion_modifier = {
-				target = CHI
-				modifier = small_increase
-			}
-			CHI = {
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_plane_help_0
-		icon = GFX_GGR_chinese_civil_war_plane_help_0
-		cost = 1
-		x = 7
-		y = 2
-		prerequisite = {
-			focus = GGR_chinese_civil_war_plane_help
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = CAS_equipment_4
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = CAS_equipment_4
-					amount = 500
-					producer = GGR
-				}
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 5
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_plane_help_1
-		icon = GFX_GGR_chinese_civil_war_plane_help_1
-		cost = 1
-		x = 7
-		y = 3
-		prerequisite = {
-			focus = GGR_chinese_civil_war_plane_help_0
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = jet_multirole_equipment_1
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = jet_multirole_equipment_1
-					amount = 500
-					producer = GGR
-				}
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 5
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_plane_help_2
-		icon = GFX_GGR_chinese_civil_war_plane_help_2
-		cost = 1
-		x = 7
-		y = 4
-		prerequisite = {
-			focus = GGR_chinese_civil_war_plane_help_1
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = jet_interceptor_equipment_1
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = jet_interceptor_equipment_1
-					amount = 500
-					producer = GGR
-				}
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 5
-			}
-		}
-	}
-	focus = {
-		id = GGR_chinese_civil_war_plane_help_3
-		icon = GFX_GGR_chinese_civil_war_plane_help_3
-		cost = 1
-		x = 7
-		y = 5
-		prerequisite = {
-			focus = GGR_chinese_civil_war_plane_help_2
-		}
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = jet_tac_bomber_equipment_1
-				amount = -500
-			}
-			CHI = {
-				add_equipment_to_stockpile = {
-					type = jet_tac_bomber_equipment_1
-					amount = 500
-					producer = GGR
-				}
-				add_opinion_modifier = {
-					target = GGR
-					modifier = small_increase
-				}
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 5
-			}
-		}
-	}
-	focus = {
-		id = GGR_CHI_entete
-		icon = GFX_GGR_CHI_entete
-		cost = 1
-		x = 3
-		y = 7
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_4
-		}
-		prerequisite = {
-			focus = GGR_chinese_civil_war_army_help_5
-		}
-		completion_reward = {
-			add_political_power = -200
-			CHI = {
-				add_stability = 0.25
-				add_opinion_modifier = {
-					target = GGR
-					modifier = medium_increase
-				}
-				add_to_variable = {
-					tooltip = increase_money_tt
-					currentMoney = 100
-				}
-			}
-			add_stability = 0.05
-			add_opinion_modifier = {
-				target = CHI
-				modifier = medium_increase
-			}
-			add_to_variable = {
-				tooltip = increase_money_tt
-				currentMoney = 100
-			}
-		}
-	}
 	#### ECONOMY
 	focus = {
 		id = GGR_economy
@@ -1122,7 +125,7 @@ focus_tree = {
 		id = GGR_economy_bank_building_3
 		icon = GFX_GGR_economy_bank_building
 		cost = 4.4
-		x = 11
+		x = 10
 		y = 4
 		prerequisite = {
 			focus = GGR_economy_bank_building_0
@@ -1142,8 +145,8 @@ focus_tree = {
 		id = GGR_economy_bank_building_4
 		icon = GFX_GGR_economy_bank_building
 		cost = 4.4
-		x = 13
-		y = 5
+		x = 12
+		y = 4
 		prerequisite = {
 			focus = GGR_economy_bank_building_0
 		}
@@ -1246,6 +249,9 @@ focus_tree = {
 		y = 5
 		prerequisite = {
 			focus = GGR_economy_bank_building_3
+		}
+		prerequisite = {
+			focus = GGR_economy_bank_building_4
 		}
 		completion_reward = {
 			capital_scope = {
@@ -2199,7 +1205,7 @@ focus_tree = {
 		id = GGR_nuclear
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 10
+		x = 12
 		y = 7
 		available = {
 			has_tech = atomic_research
@@ -2221,7 +1227,7 @@ focus_tree = {
 		id = GGR_nuclear_0
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 9
+		x = 11
 		y = 8
 		prerequisite = {
 			focus = GGR_nuclear
@@ -2243,7 +1249,7 @@ focus_tree = {
 		id = GGR_nuclear_1
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 11
+		x = 13
 		y = 8
 		prerequisite = {
 			focus = GGR_nuclear
@@ -2265,7 +1271,7 @@ focus_tree = {
 		id = GGR_nuclear_2
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 7
+		x = 9
 		y = 9
 		prerequisite = {
 			focus = GGR_nuclear_0
@@ -2287,7 +1293,7 @@ focus_tree = {
 		id = GGR_nuclear_3
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 9
+		x = 11
 		y = 9
 		prerequisite = {
 			focus = GGR_nuclear_0
@@ -2309,7 +1315,7 @@ focus_tree = {
 		id = GGR_nuclear_4
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 11
+		x = 13
 		y = 9
 		prerequisite = {
 			focus = GGR_nuclear_1
@@ -2331,7 +1337,7 @@ focus_tree = {
 		id = GGR_nuclear_5
 		icon = GFX_GGR_nuclear
 		cost = 4.4
-		x = 13
+		x = 15
 		y = 9
 		prerequisite = {
 			focus = GGR_nuclear_1
@@ -2346,6 +1352,218 @@ focus_tree = {
 			add_to_variable = {
 				tooltip = increase_money_tt
 					currentMoney = -10
+			}
+		}
+	}
+	#### HEALTH
+	focus = {
+		id = GGR_health
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 5
+		y = 1
+		completion_reward = {
+			increase_healthcare_rate = yes
+		}
+	}
+	focus = {
+		id = GGR_health_0
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = GGR_health
+		}
+		completion_reward = {
+			add_ideas = four_child_per_women
+		}
+	}
+	focus = {
+		id = GGR_health_1
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = GGR_health
+		}
+		completion_reward = {
+			add_ideas = nazi_health
+		}
+	}
+	focus = {
+		id = GGR_health_ogm
+		icon = GFX_GGR_health_ogm
+		cost = 4.4
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = GGR_health_0
+		}
+		prerequisite = {
+			focus = GGR_health_1
+		}
+		completion_reward = {
+			add_ideas = OGM_has_accepted
+		}
+	}
+	focus = {
+		id = GGR_health_00
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = GGR_health_ogm
+		}
+		completion_reward = {
+			increase_healthcare_rate = yes
+		}
+	}
+	focus = {
+		id = GGR_purity_1
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 4
+		y = 5
+		prerequisite = {
+			focus = GGR_health_00
+		}
+		completion_reward = {
+			add_stability = -0.05
+			797 = {
+				add_manpower = -500000
+			}
+		}
+	}
+	focus = {
+		id = GGR_purity_2
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = GGR_health_00
+		}
+		completion_reward = {
+			add_stability = -0.05
+			86 = {
+				add_manpower = -500000
+			}
+		}
+	}
+	focus = {
+		id = GGR_purity_3
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 3
+		y = 6
+		prerequisite = {
+			focus = GGR_purity_1
+		}
+		prerequisite = {
+			focus = GGR_purity_2
+		}
+		completion_reward = {
+			GGP = {
+				add_stability = -0.05
+			}
+			10 = {
+				add_manpower = -500000
+			}
+		}
+	}
+	focus = {
+		id = GGR_purity_4
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 5
+		y = 6
+		prerequisite = {
+			focus = GGR_purity_1
+		}
+		prerequisite = {
+			focus = GGR_purity_2
+		}
+		completion_reward = {
+			ROS = {
+				add_stability = -0.05
+			}
+			204 = {
+				add_manpower = -500000
+			}
+		}
+	}
+	focus = {
+		id = GGR_purity_5
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 7
+		y = 6
+		prerequisite = {
+			focus = GGR_purity_1
+		}
+		prerequisite = {
+			focus = GGR_purity_2
+		}
+		completion_reward = {
+			RUK = {
+				add_stability = -0.05
+			}
+			202 = {
+				add_manpower = -500000
+			}
+		}
+	}
+	focus = {
+		id = GGR_purity_6
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 4
+		y = 7
+		prerequisite = {
+			focus = GGR_purity_3
+		}
+		prerequisite = {
+			focus = GGR_purity_4
+		}
+		prerequisite = {
+			focus = GGR_purity_5
+		}
+		completion_reward = {
+			RKA = {
+				add_stability = -0.05
+			}
+			234 = {
+				add_manpower = -500000
+			}
+		}
+	}
+	focus = {
+		id = GGR_purity_7
+		icon = GFX_GGR_health
+		cost = 4.4
+		x = 6
+		y = 7
+		prerequisite = {
+			focus = GGR_purity_3
+		}
+		prerequisite = {
+			focus = GGR_purity_4
+		}
+		prerequisite = {
+			focus = GGR_purity_5
+		}
+		completion_reward = {
+			RMO = {
+				add_stability = -0.2
+			}
+			219 = {
+				add_manpower = -500000
+				add_manpower = -500000
+				add_manpower = -500000
+				add_manpower = -500000
 			}
 		}
 	}
