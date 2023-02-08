@@ -11,6 +11,126 @@ focus_tree = {
 		x = 5
 		y = 0
 	}
+	#### BEGINNING
+	focus = {
+		id = GGR_beginning
+		icon = GFX_GGR_beginning
+		cost = 0.2
+		x = 17
+		y = 0
+		completion_reward = { 
+			hidden_effect = {
+				remove_ideas = policy_services_temp_0
+				remove_ideas = policy_services_temp_1
+				remove_ideas = policy_services_temp_2
+				remove_ideas = policy_services_temp_3
+
+				remove_ideas = policy_union_temp_0
+				remove_ideas = policy_union_temp_1
+				remove_ideas = policy_union_temp_2
+				remove_ideas = policy_union_temp_3
+				remove_ideas = policy_union_temp_4
+
+				remove_ideas = policy_saga_temp_0
+				remove_ideas = policy_saga_temp_1
+				remove_ideas = policy_saga_temp_2
+				remove_ideas = policy_saga_temp_3
+				remove_ideas = policy_saga_temp_4
+				remove_ideas = policy_saga_temp_4a
+
+				remove_ideas = policy_voting_temp_0
+				remove_ideas = policy_voting_temp_1
+				remove_ideas = policy_voting_temp_2
+				remove_ideas = policy_voting_temp_3
+
+				remove_ideas = policy_religion_temp_0
+				remove_ideas = policy_religion_temp_0a
+				remove_ideas = policy_religion_temp_1
+				remove_ideas = policy_religion_temp_2
+				remove_ideas = policy_religion_temp_3
+				remove_ideas = policy_religion_temp_3a
+
+				remove_ideas = policy_media_temp_0
+				remove_ideas = policy_media_temp_1
+				remove_ideas = policy_media_temp_2
+				remove_ideas = policy_media_temp_3
+				remove_ideas = policy_media_temp_3a
+
+				remove_ideas = policy_women_temp_0
+				remove_ideas = policy_women_temp_1
+				remove_ideas = policy_women_temp_2
+				remove_ideas = policy_women_temp_3
+				remove_ideas = policy_women_temp_4
+				remove_ideas = policy_women_temp_4a
+
+				remove_ideas = policy_minorities_temp_0
+				remove_ideas = policy_minorities_temp_1
+				remove_ideas = policy_minorities_temp_2
+				remove_ideas = policy_minorities_temp_3
+				remove_ideas = policy_minorities_temp_3a
+
+				remove_ideas = policy_taxrate_temp_1
+				remove_ideas = policy_taxrate_temp_2
+				remove_ideas = policy_taxrate_temp_3
+				remove_ideas = policy_taxrate_temp_4
+				remove_ideas = policy_taxrate_temp_5
+
+				remove_ideas = policy_military_temp_0
+				remove_ideas = policy_military_temp_1
+				remove_ideas = policy_military_temp_2
+				remove_ideas = policy_military_temp_3
+				remove_ideas = policy_military_temp_4
+				remove_ideas = policy_military_temp_5
+
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+
+				remove_ideas = policy_education_temp_0
+				remove_ideas = policy_education_temp_1
+				remove_ideas = policy_education_temp_2
+				remove_ideas = policy_education_temp_3
+				remove_ideas = policy_education_temp_4
+
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+
+				remove_ideas = policy_services_temp_0
+				remove_ideas = policy_services_temp_1
+				remove_ideas = policy_services_temp_2
+				remove_ideas = policy_services_temp_3
+
+				add_ideas = policy_women_temp_1
+				add_ideas = policy_saga_temp_0
+				add_ideas = policy_religion_temp_0a
+				add_ideas = policy_media_temp_0
+				add_ideas = policy_union_temp_2
+				add_ideas = policy_minorities_temp_0
+				add_ideas = policy_military_temp_4
+				add_ideas = policy_welfare_temp_1
+				add_ideas = policy_cpi_temp_3
+				add_ideas = policy_education_temp_1
+				add_ideas = policy_healthcare_temp_1
+				add_ideas = policy_services_temp_0
+				add_ideas = policy_taxrate_temp_5
+			}
+			add_stability = 0.01
+		}
+	}
 	#### ECONOMY
 	focus = {
 		id = GGR_economy
@@ -18,6 +138,9 @@ focus_tree = {
 		cost = 4.4
 		x = 25
 		y = 0
+		available = {
+			has_completed_focus = GGR_beginning
+		}
 		completion_reward = {
 			add_stability = 0.05
 		}
@@ -580,7 +703,9 @@ focus_tree = {
 			}
 			else = {
 				remove_ideas = GER_economic_stagnation
-			}
+				}
+			
+			country_event = GGR_Focus_Events.1
 		}
 	}
 	focus = {
@@ -1209,6 +1334,7 @@ focus_tree = {
 		y = 7
 		available = {
 			has_tech = atomic_research
+			has_completed_focus = GGR_economy_recovery_idea_5
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1362,6 +1488,9 @@ focus_tree = {
 		cost = 4.4
 		x = 5
 		y = 1
+		available = {
+			has_completed_focus = GGR_economy_recovery_idea_5
+		}
 		completion_reward = {
 			increase_healthcare_rate = yes
 		}
@@ -1565,6 +1694,187 @@ focus_tree = {
 				add_manpower = -500000
 				add_manpower = -500000
 			}
+		}
+	}
+	#### NAVY
+	focus = {
+		id = GGR_navy
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 45
+		y = 1
+		available = {
+			has_completed_focus = GGR_economy_recovery_idea_5
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_0
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 44
+		y = 2
+		prerequisite = {
+			focus = GGR_navy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_1
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 46
+		y = 2
+		prerequisite = {
+			focus = GGR_navy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_2
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 45
+		y = 3
+		prerequisite = {
+			focus = GGR_navy_0
+		}
+		prerequisite = {
+			focus = GGR_navy_1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_3
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 45
+		y = 4
+		prerequisite = {
+			focus = GGR_navy_2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_4
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 44
+		y = 5
+		prerequisite = {
+			focus = GGR_navy_3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_5
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 46
+		y = 5
+		prerequisite = {
+			focus = GGR_navy_3
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_6
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 43
+		y = 6
+		prerequisite = {
+			focus = GGR_navy_4
+		}
+		prerequisite = {
+			focus = GGR_navy_5
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_7
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 45
+		y = 6
+		prerequisite = {
+			focus = GGR_navy_4
+		}
+		prerequisite = {
+			focus = GGR_navy_5
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_8
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 47
+		y = 6
+		prerequisite = {
+			focus = GGR_navy_4
+		}
+		prerequisite = {
+			focus = GGR_navy_5
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_9
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 44
+		y = 7
+		prerequisite = {
+			focus = GGR_navy_6
+		}
+		prerequisite = {
+			focus = GGR_navy_7
+		}
+		prerequisite = {
+			focus = GGR_navy_8
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GGR_navy_10
+		icon = GFX_GGR_navy
+		cost = 4.4
+		x = 46
+		y = 7
+		prerequisite = {
+			focus = GGR_navy_6
+		}
+		prerequisite = {
+			focus = GGR_navy_7
+		}
+		prerequisite = {
+			focus = GGR_navy_8
+		}
+		completion_reward = {
+			
 		}
 	}
 }

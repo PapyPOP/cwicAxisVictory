@@ -1,5 +1,6 @@
 ﻿capital = 70
-set_country_flag = is_normal_language
+set_country_flag = tech_gfx_western
+set_country_flag = tech_alignment_western
 if = {
 	limit = {
 		not = {
@@ -198,6 +199,7 @@ set_popularities = {
 	maoism = 0
 }
 
+set_country_flag = german_and_germanrk
 add_ideas = {
 	authoritarian_system
 	SLO_Remnants_of_Czechoslovakia

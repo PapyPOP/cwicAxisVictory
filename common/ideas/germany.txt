@@ -579,8 +579,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.7
-				production_factory_max_efficiency_factor = -0.3
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.3
 			}
 		}
 		GER_heer_pride = {
@@ -1916,8 +1915,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.6
-				production_factory_max_efficiency_factor = -0.2
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.25
 			}
 		}
 		GER_economic_recovery_2 = {
@@ -1934,8 +1932,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.45
-				production_factory_max_efficiency_factor = -0.15
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.2
 			}
 		}
 		GER_economic_recovery_3 = {
@@ -1952,8 +1949,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.3
-				production_factory_max_efficiency_factor = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.15
 			}
 		}
 		GER_economic_recovery_4 = {
@@ -1970,8 +1966,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.15
-				production_factory_max_efficiency_factor = -0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.10
 			}
 		}
 		GER_our_total_war_idea = {
