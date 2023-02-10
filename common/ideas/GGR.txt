@@ -1,4 +1,1476 @@
 ideas = {
+	#### IDEA - MANUFACTORIES
+	#TANK
+	tank_manufacturer = {
+		designer = yes
+		alkett = {
+			picture = idea_alkett
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				medium_tank_destroyer_chassis = {
+					build_cost_ic = -0.15
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				heavy_tank_destroyer_chassis = {
+					build_cost_ic = -0.15
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+			}
+			research_bonus = {
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+		vomag = {
+			picture = idea_vomag
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				medium_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+					armor_value = 0.05
+				}
+				heavy_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+					armor_value = 0.05
+				}
+			}
+			research_bonus = {
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+		krupp_2 = {
+			picture = idea_krupp_2
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.05
+					reliability = 0.05
+				}
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+		daimler_benz_2 = {
+			picture = idea_daimler_benz
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.1
+				}
+			}
+			research_bonus = {
+				armor = 0.1
+				cat_air_engine = 0.1
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+		Miag = {
+			picture = idea_Miag
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				armored_car_equipment = {
+					armor_value = 0.05
+				}
+			}
+			research_bonus = {
+			}
+			traits = {
+				armored_car_manufacturer
+			}
+		}
+		Bussing_2 = {
+			picture = idea_Bussing
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				armored_car_equipment = {
+					soft_attack = 0.1
+					reliability = 0.05
+				}
+			}
+			research_bonus = {
+			}
+			traits = {
+				armored_car_manufacturer
+			}
+		}
+		ostbau = {
+			picture = idea_ostbau
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.05
+					air_attack = 0.15
+				}
+			}
+			research_bonus = {
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+		skoda = {
+			picture = idea_skoda
+			allowed = {
+				original_tag = GGR
+			}
+			equipment_bonus = {
+				light_tank_chassis = {
+					maximum_speed = 0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+				}
+				light_tank_destroyer_chassis = {
+					ap_attack = 0.1
+					hard_attack = 0.05
+				}
+			}
+			research_bonus = {
+				armor = 0.1
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+	}
+	#NAVAL
+	naval_manufacturer = {
+		designer = yes
+		bremervulkan = {
+			picture = idea_bremervulkan
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+			}
+			traits = {
+				raiding_fleet_naval_manufacturer
+			}
+		}
+		howaldtswerke = {
+			picture = idea_howaldtswerke
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+			}
+			traits = {
+				raiding_fleet_naval_manufacturer
+			}
+		}
+		deutsche-werft = {
+			picture = idea_deutsche-werft
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+			}
+			traits = {
+				atlantic_fleet_naval_manufacturer
+			}
+		}
+		nordseewerke = {
+			picture = idea_nordseewerke
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+			}
+			traits = {
+				raiding_fleet_naval_manufacturer
+			}
+		}
+		ag_weser = {
+			picture = idea_ag_weser
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+			}
+			traits = {
+				convoy_escort_naval_manufacturer
+			}
+		}
+		schichau = {
+			picture = idea_schichau
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				repair_speed_factor = 0.15
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			equipment_bonus = {
+			}
+			traits = {
+				coastal_defence_naval_manufacturer
+			}
+		}
+	}
+	#AIR
+	aircraft_manufacturer = {
+		designer = yes
+		messerschmitt = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			modifier = {
+				Political_power_gain = 0.05
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_attack = 0.1
+					maximum_speed = 0.15
+					reliability = -0.03
+				}
+				cv_small_plane_airframe = {
+					air_attack = 0.05
+					maximum_speed = 0.1
+					air_range = 0.1
+				}
+				medium_plane_fighter_airframe = {
+					air_attack = 0.1
+					maximum_speed = 0.05
+				}
+				large_plane_airframe = {
+					air_range = 0.25
+				}
+			}
+			ai_will_do = {
+				factor = 40
+			}
+		}
+		junkers = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				air_equipment = 0.15
+				cat_air_engine = 0.1
+				jet_technology = 0.1
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					air_ground_attack = 0.15
+					reliability = 0.1
+				}
+				medium_plane_airframe = {
+					air_ground_attack = 0.1
+					maximum_speed = 0.05
+				}
+				medium_plane_fighter_airframe = {
+					reliability = 0.05
+					night_penalty = -0.05
+				}
+				large_plane_airframe = {
+					air_bombing = 0.2
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		focke_wulf = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_attack = 0.1
+					reliability = 0.15
+					maximum_speed = 0.1
+				}
+				medium_plane_fighter_airframe = {
+					air_agility = 0.05
+					maximum_speed = 0.1
+				}
+				medium_plane_scout_plane_airframe = {
+					air_agility = 0.1
+				}
+				large_plane_airframe = {
+					reliability = 0.2
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					reliability = 0.2
+					surface_detection = 0.1
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		heinkel = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				air_equipment = 0.15
+				jet_technology = 0.1
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_agility = 0.15
+					reliability = 0.05
+				}
+				medium_plane_fighter_airframe = {
+					air_attack = 0.15
+					maximum_speed = 0.05
+					reliability = -0.05
+					night_penalty = -0.1
+				}
+				medium_plane_airframe = {
+					maximum_speed = 0.05
+					reliability = 0.2
+				}
+				large_plane_airframe = {
+					air_bombing = 0.15
+					air_ground_attack = 0.05
+					reliability = -0.2
+					air_agility = 0.2
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		dornier = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					air_attack = 0.05
+					air_agility = 0.05
+					maximum_speed = 0.1
+					reliability = -0.1
+				}
+				medium_plane_airframe = {
+					maximum_speed = 0.1
+					air_ground_attack = 0.05
+					naval_strike_attack = 0.05
+				}
+				medium_plane_scout_plane_airframe = {
+					air_range = 0.2
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		arado = {
+			allowed = {
+				original_tag = GGR
+			}
+			picture = idea_arado
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					reliability = 0.1
+					surface_detection = 0.1
+					sub_detection = 0.1
+				}
+				medium_plane_airframe = {
+					maximum_speed = 0.1
+				}
+				medium_plane_scout_plane_airframe = {
+					maximum_speed = 0.1
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		blohm_und_voss_2 = {
+			allowed = {
+				original_tag = GGR
+			}
+			picture = idea_blohm_und_voss_2
+			research_bonus = {
+				air_equipment = 0.05
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					air_attack = 0.05
+					air_ground_attack = 0.1
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					air_attack = 0.1
+					air_range = 0.15
+					naval_strike_attack = 0.05
+				}
+				medium_plane_scout_plane_airframe = {
+					air_range = 0.1
+					naval_strike_attack = 0.05
+					surface_detection = 0.1
+					sub_detection = 0.1
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					air_attack = 0.1
+					air_range = 0.15
+					naval_strike_attack = 0.05
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		henschel_2 = {
+			allowed = {
+				original_tag = GGR
+			}
+			picture = idea_henschel_2
+			research_bonus = {
+				air_equipment = 0.05
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					air_agility = 0.1
+					reliability = 0.2
+				}
+				medium_plane_airframe = {
+					air_ground_attack = 0.15
+					air_defence = 0.1
+					air_agility = -0.1
+				}
+				medium_plane_scout_plane_airframe = {
+					maximum_speed = 0.1
+					reliability = -0.1
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		fieseler = {
+			allowed = {
+				original_tag = GGR
+			}
+			picture = idea_fieseler
+			research_bonus = {
+				air_equipment = 0.05
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					maximum_speed = -0.5
+					air_agility = 0.2
+					air_range = -0.5
+					air_ground_attack = -1
+					naval_strike_attack = -1
+					sub_detection = 0.1
+					build_cost_ic = -0.5
+				}
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#INDUSTRIAL
+	industrial_concern = {
+		ig_faben = {
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Fuel_gain_factor_from_states = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			traits = {
+				refinery_concern
+			}
+			ai_will_do = {
+				factor = 30
+			}
+		}
+		krupp = {
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			ai_will_do = {
+				factor = 40
+			}
+			traits = {
+				industrial_concern
+			}
+		}
+		siemens = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+			traits = {
+				electronics_concern
+			}
+		}
+		reichswerke_Hermann_Goering = {
+			picture = idea_reichswerke_Hermann_Goering
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Political_power_factor = 0.1
+				Industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 35
+			}
+		}
+		vereinigte_stahlwerke = {
+			picture = idea_vereinigte_stahlwerke
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 35
+			}
+		}
+		gutehoffnungshutte = {
+			picture = idea_gutehoffnungshutte
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		volkswagen = {
+			picture = idea_volkswagen
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Political_power_gain = 0.1
+			}
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 30
+			}
+		}
+		steyr_daimler_puch_2 = {
+			picture = idea_steyr_daimler_puch_2
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industrial_capacity_factory = 0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		bosch = {
+			picture = idea_bosch
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+			traits = {
+				electronics_concern
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		kwg = {
+			picture = idea_kwg
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				nuclear = 0.1
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 30
+			}
+		}
+		deutsche_reichsbahn = {
+			picture = idea_deutsche_reichsbahn
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Planning_speed = 0.05
+				Equipment_conversion_speed = 0.05
+				army_org_regain = 0.05
+				land_reinforce_rate = 0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				railway_company
+			}
+			ai_will_do = {
+				factor = 30
+			}
+		}
+		DAPG = {
+			picture = idea_DAPG
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Fuel_gain_factor = 0.1
+			}
+			research_bonus = {
+				synth_resources = 0.15
+			}
+			traits = {
+				refinery_concern
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		DEA = {
+			picture = idea_DEA
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				state_resources_factor = 0.1
+				compliance_growth = 0.1
+				resistance_activity = 0.05
+			}
+			research_bonus = {
+				synth_resources = 0.1
+			}
+			traits = {
+				refinery_concern
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Wintershall = {
+			picture = idea_Wintershall
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				fuel_gain_factor_from_states = 0.1
+				exile_manpower_factor = 0.1
+				resistance_activity = -0.05
+			}
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.05
+			}
+			traits = {
+				refinery_concern
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		aeg = {
+			picture = idea_aeg
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Consumer_goods_factor = -0.1
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+			traits = {
+				electronics_concern
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		konski_and_kruger = {
+			picture = idea_konski_and_kruger
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				encryption_factor = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				electronics_concern
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		dew = {
+			picture = idea_dew
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		erla = {
+			picture = idea_erla
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				air_training_xp_gain_factor = 0.1
+				air_superiority_efficiency = 0.1
+				air_intercept_efficiency = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		polte_werke = {
+			picture = idea_polte_werke
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industrial_capacity_factory = 0.05
+				army_morale_factor = 0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ruhrstahl = {
+			picture = idea_ruhrstahl
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+	}
+	#MATERIEL
+	materiel_manufacturer = {
+		designer = yes
+		rheinmetall = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = {
+				artillery_manufacturer
+			}
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		mauser = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+				cat_air_guns = 0.1
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		opel = {
+			allowed = {
+				original_tag = GGR
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+		}
+		#######################################################################
+		daimler_benz = {
+			picture = idea_daimler_benz
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				motorized_equipment = 0.1
+				cat_air_engine = 0.1
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		hanomag = {
+			picture = idea_hanomag
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				mechanized_attack_factor = 0.1
+				mechanized_defence_factor = 0.1
+			}
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		BMW = {
+			picture = idea_BMW
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				breakthrough_factor = 0.03
+			}
+			research_bonus = {
+				motorized_equipment = 0.03
+				cat_air_engine = 0.1
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		nsu = {
+			picture = idea_nsu
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				recon_factor = 0.05
+			}
+			research_bonus = {
+				motorized_equipment = 0.03
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		gema = {
+			picture = idea_gema
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				air_detection = 0.05
+				air_night_penalty = -0.05
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = {
+				electronics_concern
+			}
+			ai_will_do = {
+				factor = 25
+			}
+		}
+		walther = {
+			picture = idea_walther
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Experience_loss_factor = -0.03
+				army_org_regain = 0.03
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		borgward = {
+			picture = idea_borgward
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				breakthrough_factor = 0.05
+				fortification_damage = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				support_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		khd = {
+			picture = idea_khd
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				out_of_supply_factor = -0.05
+			}
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		Bussing = {
+			picture = idea_Bussing
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				land_reinforce_rate = 0.05
+			}
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		askania_werke_ag = {
+			picture = idea_askania_werke_ag
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				rocket_attack_factor = 0.1
+			}
+			research_bonus = {
+				rocketry = 0.1
+				electronics = 0.05
+			}
+			traits = {
+				support_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		wasag = {
+			picture = idea_wasag
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				support_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		eibia = {
+			picture = idea_eibia
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+			research_bonus = {
+			}
+			traits = {
+				support_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		sauer_and_sohn = {
+			picture = idea_sauer_and_sohn
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		famo = {
+			picture = idea_famo
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				attrition = -0.1
+				Equipment_capture_factor = 0.1
+			}
+			research_bonus = {
+				motorized_equipment = 0.05
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 25
+			}
+		}
+		reimahg_werke = {
+			picture = idea_reimahg_werke
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industry_free_repair_factor = 0.2
+				Industry_repair_factor = 0.2
+				Industry_air_damage_factor = -0.2
+				production_speed_arms_factory_factor = -0.5
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		gustloff_werk = {
+			picture = idea_gustloff_werk
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		haenel = {
+			picture = idea_haenel
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		telefunken = {
+			picture = idea_telefunken
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				land_reinforce_rate = 0.1
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+			traits = {
+				electronics_concern
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		kraussmaffei = {
+			picture = idea_kraussmaffei
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+			research_bonus = {
+				train_tech = 0.1
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		erma_werke = {
+			picture = idea_erma_werke
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				breakthrough_bonus_against = 0.05
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		DFS = {
+			picture = idea_DFS
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				extra_paratrooper_supply_grace = 72
+				air_paradrop_attack_factor = 0.1
+				paratrooper_count_per_plane = 0.5
+				air_fuel_consumption_factor = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				aircraft_manufacturer
+			}
+			ai_will_do = {
+				factor = 15
+			}
+		}
+		maybach = {
+			picture = idea_maybach
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				army_armor_speed_factor = 0.05
+			}
+			research_bonus = {
+				armor = 0.05
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		nibelungenwerk = {
+			picture = idea_nibelungenwerk
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				Industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				industrial_concern
+			}
+			ai_will_do = {
+				factor = 30
+			}
+		}
+		heimsoeth_and_rinke = {
+			picture = idea_heimsoeth_and_rinke
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				crypto_strength = 1
+				decryption_power = 25
+			}
+			research_bonus = {
+			}
+			traits = {
+				support_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 30
+			}
+		}
+		waffen_werke_brunn = {
+			picture = idea_waffen_werke_brunn
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		pulverfabrik_rotteweil = {
+			picture = idea_pulverfabrik_rotteweil
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				paratrooper_count_per_plane = 0.2
+				paradrop_organization_factor = 0.1
+			}
+			research_bonus = {
+			}
+			traits = {
+				support_equipment_manufacturer
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		UFA = {
+			picture = idea_UFA
+			available = {
+			}
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+				drift_defence_factor = 0.1
+				war_support_factor = 0.1
+				mobilization_speed = 0.1
+				boost_ideology_mission_factor = 0.05
+				propaganda_mission_factor = 0.05
+				civilian_factory_use = 1
+			}
+			research_bonus = {
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		LHG = {
+			picture = idea_LHG
+			allowed = {
+				original_tag = GGR
+			}
+			modifier = {
+			}
+			research_bonus = {
+				air_equipment = 0.1
+				rocketry = 0.15
+				jet_technology = 0.15
+			}
+			traits = {
+			}
+			ai_will_do = {
+				factor = 40
+			}
+		}
+	}
+	#### IDEA - FOCUS
 	country = {
 		greater_reich_building = {
 			removal_cost = -1
@@ -7,6 +1479,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_building
 			modifier = {
 				consumer_goods_factor = 0.1
 				production_speed_industrial_complex_factor = 0.25
@@ -21,6 +1494,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_bank
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_office_park_factor = 0.15
@@ -34,6 +1508,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_infra
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_infrastructure_factor = 0.25
@@ -48,6 +1523,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_industrial
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_industrial_complex_factor = 0.25
@@ -60,6 +1536,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_economic
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_speed_buildings_factor = 0.25
@@ -73,6 +1550,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_war_economy
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.25
@@ -85,6 +1563,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GER_birth_quotas
 			modifier = {
 				MONTHLY_POPULATION = 1
 			}
@@ -96,6 +1575,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_health
 			modifier = {
 				army_morale_factor = 0.1
 				recruitable_population_factor = -0.05
@@ -108,6 +1588,7 @@ ideas = {
 			}
 			allowed_civil_war = {
 			}
+			picture = GGR_ogm
 			modifier = {
 				agricultural_complex_production_bonus = 1
 			}

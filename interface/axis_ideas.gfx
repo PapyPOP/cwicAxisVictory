@@ -300,6 +300,78 @@ spriteTypes = {
 		name = "GFX_idea_GER_Supplies_Issue_3"
 		texturefile = "gfx/interface/ideas/GER_Supplies_Issue_3.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_coastal_navy"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_home_seas"
+		texturefile = "gfx/interface/ideas/idea_generic_coastal_defense_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_the_london_naval_treaty"
+		texturefile = "gfx/interface/ideas/idea_generic_the_london_naval_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Control_the_Seas"
+		texturefile = "gfx/interface/ideas/USA_Control_the_Seas.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Economic_Recovery_1"
+		texturefile = "gfx/interface/ideas/GER_Economic_Recovery_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Economic_Recovery_2"
+		texturefile = "gfx/interface/ideas/GER_Economic_Recovery_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Economic_Recovery_3"
+		texturefile = "gfx/interface/ideas/GER_Economic_Recovery_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Economic_Recovery_4"
+		texturefile = "gfx/interface/ideas/GER_Economic_Recovery_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_birth_quotas"
+		texturefile = "gfx/interface/ideas/GER_birth_quotas.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_health"
+		texturefile = "gfx/interface/ideas/GER_Our_Total_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_war_economy"
+		texturefile = "gfx/interface/ideas/idea_AGS_The_Glory_of_Warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_bank"
+		texturefile = "gfx/interface/ideas/idea_GER_A_German_Zollverein.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_economic"
+		texturefile = "gfx/interface/ideas/RFP_der_aryan_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_health"
+		texturefile = "gfx/interface/ideas/RFP_child_gamers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_building"
+		texturefile = "gfx/interface/ideas/idea_GER_the_two_principles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_infra"
+		texturefile = "gfx/interface/ideas/idea_GER_nationalized_banks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_industrial"
+		texturefile = "gfx/interface/ideas/idea_PER_Deutsch_Persische_Olgesellschaft.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GGR_ogm"
+		texturefile = "gfx/interface/ideas/idea_NOR_agricultural_devolution.dds"
+	}
 	#### SLO
 	spriteType = {
 		name = "GFX_idea_SLO_CZE_Czechoslovakian_Resistance"
@@ -340,4 +412,272 @@ spriteTypes = {
 		name = "GFX_idea_ENG_limited_self_governance"
 		texturefile = "gfx/interface/ideas/idea_ENG_limited_self_governance.tga"
 	}
+
+	###############################################################
+
+	spriteType = {
+		name = "GFX_idea_DFS"
+		texturefile = "gfx/interface/ideas/idea_DFS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LHG"
+		texturefile = "gfx/interface/ideas/idea_LHG.dds"
+	}
+
+	###############################################################
+	### GERMAN IDEAS
+	###############################################################
+	SpriteType = {
+		name = "GFX_idea_aeg"
+		texturefile = "gfx/interface/ideas/idea_aeg.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ag_weser"
+		texturefile = "gfx/interface/ideas/idea_ag_weser.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_arado"
+		texturefile = "gfx/interface/ideas/idea_arado.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_askania_werke_ag"
+		texturefile = "gfx/interface/ideas/idea_askania_werke_ag.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_auto_union"
+		texturefile = "gfx/interface/ideas/idea_auto_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_borgward"
+		texturefile = "gfx/interface/ideas/idea_borgward.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_bosch"
+		texturefile = "gfx/interface/ideas/idea_bosch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_bremervulkan"
+		texturefile = "gfx/interface/ideas/idea_bremervulkan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Bussing"
+		texturefile = "gfx/interface/ideas/idea_Bussing.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Bussing_2"
+		texturefile = "gfx/interface/ideas/idea_Bussing_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_daimler_benz"
+		texturefile = "gfx/interface/ideas/idea_daimler_benz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_daimler_benz_2"
+		texturefile = "gfx/interface/ideas/idea_daimler_benz_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_deutsche_reichsbahn"
+		texturefile = "gfx/interface/ideas/idea_deutsche_reichsbahn.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_deutsche-werft"
+		texturefile = "gfx/interface/ideas/idea_deutsche-werft.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_dew"
+		texturefile = "gfx/interface/ideas/idea_dew.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eibia"
+		texturefile = "gfx/interface/ideas/idea_eibia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_erla"
+		texturefile = "gfx/interface/ideas/idea_erla.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_erma_werke"
+		texturefile = "gfx/interface/ideas/idea_erma_werke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_famo"
+		texturefile = "gfx/interface/ideas/idea_famo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fieseler"
+		texturefile = "gfx/interface/ideas/idea_fieseler.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_gema"
+		texturefile = "gfx/interface/ideas/idea_gema.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_gustloff_werk"
+		texturefile = "gfx/interface/ideas/idea_gustloff_werk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_haenel"
+		texturefile = "gfx/interface/ideas/idea_haenel.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_hanomag"
+		texturefile = "gfx/interface/ideas/idea_hanomag.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_henschel_2"
+		texturefile = "gfx/interface/ideas/idea_henschel_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_howaldtswerke"
+		texturefile = "gfx/interface/ideas/idea_howaldtswerke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_khd"
+		texturefile = "gfx/interface/ideas/idea_khd.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_konski_and_kruger"
+		texturefile = "gfx/interface/ideas/idea_konski_and_kruger.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_kraussmaffei"
+		texturefile = "gfx/interface/ideas/idea_kraussmaffei.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_kwg"
+		texturefile = "gfx/interface/ideas/idea_kwg.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_maybach"
+		texturefile = "gfx/interface/ideas/idea_maybach.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Miag"
+		texturefile = "gfx/interface/ideas/idea_Miag.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_nibelungenwerk"
+		texturefile = "gfx/interface/ideas/idea_nibelungenwerk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_nordseewerke"
+		texturefile = "gfx/interface/ideas/idea_nordseewerke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BMW"
+		texturefile = "gfx/interface/ideas/idea_BMW.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_nsu"
+		texturefile = "gfx/interface/ideas/idea_nsu.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_polte_werke"
+		texturefile = "gfx/interface/ideas/idea_polte_werke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_pulverfabrik_rotteweil"
+		texturefile = "gfx/interface/ideas/idea_pulverfabrik_rotteweil.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_reichswerke_Hermann_Goering"
+		texturefile = "gfx/interface/ideas/idea_reichswerke_Hermann_Goering.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_reimahg_werke"
+		texturefile = "gfx/interface/ideas/idea_reimahg_werke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ruhrstahl"
+		texturefile = "gfx/interface/ideas/idea_ruhrstahl.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sauer_and_sohn"
+		texturefile = "gfx/interface/ideas/idea_sauer_and_sohn.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_schichau"
+		texturefile = "gfx/interface/ideas/idea_schichau.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_skoda"
+		texturefile = "gfx/interface/ideas/idea_skoda.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_telefunken"
+		texturefile = "gfx/interface/ideas/idea_telefunken.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_vereinigte_stahlwerke"
+		texturefile = "gfx/interface/ideas/idea_vereinigte_stahlwerke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_volkswagen"
+		texturefile = "gfx/interface/ideas/idea_volkswagen.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_vomag"
+		texturefile = "gfx/interface/ideas/idea_vomag.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_walther"
+		texturefile = "gfx/interface/ideas/idea_walther.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_wasag"
+		texturefile = "gfx/interface/ideas/idea_wasag.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_heimsoeth_and_rinke"
+		texturefile = "gfx/interface/ideas/idea_heimsoeth_and_rinke.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_steyr_daimler_puch"
+		texturefile = "gfx/interface/ideas/idea_steyr_daimler_puch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_waffen_werke_brunn"
+		texturefile = "gfx/interface/ideas/idea_waffen_werke_brunn.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_alkett"
+		texturefile = "gfx/interface/ideas/idea_alkett.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ostbau"
+		texturefile = "gfx/interface/ideas/idea_ostbau.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_blohm_und_voss_2"
+		texturefile = "gfx/interface/ideas/idea_blohm_und_voss_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_krupp_2"
+		texturefile = "gfx/interface/ideas/idea_krupp_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DAPG"
+		texturefile = "gfx/interface/ideas/idea_DAPG.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DEA"
+		texturefile = "gfx/interface/ideas/idea_DEA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Wintershall"
+		texturefile = "gfx/interface/ideas/idea_Wintershall.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gutehoffnungshutte"
+		texturefile = "gfx/interface/ideas/idea_gutehoffnungshutte.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UFA"
+		texturefile = "gfx/interface/ideas/idea_UFA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_steyr_daimler_puch_2"
+		texturefile = "gfx/interface/ideas/idea_steyr_daimler_puch_2.dds"
+	}
+	##################################################################
 }

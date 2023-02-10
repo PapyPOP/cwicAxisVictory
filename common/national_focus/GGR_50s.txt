@@ -127,6 +127,15 @@ focus_tree = {
 				add_ideas = policy_healthcare_temp_1
 				add_ideas = policy_services_temp_0
 				add_ideas = policy_taxrate_temp_5
+
+				742 = {
+					add_building_construction = {
+						type = volkshalleconstructing
+						level = 1
+						instant_build = yes
+						province = 11444
+					}
+				}
 			}
 			add_stability = 0.01
 		}
@@ -667,6 +676,33 @@ focus_tree = {
 			focus = GGR_economy_recovery_idea_4
 		}
 		completion_reward = {
+			hidden_effect = {
+				742 = {
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+					add_manpower = 1000000
+
+					add_building_construction = {
+						type = volkshalle
+						level = 1
+						instant_build = yes
+						province = 6521
+					}
+					set_building_level = {
+						type = volkshalleconstructing
+						level = 0
+						province = 6521
+					}
+				}
+			}
+
 			if = {
 				limit = {
 					has_idea = GER_economic_stagnation
@@ -704,7 +740,7 @@ focus_tree = {
 			else = {
 				remove_ideas = GER_economic_stagnation
 				}
-			
+
 			country_event = GGR_Focus_Events.1
 		}
 	}
@@ -737,7 +773,7 @@ focus_tree = {
 	#### INFRA
 	focus = {
 		id = GGR_economy_infra
-		icon = GFX_GGR_economy_infra
+		icon = GFX_usa_50_send_reconstruction_funds
 		cost = 4.4
 		x = 25
 		y = 2
@@ -968,7 +1004,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_boom
-		icon = GFX_GGR_economy_infra_boom
+		icon = GFX_usa_50_progressive_colonialism
 		cost = 4.4
 		x = 25
 		y = 6
@@ -992,7 +1028,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_boom_0
-		icon = GFX_GGR_economy_infra_boom
+		icon = GFX_usa_50_infrastructure_grants
 		cost = 20
 		x = 23
 		y = 7
@@ -1012,7 +1048,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_boom_1
-		icon = GFX_GGR_economy_infra_boom
+		icon = GFX_usa_50_expand_foreign_aid_recipients
 		cost = 20
 		x = 25
 		y = 7
@@ -1328,7 +1364,7 @@ focus_tree = {
 	#### NUCLEAR
 	focus = {
 		id = GGR_nuclear
-		icon = GFX_GGR_nuclear
+		icon = GFX_nuclear_detonation
 		cost = 4.4
 		x = 12
 		y = 7
@@ -1373,7 +1409,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_nuclear_1
-		icon = GFX_GGR_nuclear
+		icon = GFX_usa_truman_national_science_foundation
 		cost = 4.4
 		x = 13
 		y = 8
@@ -1417,7 +1453,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_nuclear_3
-		icon = GFX_GGR_nuclear
+		icon = GFX_hydrogen_bomb
 		cost = 4.4
 		x = 11
 		y = 9
@@ -1439,7 +1475,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_nuclear_4
-		icon = GFX_GGR_nuclear
+		icon = GFX_uranium_fever
 		cost = 4.4
 		x = 13
 		y = 9
@@ -1461,7 +1497,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_nuclear_5
-		icon = GFX_GGR_nuclear
+		icon = GFX_uranium_fever
 		cost = 4.4
 		x = 15
 		y = 9
@@ -1552,7 +1588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_1
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 4
 		y = 5
@@ -1568,7 +1604,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_2
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 6
 		y = 5
@@ -1584,7 +1620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_3
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 3
 		y = 6
@@ -1605,7 +1641,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_4
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 5
 		y = 6
@@ -1626,7 +1662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_5
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 7
 		y = 6
@@ -1647,7 +1683,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_6
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 4
 		y = 7
@@ -1671,7 +1707,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_purity_7
-		icon = GFX_GGR_health
+		icon = GFX_usa_50_condemn_euro_influence
 		cost = 4.4
 		x = 6
 		y = 7
@@ -1707,12 +1743,12 @@ focus_tree = {
 			has_completed_focus = GGR_economy_recovery_idea_5
 		}
 		completion_reward = {
-			
+			add_ideas = GER_Naval_Frenzy_IDEA
 		}
 	}
 	focus = {
 		id = GGR_navy_0
-		icon = GFX_GGR_navy
+		icon = GFX_usa_50_focus_on_sub_detection
 		cost = 4.4
 		x = 44
 		y = 2
@@ -1720,12 +1756,12 @@ focus_tree = {
 			focus = GGR_navy
 		}
 		completion_reward = {
-			
+			add_ideas = GER_Submarine_Production_IDEA
 		}
 	}
 	focus = {
 		id = GGR_navy_1
-		icon = GFX_GGR_navy
+		icon = GFX_usa_50_charles_f_adams_class
 		cost = 4.4
 		x = 46
 		y = 2
@@ -1733,7 +1769,7 @@ focus_tree = {
 			focus = GGR_navy
 		}
 		completion_reward = {
-			
+			add_ideas = GER_Destroyer_Fleet_IDEA
 		}
 	}
 	focus = {
@@ -1749,7 +1785,7 @@ focus_tree = {
 			focus = GGR_navy_1
 		}
 		completion_reward = {
-			
+			remove_ideas = GER_oversized_fleet
 		}
 	}
 	focus = {
@@ -1762,7 +1798,7 @@ focus_tree = {
 			focus = GGR_navy_2
 		}
 		completion_reward = {
-			
+			add_ideas = GER_Wolfpack_Training_IDEA
 		}
 	}
 	focus = {
@@ -1775,7 +1811,7 @@ focus_tree = {
 			focus = GGR_navy_3
 		}
 		completion_reward = {
-			
+			remove_ideas = GER_Naval_Frenzy_IDEA
 		}
 	}
 	focus = {
@@ -1788,7 +1824,7 @@ focus_tree = {
 			focus = GGR_navy_3
 		}
 		completion_reward = {
-			
+			add_ideas = GER_Prepare_for_Sealion_IDEA
 		}
 	}
 	focus = {
@@ -1804,7 +1840,7 @@ focus_tree = {
 			focus = GGR_navy_5
 		}
 		completion_reward = {
-			
+			add_ideas = GER_Invasion_fleet_IDEA
 		}
 	}
 	focus = {
@@ -1820,7 +1856,7 @@ focus_tree = {
 			focus = GGR_navy_5
 		}
 		completion_reward = {
-			
+			add_ideas = GER_naval_boom 
 		}
 	}
 	focus = {
@@ -1836,14 +1872,14 @@ focus_tree = {
 			focus = GGR_navy_5
 		}
 		completion_reward = {
-			
+			add_ideas = GER_polished_naval_production
 		}
 	}
 	focus = {
 		id = GGR_navy_9
 		icon = GFX_GGR_navy
 		cost = 4.4
-		x = 44
+		x = 45
 		y = 7
 		prerequisite = {
 			focus = GGR_navy_6
@@ -1855,26 +1891,21 @@ focus_tree = {
 			focus = GGR_navy_8
 		}
 		completion_reward = {
-			
+			add_ideas = GER_funding_the_navy
 		}
 	}
 	focus = {
 		id = GGR_navy_10
 		icon = GFX_GGR_navy
 		cost = 4.4
-		x = 46
-		y = 7
+		x = 45
+		y = 8
 		prerequisite = {
-			focus = GGR_navy_6
-		}
-		prerequisite = {
-			focus = GGR_navy_7
-		}
-		prerequisite = {
-			focus = GGR_navy_8
+			focus = GGR_navy_9
 		}
 		completion_reward = {
-			
+			remove_ideas = GER_funding_the_navy
+			add_ideas = GER_extra_funding_the_navy
 		}
 	}
 }

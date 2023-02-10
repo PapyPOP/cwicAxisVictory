@@ -3,4 +3,5 @@ spriteTypes = {
 		name = "GFX_GGR_Focus_Events.1"
 		texturefile = "gfx/event_pictures/Germania.dds"
 	}
+	
 }

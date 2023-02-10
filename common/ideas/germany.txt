@@ -5159,9 +5159,27 @@ ideas = {
 			picture = generic_the_london_naval_treaty
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
-				production_speed_dockyard_factor = 0.2
-				production_speed_naval_base_factor = 0.2
+				consumer_goods_factor = -0.05
+				production_speed_dockyard_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+			}
+		}
+		GER_extra_funding_the_navy = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GER_funding_the_navy"
+			}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_the_london_naval_treaty
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
 			}
 		}
 		GER_polished_naval_production = {
@@ -5616,7 +5634,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = ENG_anti_submarine
+			picture = generic_coastal_navy
 			removal_cost = -1
 			equipment_bonus = {
 				submarine = {
@@ -5634,7 +5652,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			#picture = generic_coastal_defense_ships
+			picture = GGR_home_seas
 			removal_cost = -1
 			modifier = {
 				amphibious_invasion = 0.1
@@ -5650,7 +5668,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = ENG_home_seas
+			picture = GGR_home_seas
 			removal_cost = -1
 			modifier = {
 				invasion_preparation = -0.15

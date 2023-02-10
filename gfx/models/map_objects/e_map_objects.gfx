@@ -1,0 +1,27 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "reichstag_mesh"
+		file = "gfx/models/map_objects/reichstag/mesh_reichstag.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "brandenburg_mesh"
+		file = "gfx/models/map_objects/brandenburg/mesh_brandenburg.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+}

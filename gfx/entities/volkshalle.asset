@@ -1,0 +1,19 @@
+entity = {
+	name = "building_volkshalle"
+	pdxmesh = "building_volkshalle"
+	default_state = "idle"
+	state = { name = "idle" 
+	}
+	
+	scale = 0.6
+}
+
+entity = {
+	name = "building_volkshalleconstructing"
+	pdxmesh = "building_volkshalleconstructing"
+	default_state = "idle"
+	state = { name = "idle" 
+	}
+	
+	scale = 0.6
+}

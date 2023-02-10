@@ -1,0 +1,11 @@
+entity = {
+	name = "reichstag"
+	pdxmesh = "reichstag_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "brandenburg"
+	pdxmesh = "brandenburg_mesh"
+	scale = 1.0
+}
