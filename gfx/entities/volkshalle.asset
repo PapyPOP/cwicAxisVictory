@@ -5,7 +5,7 @@ entity = {
 	state = { name = "idle" 
 	}
 	
-	scale = 0.6
+	scale = 0.5
 }
 
 entity = {
@@ -15,5 +15,5 @@ entity = {
 	state = { name = "idle" 
 	}
 	
-	scale = 0.6
+	scale = 0.5
 }

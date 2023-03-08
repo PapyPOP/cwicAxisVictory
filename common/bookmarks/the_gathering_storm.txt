@@ -36,8 +36,8 @@ bookmarks = {
 				fanatical_dictatorship
 			}
 			focuses = {
+				GGR_beginning
 				GGR_economy
-				GGR_nuclear
 				GGR_health
 			}
 		}

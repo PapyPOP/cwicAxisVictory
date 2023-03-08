@@ -337,7 +337,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER_birth_quotas.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_GGR_health"
+		name = "GFX_idea_medical_GGR_health"
 		texturefile = "gfx/interface/ideas/GER_Our_Total_War.dds"
 	}
 	spriteType = {
@@ -371,6 +371,38 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GGR_ogm"
 		texturefile = "gfx/interface/ideas/idea_NOR_agricultural_devolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_anti_americanism"
+		texturefile = "gfx/interface/ideas/idea_ARG_anti_americanism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_brg_idea_army"
+		texturefile = "gfx/interface/ideas/idea_BRG_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Burgundy_Generic_Idea_Icon"
+		texturefile = "gfx/interface/ideas/idea_BRG_Generic.dds"
+	}
+	spriteType = {
+		name = "GFX_econ_sphere_icon_GER"
+		textureFile = "gfx/interface/ideas/EHP_GER_sphere_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_econ_type_deystch_economics"
+		textureFile = "gfx/interface/ideas/deytch_econ.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_student_protest"
+		texturefile = "gfx/interface/ideas/idea_GER_student_protest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nazi_money"
+		texturefile = "gfx/interface/ideas/idea_funding.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEEU_leader"
+		texturefile = "gfx/interface/ideas/idea_GER_european_fleet.dds"
 	}
 	#### SLO
 	spriteType = {
@@ -678,6 +710,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_steyr_daimler_puch_2"
 		texturefile = "gfx/interface/ideas/idea_steyr_daimler_puch_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_breakneck_industrialization"
+		texturefile = "gfx/interface/ideas/idea_ARL_breakneck_industrialization.dds"
 	}
 	##################################################################
 }

@@ -7,113 +7,95 @@ focus_tree = {
 			tag = GGR
 		}
 	}
-	initial_show_position = {
-		x = 5
-		y = 0
-	}
+	default = no
 	#### BEGINNING
 	focus = {
 		id = GGR_beginning
-		icon = GFX_GGR_beginning
+		icon = GFX_idea_ARG_anti_americanism
 		cost = 0.2
-		x = 17
+		x = 20
 		y = 0
-		completion_reward = { 
+		completion_reward = {
 			hidden_effect = {
 				remove_ideas = policy_services_temp_0
 				remove_ideas = policy_services_temp_1
 				remove_ideas = policy_services_temp_2
 				remove_ideas = policy_services_temp_3
-
 				remove_ideas = policy_union_temp_0
 				remove_ideas = policy_union_temp_1
 				remove_ideas = policy_union_temp_2
 				remove_ideas = policy_union_temp_3
 				remove_ideas = policy_union_temp_4
-
 				remove_ideas = policy_saga_temp_0
 				remove_ideas = policy_saga_temp_1
 				remove_ideas = policy_saga_temp_2
 				remove_ideas = policy_saga_temp_3
 				remove_ideas = policy_saga_temp_4
 				remove_ideas = policy_saga_temp_4a
-
 				remove_ideas = policy_voting_temp_0
 				remove_ideas = policy_voting_temp_1
 				remove_ideas = policy_voting_temp_2
 				remove_ideas = policy_voting_temp_3
-
 				remove_ideas = policy_religion_temp_0
 				remove_ideas = policy_religion_temp_0a
 				remove_ideas = policy_religion_temp_1
 				remove_ideas = policy_religion_temp_2
 				remove_ideas = policy_religion_temp_3
 				remove_ideas = policy_religion_temp_3a
-
 				remove_ideas = policy_media_temp_0
 				remove_ideas = policy_media_temp_1
 				remove_ideas = policy_media_temp_2
 				remove_ideas = policy_media_temp_3
 				remove_ideas = policy_media_temp_3a
-
 				remove_ideas = policy_women_temp_0
 				remove_ideas = policy_women_temp_1
 				remove_ideas = policy_women_temp_2
 				remove_ideas = policy_women_temp_3
 				remove_ideas = policy_women_temp_4
 				remove_ideas = policy_women_temp_4a
-
 				remove_ideas = policy_minorities_temp_0
 				remove_ideas = policy_minorities_temp_1
 				remove_ideas = policy_minorities_temp_2
 				remove_ideas = policy_minorities_temp_3
 				remove_ideas = policy_minorities_temp_3a
-
 				remove_ideas = policy_taxrate_temp_1
 				remove_ideas = policy_taxrate_temp_2
 				remove_ideas = policy_taxrate_temp_3
 				remove_ideas = policy_taxrate_temp_4
 				remove_ideas = policy_taxrate_temp_5
-
 				remove_ideas = policy_military_temp_0
 				remove_ideas = policy_military_temp_1
 				remove_ideas = policy_military_temp_2
 				remove_ideas = policy_military_temp_3
 				remove_ideas = policy_military_temp_4
 				remove_ideas = policy_military_temp_5
-
 				remove_ideas = policy_welfare_temp_0
 				remove_ideas = policy_welfare_temp_1
 				remove_ideas = policy_welfare_temp_2
 				remove_ideas = policy_welfare_temp_3
 				remove_ideas = policy_welfare_temp_4
 				remove_ideas = policy_welfare_temp_5
-
 				remove_ideas = policy_cpi_temp_0
 				remove_ideas = policy_cpi_temp_1
 				remove_ideas = policy_cpi_temp_2
 				remove_ideas = policy_cpi_temp_3
 				remove_ideas = policy_cpi_temp_4
 				remove_ideas = policy_cpi_temp_5
-
 				remove_ideas = policy_education_temp_0
 				remove_ideas = policy_education_temp_1
 				remove_ideas = policy_education_temp_2
 				remove_ideas = policy_education_temp_3
 				remove_ideas = policy_education_temp_4
-
 				remove_ideas = policy_healthcare_temp_0
 				remove_ideas = policy_healthcare_temp_1
 				remove_ideas = policy_healthcare_temp_2
 				remove_ideas = policy_healthcare_temp_3
 				remove_ideas = policy_healthcare_temp_4
 				remove_ideas = policy_healthcare_temp_5
-
 				remove_ideas = policy_services_temp_0
 				remove_ideas = policy_services_temp_1
 				remove_ideas = policy_services_temp_2
 				remove_ideas = policy_services_temp_3
-
 				add_ideas = policy_women_temp_1
 				add_ideas = policy_saga_temp_0
 				add_ideas = policy_religion_temp_0a
@@ -127,7 +109,6 @@ focus_tree = {
 				add_ideas = policy_healthcare_temp_1
 				add_ideas = policy_services_temp_0
 				add_ideas = policy_taxrate_temp_5
-
 				742 = {
 					add_building_construction = {
 						type = volkshalleconstructing
@@ -143,8 +124,8 @@ focus_tree = {
 	#### ECONOMY
 	focus = {
 		id = GGR_economy
-		icon = GFX_GGR_economy
-		cost = 4.4
+		icon = GFX_idea_ARL_breakneck_industrialization
+		cost = 5
 		x = 25
 		y = 0
 		available = {
@@ -156,8 +137,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_reich_construction
-		icon = GFX_GGR_reich_construction
-		cost = 4.4
+		icon = GFX_idea_GGR_building
+		cost = 5
 		x = 25
 		y = 1
 		prerequisite = {
@@ -170,8 +151,8 @@ focus_tree = {
 	#### BANK
 	focus = {
 		id = GGR_economy_bank
-		icon = GFX_GGR_economy_bank
-		cost = 4.4
+		icon = GFX_idea_GGR_bank
+		cost = 5
 		x = 15
 		y = 2
 		prerequisite = {
@@ -195,8 +176,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_0
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 11
 		y = 3
 		prerequisite = {
@@ -215,8 +196,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_1
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 15
 		y = 3
 		prerequisite = {
@@ -235,8 +216,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_2
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 19
 		y = 3
 		prerequisite = {
@@ -255,8 +236,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_3
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 10
 		y = 4
 		prerequisite = {
@@ -275,8 +256,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_4
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 12
 		y = 4
 		prerequisite = {
@@ -295,8 +276,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_5
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 14
 		y = 4
 		prerequisite = {
@@ -315,8 +296,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_6
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 16
 		y = 4
 		prerequisite = {
@@ -335,8 +316,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_7
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 18
 		y = 4
 		prerequisite = {
@@ -355,8 +336,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_8
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 20
 		y = 4
 		prerequisite = {
@@ -375,8 +356,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_9
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 11
 		y = 5
 		prerequisite = {
@@ -398,8 +379,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_10
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 15
 		y = 5
 		prerequisite = {
@@ -421,8 +402,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_bank_building_11
-		icon = GFX_GGR_economy_bank_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 19
 		y = 5
 		prerequisite = {
@@ -445,7 +426,7 @@ focus_tree = {
 	#### ECONOMIC RECOVERY
 	focus = {
 		id = GGR_economy_recovery_idea_1
-		icon = GFX_GGR_economy_idea_stable
+		icon = GFX_Monetary_stability
 		cost = 10
 		x = 19
 		y = 6
@@ -467,28 +448,28 @@ focus_tree = {
 				add_ideas = GER_economic_recovery_1
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_1
 				}
 				remove_ideas = GER_economic_recovery_1
 				add_ideas = GER_economic_recovery_2
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_2
 				}
 				remove_ideas = GER_economic_recovery_2
 				add_ideas = GER_economic_recovery_3
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_3
 				}
 				remove_ideas = GER_economic_recovery_3
 				add_ideas = GER_economic_recovery_4
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_4
 				}
 				remove_ideas = GER_economic_recovery_4
@@ -500,7 +481,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_recovery_idea_2
-		icon = GFX_GGR_economy_idea_stable
+		icon = GFX_Rebuild_light_industry
 		cost = 10
 		x = 31
 		y = 6
@@ -522,28 +503,28 @@ focus_tree = {
 				add_ideas = GER_economic_recovery_1
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_1
 				}
 				remove_ideas = GER_economic_recovery_1
 				add_ideas = GER_economic_recovery_2
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_2
 				}
 				remove_ideas = GER_economic_recovery_2
 				add_ideas = GER_economic_recovery_3
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_3
 				}
 				remove_ideas = GER_economic_recovery_3
 				add_ideas = GER_economic_recovery_4
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_4
 				}
 				remove_ideas = GER_economic_recovery_4
@@ -555,7 +536,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_recovery_idea_3
-		icon = GFX_GGR_economy_idea_stable
+		icon = GFX_Money
 		cost = 10
 		x = 19
 		y = 8
@@ -577,28 +558,28 @@ focus_tree = {
 				add_ideas = GER_economic_recovery_1
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_1
 				}
 				remove_ideas = GER_economic_recovery_1
 				add_ideas = GER_economic_recovery_2
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_2
 				}
 				remove_ideas = GER_economic_recovery_2
 				add_ideas = GER_economic_recovery_3
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_3
 				}
 				remove_ideas = GER_economic_recovery_3
 				add_ideas = GER_economic_recovery_4
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_4
 				}
 				remove_ideas = GER_economic_recovery_4
@@ -610,7 +591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_recovery_idea_4
-		icon = GFX_GGR_economy_idea_stable
+		icon = GFX_usa_truman_tax_relief_for_poor
 		cost = 10
 		x = 31
 		y = 8
@@ -632,28 +613,28 @@ focus_tree = {
 				add_ideas = GER_economic_recovery_1
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_1
 				}
 				remove_ideas = GER_economic_recovery_1
 				add_ideas = GER_economic_recovery_2
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_2
 				}
 				remove_ideas = GER_economic_recovery_2
 				add_ideas = GER_economic_recovery_3
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_3
 				}
 				remove_ideas = GER_economic_recovery_3
 				add_ideas = GER_economic_recovery_4
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_4
 				}
 				remove_ideas = GER_economic_recovery_4
@@ -665,7 +646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_recovery_idea_5
-		icon = GFX_GGR_economy_idea_stable
+		icon = GFX_econ_sphere_icon_GER
 		cost = 10
 		x = 25
 		y = 9
@@ -688,7 +669,6 @@ focus_tree = {
 					add_manpower = 1000000
 					add_manpower = 1000000
 					add_manpower = 1000000
-
 					add_building_construction = {
 						type = volkshalle
 						level = 1
@@ -702,7 +682,6 @@ focus_tree = {
 					}
 				}
 			}
-
 			if = {
 				limit = {
 					has_idea = GER_economic_stagnation
@@ -711,42 +690,41 @@ focus_tree = {
 				add_ideas = GER_economic_recovery_1
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_1
 				}
 				remove_ideas = GER_economic_recovery_1
 				add_ideas = GER_economic_recovery_2
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_2
 				}
 				remove_ideas = GER_economic_recovery_2
 				add_ideas = GER_economic_recovery_3
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_3
 				}
 				remove_ideas = GER_economic_recovery_3
 				add_ideas = GER_economic_recovery_4
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = GER_economic_recovery_4
 				}
 				remove_ideas = GER_economic_recovery_4
 			}
 			else = {
 				remove_ideas = GER_economic_stagnation
-				}
-
+			}
 			country_event = GGR_Focus_Events.1
 		}
 	}
 	focus = {
 		id = GGR_economy_war_rework_0
-		icon = GFX_GGR_economy_war_rework
+		icon = GFX_idea_GGR_economic
 		cost = 10
 		x = 25
 		y = 10
@@ -759,7 +737,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_war_rework_1
-		icon = GFX_GGR_economy_war_rework
+		icon = GFX_idea_GGR_war_economy
 		cost = 10
 		x = 25
 		y = 11
@@ -773,8 +751,8 @@ focus_tree = {
 	#### INFRA
 	focus = {
 		id = GGR_economy_infra
-		icon = GFX_usa_50_send_reconstruction_funds
-		cost = 4.4
+		icon = GFX_idea_GGR_infra
+		cost = 5
 		x = 25
 		y = 2
 		prerequisite = {
@@ -804,8 +782,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_0
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 23
 		y = 3
 		prerequisite = {
@@ -824,8 +802,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_1
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 27
 		y = 3
 		prerequisite = {
@@ -844,8 +822,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_2
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 22
 		y = 4
 		prerequisite = {
@@ -864,8 +842,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_3
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 24
 		y = 4
 		prerequisite = {
@@ -884,8 +862,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_4
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 26
 		y = 4
 		prerequisite = {
@@ -904,8 +882,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_5
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 28
 		y = 4
 		prerequisite = {
@@ -924,8 +902,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_6
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 22
 		y = 5
 		prerequisite = {
@@ -944,8 +922,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_7
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 24
 		y = 5
 		prerequisite = {
@@ -964,8 +942,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_8
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 26
 		y = 5
 		prerequisite = {
@@ -984,8 +962,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_9
-		icon = GFX_GGR_economy_infra
-		cost = 4.4
+		icon = GFX_usa_50_send_reconstruction_funds
+		cost = 5
 		x = 28
 		y = 5
 		prerequisite = {
@@ -1005,7 +983,7 @@ focus_tree = {
 	focus = {
 		id = GGR_economy_infra_boom
 		icon = GFX_usa_50_progressive_colonialism
-		cost = 4.4
+		cost = 5
 		x = 25
 		y = 6
 		prerequisite = {
@@ -1068,7 +1046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_infra_boom_2
-		icon = GFX_GGR_economy_infra_boom
+		icon = GFX_Generic_Arab_Industry
 		cost = 20
 		x = 27
 		y = 7
@@ -1089,8 +1067,8 @@ focus_tree = {
 	#### INDUSTRIAL
 	focus = {
 		id = GGR_economy_industrial
-		icon = GFX_GGR_economy_industrial
-		cost = 4.4
+		icon = GFX_idea_GGR_industrial
+		cost = 5
 		x = 35
 		y = 2
 		prerequisite = {
@@ -1114,8 +1092,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_0
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 31
 		y = 3
 		prerequisite = {
@@ -1134,8 +1112,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_1
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 35
 		y = 3
 		prerequisite = {
@@ -1154,8 +1132,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_2
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 39
 		y = 3
 		prerequisite = {
@@ -1174,8 +1152,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_3
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 30
 		y = 4
 		prerequisite = {
@@ -1194,8 +1172,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_4
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 32
 		y = 4
 		prerequisite = {
@@ -1214,8 +1192,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_5
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 34
 		y = 4
 		prerequisite = {
@@ -1234,8 +1212,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_6
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 36
 		y = 4
 		prerequisite = {
@@ -1254,8 +1232,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_7
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 38
 		y = 4
 		prerequisite = {
@@ -1274,8 +1252,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_8
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 40
 		y = 4
 		prerequisite = {
@@ -1294,8 +1272,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_9
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 31
 		y = 5
 		prerequisite = {
@@ -1317,8 +1295,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_10
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 35
 		y = 5
 		prerequisite = {
@@ -1340,8 +1318,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_economy_industrial_building_11
-		icon = GFX_GGR_economy_industrial_building
-		cost = 4.4
+		icon = GFX_GDR_Plattenbau_Housing
+		cost = 5
 		x = 39
 		y = 5
 		prerequisite = {
@@ -1365,7 +1343,7 @@ focus_tree = {
 	focus = {
 		id = GGR_nuclear
 		icon = GFX_nuclear_detonation
-		cost = 4.4
+		cost = 5
 		x = 12
 		y = 7
 		available = {
@@ -1381,14 +1359,14 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -50
+				currentMoney = -50
 			}
 		}
 	}
 	focus = {
 		id = GGR_nuclear_0
-		icon = GFX_GGR_nuclear
-		cost = 4.4
+		icon = GFX_uranium_fever
+		cost = 5
 		x = 11
 		y = 8
 		prerequisite = {
@@ -1403,14 +1381,14 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -50
+				currentMoney = -50
 			}
 		}
 	}
 	focus = {
 		id = GGR_nuclear_1
 		icon = GFX_usa_truman_national_science_foundation
-		cost = 4.4
+		cost = 5
 		x = 13
 		y = 8
 		prerequisite = {
@@ -1425,14 +1403,14 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -50
+				currentMoney = -50
 			}
 		}
 	}
 	focus = {
 		id = GGR_nuclear_2
-		icon = GFX_GGR_nuclear
-		cost = 4.4
+		icon = GFX_uranium_fever
+		cost = 5
 		x = 9
 		y = 9
 		prerequisite = {
@@ -1447,14 +1425,14 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -10
+				currentMoney = -10
 			}
 		}
 	}
 	focus = {
 		id = GGR_nuclear_3
 		icon = GFX_hydrogen_bomb
-		cost = 4.4
+		cost = 5
 		x = 11
 		y = 9
 		prerequisite = {
@@ -1469,14 +1447,14 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -10
+				currentMoney = -10
 			}
 		}
 	}
 	focus = {
 		id = GGR_nuclear_4
 		icon = GFX_uranium_fever
-		cost = 4.4
+		cost = 5
 		x = 13
 		y = 9
 		prerequisite = {
@@ -1491,14 +1469,14 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -10
+				currentMoney = -10
 			}
 		}
 	}
 	focus = {
 		id = GGR_nuclear_5
 		icon = GFX_uranium_fever
-		cost = 4.4
+		cost = 5
 		x = 15
 		y = 9
 		prerequisite = {
@@ -1513,15 +1491,40 @@ focus_tree = {
 			}
 			add_to_variable = {
 				tooltip = increase_money_tt
-					currentMoney = -10
+				currentMoney = -10
 			}
+		}
+	}
+	focus = {
+		id = GGR_nuclear_6
+		icon = GFX_hydrogen_bomb
+		cost = 5
+		x = 12
+		y = 10
+		prerequisite = {
+			focus = GGR_nuclear_1
+		}
+		prerequisite = {
+			focus = GGR_nuclear_2
+		}
+		prerequisite = {
+			focus = GGR_nuclear_3
+		}
+		prerequisite = {
+			focus = GGR_nuclear_4
+		}
+		available = {
+			has_tech = atomic_weapons
+		}
+		completion_reward = {
+			nuclear_mobilization_laws = armed_nation_nuke
 		}
 	}
 	#### HEALTH
 	focus = {
 		id = GGR_health
-		icon = GFX_GGR_health
-		cost = 4.4
+		icon = GFX_idea_medical_GGR_health
+		cost = 5
 		x = 5
 		y = 1
 		available = {
@@ -1533,8 +1536,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_health_0
-		icon = GFX_GGR_health
-		cost = 4.4
+		icon = GFX_idea_GER_birth_quotas
+		cost = 5
 		x = 4
 		y = 2
 		prerequisite = {
@@ -1546,8 +1549,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_health_1
-		icon = GFX_GGR_health
-		cost = 4.4
+		icon = GFX_idea_generic_brg_idea_army
+		cost = 5
 		x = 6
 		y = 2
 		prerequisite = {
@@ -1559,8 +1562,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_health_ogm
-		icon = GFX_GGR_health_ogm
-		cost = 4.4
+		icon = GFX_idea_GGR_ogm
+		cost = 5
 		x = 5
 		y = 3
 		prerequisite = {
@@ -1575,8 +1578,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_health_00
-		icon = GFX_GGR_health
-		cost = 4.4
+		icon = GFX_idea_Burgundy_Generic_Idea_Icon
+		cost = 5
 		x = 5
 		y = 4
 		prerequisite = {
@@ -1589,7 +1592,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_1
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 4
 		y = 5
 		prerequisite = {
@@ -1605,7 +1608,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_2
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 6
 		y = 5
 		prerequisite = {
@@ -1621,7 +1624,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_3
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 3
 		y = 6
 		prerequisite = {
@@ -1642,7 +1645,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_4
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 5
 		y = 6
 		prerequisite = {
@@ -1663,7 +1666,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_5
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 7
 		y = 6
 		prerequisite = {
@@ -1684,7 +1687,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_6
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 4
 		y = 7
 		prerequisite = {
@@ -1708,7 +1711,7 @@ focus_tree = {
 	focus = {
 		id = GGR_purity_7
 		icon = GFX_usa_50_condemn_euro_influence
-		cost = 4.4
+		cost = 5
 		x = 6
 		y = 7
 		prerequisite = {
@@ -1735,8 +1738,8 @@ focus_tree = {
 	#### NAVY
 	focus = {
 		id = GGR_navy
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_GER_student_protest
+		cost = 5
 		x = 45
 		y = 1
 		available = {
@@ -1749,7 +1752,7 @@ focus_tree = {
 	focus = {
 		id = GGR_navy_0
 		icon = GFX_usa_50_focus_on_sub_detection
-		cost = 4.4
+		cost = 5
 		x = 44
 		y = 2
 		prerequisite = {
@@ -1762,7 +1765,7 @@ focus_tree = {
 	focus = {
 		id = GGR_navy_1
 		icon = GFX_usa_50_charles_f_adams_class
-		cost = 4.4
+		cost = 5
 		x = 46
 		y = 2
 		prerequisite = {
@@ -1774,8 +1777,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_2
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_nazi_money
+		cost = 5
 		x = 45
 		y = 3
 		prerequisite = {
@@ -1790,8 +1793,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_3
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_FRA_army_of_aggression_focus
+		cost = 5
 		x = 45
 		y = 4
 		prerequisite = {
@@ -1803,8 +1806,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_4
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_GENERIC_oversized_fleet
+		cost = 5
 		x = 44
 		y = 5
 		prerequisite = {
@@ -1816,8 +1819,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_5
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_GGR_home_seas
+		cost = 5
 		x = 46
 		y = 5
 		prerequisite = {
@@ -1829,8 +1832,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_6
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_GGR_home_seas
+		cost = 5
 		x = 43
 		y = 6
 		prerequisite = {
@@ -1845,8 +1848,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_7
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_liberty_ships_focus
+		cost = 5
 		x = 45
 		y = 6
 		prerequisite = {
@@ -1856,13 +1859,13 @@ focus_tree = {
 			focus = GGR_navy_5
 		}
 		completion_reward = {
-			add_ideas = GER_naval_boom 
+			add_ideas = GER_naval_boom
 		}
 	}
 	focus = {
 		id = GGR_navy_8
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_idea_USA_Control_the_Seas
+		cost = 5
 		x = 47
 		y = 6
 		prerequisite = {
@@ -1877,8 +1880,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_9
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_Money
+		cost = 5
 		x = 45
 		y = 7
 		prerequisite = {
@@ -1896,8 +1899,8 @@ focus_tree = {
 	}
 	focus = {
 		id = GGR_navy_10
-		icon = GFX_GGR_navy
-		cost = 4.4
+		icon = GFX_usa_truman_tax_relief_for_poor
+		cost = 5
 		x = 45
 		y = 8
 		prerequisite = {

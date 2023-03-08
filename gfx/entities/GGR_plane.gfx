@@ -1,0 +1,77 @@
+objectTypes = {
+	#### CV ####
+	pdxmesh = {
+		name = "GGR_ROC_1_Me_163_mesh"
+		file = "gfx/models/units/planes/GGR_ROC_1_Me_163.mesh"
+		animation = {
+			id = "idle"
+			type = "fighter_default_idle_animation"
+		}
+		meshsettings = {
+			texture_diffuse = "GGR_ROC_1_Me_163_diffuse.dds"
+            texture_normal = "w_Weapon_N.dds"
+            texture_specular = "w_Weapon_S.dds"
+			shader = PdxMeshAdvanced
+		}
+	}
+	#### TB ####
+	pdxmesh = {
+		name = "GGR_JET_TB_2_Ar_555_mesh"
+		file = "gfx/models/units/planes/GGR_JET_TB_2_Ar_555.mesh"
+		animation = {
+			id = "idle"
+			type = "bomber_default_idle_animation"
+		}
+		meshsettings = {
+			texture_diffuse = "GGR_JET_TB_2_Ar_555_diffuse.dds"
+            texture_normal = "w_Weapon_N.dds"
+            texture_specular = "w_Weapon_S.dds"
+			shader = PdxMeshAdvanced
+		}
+	}
+	##### SB #####
+	pdxmesh = {
+		name = "GGR_JET_SB_1_Horten_18_mesh"
+		file = "gfx/models/units/planes/GGR_JET_SB_1_Horten_18.mesh"
+		animation = {
+			id = "idle"
+			type = "bomber_default_idle_animation"
+		}
+		meshsettings = {
+			texture_diffuse = "GGR_JET_SB_1_Horten_18_diffuse.dds"
+            texture_normal = "w_Weapon_N.dds"
+            texture_specular = "w_Weapon_S.dds"
+			shader = PdxMeshAdvanced
+		}
+	}
+	##### FTR / ASF / CAS #####
+	pdxmesh = {
+		name = "GGR_JET_FTR_2_Ho_229_mesh"
+		file = "gfx/models/units/planes/GGR_JET_FTR_2_Ho_229.mesh"
+		animation = {
+			id = "idle"
+			type = "fighter_default_idle_animation"
+		}
+		meshsettings = {
+			texture_diffuse = "GGR_JET_FTR_2_Ho_229_diffuse.dds"
+            texture_normal = "w_Weapon_N.dds"
+            texture_specular = "w_Weapon_S.dds"
+			shader = PdxMeshAdvanced
+		}
+	}
+	##### NAV #####
+	pdxmesh = {
+		name = "GGR_NAV_3_Bv_238_mesh"
+		file = "gfx/models/units/planes/GGR_NAV_3_Bv_238.mesh"
+		animation = {
+			id = "idle"
+			type = "bomber_default_idle_animation"
+		}
+		meshsettings = {
+			texture_diffuse = "GGR_NAV_3_Bv_238_diffuse.dds"
+            texture_normal = "w_Weapon_N.dds"
+            texture_specular = "w_Weapon_S.dds"
+			shader = PdxMeshAdvanced
+		}
+	}
+}

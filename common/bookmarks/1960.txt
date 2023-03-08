@@ -5,7 +5,7 @@ bookmarks = {
 		desc = "DECADE_CRISIS_DESC"
 		date = 1960.1.1.12
 		picture = "GFX_select_date_1939"
-		default_country = "USA"
+		default_country = "GGR"
 		default = yes
 		
 		"USA" = {
@@ -27,9 +27,16 @@ bookmarks = {
 			history = "GGR_GATHERING_STORM_DESC"
 			ideology = neo_nazism
 			ideas = {
-				
+				GER_overgrown_officer_corps
+				GER_oversized_fleet
+				GER_nazi_recruitment_system
+				GER_economic_stagnation
+				GER_SS_Infightings
+				fanatical_dictatorship
 			}
 			focuses = {
+				NEEU
+				NEEU_expansion_puppet
 			}
 		}
 		

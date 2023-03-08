@@ -1,0 +1,88 @@
+focus_tree = {
+	id = GGR_60s
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = NEEU
+		icon = GFX_econ_sphere_icon_GER
+		cost = 2
+		x = 10
+		y = 0
+		completion_reward = {
+			add_ideas = NEEU_leader
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
+				}
+				set_variable = {
+					nazy_europa_economic_union_leader_level_increase = 2
+				}
+				set_variable = {
+					nazy_europa_economic_union_consumer_goods_cost = 0.1
+				}
+				set_variable = {
+					nazy_europa_economic_union_alpha = 0.01
+				}
+				set_variable = {
+					nazy_europa_economic_union_theta = 0.005
+				}
+				set_variable = {
+					nazy_europa_economic_union_gamma = 0.005
+				}
+				set_variable = {
+					nazy_europa_economic_union_delta = 0.005
+				}
+				set_variable = {
+					nazy_europa_economic_union_phi = 0.05
+				}
+				set_variable = {
+					nazy_europa_economic_union_beta = -0.001
+				}
+			}
+		}
+	}
+	focus = {
+		id = NEEU_expansion_puppet
+		icon = GFX_econ_sphere_icon_GER
+		cost = 2
+		x = 10
+		y = 1
+		prerequisite = {
+			focus = NEEU
+		}
+		completion_reward = {
+			add_ideas = NEEU_leader
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_leader_level_increase = 2
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_consumer_goods_cost = 0.1
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_alpha = 0.01
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_theta = 0.005
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_gamma = 0.005
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_delta = 0.005
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_phi = 0.05
+				}
+				add_to_variable = {
+					nazy_europa_economic_union_beta = -0.001
+				}
+			}
+		}
+	}
+}
