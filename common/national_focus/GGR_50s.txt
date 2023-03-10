@@ -1502,9 +1502,6 @@ focus_tree = {
 		x = 12
 		y = 10
 		prerequisite = {
-			focus = GGR_nuclear_1
-		}
-		prerequisite = {
 			focus = GGR_nuclear_2
 		}
 		prerequisite = {
@@ -1513,8 +1510,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GGR_nuclear_4
 		}
+		prerequisite = {
+			focus = GGR_nuclear_5
+		}
 		available = {
-			has_tech = atomic_weapons
+			has_tech = atomic_weapons_armament_0
 		}
 		completion_reward = {
 			nuclear_mobilization_laws = armed_nation_nuke

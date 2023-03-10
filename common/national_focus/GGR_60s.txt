@@ -2,6 +2,10 @@ focus_tree = {
 	id = GGR_60s
 	country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = GGR
+		}
 	}
 	default = no
 	focus = {
@@ -13,33 +17,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = NEEU_leader
 			hidden_effect = {
+				set_global_flag = NEEU_Leader
 				add_dynamic_modifier = {
 					modifier = nazy_europa_economic_union_modifier
 				}
-				set_variable = {
-					nazy_europa_economic_union_leader_level_increase = 2
-				}
-				set_variable = {
-					nazy_europa_economic_union_consumer_goods_cost = 0.1
-				}
-				set_variable = {
-					nazy_europa_economic_union_alpha = 0.01
-				}
-				set_variable = {
-					nazy_europa_economic_union_theta = 0.005
-				}
-				set_variable = {
-					nazy_europa_economic_union_gamma = 0.005
-				}
-				set_variable = {
-					nazy_europa_economic_union_delta = 0.005
-				}
-				set_variable = {
-					nazy_europa_economic_union_phi = 0.05
-				}
-				set_variable = {
-					nazy_europa_economic_union_beta = -0.001
-				}
+				ic_pulse = yes
 			}
 		}
 	}
@@ -53,34 +35,49 @@ focus_tree = {
 			focus = NEEU
 		}
 		completion_reward = {
-			add_ideas = NEEU_leader
-			hidden_effect = {
+			SLO = {
 				add_dynamic_modifier = {
 					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_leader_level_increase = 2
+			}
+			SBA = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_consumer_goods_cost = 0.1
+			}
+			ICE = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_alpha = 0.01
+			}
+			NOR = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_theta = 0.005
+			}
+			RGO = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_gamma = 0.005
+			}
+			RKA = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_delta = 0.005
+			}
+			RMO = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_phi = 0.05
+			}
+			ROS = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
-				add_to_variable = {
-					nazy_europa_economic_union_beta = -0.001
+			}
+			RUK = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
 				}
 			}
 		}

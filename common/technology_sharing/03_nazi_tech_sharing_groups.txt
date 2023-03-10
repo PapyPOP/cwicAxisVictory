@@ -1,0 +1,13 @@
+technology_sharing_group = {
+	id = NEEU_Research
+	name = NEEU_Research_name
+	desc = NEEU_Research_desc
+	research_sharing_per_country_bonus = 0.05
+	is_faction_sharing = no
+	available = {
+		has_dynamic_modifier = {
+			modifier = nazy_europa_economic_union_modifier
+		}
+		has_global_flag = NEEU_ResearchSharing
+	}
+}

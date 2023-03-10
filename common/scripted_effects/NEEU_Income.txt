@@ -1,0 +1,103 @@
+neeu_calculator = {
+	if = {
+		limit = {
+			has_dynamic_modifier = {
+				modifier = nazy_europa_economic_union_modifier
+			}
+			NOT = {
+				has_country_flag = nazy_europa_economic_union_member
+			}
+		}
+		add_to_variable = { global.nazy_europa_economic_union_count = 1 } #Adds up all european union members
+		set_country_flag = nazy_europa_economic_union_member
+		set_global_flag = NEEU_PP
+		set_global_flag = NEEU_ResearchSharing
+		set_global_flag = NEEU_Trade
+		set_global_flag = NEEU_Food
+		set_global_flag = NEEU_license
+		set_global_flag = NEEU_ResearchGrants
+		set_global_flag = NEEU_Construction
+		set_global_flag = NEEU_Efficiency
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = NEEU_PP
+		}
+		set_variable = { global.nazy_europa_economic_union_beta = -0.001 } #-0.1% per country
+		multiply_variable = { global.nazy_europa_economic_union_beta = global.nazy_europa_economic_union_count }
+	}
+
+	if = {
+		limit = {
+			has_global_flag = NEEU_ResearchSharing
+
+			has_dynamic_modifier = {
+				modifier = nazy_europa_economic_union_modifier
+			}
+		}
+		add_to_tech_sharing_group = NEEU_Research
+	}
+
+	if = {
+		limit = {
+			has_global_flag = NEEU_Trade
+		}
+		set_variable = { global.nazy_europa_economic_union_phi = 0.025 } #2.5% per country
+		multiply_variable = { global.nazy_europa_economic_union_phi = global.nazy_europa_economic_union_count }
+	}
+
+	if = {
+		limit = {
+			has_global_flag = NEEU_Food
+		}
+		set_variable = { global.nazy_europa_economic_union_food = 0.01 } #1% per country
+		multiply_variable = { global.nazy_europa_economic_union_food = global.nazy_europa_economic_union_count }
+	}
+
+	
+	if = {
+		limit = {
+			has_global_flag = NEEU_license 
+		}
+		set_variable = { global.nazy_europa_economic_union_alpha = 0.01 } #1% per country
+		multiply_variable = { global.nazy_europa_economic_union_alpha = global.nazy_europa_economic_union_count }
+	}
+
+	if = { 
+		limit = {
+			has_global_flag = NEEU_ResearchGrants
+		}
+		set_variable = { global.nazy_europa_economic_union_theta = 0.005 } #0.5% per country
+		multiply_variable = { global.nazy_europa_economic_union_theta = global.nazy_europa_economic_union_count }
+	}
+	
+
+	if = {
+		limit = {
+			has_global_flag = NEEU_Construction
+		}
+		set_variable = { global.nazy_europa_economic_union_gamma = 0.005 } #0.5% per country
+		multiply_variable = { global.nazy_europa_economic_union_gamma = global.nazy_europa_economic_union_count }
+
+
+		set_variable = { global.federation_european_consumer_goods_cost = 0.1 } #always 10%
+
+	}
+	
+	if = {
+		limit = {
+			has_global_flag = NEEU_Efficiency
+		}
+		set_variable = { global.nazy_europa_economic_union_delta = 0.005 } #0.5% per country
+		multiply_variable = { global.nazy_europa_economic_union_delta = global.nazy_europa_economic_union_count }
+	}
+	
+	if = { 
+		limit = {
+			has_global_flag = NEEU_Leader
+		}
+		set_variable = { global.nazy_europa_economic_union_leader_level_increase = 1 } #always 1
+	}
+	
+}
