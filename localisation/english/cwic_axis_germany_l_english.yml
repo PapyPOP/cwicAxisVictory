@@ -283,6 +283,12 @@
  GGR_navy_9_desc:0 "Funding The Navy"
  GGR_navy_10:0 "Big Funding The Navy"
  GGR_navy_10_desc:0 "Big Funding The Navy"
+ NEEU:0 "Nazi European Economic Union"
+ NEEU_desc:0 "Nazi European Economic Union"
+ NEEU_expansion_puppet:0 "Expansion Of NEEU"
+ NEEU_expansion_puppet_desc:0 "Expansion Of NEEU"
+ GGR_Join_the_United_Nations:0 "Welcome to United Nations"
+ GGR_Join_the_United_Nations_desc:0 "Welcome to United Nations"
 
 #IDEA#
  greater_reich_building:0 "Building Office"

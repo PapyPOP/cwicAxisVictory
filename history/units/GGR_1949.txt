@@ -500,9 +500,25 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
+		jet_strat_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_strat_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_strat_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
+		jet_strat_bomber_equipment_1 = {
+			owner = "GGR"
+			amount = 50
+		}
 		transport_plane_equipment_1 = {
 			owner = "GGR"
-			amount = 5
+			amount = 50
 		}
 	}
 	86 = {
@@ -522,10 +538,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	8 = {
 		CAS_equipment_4 = {
@@ -543,10 +555,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	1565 = {
@@ -566,10 +574,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	53 = {
 		CAS_equipment_4 = {
@@ -587,10 +591,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	50 = {
@@ -610,10 +610,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	28 = {
 		CAS_equipment_4 = {
@@ -631,10 +627,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	34 = {
@@ -654,10 +646,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	958 = {
 		CAS_equipment_4 = {
@@ -675,10 +663,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	735 = {
@@ -698,10 +682,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	51 = {
 		CAS_equipment_4 = {
@@ -719,10 +699,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	35 = {
@@ -742,10 +718,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	7 = {
 		CAS_equipment_4 = {
@@ -763,10 +735,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	36 = {
@@ -786,10 +754,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	1631 = {
 		CAS_equipment_4 = {
@@ -807,10 +771,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	1632 = {
@@ -830,10 +790,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	1629 = {
 		CAS_equipment_4 = {
@@ -851,10 +807,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	56 = {
@@ -874,10 +826,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	1633 = {
 		CAS_equipment_4 = {
@@ -895,10 +843,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	58 = {
@@ -918,10 +862,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	1626 = {
 		CAS_equipment_4 = {
@@ -939,10 +879,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 	61 = {
@@ -962,10 +898,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	62 = {
 		CAS_equipment_4 = {
@@ -984,10 +916,6 @@ air_wings = {
 			owner = "GGR"
 			amount = 50
 		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
-		}
 	}
 	60 = {
 		CAS_equipment_4 = {
@@ -1005,10 +933,6 @@ air_wings = {
 		jet_tac_bomber_equipment_1 = {
 			owner = "GGR"
 			amount = 50
-		}
-		transport_plane_equipment_1 = {
-			owner = "GGR"
-			amount = 5
 		}
 	}
 }

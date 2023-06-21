@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	#### NEEU
 	focus = {
 		id = NEEU
 		icon = GFX_econ_sphere_icon_GER
@@ -89,6 +90,21 @@ focus_tree = {
 				add_dynamic_modifier = {
 					modifier = nazy_europa_economic_union_modifier
 				}
+			}
+		}
+	}
+	#### DIPLOMACY
+	focus = {
+		id = GGR_Join_the_United_Nations
+		icon = GFX_usa_50_un_police_action
+		cost = 10.00
+		x = 15
+		y = 0
+		completion_reward = {
+			add_political_power = -1000
+			swap_ideas = {
+				remove_idea = semi_recognized_state
+				add_idea = un_member
 			}
 		}
 	}
