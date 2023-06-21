@@ -80,6 +80,16 @@ focus_tree = {
 					modifier = nazy_europa_economic_union_modifier
 				}
 			}
+			GGP = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
+				}
+			}
+			DEN = {
+				add_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
+				}
+			}
 		}
 	}
 }

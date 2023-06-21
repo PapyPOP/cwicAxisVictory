@@ -9,3 +9,9 @@ entity = {
 	pdxmesh = "brandenburg_mesh"
 	scale = 1.0
 }
+
+entity = {
+	name = "volkshalle"
+	pdxmesh = "volkshalle_mesh"
+	scale = 1.0
+}

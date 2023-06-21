@@ -24,4 +24,15 @@ objectTypes = {
 		scale = 1.0
 	}
 	
+	pdxmesh = {
+		name = "volkshalle_mesh"
+		file = "gfx/models/buildings/volkshalle.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
 }

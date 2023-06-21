@@ -31,7 +31,6 @@ bookmarks = {
 			}
 			focuses = {
 				NEEU
-				NEEU_expansion_puppet
 			}
 		}
 		

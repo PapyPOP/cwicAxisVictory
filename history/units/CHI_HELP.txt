@@ -1,0 +1,964 @@
+##### OOB #####
+units = {
+	#### Reset CHI in civil war####
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7014
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 7191
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Sanjiao Jun"
+		location = 9974
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+	division = {
+		name = "Zhuangjia Shi"
+		location = 10757
+		division_template = "Zhòng Zhuangjia Shi"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = {
+			infantry_equipment_0 = {
+				owner = "GGR"
+			}
+		}
+	}
+}

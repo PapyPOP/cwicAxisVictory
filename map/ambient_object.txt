@@ -30,6 +30,22 @@ type={
 	}
 }
 
+type={
+	type="volkshalle"
+	use_animation=no
+	scale=0.200000
+	always_visible=yes
+	object={
+		name="volkshalle"
+		position={
+			3009.920 10.300 1567.360 
+		}
+		rotation={
+			0.000 105.000 0.000 
+		}
+	}
+}
+
 #######################################
 
 type={
