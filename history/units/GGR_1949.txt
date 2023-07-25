@@ -117,6 +117,36 @@ division_template = {
 	}
 }
 division_template = {
+	name = "SS Pz division" #SS Panzer Division
+	division_names_group = GGR_ARM_01
+
+	regiments = {
+		armored_infantry = { x = 0 y = 0 }
+		armored_infantry = { x = 0 y = 1 }
+		armored_infantry = { x = 0 y = 2 }
+		armored_infantry = { x = 0 y = 3 }
+		armored_infantry = { x = 1 y = 0 }
+		armored_infantry = { x = 1 y = 1 }
+		armored_infantry = { x = 1 y = 2 }
+		armored_infantry = { x = 1 y = 3 }
+		super_heavy_armor = { x = 2 y = 0 }
+		super_heavy_armor = { x = 2 y = 1 }
+		super_heavy_armor = { x = 2 y = 2 }
+		super_heavy_armor = { x = 2 y = 3 }
+		super_heavy_armor = { x = 2 y = 4 }
+	}
+	support = {
+		engineer_armored = { x = 0 y = 0 }
+		recon_mechanized = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital_mechanized = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+		maintenance_company = { x = 1 y = 0 }
+		auto_cannon_support = { x = 1 y = 1 }
+		artillery_support = { x = 1 y = 2 }
+	}
+}
+division_template = {
 	name = "Luftlandedivision"
 	division_names_group = GGR_PAR_01
 
@@ -144,7 +174,7 @@ division_template = {
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		light_armor = { x = 2 y = 0 }
+		super_heavy_armor = { x = 2 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -352,35 +382,35 @@ units = {
 	division = {			
 		name = ""		
 		location = 3516
-		division_template = "Pz division"
+		division_template = "SS Pz division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
 	division = {			
 		name = ""		
 		location = 11483
-		division_template = "Pz division"
+		division_template = "SS Pz division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
 	division = {			
 		name = ""		
 		location = 11548
-		division_template = "Pz division"
+		division_template = "SS Pz division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
 	division = {			
 		name = ""		
 		location = 6598
-		division_template = "Pz division"
+		division_template = "SS Pz division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
 	division = {			
 		name = ""		
 		location = 516
-		division_template = "Pz division"
+		division_template = "SS Pz division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 	}
@@ -484,7 +514,7 @@ instant_effect = {
 air_wings = {
 	##### Nazi Air Force #####
 	744 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -522,7 +552,7 @@ air_wings = {
 		}
 	}
 	86 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -540,7 +570,7 @@ air_wings = {
 		}
 	}
 	8 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -558,7 +588,7 @@ air_wings = {
 		}
 	}
 	1565 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -576,7 +606,7 @@ air_wings = {
 		}
 	}
 	53 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -594,7 +624,7 @@ air_wings = {
 		}
 	}
 	50 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -612,7 +642,7 @@ air_wings = {
 		}
 	}
 	28 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -630,7 +660,7 @@ air_wings = {
 		}
 	}
 	34 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -648,7 +678,7 @@ air_wings = {
 		}
 	}
 	958 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -666,7 +696,7 @@ air_wings = {
 		}
 	}
 	735 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -684,7 +714,7 @@ air_wings = {
 		}
 	}
 	51 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -702,7 +732,7 @@ air_wings = {
 		}
 	}
 	35 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -720,7 +750,7 @@ air_wings = {
 		}
 	}
 	7 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -738,7 +768,7 @@ air_wings = {
 		}
 	}
 	36 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -756,7 +786,7 @@ air_wings = {
 		}
 	}
 	1631 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -774,7 +804,7 @@ air_wings = {
 		}
 	}
 	1632 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -792,7 +822,7 @@ air_wings = {
 		}
 	}
 	1629 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -810,7 +840,7 @@ air_wings = {
 		}
 	}
 	56 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -828,7 +858,7 @@ air_wings = {
 		}
 	}
 	1633 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -846,7 +876,7 @@ air_wings = {
 		}
 	}
 	58 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -864,7 +894,7 @@ air_wings = {
 		}
 	}
 	1626 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -882,7 +912,7 @@ air_wings = {
 		}
 	}
 	61 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -900,7 +930,7 @@ air_wings = {
 		}
 	}
 	62 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}
@@ -918,7 +948,7 @@ air_wings = {
 		}
 	}
 	60 = {
-		CAS_equipment_4 = {
+		jet_CAS_equipment_1 = {
 			owner = "GGR"
 			amount = 100
 		}

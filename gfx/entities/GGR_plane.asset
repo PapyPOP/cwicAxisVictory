@@ -1339,7 +1339,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_jet_strat_bomber_equipment_2_entity"
@@ -1358,7 +1358,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_jet_strat_bomber_equipment_3_entity"
@@ -1377,7 +1377,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_jet_strat_bomber_equipment_4_entity"
@@ -1396,7 +1396,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_jet_strat_bomber_equipment_5_entity"
@@ -1415,7 +1415,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 
 ######## Stealth Strategic Bomber #######
@@ -1437,7 +1437,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_stealth_strategic_bomber_equipment_2_entity"
@@ -1456,7 +1456,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 
 ######## Jet Tactical Bomber #######
@@ -1857,7 +1857,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_2_entity"
@@ -1876,7 +1876,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_3_entity"
@@ -1895,7 +1895,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_4_entity"
@@ -1914,7 +1914,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_5_entity"
@@ -1933,7 +1933,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_6_entity"
@@ -1952,7 +1952,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_7_entity"
@@ -1971,7 +1971,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_8_entity"
@@ -1990,7 +1990,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_9_entity"
@@ -2009,7 +2009,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 entity = {
 	name = "GGR_transport_plane_equipment_10_entity"
@@ -2028,7 +2028,7 @@ entity = {
 		event = { time = 0 node = "engine4"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.3
+	scale = 0.5
 }
 
 

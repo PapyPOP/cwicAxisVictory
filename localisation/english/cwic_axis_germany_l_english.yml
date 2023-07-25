@@ -221,6 +221,8 @@
  GGR_economy_war_rework_0_desc:0 "Strong Reich Economy"
  GGR_economy_war_rework_1:0 "War Economy Possible ?"
  GGR_economy_war_rework_1_desc:0 "War Economy Possible ?"
+ GGR_economy_war_rework_2:0 "What Next For The Reich ?"
+ GGR_economy_war_rework_2_desc:0 "What Next For The Reich ?"
  GGR_nuclear:0 "Keep The Bomb"
  GGR_nuclear_0:0 "The Nuclear For The Army"
  GGR_nuclear_1:0 "The Nuclear For The People"
@@ -228,6 +230,7 @@
  GGR_nuclear_3:0 "Bomb H ?"
  GGR_nuclear_4:0 "Fission One"
  GGR_nuclear_5:0 "Fission Two"
+ GGR_nuclear_6:0 "We Have The Atomic Bomb"
  GGR_nuclear_desc:0 "Keep The Bomb"
  GGR_nuclear_0_desc:0 "The Nuclear For The Army"
  GGR_nuclear_1_desc:0 "The Nuclear For The People"
@@ -235,6 +238,7 @@
  GGR_nuclear_3_desc:0 "Bomb H ?"
  GGR_nuclear_4_desc:0 "Fission One"
  GGR_nuclear_5_desc:0 "Fission Two"
+ GGR_nuclear_6_desc:0 "We Have The Atomic Bomb"
  GGR_health:0 "Medical System Increase"
  GGR_health_desc:0 "Medical System Increase"
  GGR_health_0:0 "One Women Equals Four Child"
@@ -289,6 +293,10 @@
  NEEU_expansion_puppet_desc:0 "Expansion Of NEEU"
  GGR_Join_the_United_Nations:0 "Welcome to United Nations"
  GGR_Join_the_United_Nations_desc:0 "Welcome to United Nations"
+
+##Focus Tree Names#
+ GGR_60s:0 "The next Decade"
+ GGR_70s:0 "The next Decade"
 
 #IDEA#
  greater_reich_building:0 "Building Office"

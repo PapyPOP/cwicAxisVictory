@@ -23,7 +23,7 @@ state = {
 			state_infrastructure = 2
 			water_infrastructure = 1
 			
-			industrial_complex = 4
+			industrial_complex = 2
 			arms_factory = 1
 			agri_industrial_complex = 2
 			office_park = 1

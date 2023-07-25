@@ -801,6 +801,24 @@ focus_tree = {
 			add_ideas = greater_reich_war_economy
 		}
 	}
+	focus = {
+		id = GGR_economy_war_rework_2
+		icon = GFX_idea_GGR_war_economy
+		cost = 2
+		x = 25
+		y = 12
+		prerequisite = {
+			focus = GGR_economy_war_rework_1
+		}
+		available = {
+			date > 1959.01.01
+		}
+		completion_reward = {
+			hidden_effect = {
+				load_focus_tree = GGR_60s
+			}
+		}
+	}
 	#### INFRA
 	focus = {
 		id = GGR_economy_infra
@@ -1570,7 +1588,7 @@ focus_tree = {
 			has_tech = atomic_weapons_armament_0
 		}
 		completion_reward = {
-			nuclear_mobilization_laws = armed_nation_nuke
+			add_ideas = armed_nation_nuke
 		}
 	}
 	#### HEALTH
