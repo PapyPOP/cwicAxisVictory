@@ -1,0 +1,20 @@
+spriteTypes = {	
+
+	#### RKSPLUS FOCUS TREE ### #### ONLY FOR CERTAIN FOCUSES REICHSKOMMISSARIATS ####
+
+	SpriteType = {
+	name = "GFX_goal_rksplus_allyukraine"
+	texturefile = "gfx/interface/goals/goal_rksplus_allyukraine.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_rksplus_crushukraine"
+	texturefile = "gfx/interface/goals/goal_rksplus_crushukraine.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_rksplus_generalplanost"
+	texturefile = "gfx/interface/goals/goal_rksplus_generalplanost.dds"			
+	}
+
+}

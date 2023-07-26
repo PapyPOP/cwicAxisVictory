@@ -1,0 +1,345 @@
+GGR_customization_category = {
+
+    GGR_customization_reset = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+			has_country_flag = GGR_applied_customization
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			drop_cosmetic_tag = yes
+			
+			clr_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_default = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_default
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_warflag = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_warflag
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_greatergermanreich = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_greatergermanreich
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_germanhakenkrauz = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_germanhakenkrauz
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_schutzstaffel = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_schutzstaffel
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_holyroman = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_holyroman
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_imperial = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_imperial
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_confederation = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_confederation
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_yellow = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_yellow
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GGR_customization_pinkgermany = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GGR
+		}
+
+		available = {
+			is_subject = no
+			has_government = fascism
+		}
+
+		visible = {
+			OR = {
+				original_tag = GGR
+			}
+			has_government = fascism
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GGR_rksplus_pinkgermany
+			
+			set_country_flag = GGR_applied_customization
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+	

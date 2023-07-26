@@ -1,0 +1,15 @@
+characters={
+	RPZ_Leader={
+		name= "Erich von Manstein"
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_erich_von_manstein
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

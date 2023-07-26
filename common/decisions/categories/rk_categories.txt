@@ -1,0 +1,47 @@
+GGR_reichskommissariats_category_europe = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_reichskommissariats_category_asia = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_reichskommissariats_category_africa = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_reichskommissariats_category_america = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_rksplus_category_integration = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_rksplus_category_state_transfer = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_customization_category = {
+	allowed = {
+		original_tag = GGR
+	}
+}
+
+GGR_rksplus_category_uniting_rks = {
+	allowed = {
+		original_tag = GGR
+	}
+}

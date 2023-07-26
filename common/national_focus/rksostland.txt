@@ -1,0 +1,1381 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = rksostland_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROT
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 1600 y = 1000 }  
+	initial_show_position = {
+		x = 15
+		y = 15
+	}
+
+	focus = {
+		id = ROT_grant_hinrich_lohse
+		icon = GFX_goal_generic_demand_territory
+		#prerequisite = { focus = }
+
+		x = 11
+		y = 0
+		#relative_position_id = 
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.15
+			add_political_power = 75
+			add_country_leader_trait = dictator
+			
+		}
+	}
+
+	
+	focus = {
+		id = ROT_gather_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ROT_grant_hinrich_lohse }
+
+		x = -4
+		y = 2
+		relative_position_id = ROT_grant_hinrich_lohse
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 6500
+                producer = SOV
+            }
+		}
+	}
+	
+		
+	focus = {
+		id = ROT_determination
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = ROT_gather_guns }
+
+		x = 0
+		y = 2
+		relative_position_id = ROT_gather_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_war_support = 0.05
+			
+			add_ideas = ROT_determination_idea
+			
+		}
+	}
+	
+	focus = {
+		id = ROT_army_research_one
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ROT_gather_guns }
+
+		x = -3
+		y = 1
+		relative_position_id = ROT_gather_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    army_experience = 10
+		
+		    add_doctrine_cost_reduction = {
+				name = ROT_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = ROT_army_research_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = ROT_army_research_one }
+
+		x = 1
+		y = 1
+		relative_position_id = ROT_army_research_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = ROT_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_army_research_motorized_equipment
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ROT_army_research_one }
+
+		x = -1
+		y = 1
+		relative_position_id = ROT_army_research_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = ROT_motorized_equipment
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_army_buff_attack
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = ROT_army_research_artillery }
+		mutually_exclusive = { focus = ROT_army_buff_defense }
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_army_research_artillery
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = ROT_attack_buff
+			
+		}
+	}
+	
+	focus = {
+		id = ROT_army_buff_defense
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = ROT_army_research_motorized_equipment }
+		mutually_exclusive = { focus = ROT_army_buff_attack }
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_army_research_motorized_equipment
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = ROT_defense_buff
+			
+		}
+	}
+	
+	focus = {
+		id = ROT_army_research_two
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ROT_army_buff_attack focus = ROT_army_buff_defense }
+
+
+		x = -1
+		y = 1
+		relative_position_id = ROT_army_buff_attack
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_doctrine_cost_reduction = {
+				name = ROT_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_army_research_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = ROT_army_research_two }
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_army_research_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = ROT_ostwall_defense
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = ROT_determination }
+
+
+		x = 0
+		y = 2
+		relative_position_id = ROT_determination
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		    ROT = {
+			    controls_state = 809
+				controls_state = 96
+				controls_state = 207
+				controls_state = 206
+				controls_state = 204
+				controls_state = 194
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    custom_effect_tooltip = 1_ROT_tooltip
+			
+			hidden_effect = {
+			    
+				809 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 6222
+				    level = 1
+				    }
+			    }
+				
+				809 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 265
+				    level = 1
+				    }
+			    }
+				
+			    809 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3255
+				    level = 1
+				    }
+			    }
+			    
+				809 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11358
+				    level = 1
+				    }
+			    }
+				
+				96 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 233
+				    level = 1
+				    }
+			    }
+				
+			    96 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 358
+				    level = 1
+				    }
+			    }
+				
+			    207 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 6371
+				    level = 1
+				    }
+			    }
+			
+			    207 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9241
+				    level = 1
+				    }
+			    }
+			
+			    207 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3331
+				    level = 1
+				    }
+			    }
+			
+			    206 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9289
+				    level = 1
+				    }
+			    }
+			
+			    206 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3378
+				    level = 1
+				    }
+			    }
+			
+			    204 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 6373
+				    level = 1
+				    }
+			    }
+			
+			    194 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 6319
+				    level = 1
+				    }
+			    }
+			
+			    194 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9249
+				    level = 1
+				    }
+			    }
+				
+				194 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3507
+				    level = 1
+				    }
+			    }
+			
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_stabilise_region
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ROT_grant_hinrich_lohse }
+
+
+		x = 4
+		y = 1
+		relative_position_id = ROT_grant_hinrich_lohse
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = ROT_segregate_population
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ROT_stabilise_region }
+
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_stabilise_region
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = -0.10
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ROT_invite_german_settlers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = ROT_segregate_population }
+
+
+		x = -2
+		y = 1
+		relative_position_id = ROT_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_manpower = 30000
+			add_ideas = ROT_manpower
+		}
+	}
+	
+	focus = {
+		id = ROT_buy_equipments
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = ROT_gather_guns }
+
+
+		x = 2
+		y = 1
+		relative_position_id = ROT_gather_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = GER
+            }
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 100
+                producer = GER
+            }
+			add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 50
+                producer = GER
+            }
+			
+			add_timed_idea = { idea = ROT_buying_stuff days = 180 }
+		}
+	}
+	
+	focus = {
+		id = ROT_train_professional_army
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = ROT_buy_equipments }
+		prerequisite = { focus = ROT_invite_german_settlers }
+
+
+		x = 2
+		y = 3
+		relative_position_id = ROT_buy_equipments
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+			
+			division_template = {
+				name = "Ostlandisch Division"
+				priority = 1
+				division_names_group = GER_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+
+
+		
+				}
+				support = {
+				    engineer = { x = 0 y = 0 }
+				}
+			}
+			
+			808 = {
+				create_unit = {
+					division = "name = \"1. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+					owner = ROT
+				}
+				
+				create_unit = {
+					division = "name = \"2. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+                    owner = ROT
+				}
+				
+			}
+			
+			206 = {
+			    create_unit = {
+					division = "name = \"3. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+					owner = ROT
+				}
+	        }
+			
+			812 = {
+			    create_unit = {
+					division = "name = \"4. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+					owner = ROT
+				}
+	        }
+			
+			11 = {
+			    create_unit = {
+					division = "name = \"5. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+					owner = ROT
+				}
+				create_unit = {
+					division = "name = \"6. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+					owner = ROT
+				}
+	        }
+			
+			207 = {
+			    create_unit = {
+					division = "name = \"7. Ostlandisch Division\" division_template = \"Ostlandisch Division\" start_experience_factor = 0.5" 
+					owner = ROT
+				}
+	        }
+		}
+	}
+	
+	focus = {
+		id = ROT_work_with_baltic
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROT_train_professional_army }
+		mutually_exclusive = { focus = ROT_destroy_the_baltic }
+
+
+		x = -1
+		y = 1
+		relative_position_id = ROT_train_professional_army
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			swap_ideas = {
+			    remove_idea = ROT_baltic_nationalism
+			    add_idea = ROT_balticism_nationalism_friendly
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_destroy_the_baltic
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = ROT_train_professional_army }
+		mutually_exclusive = { focus = ROT_work_with_baltic }
+
+
+		x = 1
+		y = 1
+		relative_position_id = ROT_train_professional_army
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    swap_ideas = {
+			    remove_idea = ROT_baltic_nationalism
+			    add_idea = ROT_destroyed_baltic
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_destroy_the_bolsheviks
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = ROT_destroy_the_baltic focus = ROT_work_with_baltic }
+		
+         
+
+		x = -1
+		y = 1
+		relative_position_id = ROT_destroy_the_baltic
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			remove_ideas = ROT_bolshevik_resistance
+		}
+	}
+	
+	focus = {
+		id = ROT_expand_business
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ROT_invite_german_settlers focus = ROT_expand_industries }
+
+
+		x = 0
+		y = 2
+		relative_position_id = ROT_invite_german_settlers
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_ideas = ROT_production
+		}
+	}
+	
+	focus = {
+		id = ROT_serfdom
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = ROT_segregate_population }
+
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_ideas = ROT_forcedlabor
+		}
+	}
+	
+	focus = {
+		id = ROT_expand_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ROT_serfdom }
+
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_expand_industries_two
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ROT_expand_industries }
+
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_expand_industries
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			190 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			811 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = ROT_expand_milfactories
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ROT_serfdom }
+
+
+		x = 4
+		y = 1
+		relative_position_id = ROT_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = ROT_expand_milfactories_two
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ROT_expand_milfactories }
+
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_expand_milfactories
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = ROT_naval_dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ROT_serfdom }
+		
+
+		x = 6
+		y = 1
+		relative_position_id = ROT_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = ROT_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ROT_serfdom }
+		
+
+		x = 2
+		y = 1
+		relative_position_id = ROT_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    808 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			812 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			11 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			784 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ROT_riga_airport
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = ROT_infrastructure }
+		
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_infrastructure
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    808 = {
+				add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_baltic_paradise
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = ROT_expand_industries_two }
+		prerequisite = { focus = ROT_expand_business }
+		
+
+		x = 1
+		y = 4
+		relative_position_id = ROT_expand_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 100
+			add_stability = 0.10
+			
+			add_ideas = ROT_breadbasket
+		}
+	}
+	
+	focus = {
+		id = ROT_empower_the_fascists
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ROT_stabilise_region }
+		
+
+		x = 3
+		y = 1
+		relative_position_id = ROT_stabilise_region
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 25
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+		}
+	}
+	
+	focus = {
+		id = ROT_german_victory
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = ROT_empower_the_fascists }
+		
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_empower_the_fascists
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		
+		NOT = { has_war_with = SOV }
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 50
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = ROT_german_research
+		icon = GFX_focus_research
+		prerequisite = { focus = ROT_riga_airport }
+		
+
+		x = 0
+		y = 1
+		relative_position_id = ROT_riga_airport
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = ROT_military_state
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = ROT_army_research_slot }
+		prerequisite = { focus = ROT_ostwall_defense }
+		prerequisite = { focus = ROT_destroy_the_bolsheviks }
+		
+
+		x = 3
+		y = 2
+		relative_position_id = ROT_army_research_slot
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.1
+			add_ideas = ROT_military_buff
+			
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = ROT_finalise_plan
+		icon = GFX_goal_rksplus_generalplanost
+		prerequisite = { focus = ROT_military_state }
+		prerequisite = { focus = ROT_baltic_paradise }
+
+		
+
+		x = 0
+		y = 10
+		relative_position_id = ROT_grant_hinrich_lohse
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = ROT_germanization
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = ROT_finalise_plan }
+
+		
+
+		x = 0
+		y = 2
+		relative_position_id = ROT_finalise_plan
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        add_manpower = 75000
+			add_stability = 0.25
+		}
+	}
+
+}
+

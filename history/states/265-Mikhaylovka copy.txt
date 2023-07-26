@@ -4,7 +4,7 @@ state = {
 	name = "STATE_265"
 
 	history = {
-		owner = RKA
+		owner = GGR
 		set_state_flag = temperate
 		set_state_flag = lakes
 		set_state_flag = micro
@@ -15,7 +15,7 @@ state = {
 
 
 		}
-		add_core_of = RKA
+		add_core_of = GGR
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

@@ -1,0 +1,15 @@
+characters={
+	RKS_Leader={
+		name= "Alfred Rosenberg"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Alfred_Rosenberg
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

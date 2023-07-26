@@ -6,7 +6,7 @@ state = {
 	}
 
 	history = {
-		owner = DEN
+		owner = GGR
 		set_state_flag = boreal
 		set_state_flag = river
 		set_state_flag = small
@@ -30,7 +30,7 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = DEN
+		add_core_of = GGR
 		set_state_flag = HDI4
 		set_variable = { tourism_infrastructure = 0 }
 		

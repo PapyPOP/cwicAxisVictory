@@ -1,0 +1,15 @@
+characters={
+	OGT_Leader={
+		name= "Reinhard Heydrich"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Reinhard_Heydrich_RKPLUS
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -692,19 +692,591 @@ SIK_PRC_liberation= {
 	color = rgb {  245 12 55 }
 	color_ui = rgb { 178 34 60}
 }
-RKA_SS = {
-    color = rgb { 31 31 31 }
-    color_ui = rgb { 185 170 167 }
+
+### +RK ###
+
+RBG_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
 }
-ROS_SS = {
-    color = rgb { 31 31 31 }
-    color_ui = rgb { 185 170 167 }
+
+RBG_fascism_nordfrankreich = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
 }
-RMO_SS = {
-    color = rgb { 31 31 31 }
-    color_ui = rgb { 185 170 167 }
+
+RGR_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
 }
-RUK_SS = {
-    color = rgb { 31 31 31 }
-    color_ui = rgb { 185 170 167 }
+
+RBL_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RNT_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RDN_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RNW_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RBM_reichsprotektorat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RGV_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RUA_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+ROT_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RMK_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RDW_reichskommissariat = {
+	color = rgb { 115  115  115}
+	color_ui = rgb { 115 115 115 }
+}
+
+RTK_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RKS_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RSV_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RHG_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RRO_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RBA_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RBA_reichskommissariat_SS = {
+	color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+RTS_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115  115  115 }
+}
+
+RCR_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSB_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RAB_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RUK_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RUK_reichskommissariat_england_king = {
+	color = rgb { 180  0  0 }
+	color_ui = rgb { 180 0 0 }
+}
+
+RUK_united_kingdom = {
+	color = rgb { 180  0  0 }
+	color_ui = rgb { 180 0 0 }
+}
+
+RUK_reichskommissariat_england = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSC_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RWL_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RCW_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RFC_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RFC_fascism_rks = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RIE_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSW_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RFD_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSP_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSP_fascism_castille = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RBQ_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RAG_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RPT_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RWS_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RES_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RTU_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RNH_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RAR_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RNA_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RMA_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSF_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+REF_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RMG_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RIT_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RIT_reichskommissariat_benito = {
+	color = rgb { 10 80 20 }
+	color_ui = rgb { 10 80 20 }
+}
+
+RSZ_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RPR_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RID_reichskommissariat = {
+	color = rgb { 70  0  0 }
+	color_ui = rgb { 70 0 0 }
+}
+
+RIN_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+ROA_reichskommissariat = {
+	color = rgb { 22  22  84 }
+	color_ui = rgb { 22 22 84 }
+}
+
+ROZ_reichskommissariat = {
+	color = rgb { 75  75  75 }
+	color_ui = rgb { 75 75 75 }
+}
+
+RQU_reichskommissariat = {
+	color = rgb { 22  22  84 }
+	color_ui = rgb { 22 22 84 }
+}
+
+RCD_reichskommissariat = {
+	color = rgb { 75  75  75 }
+	color_ui = rgb { 75 75 75 }
+}
+
+RAM_reichskommissariat = {
+	color = rgb { 22  22  84 }
+	color_ui = rgb { 22 22 84 }
+}
+
+RCS_reichskommissariat = {
+	color = rgb { 0  53  91 }
+	color_ui = rgb { 0  53  91 }
+}
+
+RPZ_reichskommissariat = {
+	color = rgb { 130  130  0 }
+	color_ui = rgb { 130 130 0 }
+}
+
+RMX_reichskommissariat = {
+	color = rgb { 75  75  75 }
+	color_ui = rgb { 75 75 75 }
+}
+
+RCX_reichskommissariat = {
+	color = rgb { 75  75  75 }
+	color_ui = rgb { 75 75 75 }
+}
+
+RCB_reichskommissariat = {
+	color = rgb { 22  22  84 }
+	color_ui = rgb { 22 22 84 }
+}
+
+RCL_reichskommissariat = {
+	color = rgb { 75  75  0 }
+	color_ui = rgb { 75 75 0 }
+}
+
+RBZ_reichskommissariat = {
+	color = rgb { 15  75  13 }
+	color_ui = rgb { 15 75 13 }
+}
+
+RGT_reichskommissariat = {
+	color = rgb { 75  125  125 }
+	color_ui = rgb { 75 125 125 }
+}
+
+REC_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RWS_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RMO_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RMC_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RKR_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RJP_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RPO_reichskommissariat = {
+	color = rgb { 22  22  84 }
+	color_ui = rgb { 22 22 84 }
+}
+
+RAD_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RUL_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+REY_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RGL_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSD_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RTZ_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RWF_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RZA_reichskommissariat = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RPE_reichskommissariat = {
+	color = rgb { 104  0  0 }
+	color_ui = rgb { 104 0 0 }
+}
+
+OBG_reichskommissariat = {
+	color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+OGT_reichskommissariat = {
+	color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+OLB_reichskommissariat = {
+	color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+OIC_reichskommissariat = {
+	color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+SHC_reichskommissariat = {
+	color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+JPZ_puppet = {
+    color = hsv { 0.05 0.3 1 }
+	color_ui = hsv { 0.05 0.25 1.2 }
+}
+
+RNA_reichskommissariat_unitedrks = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RMA_reichskommissariat_unitedrks = {
+	color = rgb { 115  115  115 }
+	color_ui = rgb { 115 115 115 }
+}
+
+RSP_reichskommissariat_unitedrks = {
+	color = rgb { 130  130  0 }
+	color_ui = rgb { 130 130 0 }
+}
+
+RSW_reichskommissariat_unitedrks = {
+	color = rgb { 22 22 84 }
+	color_ui = rgb { 22 22 84 }
+}
+
+RBL_reichskommissariat_unitedrks = {
+	color = rgb { 75 75 75 }
+	color_ui = rgb { 75 75 75 }
+}
+
+REC_reichskommissariat_unitedrks = {
+	color = rgb { 130  130  0 }
+	color_ui = rgb { 130 130 0 }
+}
+
+RWS_reichskommissariat_unitedrks = {
+	color = rgb { 10 80 20 }
+	color_ui = rgb { 10 80 20 }
+}
+
+RSF_reichskommissariat_unitedrks_africa = {
+	color = rgb { 56 56 56 }
+	color_ui = rgb { 56 56 56 }
+}
+
+#### secret tags ####
+
+WRS_hyperborea = {
+	color = rgb { 83 63 83 }
+	color_ui = rgb { 83 63 83 }
+}
+
+WRS_satan = {
+	color = rgb { 102  91  91 }
+	color_ui = rgb { 102  91  91 }
+}
+
+WRA_onestate = {
+	color = rgb { 37 37 37 }
+	color_ui = rgb { 37 37 37 }
+}
+
+WRA_holyrussianempire = {
+	color = rgb { 77 0 75 }
+	color_ui = rgb { 77 0 75 }
+}
+
+SBI_cain = {
+	color = rgb { 107 95 95 }
+	color_ui = rgb { 107 95 95 }
+}
+
+SBI_omsk = {
+	color = rgb { 37 7 40 }
+	color_ui = rgb { 37 7 40 }
+}
+
+
+### GERMANY CUSTOMIZATION ###
+
+
+GGR_rksplus_default = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GGR_rksplus_warflag = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GGR_rksplus_greatergermanreich = {
+	color = rgb { 54 54 54 }
+	color_ui = rgb { 115 115 115 }
+}
+
+GGR_rksplus_germanhakenkrauz = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GGR_rksplus_schutzstaffel = {
+    color = rgb { 76  46  76 }
+	color_ui = rgb { 76  46  76 }
+}
+
+GGR_rksplus_holyroman = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GGR_rksplus_imperial = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GGR_rksplus_confederation = {
+    color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
+
+GGR_rksplus_yellow = { 
+    color = rgb { 255 200 53 }
+	color_ui = rgb { 255 200 53  }
+}
+
+GGR_rksplus_pinkgermany = { 
+    color = rgb { 255 127 182 }
+	color_ui = rgb { 255 127 182  }
 }

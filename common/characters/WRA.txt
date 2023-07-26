@@ -1,0 +1,15 @@
+characters={
+	WRA_Leader={
+		name= "White Russian Army"
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_white_transitionary_council_rksplus
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

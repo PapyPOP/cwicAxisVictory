@@ -7,7 +7,7 @@ state = {
 	}
 
 	history = {
-		owner = GGP
+		owner = GGR
 		set_state_flag = temperate
 		set_state_flag = river
 		set_state_flag = nominal
@@ -21,7 +21,7 @@ state = {
 			air_base = 1
 
 		}
-		add_core_of = GGP
+		add_core_of = GGR
 		set_variable = { coal_amount = 0 }
 
 		set_state_flag = HDI4

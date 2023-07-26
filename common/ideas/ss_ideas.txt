@@ -1,0 +1,139 @@
+ideas = {
+	country = {
+		OSS_germanrule = {
+			picture = german_advisors
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.1
+			}
+		}
+		OSS_resistance = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = OSS
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.3
+				stability_factor = -0.3
+				conscription_factor = -0.5
+			}
+		}
+		OSS_forcedlabor = {
+			picture = generic_production_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+			}
+		}
+		OSS_relocation = {
+			picture = generic_purge
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.15
+				stability_factor = -0.05
+			}
+		}
+		OSS_armorbuff = {
+			picture = idea_generic_acquire_tanks
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.1
+			}
+		}
+		OSS_infantrybuff = {
+			picture = generic_infantry_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		OSS_settlers = {
+			picture = generic_manpower_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 300
+			}
+		}
+		OSS_resource_exploit = {
+			picture = generic_production_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		OSS_aryanstate = {
+			picture = generic_economic_increase
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+}

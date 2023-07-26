@@ -1,0 +1,522 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = shocker_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SHC
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 1600 y = 1000 }  
+	initial_show_position = {
+		x = 10
+		y = 0
+	}
+
+	focus = {
+		id = SHC_create_troops
+		icon = GFX_focus_ger_reichskommisariats
+		#prerequisite = { focus = }
+
+		x = 10
+		y = 0
+		#relative_position_id = 
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 1
+			add_political_power = 2000
+			add_country_leader_trait = dictator
+			add_research_slot = 5
+			
+			add_ideas = SHC_experiment
+			add_ideas = SHC_cyborgarmy
+			
+			
+			division_template = {
+				name = "Shocker Main Division"
+				priority = 1
+				division_names_group = JAP_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					
+					infantry = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 4 y = 0 }
+
+
+		
+				}
+				support = {
+				    engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			
+			650 = {
+				create_unit = {
+					division = "name = \"1. Shocker Main Division\" division_template = \"Shocker Main Division\" start_experience_factor = 1" 
+					owner = SHC
+				}
+				
+				create_unit = {
+					division = "name = \"2. Shocker Main Division\" division_template = \"Shocker Main Division\" start_experience_factor = 1" 
+                    owner = SHC
+				}
+				
+				create_unit = {
+					division = "name = \"3. Shocker Main Division\" division_template = \"Shocker Main Division\" start_experience_factor = 1" 
+                    owner = SHC
+				}
+				
+				create_unit = {
+					division = "name = \"4. Shocker Main Division\" division_template = \"Shocker Main Division\" start_experience_factor = 1" 
+                    owner = SHC
+				}
+				
+				create_unit = {
+					division = "name = \"5. Shocker Main Division\" division_template = \"Shocker Main Division\" start_experience_factor = 1" 
+                    owner = SHC
+				}
+				
+				create_unit = {
+					division = "name = \"6. Shocker Main Division\" division_template = \"Shocker Main Division\" start_experience_factor = 1" 
+                    owner = SHC
+				}
+				
+			}
+		}
+	}
+	focus = {
+		id = SHC_free_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SHC_create_troops }
+
+		x = 0
+		y = 1
+		relative_position_id = SHC_create_troops
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000000
+            }
+			
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 1000000
+            }
+			
+			add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 1000000
+            }
+			
+			add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 1000000
+            }
+		}
+	}
+	
+	focus = {
+		id = SHC_bunkers
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = SHC_create_troops }
+
+		x = 1
+		y = 2
+		relative_position_id = SHC_create_troops
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			
+		    650 = {
+				add_building_construction = {
+				type = bunker
+				province = 13067  
+				level = 10
+				}
+			}
+			
+			650 = {
+				add_building_construction = {
+				type = coastal_bunker
+				province = 13067  
+				level = 10
+				}
+			}
+			650 = {
+				add_building_construction = {
+				type = naval_base
+				province = 13067  
+				level = 10
+				}
+			}
+			650 = {
+				add_building_construction = {
+				type = anti_air_building
+				instant_build = yes
+				level = 5
+				}
+			}
+			
+			650 = {
+				add_building_construction = {
+				type = radar_station
+				instant_build = yes
+				level = 6
+				}
+			}
+			650 = {
+				add_building_construction = {
+				type = air_base
+				instant_build = yes
+				level = 10
+				}
+			}
+			
+			650 = {
+				add_building_construction = {
+				type = infrastructure
+				instant_build = yes
+				level = 5
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SHC_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SHC_create_troops }
+
+		x = -1
+		y = 2
+		relative_position_id = SHC_create_troops
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_ideas = SHC_production
+			650 = { 
+			    add_extra_state_shared_building_slots = 25
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				
+				hidden_effect = {
+				    add_resource = {
+                    type = steel
+                    amount = 999
+                    }
+				
+				    add_resource = {
+                    type = rubber
+                    amount = 999
+                    }
+				
+				    add_resource = {
+                    type = aluminium
+                    amount = 999
+                    }
+				
+				    add_resource = {
+                    type = oil
+                    amount = 999
+                    }
+				
+				    add_resource = {
+                    type = tungsten
+                    amount = 999
+                    }
+				
+				    add_resource = {
+                    type = chromium
+                    amount = 999
+					}
+                }
+			}
+		}
+	}
+	
+	focus = {
+		id = SHC_daishocker
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = SHC_factories }
+		prerequisite = { focus = SHC_bunkers }
+		prerequisite = { focus = SHC_free_guns }
+
+		x = -1
+		y = 2
+		relative_position_id = SHC_bunkers
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			create_faction = "Dai-Shocker"
+			
+			unlock_decision_tooltip = SHC_call_generalshadow
+			unlock_decision_tooltip = SHC_call_generaljark
+			unlock_decision_tooltip = SHC_call_apollogeist
+			unlock_decision_tooltip = SHC_call_shadowmoon
+			unlock_decision_tooltip = SHC_call_doras
+			
+			hidden_effect = {
+			news_event = { hours = 6 id = rksnews.2 }
+		    }
+		}
+	}
+	
+	focus = {
+		id = SHC_demand_japan
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = SHC_daishocker }
+
+		x = 0
+		y = 1
+		relative_position_id = SHC_daishocker
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			GER = { country_event = rksplus.52 }
+		}
+	}
+
+	
+	focus = {
+		id = SHC_core_japan
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SHC_demand_japan }
+
+		x = 0
+		y = 1
+		relative_position_id = SHC_demand_japan
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		    controls_state = 555
+		    controls_state = 536
+		    controls_state = 533
+		    controls_state = 534
+		    controls_state = 282
+		    controls_state = 535
+		    controls_state = 532
+		    controls_state = 531
+		    controls_state = 529
+		    controls_state = 530
+		    controls_state = 528
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			SHC = {
+			    add_state_core = 555
+			    add_state_core = 536
+			    add_state_core = 533
+			    add_state_core = 534
+			    add_state_core = 282
+			    add_state_core = 535
+			    add_state_core = 532
+			    add_state_core = 531
+			    add_state_core = 529
+			    add_state_core = 530
+			    add_state_core = 528
+			    add_state_core = 526
+		    }
+	    }
+		
+		
+	} 
+	
+	focus = {
+		id = SHC_move_to_japan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = SHC_core_japan }
+
+		x = 0
+		y = 1
+		relative_position_id = SHC_core_japan
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    SHC = {
+			    set_capital = {
+				    state = 282
+				    remember_old_capital = yes
+			    }
+			}
+		}
+	}
+	
+	focus = {
+		id = SHC_march_to_berlin
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = SHC_move_to_japan }
+
+		x = 0
+		y = 1
+		relative_position_id = SHC_move_to_japan
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+		    OR = { 
+				has_war_with = GER
+				NOT = {country_exists = GER }
+			}
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+
+			declare_war_on = { 
+			    target = GER
+				type = annex_everything 
+			}
+			
+			hidden_effect = {
+			    news_event = { hours = 6 id = rksnews.6 }
+			}
+		}
+	}
+	
+	focus = {
+		id = SHC_pressure_ordensstaat
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = SHC_march_to_berlin }
+
+		x = 1
+		y = 1
+		relative_position_id = SHC_march_to_berlin
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			OBG = { country_event = rksplus.56 }
+			OGT = { country_event = rksplus.57 }
+		}
+	}
+	
+	focus = {
+		id = SHC_naval_invade_boost
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = SHC_march_to_berlin }
+
+		x = -1
+		y = 1
+		relative_position_id = SHC_march_to_berlin
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_ideas =  SHC_navalboost
+		}
+	}

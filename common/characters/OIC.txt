@@ -1,0 +1,15 @@
+characters={
+	OIC_Leader={
+		name= "Björn Sveinsson Björnsson"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Bjorn_Sveinsson_Bjornsson
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

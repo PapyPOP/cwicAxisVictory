@@ -1,0 +1,68 @@
+characters={
+
+	RAM_Leader={
+		name= "Fritz Julius Kuhn"
+		portraits={
+			civilian={
+				large=GFX_Portrait_GER_Fritz_Kuhn_rksplus
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+	RAM_Democratic={
+		name= "Douglas MacArthur"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Douglas_MacArthur
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits = {
+			democratic_firebrand
+			retired_officer
+			} 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	RAM_Communist={
+		name= "Earl Browder"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Earl_Browder
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = {  } 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	RAM_Neutral={
+		name= "George S. Patton"
+		portraits={
+			civilian={
+				large=GFX_Portrait_George_Patton
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = { 
+				hardened_officer
+				military_theorist
+			} 
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

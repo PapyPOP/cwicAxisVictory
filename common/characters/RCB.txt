@@ -1,0 +1,15 @@
+characters={
+	RCB_Leader={
+		name= "Karl Dönitz"
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_karl_donitz
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

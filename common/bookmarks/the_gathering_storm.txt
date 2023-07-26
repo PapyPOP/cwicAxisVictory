@@ -33,7 +33,6 @@ bookmarks = {
 				GER_nazi_recruitment_system
 				GER_economic_stagnation
 				GER_SS_Infightings
-				fanatical_dictatorship
 			}
 			focuses = {
 				GGR_beginning

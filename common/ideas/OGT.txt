@@ -1,0 +1,182 @@
+ideas = {
+	country = {
+		OGT_germanrule = {
+			picture = german_advisors
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.1
+			}
+		}
+		OGT_germanrule_ppgain = {
+			picture = german_advisors
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.1
+				political_power_gain = 0.15
+			}
+		}
+		OGT_bolshevik_resistance = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.3
+				stability_factor = -0.3
+				conscription_factor = -0.5
+			}
+		}
+		OGT_bolshevik_resistance_weakened = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.1
+				stability_factor = -0.1
+				conscription_factor = -0.25
+			}
+		}
+		OGT_forcedlabor = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+			}
+		}
+		OGT_armorbuff = {
+			picture = idea_generic_acquire_tanks
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.1
+			}
+		}
+		OGT_infantrybuff = {
+			picture = generic_infantry_bonus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		OGT_settlers = {
+			picture = generic_manpower_bonus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 300
+			}
+		}
+		OGT_resource_exploit = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		OGT_business = {
+			picture = generic_economic_increase
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		OGT_business_two = {
+			picture = generic_economic_increase
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+	}
+}

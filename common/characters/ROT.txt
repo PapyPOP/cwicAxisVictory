@@ -1,0 +1,15 @@
+characters={
+	ROT_Leader={
+		name= "Hinrich Lohse"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Hinrich_Lohse
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

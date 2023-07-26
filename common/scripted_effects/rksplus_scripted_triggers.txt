@@ -1,0 +1,12 @@
+SOV_is_owned_by_SOV_or_puppet_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_is_owned_by_SOV_or_puppet_trigger_tooltip
+		
+		owner = {
+			OR = {
+				tag = SOV
+				is_subject_of = SOV
+			}
+		}
+	}
+}

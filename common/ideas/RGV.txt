@@ -1,0 +1,116 @@
+ideas = {
+	country = {
+		RGV_germanrule = {
+			picture = german_advisors
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.15
+			}
+		}
+		RGV_resistance = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.3
+				stability_factor = -0.25
+				conscription_factor = -0.5
+			}
+		}
+		RGV_forcedlabor = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+			}
+		}
+		RGV_consumergoods = {
+			picture = generic_goods_red_bonus
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		RGV_manpower = {
+			picture = generic_manpower_bonus
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		RGV_production = {
+			picture = generic_economic_increase
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		RGV_production2 = {
+			picture = generic_economic_increase
+			allowed = {
+				tag = RGV
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+}

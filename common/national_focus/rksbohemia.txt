@@ -1,0 +1,439 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = rksbohemia_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RBM
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1250 }  
+	initial_show_position = {
+		x = 12
+		y = 0
+	}
+
+	focus = {
+		id = RBM_cleanup_the_mess
+		icon = GFX_goal_generic_political_pressure
+		#prerequisite = { focus = }
+
+		x = 10
+		y = 0
+		#relative_position_id = 
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.1
+			add_political_power = 100
+			
+		}
+	}
+	
+	focus = {
+		id = RBM_mobilize_native
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = RBM_cleanup_the_mess }
+
+		x = -2
+		y = 1
+		relative_position_id = RBM_cleanup_the_mess
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_ideas = RBM_mobilizationnative	
+			
+		}
+	}
+	
+	focus = {
+		id = RBM_exploitresources
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = RBM_mobilize_native }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_mobilize_native
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_resource = {
+                type = steel
+                amount = 25
+                state = 75
+            }
+			
+		}
+	}
+	
+	focus = {
+		id = RBM_militaryindustries
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RBM_exploitresources }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_exploitresources
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			75 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RBM_devalue_krona
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = RBM_cleanup_the_mess }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_cleanup_the_mess
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.05
+			
+			add_ideas = RBM_inflation
+			
+		}
+	}
+	
+	focus = {
+		id = RBM_invite_german_settlers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = RBM_devalue_krona }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_devalue_krona
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_manpower = 25000
+			
+			add_ideas = RBM_settlers
+			
+		}
+	}
+	
+	focus = {
+		id = RBM_nazi_party
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RBM_invite_german_settlers }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_invite_german_settlers
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.10
+			
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+		}
+	}
+	
+	focus = {
+		id = RBM_german_equipments
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RBM_cleanup_the_mess }
+
+		x = 2
+		y = 1
+		relative_position_id = RBM_cleanup_the_mess
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2500
+                producer = GER
+            }
+			
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 30
+                producer = GER
+            }
+	
+		}
+	}
+	
+	focus = {
+		id = RBM_german_army
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RBM_german_equipments }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_german_equipments
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_war_support = 0.1
+			
+			division_template = {
+				name = "Böhmisch Division"
+				priority = 1
+				division_names_group = GER_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+
+		
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			
+			9 = {
+				create_unit = {
+					division = "name = \"1. Böhmisch Division\" division_template = \"Böhmisch Division\" start_experience_factor = 0.5" 
+					owner = RBM
+				}
+				
+				create_unit = {
+					division = "name = \"2. Böhmisch Division\" division_template = \"Böhmisch Division\" start_experience_factor = 0.5" 
+                    owner = RBM
+				}
+				
+			}
+			
+			75 = {
+			    create_unit = {
+					division = "name = \"3. Böhmisch Division\" division_template = \"Böhmisch Division\" start_experience_factor = 0.5" 
+					owner = RBM
+				}
+	        }
+		}
+	}
+	
+	focus = {
+		id = RBM_research_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = RBM_german_army }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_german_army
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = RBM_improve_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RBM_militaryindustries }
+		prerequisite = { focus = RBM_nazi_party }
+		prerequisite = { focus = RBM_research_slot }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_nazi_party
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}	
+			}
+			
+			9 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			
+			75 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RBM_tackle_resistance
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = RBM_improve_infrastructure }
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_improve_infrastructure
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        remove_ideas = RBM_resistance
+		}
+	}
+	
+	focus = {
+		id = RBM_germanisation
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = {
+		    focus = RBM_tackle_resistance
+		}
+
+
+		x = 0
+		y = 1
+		relative_position_id = RBM_tackle_resistance
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        add_manpower = 30000
+			add_stability = 0.15
+			remove_ideas = RBM_inflation
+		}
+	}
+}

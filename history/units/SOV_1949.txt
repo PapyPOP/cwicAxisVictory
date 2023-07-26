@@ -1500,18 +1500,6 @@ units = {
 		}
 	}
 	division = {
-		name = "28th Gvardeyskaya Strelkovaya Diviziya"
-		location = 11686
-		division_template = "Gvardeyskaya Strelkovaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
 		name = "40th Strelkovaya Diviziya"
 		location = 1504		### Primorskiy Krai, Far East
 		division_template = "Strelkovaya Diviziya"
@@ -1549,18 +1537,6 @@ units = {
 				owner = "SOV"
 			}
 			motorized_equipment_1 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
-		name = "70th Gvardeyskaya Strelkovaya Diviziya"
-		location = 6600
-		division_template = "Gvardeyskaya Strelkovaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
 				owner = "SOV"
 			}
 		}
@@ -2398,18 +2374,6 @@ units = {
 	division = {
 		name = "55th Polk Morskoi Pekhoty"
 		location = 957
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-		division_template = "Polk Morskoi Pekhoty"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "63rd Gvardeiyskiy 'Kirkenneskaya' Polk Morskoi Pekhoty"
-		location = 11670
 		force_equipment_variants = {
 			infantry_equipment_0 = {
 				owner = "SOV"

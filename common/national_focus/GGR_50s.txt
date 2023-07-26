@@ -1687,8 +1687,11 @@ focus_tree = {
 			focus = GGR_purity_2
 		}
 		completion_reward = {
-			GGP = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = RGV }
+				RGV = {
+					add_stability = -0.05
+				}
 			}
 			10 = {
 				add_manpower = -500000
@@ -1708,8 +1711,11 @@ focus_tree = {
 			focus = GGR_purity_2
 		}
 		completion_reward = {
-			ROS = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = ROT }
+				ROT = {
+					add_stability = -0.05
+				}
 			}
 			204 = {
 				add_manpower = -500000
@@ -1729,8 +1735,11 @@ focus_tree = {
 			focus = GGR_purity_2
 		}
 		completion_reward = {
-			RUK = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = RUA }
+				RUA = {
+					add_stability = -0.05
+				}
 			}
 			202 = {
 				add_manpower = -500000
@@ -1753,8 +1762,11 @@ focus_tree = {
 			focus = GGR_purity_5
 		}
 		completion_reward = {
-			RKA = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = RKS }
+				RKS = {
+					add_stability = -0.05
+				}
 			}
 			234 = {
 				add_manpower = -500000
@@ -1777,8 +1789,11 @@ focus_tree = {
 			focus = GGR_purity_5
 		}
 		completion_reward = {
-			RMO = {
-				add_stability = -0.2
+			if = {
+				limit = { country_exists = RMK }
+				RMK = {
+					add_stability = -0.05
+				}
 			}
 			219 = {
 				add_manpower = -500000

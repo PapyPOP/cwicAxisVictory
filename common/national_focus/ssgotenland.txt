@@ -1,0 +1,1038 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = ssgotenland_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OGT
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 2000 y = 200 }  
+	initial_show_position = {
+		x = 15
+		y = 0
+	}
+
+	focus = {
+		id = OGT_grant_heydrich
+		icon = GFX_goal_generic_defence
+		#prerequisite = { focus = }
+
+		x = 15
+		y = 0
+		#relative_position_id = 
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.05
+			add_political_power = 75
+			add_country_leader_trait = dictator
+		}
+	}
+	
+	focus = {
+		id = OGT_situation_event
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = OGT_grant_heydrich }
+
+		x = 0
+		y = 1
+		relative_position_id = OGT_grant_heydrich
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    country_event = rksgotenland.1
+		}
+	}
+	
+	focus = {
+		id = OGT_free_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = OGT_situation_event }
+
+		x = -2
+		y = 1
+		relative_position_id = OGT_situation_event
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1500
+                producer = GER
+            }
+
+		}
+	}
+	
+	focus = {
+		id = OGT_free_manpower
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = OGT_situation_event }
+
+		x = 2
+		y = 1
+		relative_position_id = OGT_situation_event
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_manpower = 7500
+
+		}
+	}
+	
+	focus = {
+		id = OGT_deploy_ss
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = OGT_free_guns }
+        prerequisite = { focus = OGT_free_manpower }
+		
+		x = 2
+		y = 1
+		relative_position_id = OGT_free_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    division_template = {
+				name = "Schutzstaffel Division"
+				priority = 1
+				division_names_group = GER_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+
+
+		
+				}
+				support = {
+				    engineer = { x = 0 y = 0 }
+				}
+			}
+			
+			137 = {
+				create_unit = {
+					division = "name = \"1. Schutzstaffel Division\" division_template = \"Schutzstaffel Division\" start_experience_factor = 0.5" 
+					owner = OGT
+				}
+				
+				create_unit = {
+					division = "name = \"2. Schutzstaffel Division\" division_template = \"Schutzstaffel Division\" start_experience_factor = 0.5" 
+                    owner = OGT
+				}
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = OGT_weaken_resistance
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = OGT_deploy_ss }
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_deploy_ss
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    country_event = rksgotenland.3
+
+		}
+	}
+	
+	focus = {
+		id = OGT_first_phase
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = OGT_weaken_resistance }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_weaken_resistance
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+
+        country_event = rksgotenland.2
+		
+		
+		}
+	}
+	
+	focus = {
+		id = OGT_power_of_the_ss
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = OGT_first_phase }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OGT_first_phase
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		add_stability = 0.15
+
+		}
+	}
+	
+	focus = {
+		id = OGT_strengthen_ss
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = OGT_first_phase }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OGT_first_phase
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+		
+		    swap_ideas = {
+		        remove_idea = OGT_germanrule
+				add_idea = OGT_germanrule_ppgain
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_military_development
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = OGT_first_phase }
+
+		
+		x = -4
+		y = 1
+		relative_position_id = OGT_first_phase
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OGT_forcedlabor
+
+		}
+	}
+	
+	focus = {
+		id = OGT_military_factory_one
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = OGT_military_development }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OGT_military_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_military_factory_two
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = OGT_military_development }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OGT_military_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_equipment_research
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = OGT_military_factory_one }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OGT_military_factory_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = OGT_infantry_focus
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = OGT_equipment_research }
+		mutually_exclusive = { focus = OGT_tank_focus }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_equipment_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OGT_infantrybuff
+			
+			137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_tank_research
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = OGT_military_factory_two }
+
+		
+		
+		x = 1
+		y = 1
+		relative_position_id = OGT_military_factory_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = OGT_tank_focus
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = OGT_tank_research }
+		mutually_exclusive = { focus = OGT_infantry_focus }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_tank_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OGT_armorbuff
+			
+			137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_doctrine_army
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OGT_infantry_focus focus = OGT_tank_focus }
+
+
+		
+		x = 2
+		y = 2
+		relative_position_id = OGT_infantry_focus
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = rkp_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = OGT_military_research
+		icon = GFX_focus_research
+		prerequisite = { focus = OGT_military_factory_one focus = OGT_military_factory_two }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OGT_military_factory_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+            add_research_slot = 1
+		
+		}
+	}
+	
+	focus = {
+		id = OGT_invite_german
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = OGT_first_phase }
+
+		
+		x = 4
+		y = 1
+		relative_position_id = OGT_first_phase
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OGT_settlers
+
+		}
+	}
+	
+	focus = {
+		id = OGT_civ_factories_one
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = OGT_invite_german }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OGT_invite_german
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_civ_factories_two
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = OGT_civ_factories_one }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_civ_factories_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_crimean_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = OGT_invite_german }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OGT_invite_german
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			137 = {
+			    add_resource = {
+                type = oil
+                amount = 8
+                }
+            }
+
+		}
+	}
+	
+	focus = {
+		id = OGT_crimean_exploit
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = OGT_crimean_oil }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_crimean_oil
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OGT_resource_exploit
+			
+			137 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			137 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			137 = {
+			    add_resource = {
+                type = oil
+                amount = 12
+                }
+            }
+		}
+	}
+	
+	focus = {
+		id = OGT_infrastructure_investment
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = OGT_crimean_exploit }
+		prerequisite = { focus = OGT_civ_factories_two }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OGT_crimean_exploit
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			137 = {
+				add_building_construction = {
+				type = air_base
+				level = 7
+				instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_dockyard_investment
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = OGT_infrastructure_investment }
+
+		
+		x = 0
+		y = 2
+		relative_position_id = OGT_infrastructure_investment
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		
+		    137 = {
+				add_building_construction = {
+				type = naval_base
+				level = 5
+				province = 9680
+				instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	
+	focus = {
+		id = OGT_german_tourism
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = OGT_dockyard_investment }
+		prerequisite = { focus = OGT_doctrine_army }
+
+
+		
+		x = -4
+		y = 1
+		relative_position_id = OGT_dockyard_investment
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OGT_business
+
+		}
+	}
+	
+	focus = {
+		id = OGT_research_facility
+		icon = GFX_focus_research
+		prerequisite = { focus = OGT_german_tourism }
+
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OGT_german_tourism
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_research_slot = 1
+
+		}
+	}
+	
+	focus = {
+		id = OGT_tourism_hotspot
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = OGT_german_tourism }
+
+
+		
+		x = 2
+		y = 1
+		relative_position_id = OGT_german_tourism
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    swap_ideas = {
+			    remove_idea = OGT_business
+				add_idea = OGT_business_two
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OGT_defense_gotenland
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = OGT_german_tourism }
+
+
+		
+		x = -2
+		y = 1
+		relative_position_id = OGT_german_tourism
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		controls_state = 137
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    137 = {
+				add_building_construction = {
+			    type = bunker
+			    province = 3722
+			    level = 3
+			    }
+            }
+			
+			137 = {
+				add_building_construction = {
+			    type = bunker
+			    province = 9680
+			    level = 3
+			    }
+            }
+			
+			137 = {
+				add_building_construction = {
+			    type = bunker
+			    province = 3686
+			    level = 3
+			    }
+            }
+			
+			137 = {
+				add_building_construction = {
+			    type = radar_station
+			    level = 1
+				instant_build = yes
+			    }
+            }
+			
+			137 = {
+				add_building_construction = {
+			    type = anti_air_building
+			    level = 3
+				instant_build = yes
+			    }
+            }
+			
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = OGT_kill_resistance
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = OGT_defense_gotenland }
+		prerequisite = { focus = OGT_research_facility }
+		prerequisite = { focus = OGT_tourism_hotspot }
+
+
+		
+		x = 0
+		y = 2
+		relative_position_id = OGT_german_tourism
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    remove_ideas = OGT_bolshevik_resistance_weakened
+
+		}
+	}
+	
+	focus = {
+		id = OGT_the_dragon
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = OGT_defense_gotenland }
+		prerequisite = { focus = OGT_research_facility }
+		prerequisite = { focus = OGT_tourism_hotspot }
+
+
+		
+		x = 0
+		y = 3
+		relative_position_id = OGT_german_tourism
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_stability = 0.25
+			add_political_power = 100
+			add_manpower = 10000
+
+		}
+	}
+}
+

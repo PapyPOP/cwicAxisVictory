@@ -2,14 +2,12 @@ state = {
 	id = 949
 	name = "STATE_949"
 	history = {
-		owner = ROM
+		owner = GGR
 		set_state_flag = temperate
 		set_state_flag = riverlarge
 		set_state_flag = small
 		set_state_flag = decent
-		add_core_of = ROM
-		add_core_of = MOL
-		add_core_of = PMR
+		add_core_of = GGR
 		victory_points = {
 			13226 5 
 		}

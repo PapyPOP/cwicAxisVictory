@@ -1,0 +1,15 @@
+characters={
+	RAR_Leader={
+		name= "Hans von Luck"
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_hans_von_luck
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

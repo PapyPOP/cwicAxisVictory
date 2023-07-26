@@ -1574,6 +1574,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.1
 				recruitable_population_factor = -0.05
+				weekly_manpower = -10000
 			}
 		}
 		OGM_has_accepted = {

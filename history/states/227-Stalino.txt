@@ -7,7 +7,7 @@ state = {
 		steel = 23
 	}
 	history = {
-		owner = RUK
+		owner = GGR
 		set_state_flag = temperate
 		set_state_flag = lakes
 		set_state_flag = small
@@ -35,7 +35,7 @@ state = {
 		victory_points = {
 			502 5
 		}
-		add_core_of = RUK
+		add_core_of = GGR
 		add_core_of = UKR
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }

@@ -1,0 +1,15 @@
+characters={
+	RTZ_Leader={
+		name= "Leo Geyr von Schweppenburg"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Leo_Geyr_von_Schweppenburg_rksplus
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

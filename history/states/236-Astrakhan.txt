@@ -7,7 +7,7 @@ state = {
 	}
 
 	history = {
-		owner = RKA
+		owner = GGR
 		set_state_flag = desertlush
 		set_state_flag = riverlarge
 		set_state_flag = nominal
@@ -24,7 +24,7 @@ state = {
 			fossil_fuel_powerplant = 1
 
 		}
-		add_core_of = RKA
+		add_core_of = GGR
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

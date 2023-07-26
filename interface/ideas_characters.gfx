@@ -1,0 +1,371 @@
+spriteTypes = {
+    ### BOHMEN UND MAHREN ###
+	spriteType = {
+		name = "GFX_Portrait_Konstantin_von_Neurath_rkplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Konstantin_von_Neurath_rkplus.dds"
+	}
+	### GENERALGOVERNMENT ###
+	spriteType = {
+		name = "GFX_Portrait_RGV_Hans_Frank"
+		texturefile = "gfx/leaders/GGR/Portrait_RGV_Hans_Frank.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Hinrich_Lohse"
+		texturefile = "gfx/leaders/GGR/Portrait_Hinrich_Lohse.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Siegfried_Kasche"
+		texturefile = "gfx/leaders/GGR/Portrait_Siegfried_Kasche.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Alfred_Rosenberg"
+		texturefile = "gfx/leaders/GGR/Portrait_Alfred_Rosenberg.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Reinhard_Heydrich_RKPLUS"
+		texturefile = "gfx/leaders/GGR/Portrait_Reinhard_Heydrich_RKPLUS.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Johannes_Friessner"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Johannes_Friessner.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Otto_Woehler"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Otto_Woehler.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Erhard_Raus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Erhard_Raus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Hans_Gustav_Felber"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Hans_Gustav_Felber.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Franz_Behme"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Franz_Behme.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Hans-Valentin_Hube"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Hans-Valentin_Hube.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Martin_Ludwig_Bormann"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Martin_Ludwig_Bormann.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Erhard_Milch_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Erhard_Milch_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Willi_Reschke_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Willi_Reschke_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_GER_Franz_Halder_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_GER_Franz_Halder_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Eduard_Dietl"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Eduard_Dietl.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Military_Administration"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Military_Administration.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Helmuth_Weidling"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Helmuth_Weidling.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Dietrich_von_Saucken"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Dietrich_von_Saucken.dds"
+	} 
+	spriteType = {
+		name = "GFX_Portrait_Germany_Hans_Krebs"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Hans_Krebs.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Sepp_Janko_SS"
+		texturefile = "gfx/leaders/GGR/Portrait_Sepp_Janko_SS.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Ferdinand_Scherner"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Ferdinand_Scherner.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Wilhelm_Ritter_von_Thoma"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Wilhelm_Ritter_von_Thoma.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Generic_land_7_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Generic_land_7_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Arthur_Seyss-Inquart"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Arthur_Seyss-Inquart.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Dietrich_Klagges"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Dietrich_Klagges.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Josef_Terboven"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Josef_Terboven.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Josef_Grohe"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Josef_Grohe.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Rudolf_Veiel"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Rudolf_Veiel.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Ludwig_Cruwell"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Ludwig_Cruwell.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Heinz_Harmel"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Heinz_Harmel.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Walter_von_Reichenau"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Walter_von_Reichenau.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Heinrich_Himmler_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Heinrich_Himmler_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_GER_Fritz_Kuhn_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_GER_Fritz_Kuhn_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Walther_Schroth"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Walther_Schroth.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Hans_von_Obstfelder"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Hans_von_Obstfelder.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Erich_Koch_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Erich_Koch_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_GER_Alexander_von_Falkenhausen"
+		texturefile = "gfx/leaders/GGR/Portrait_GER_Alexander_von_Falkenhausen.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Anton_Grasser_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Anton_Grasser_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Wilhelm_Adam_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Wilhelm_Adam_rksplus.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Erich_Brandenberger_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Erich_Brandenberger_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Hans-Jurgen_Theodor_von_Arnim_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Hans-Jurgen_Theodor_von_Arnim_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Friedrich_Dollmann_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Friedrich_Dollmann_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Fritz_Bayerlein_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Fritz_Bayerlein_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Walther_Nehring_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Walther_Nehring_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Leo_Geyr_von_Schweppenburg_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Leo_Geyr_von_Schweppenburg_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Siegfried_Muller"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Siegfried_Muller.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Otto_Kumm"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Otto_Kumm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Herbert-Ernst_Vahl"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Herbert-Ernst_Vahl.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Germany_Bjorn_Sveinsson_Bjornsson"
+		texturefile = "gfx/leaders/GGR/Portrait_Germany_Bjorn_Sveinsson_Bjornsson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Britain_Edward_VIII_rksplus"
+		texturefile = "gfx/leaders/GGR/Portrait_Britain_Edward_VIII_rksplus.dds"
+	}
+	
+	#### AMERIKA ####
+	
+	spriteType = {
+		name = "GFX_Portrait_Douglas_MacArthur"
+		texturefile = "gfx/leaders/GGR/Portrait_Douglas_MacArthur.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Earl_Browder"
+		texturefile = "gfx/leaders/GGR/Portrait_Earl_Browder.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_George_Patton"
+		texturefile = "gfx/leaders/GGR/Portrait_George_Patton.dds"
+	}
+	
+	#### RUSSIA COLLAPSE ####
+	
+	spriteType = {
+		name = "GFX_Portrait_TRC_Iskhak_Razzakov"
+		texturefile = "gfx/leaders/TRC/Portrait_TRC_Iskhak_Razzakov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_white_transitionary_council_rksplus"
+		texturefile = "gfx/leaders/SOV/portrait_SOV_white_transitionary_council_rksplus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_SOV_Abaddon"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Abaddon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_SOV_Alexei_Gastev"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Alexei_Gastev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_SOV_Antikhrist"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Antikhrist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_SOV_Dmitry_Yazov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Dmitry_Yazov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_SOV_Sergey_Taboritsky"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Sergey_Taboritsky.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_SOV_Velimir"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Velimir.dds"
+	}
+	
+
+	
+	#### EVENTS ####
+	
+	spriteType = {
+		name = "GFX_report_event_obg_cavern"
+		texturefile = "gfx/event_pictures/report_event_obg_cavern.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_obg_hollow_earth"
+		texturefile = "gfx/event_pictures/report_event_obg_hollow_earth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_hollowearth"
+		texturefile = "gfx/event_pictures/news_event_hollowearth.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_tnoreference"
+		texturefile = "gfx/event_pictures/news_event_tnoreference.dds"
+	}
+	
+	#### SHOCKER ####
+	
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Great_Leader"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Great_Leader.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_BeardedLizardMan"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_BeardedLizardMan.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Ganikoumoru"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Ganikoumoru.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Garaganda"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Garaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Hilchameleon"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Hilchameleon.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Ika_Devil"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Ika_Devil.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Jaguarman"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Jaguarman.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_KameBazooka"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_KameBazooka.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Siomaneking"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Siomaneking.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shocker_Zanjioh"
+		texturefile = "gfx/leaders/SHC/Portrait_Shocker_Zanjioh.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_BlackSatan_GeneralShadow"
+		texturefile = "gfx/leaders/SHC/Portrait_BlackSatan_GeneralShadow.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Crisis_Jark"
+		texturefile = "gfx/leaders/SHC/Portrait_Crisis_Jark.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_GOD_Apollogeist"
+		texturefile = "gfx/leaders/SHC/Portrait_GOD_Apollogeist.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Gorgom_ShadowMoon"
+		texturefile = "gfx/leaders/SHC/Portrait_Gorgom_ShadowMoon.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Neonoid_Doras"
+		texturefile = "gfx/leaders/SHC/Portrait_Neonoid_Doras.dds"
+	}
+	
+
+}

@@ -1,0 +1,2334 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+###	    add_equipment_to_stockpile = {
+###     	type = infantry_equipment
+###             amount = 6500
+###             producer = SOV
+###         }
+			
+focus_tree = {
+	id = rksamerika_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RAM
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 100 y = 2000 }  
+	initial_show_position = {
+		x = 15
+		y = 0
+	}
+
+	
+
+
+	focus = {
+		id = RAM_loyality_to_reich
+		icon = GFX_focus_ger_reichskommisariats
+		mutually_exclusive = { focus = RAM_support_opposition }
+		#prerequisite = { focus = }
+
+		x = 11
+		y = 0
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.15
+			add_political_power = 75
+			add_country_leader_trait = dictator
+			add_country_leader_trait = eager_collaborator
+			
+			set_party_name = {
+				ideology = fascism
+				long_name = "Nationalsozialistische Amerikanische Arbeiterpartei"
+				name = "NSAAP"
+			}
+			
+			set_party_name = {
+				ideology = democratic
+				long_name = "American Resistance Movement (Democratic)"
+				name = "ARM(D)"
+			}
+			
+			set_party_name = {
+				ideology = communism
+				long_name = "American Resistance Movement (Communist)"
+				name = "ARM(C)"
+			}
+
+			set_party_name = {
+				ideology = neutrality
+				long_name = "American Resistance Movement (Military)"
+				name = "ARM(M)"
+			}
+
+		}
+		
+	}
+
+	focus = {
+		id = RAM_exile_opposition
+		icon = GFX_focus_SOV_penal_battalions
+		#mutually_exclusive = {  }
+		prerequisite = { focus = RAM_loyality_to_reich }
+
+		x = 11
+		y = 1
+		#relative_position_id = 
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		add_popularity = {
+			ideology = communism
+			popularity = -0.15
+		}
+		
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.15
+		}
+		
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.15
+		}
+		
+		}
+		
+	}
+	
+	focus = {
+		id = RAM_total_obedience
+		icon = GFX_goal_continuous_restrict_freedom
+		mutually_exclusive = { focus = RAM_limited_self }
+		prerequisite = { focus = RAM_exile_opposition }
+
+		x = 9
+		y = 2
+		#relative_position_id = 
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			swap_ideas = {
+				remove_idea = RAM_american_resistance_1
+				add_idea = RAM_american_resistance_2
+			}
+		
+			add_autonomy_score = {
+				value = -300
+				localization = " "
+			}
+			
+			add_opinion_modifier = {
+				target = GER
+				modifier = offered_support
+			}
+			
+			GER = {
+			
+				add_opinion_modifier = {
+					target = RAM
+					modifier = offered_support
+				}
+			
+			}
+		
+		}
+		
+	}
+	
+	focus = {
+		id = RAM_deport_locals
+		icon = GFX_goal_continuous_suppression
+		#mutually_exclusive = { focus = RAM_limited_self }
+		prerequisite = { focus = RAM_total_obedience }
+
+		x = 9
+		y = 3
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_political_power = 250
+			add_stability = -0.15
+		
+			add_timed_idea = { 
+				idea = RAM_deport_locals 
+				days = 360
+			}
+			
+			every_owned_state = {
+				add_compliance = 10
+				add_resistance = -10
+			}
+		}
+		
+		
+	}
+
+	focus = {
+		id = RAM_germanization
+		icon = GFX_goal_tfv_saf_support_german_coup
+		#mutually_exclusive = { focus = RAM_limited_self }
+		prerequisite = { focus = RAM_deport_locals }
+
+		x = 9
+		y = 4
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			swap_ideas = {
+				remove_idea = RAM_hyper_inflation_1
+				add_idea = RAM_hyper_inflation_2
+			}
+			
+			add_stability = -0.1
+			add_war_support = 0.1
+			
+			every_owned_state = {
+				add_compliance = 30
+				add_resistance = -20
+			}
+		}
+		
+		
+	}
+
+	focus = {
+		id = RAM_german_investors
+		icon = GFX_focus_chi_mission_to_germany
+		mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_germanization }
+
+		x = 7
+		y = 5
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_war_support = 0.15
+			add_ideas = { HUN_invite_foreign_investors }
+		}
+	}
+	
+	focus = {
+		id = RAM_german_refines
+		icon = GFX_goal_generic_oil_refinery
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_german_investors }
+
+		x = 5
+		y = 6
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 3.0
+				uses = 1
+				category = synth_resources
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 375
+				}
+				375 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+					add_compliance = 80
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAM_german_werke
+		icon = GFX_goal_generic_construct_civ_factory
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_german_investors }
+
+		x = 7
+		y = 6
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_compliance = 75
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_compliance = 75
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_compliance = 75
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAM_new_dollar
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 7
+		y = 7
+		prerequisite = { focus = RAM_german_werke }
+		mutually_exclusive = { }
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { }
+		completion_reward = {
+			add_political_power = 300
+			add_stability = 0.5
+			custom_effect_tooltip = RAM.tt.2
+			hidden_effect = {
+				add_ideas = { reichsdollar }
+			}
+			
+			swap_ideas = {
+				remove_idea = RAM_hyper_inflation_2
+				add_idea = RAM_hyper_inflation_1
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_german_steel
+		icon = GFX_focus_generic_steel
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_german_refines }
+
+		x = 5
+		y = 7
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_full_control_of_state = 361
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 361
+				}
+				361 = {
+					add_resource = {
+						type = steel
+						amount = 35
+						state = 361
+					}
+					add_compliance = 40
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_german_research
+		icon = GFX_goal_generic_scientific_exchange
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_german_steel }
+		prerequisite = { focus = RAM_new_dollar }
+
+		x = 6
+		y = 8
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = RAM_hidden
+		icon = GFX_focus_generic_industry_1
+		#mutually_exclusive = { focus = RAM_german_investors }
+		prerequisite = { 
+			focus = RAM_germanization
+		}
+
+		x = 11
+		y = 5
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			always = no
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAM_american_investors
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = RAM_german_investors }
+		prerequisite = { 
+			
+		}
+
+		x = 11
+		y = 5
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			OR = {
+				has_completed_focus = RAM_germanization
+				has_completed_focus = RAM_purge_traitors
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_political_power = 50
+			add_stability = 0.15
+			add_war_support = 0.05
+		
+			add_tech_bonus = {
+				name = "American Investors"
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_compliance = 60
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAM_autarky
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RAM_american_investors }
+		x = 11
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = {}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_autarky
+				bonus = 1.0
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+			add_ideas = GER_autarky_idea
+			
+			swap_ideas = {
+				remove_idea = RAM_hyper_inflation_2
+				add_idea = RAM_hyper_inflation_1
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_guarantee_dream
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		#mutually_exclusive = { focus = RAM_german_investors }
+		prerequisite = { focus = RAM_autarky }
+
+		x = 11
+		y = 7
+		#relative_position_id = 
+		cost = 12
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			OR = {
+				has_completed_focus = RAM_germanization
+				has_completed_focus = RAM_purge_traitors
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_political_power = 300
+			add_stability = 0.3
+			add_war_support = 0.3
+		
+			add_tech_bonus = {
+				name = "American Investors"
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_compliance = 60
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			hidden_effect = {
+				add_research_slot = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_texas_oil
+		icon = GFX_goal_generic_oil_refinery
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_american_investors }
+
+		x = 13
+		y = 6
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = { }
+
+		completion_reward = {
+			add_stability = -0.05
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 3.0
+				uses = 1
+				category = synth_resources
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 375
+				}
+				375 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 5
+						instant_build = yes
+					}
+					add_core_of = RAM
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAM_american_aluminum
+		icon = GFX_focus_generic_aluminum
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_texas_oil }
+
+		x = 13
+		y = 7
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+		}
+
+		search_filters = { }
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 361
+				}
+				361 = {
+					add_resource = {
+						type = aluminium
+						amount = 35
+						state = 361
+					}
+					add_compliance = 40
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_demand_alaska
+		icon = GFX_goal_generic_demand_territory
+		#mutually_exclusive = { focus = RAM_american_investors }
+		prerequisite = { focus = RAM_guarantee_dream }
+		prerequisite = { focus = RAM_american_aluminum }
+
+		x = 12
+		y = 8
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_army_manpower = {
+				size > 1000000
+			}
+		}
+
+		search_filters = { }
+		
+		completion_reward = {
+			custom_effect_tooltip = RAM.tt.ask
+			if = {
+				limit = {
+					GER = {
+						has_opinion = {
+							target = RAM
+							value > 50
+						}
+					}
+				}
+				RAM = {
+					transfer_state = 463
+				hidden_effect = {
+					463 = { add_core_of = RAM }
+					transfer_state = 629
+					transfer_state = 630
+					transfer_state = 631
+					transfer_state = 727
+					transfer_state = 642
+					transfer_state = 631
+				}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_army_innovations
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = RAM_german_research focus = RAM_military_factory focus = RAM_demand_alaska }
+		prerequisite = { focus = RAM_military_factory }
+		x = 8
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { }
+		completion_reward = {
+			# Balance research bonus to 2 techs in land_doctrine
+			army_experience = 40
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					name = mech_army_bonus
+					technology = basic_medium_tank
+					technology = improved_medium_tank
+					technology = advanced_medium_tank
+					technology = mechanised_infantry
+				}	
+			}
+			else = {
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					name = mech_army_bonus
+					technology = basic_medium_tank_chassis
+					technology = improved_medium_tank_chassis
+					technology = advanced_medium_tank_chassis
+					technology = mechanised_infantry
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_army_innovations_2
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RAM_german_research focus = RAM_military_factory focus = RAM_demand_alaska }
+		prerequisite = { focus = RAM_military_factory }
+		x = 10
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { }
+		completion_reward = {
+			# Balance research bonus for 2 techs under land_doctrine
+			
+			army_experience = 60
+			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			} 
+		}
+	}
+	
+	focus = {
+		id = RAM_the_new_state
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = RAM_army_innovations_2 }
+		prerequisite = { focus = RAM_army_innovations }
+		x = 9
+		y = 10
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = { }
+		completion_reward = {
+			add_political_power = 500
+			add_stability = 0.75
+			add_war_support = 0.75
+			
+
+			
+			custom_effect_tooltip = RAM.tt.yipe
+			
+			hidden_effect = {
+				
+				add_research_slot = 2
+				
+				remove_ideas = {
+					RAM_american_resistance_1
+					RAM_american_resistance_2
+					RAM_american_resistance_3
+					
+					RAM_hyper_inflation_1
+					RAM_hyper_inflation_2
+					RAM_hyper_inflation_3
+					RAM_hyper_inflation_4
+					RAM_hyper_inflation_5
+				}
+			
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}
+			}
+		}
+	}
+
+		#################
+		### INTEGRATE ###
+		#################
+		
+	focus = {
+		id = RAM_integrate_east
+		icon = GFX_goal_generic_construct_infrastructure
+		#mutually_exclusive = { focus = RAM_german_investors }
+		prerequisite = { focus = RAM_german_investors focus = RAM_american_investors }
+
+		x = 9
+		y = 6
+		#relative_position_id = 
+		cost = 15
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			
+			OR = {
+				AND = {
+					has_completed_focus = RAM_german_steel
+					has_completed_focus = RAM_new_dollar
+				}
+				AND = {
+					has_completed_focus = RAM_guarantee_dream
+					has_completed_focus = RAM_american_aluminum
+				}
+			}
+			
+			OR = {
+				RAM = {
+					has_full_control_of_state = 357
+					has_full_control_of_state = 358
+					has_full_control_of_state = 359
+					has_full_control_of_state = 360
+					has_full_control_of_state = 361
+					has_full_control_of_state = 362
+					has_full_control_of_state = 816
+					has_full_control_of_state = 261
+					has_full_control_of_state = 369
+					has_full_control_of_state = 396
+					has_full_control_of_state = 393
+					has_full_control_of_state = 395
+					has_full_control_of_state = 394
+					has_full_control_of_state = 373
+					has_full_control_of_state = 392
+					has_full_control_of_state = 391
+					has_full_control_of_state = 383
+					has_full_control_of_state = 384
+					has_full_control_of_state = 390
+					has_full_control_of_state = 389
+					has_full_control_of_state = 382
+					has_full_control_of_state = 381
+					has_full_control_of_state = 388
+					has_full_control_of_state = 376
+					has_full_control_of_state = 375
+					has_full_control_of_state = 374
+					has_full_control_of_state = 372
+					has_full_control_of_state = 371
+					has_full_control_of_state = 370
+					has_full_control_of_state = 368
+					has_full_control_of_state = 367
+					has_full_control_of_state = 363
+					has_full_control_of_state = 364
+					has_full_control_of_state = 365
+					has_full_control_of_state = 366
+					}
+				RCS = {
+					has_full_control_of_state = 357
+					has_full_control_of_state = 358
+					has_full_control_of_state = 359
+					has_full_control_of_state = 360
+					has_full_control_of_state = 361
+					has_full_control_of_state = 362
+					has_full_control_of_state = 816
+					has_full_control_of_state = 261
+					has_full_control_of_state = 369
+					has_full_control_of_state = 396
+					has_full_control_of_state = 393
+					has_full_control_of_state = 395
+					has_full_control_of_state = 394
+					has_full_control_of_state = 373
+					has_full_control_of_state = 392
+					has_full_control_of_state = 391
+					has_full_control_of_state = 383
+					has_full_control_of_state = 384
+					has_full_control_of_state = 390
+					has_full_control_of_state = 389
+					has_full_control_of_state = 382
+					has_full_control_of_state = 381
+					has_full_control_of_state = 388
+					has_full_control_of_state = 376
+					has_full_control_of_state = 375
+					has_full_control_of_state = 374
+					has_full_control_of_state = 372
+					has_full_control_of_state = 371
+					has_full_control_of_state = 370
+					has_full_control_of_state = 368
+					has_full_control_of_state = 367
+					has_full_control_of_state = 363
+					has_full_control_of_state = 364
+					has_full_control_of_state = 365
+					has_full_control_of_state = 366
+				}
+			}
+		}		
+
+		search_filters = {}
+
+		
+		completion_reward = {
+			
+			custom_effect_tooltip = RAM.tt.1
+			
+			hidden_effect = {
+				
+				swap_ideas = {
+					remove_idea = RAM_hyper_inflation_1
+					add_idea = RAM_hyper_inflation_2
+				}
+			
+				357 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				358 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				359 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				360 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				361 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				362 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				816 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				261 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				369 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				396 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				393 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				395 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				394 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				373 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				392 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				391 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				383 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				384 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				390 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				389 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				382 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				381 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				388 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				376 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				375 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				374 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				372 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				371 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				370 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				368 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				367 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				363 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				364 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				365 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				366 = {
+					add_core_of = RAM
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+		focus = {
+			id = RAM_integrate_west
+			icon = GFX_goal_generic_construct_infrastructure
+			#mutually_exclusive = { focus = RAM_german_investors }
+			prerequisite = { focus = RAM_german_investors focus = RAM_american_investors }
+
+			x = 9
+			y = 7
+			#relative_position_id = 
+			cost = 13
+			ai_will_do = {
+				factor = 5
+			}
+			available = {
+				
+				has_full_control_of_state = 386
+				has_full_control_of_state = 387
+				has_full_control_of_state = 385
+				has_full_control_of_state = 378
+				has_full_control_of_state = 379
+				has_full_control_of_state = 380
+				has_full_control_of_state = 377
+				
+				has_completed_focus = RAM_integrate_east
+			}
+
+			search_filters = {}
+			
+			bypass = {
+				country_exists = RPZ
+			}
+			
+			completion_reward = {
+			
+				custom_effect_tooltip = RAM.tt.3
+				
+				hidden_effect = {
+				
+					swap_ideas = {
+						remove_idea = RAM_hyper_inflation_2
+						add_idea = RAM_hyper_inflation_3
+					}
+				
+					386 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					
+					}
+					
+					387 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				
+					385 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+
+					}
+					
+					378 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+
+					}
+					
+					379 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+
+					}
+					
+					380 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+
+					}
+					
+					377 = {
+						add_core_of = RAM
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = RAM_military_factory
+			icon = GFX_goal_generic_construct_mil_factory
+			#mutually_exclusive = { focus = RAM_german_investors }
+			prerequisite = { focus = RAM_german_investors focus = RAM_american_investors }
+
+			x = 9
+			y = 8
+			#relative_position_id = 
+			cost = 20
+			ai_will_do = {
+				factor = 5
+			}
+			available = {
+				
+				has_completed_focus = RAM_integrate_east
+				has_completed_focus = RAM_integrate_west
+				has_war = no
+			
+			}
+
+			search_filters = {}
+
+			
+			completion_reward = {
+			
+				custom_effect_tooltip = RAM.tt.4
+				
+				hidden_effect = {
+				
+					swap_ideas = {
+						remove_idea = RAM_hyper_inflation_3
+						add_idea = RAM_hyper_inflation_4
+					}
+				
+					every_owned_state = {
+					
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					
+					}
+					
+				}
+			}
+		}
+
+
+
+######################
+
+	focus = {
+		id = RAM_limited_self
+		icon = GFX_goal_continuous_boost_freedom
+		mutually_exclusive = { focus = RAM_total_obedience }
+		prerequisite = { focus = RAM_exile_opposition }
+
+		x = 13
+		y = 2
+		#relative_position_id = 
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			always = no
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			custom_effect_tooltip = RAM.tt.warning
+		
+#			add_autonomy_score = {
+#				value = 300
+#				localization = " "
+#			}
+#			
+#			add_opinion_modifier = {
+#				target = GER
+#				modifier = betrayed_guarantee
+#			}
+#			
+#			GER = {
+#			
+#				add_opinion_modifier = {
+#					target = RAM
+#					modifier = betrayed_guarantee
+#				}
+#			
+#			}
+		
+		}
+		
+	}
+
+
+	focus = {
+		id = RAM_support_opposition
+		icon = GFX_focus_ger_oppose_hitler
+		#prerequisite = { focus = RAM_loyality_to_reich }
+		mutually_exclusive = { focus = RAM_loyality_to_reich }
+
+		x = 26
+		y = 0
+		#relative_position_id = 
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_political_power = -25
+			kill_country_leader = yes
+			
+			create_country_leader = {
+				name = "Military Council"
+				#desc = ""
+				picture = GFX_Portrait_Germany_Military_Administration
+				expire = "1965.1.1"
+				ideology = neo_nazism
+				traits = {
+				cabinet_crisis
+				}
+			}
+			
+			swap_ideas = {
+				remove_idea = RAM_american_resistance_1
+				add_idea = RAM_american_resistance_2
+			}
+			
+			
+			set_party_name = {
+				ideology = fascism
+				long_name = "German Military Council"
+				name = "NSAAP"
+			}
+			
+			set_party_name = {
+				ideology = democratic
+				long_name = "Unity Party of America"
+				name = "Unity Party"
+			}
+			
+			set_party_name = {
+				ideology = communism
+				long_name = "Communist Party of America"
+				name = "CPA"
+			}
+
+			set_party_name = {
+				ideology = neutrality
+				long_name = "United States Military"
+				name = "USM"
+			}
+			
+		}
+	}
+
+	focus = {
+		id = RAM_democratic_path
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = RAM_support_opposition }
+		mutually_exclusive = { 
+			focus = RAM_communist_path 
+			focus = RAM_neutrality_path
+		}
+
+		x = 26
+		y = 2
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+			
+		}
+	}
+	
+	focus = {
+		id = RAM_get_old_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RAM_democratic_path }
+		mutually_exclusive = {
+			focus = RAM_mobilize_workers
+			focus = RAM_socialist_democracy
+		}
+
+		x = 26
+		y = 3
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_political_power = -10
+			add_war_support = 0.05
+			add_stability = 0.05
+		
+			add_manpower = 150000
+		
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+		
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6500
+				producer = USA
+			}	
+
+		}
+	}
+	
+	
+	focus = {
+		id = RAM_socialist_democracy
+		icon = GFX_focus_prc_social_democracy
+		prerequisite = { 
+			focus = RAM_democratic_path
+			focus = RAM_communist_path
+		}
+		
+		mutually_exclusive = { 
+			focus = RAM_get_old_equipment
+			focus = RAM_mobilize_workers
+		}
+		x = 23
+		y = 3
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_political_power = 150
+			add_stability = -0.05
+			add_war_support = -0.05
+			
+			add_manpower = 350000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6500
+				producer = USA
+			}	
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4500
+				producer = SOV
+			}
+			
+			
+			set_party_name = {
+				ideology = communism
+				long_name = "Socialist Democratic Party of America (Socialist)"
+				name = "SDPA(S)"
+			}
+			
+			set_party_name = {
+				ideology = democratic
+				long_name = "Socialist Democratic Party of America (Democratic)"
+				name = "SDAP(D)"
+			}
+			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RAM_communist_path
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		prerequisite = { focus = RAM_support_opposition }
+		mutually_exclusive = { 
+			focus = RAM_democratic_path 
+			focus = RAM_neutrality_path
+		}
+
+		x = 20
+		y = 2
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+			
+		}
+	}
+
+	focus = {
+		id = RAM_mobilize_workers
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		prerequisite = { focus = RAM_communist_path }
+		mutually_exclusive = {
+			focus = RAM_socialist_democracy
+			focus = RAM_get_old_equipment
+		}
+
+		x = 20
+		y = 3
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_political_power = -75
+			add_war_support = -0.15
+			add_stability = 0.15
+		
+			add_manpower = 350000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4500
+				producer = SOV
+			}
+		
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			
+		}
+	}
+
+
+	focus = {
+		id = RAM_neutrality_path
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RAM_support_opposition }
+		mutually_exclusive = { 
+			focus = RAM_democratic_path 
+			focus = RAM_communist_path
+		}
+
+		x = 30
+		y = 2
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+			
+		}
+	}
+	
+	focus = {
+		id = RAM_recruit_old_military
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RAM_neutrality_path }
+		mutually_exclusive = { 
+		}
+
+		x = 30
+		y = 3
+		#relative_position_id = { RAM_support_opposition }
+		cost = 10
+		ai_will_do = {	
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_political_power = -75
+			add_war_support = 0.15
+			add_stability = -0.15
+			
+			army_experience = 50
+			add_manpower = 350000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 15000
+				producer = GER
+			}
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_prepare_for_civil_war
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RAM_get_old_equipment focus = RAM_mobilize_workers focus = RAM_socialist_democracy focus = RAM_recruit_old_military }
+		mutually_exclusive = { 
+		}
+		
+
+		
+		x = 26
+		y = 5
+		#relative_position_id = { RAM_support_opposition }
+		cost = 12
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+			fascism < 0.5
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			swap_ideas = {
+				remove_idea = RAM_american_resistance_2
+				add_idea = RAM_american_resistance_3
+			}
+			357 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			358 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			360 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			359 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			361 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			360 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			361 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			261 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			816 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			362 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			363 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			364 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			365 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			366 = {
+				add_core_of = RAM
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RAM_communist_uprising
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		prerequisite = { focus = RAM_prepare_for_civil_war }
+		prerequisite = { focus = RAM_communist_path focus = RAM_socialist_democracy }
+		mutually_exclusive = { 
+		}
+
+		x = 24
+		y = 6
+		#relative_position_id = { RAM_support_opposition }
+		cost = 1
+		ai_will_do = {	
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			set_autonomy = {
+				target = RAM
+				autonomy_state = autonomy_free
+			}
+			remove_ideas = RAM_american_resistance_3
+			start_civil_war = {
+				ruling_party = communism
+				# Original country's ideology changes to communism
+				ideology = fascism
+				# Breakaway gets old ideology of ROOT
+				size = 0.8
+				capital = 378
+				states_filter = {
+					NOT = { is_core_of	= RAM }
+				}
+				keep_political_leader = no
+				keep_political_party_members = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_democratic_uprising
+		icon = GFX_focus_eng_unite_the_anglosphere
+		prerequisite = { focus = RAM_prepare_for_civil_war }
+		prerequisite = { focus = RAM_democratic_path focus = RAM_socialist_democracy }
+		mutually_exclusive = { 
+		}
+
+		x = 26
+		y = 6
+		#relative_position_id = { RAM_support_opposition }
+		cost = 1
+		ai_will_do = {	
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			set_autonomy = {
+				target = RAM
+				autonomy_state = autonomy_free
+			}
+			remove_ideas = RAM_american_resistance_3
+			start_civil_war = {
+				ruling_party = democratic
+				# Original country's ideology changes to communism
+				ideology = fascism
+				# Breakaway gets old ideology of ROOT
+				size = 0.8
+				capital = 378
+				states_filter = {
+					NOT = { is_core_of	= RAM }
+				}
+				keep_political_leader = no
+				keep_political_party_members = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_neutrality_uprising
+		icon = GFX_focus_generic_military_dictatorship
+		prerequisite = { focus = RAM_prepare_for_civil_war }
+		prerequisite = { focus = RAM_neutrality_path }
+		mutually_exclusive = { 
+		}
+
+		x = 28
+		y = 6
+		#relative_position_id = { RAM_support_opposition }
+		cost = 1
+		ai_will_do = {	
+			factor = 10
+		}
+		
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			set_autonomy = {
+				target = RAM
+				autonomy_state = autonomy_free
+			}
+			remove_ideas = RAM_american_resistance_3
+			start_civil_war = {
+				ruling_party = neutrality
+				# Original country's ideology changes to communism
+				ideology = fascism
+				# Breakaway gets old ideology of ROOT
+				size = 0.8
+				capital = 378
+				states_filter = {
+					NOT = { is_core_of	= RAM }
+				}
+				keep_political_leader = no
+				keep_political_party_members = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = RAM_purge_traitors
+		icon = GFX_focus_TUR_purge_the_kemalists
+		prerequisite = { focus = RAM_communist_uprising focus = RAM_democratic_uprising focus = RAM_neutrality_uprising }
+		mutually_exclusive = { 
+		}
+
+		x = 26
+		y = 8
+		#relative_position_id = { RAM_support_opposition }
+		cost = 3
+		ai_will_do = {	
+			factor = 10
+		}
+		
+		available = {
+			RAM = { has_civil_war = no  }
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			add_manpower = -5000
+			add_stability = 0.15
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.65
+			}
+			
+			create_country_leader = {
+				name = "German Collaborators"
+				#desc = ""
+				picture = GFX_Portrait_Germany_Military_Administration
+				expire = "1965.1.1"
+				ideology = neo_nazism
+				traits = {
+				}
+			}
+			
+			set_party_name = {
+				ideology = fascism
+				long_name = "German Collaborators"
+				name = "German Collaborators"
+			}
+			
+			hidden_effect = {
+				set_politics = {
+					ruling_party = ROOT
+					elections_allowed = yes
+				}
+			}
+		}
+	}	
+}
+
+### CREDITS TO: Based Austrian
+### DISCORD: CommunistDino#8843

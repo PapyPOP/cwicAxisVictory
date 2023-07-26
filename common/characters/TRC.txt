@@ -1,0 +1,15 @@
+characters={
+	TRC_Leader={
+		name= "Iskhak Razzakov"
+		portraits={
+			civilian={
+				large=GFX_Portrait_TRC_Iskhak_Razzakov
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

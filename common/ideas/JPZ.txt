@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		JPZ_japanrule = {
+			picture = state_shintoism
+			allowed = {
+				tag = JPZ
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+				fascism_drift = 0.03
+				surrender_limit = -0.3
+				stability_factor = -0.25
+				consumer_goods_factor = 0.25
+			}
+		}
+	}
+}

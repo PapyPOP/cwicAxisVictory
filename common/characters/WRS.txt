@@ -1,0 +1,15 @@
+characters={
+	WRS_Leader={
+		name= "Georgy Zhukov"
+		portraits={
+			civilian={
+				large=GFX_portrait_SOV_georgy_zhukov
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

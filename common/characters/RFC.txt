@@ -1,0 +1,15 @@
+characters={
+	RFC_Leader={
+		name= "Military Administration of Frankreich"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Military_Administration
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

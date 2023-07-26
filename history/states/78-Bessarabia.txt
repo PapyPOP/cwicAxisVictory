@@ -4,13 +4,12 @@ state = {
 	name = "STATE_78"
 
 	history = {
-		owner = ROM
+		owner = GGR
 		set_state_flag = temperate
 		set_state_flag = lakes
 		set_state_flag = small
 		set_state_flag = semideveloped
-		add_core_of = ROM
-		add_core_of = MOL
+		add_core_of = GGR
 		victory_points = { 11686 10 }
 		buildings = {
 			infrastructure = 1

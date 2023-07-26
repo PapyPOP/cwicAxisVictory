@@ -1,0 +1,15 @@
+characters={
+	OLB_Leader={
+		name= "Herbert Ernst Vahl"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Herbert-Ernst_Vahl
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

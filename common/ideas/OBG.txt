@@ -1,0 +1,120 @@
+ideas = {
+	country = {
+		OBG_germanrule = {
+			picture = german_advisors
+			allowed = {
+				tag = OBG
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.1
+			}
+		}
+		OBG_resistance = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = OBG
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.3
+				stability_factor = -0.3
+				conscription_factor = -0.5
+			}
+		}
+		OBG_germanization = {
+			picture = generic_manpower_bonus
+			allowed = {
+				tag = OBG
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 350
+			}
+		}
+		OBG_serfdom = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = OBG
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+			}
+		}
+		OBG_serfdom_two = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = OBG
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		OBG_strong_army = {
+			picture = generic_infantry_bonus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		OBG_research_boost = {
+			picture = generic_research_bonus
+			allowed = {
+				tag = OGT
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+	}
+}

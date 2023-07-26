@@ -4,7 +4,7 @@ state = {
 	name = "STATE_97"
 
 	history = {
-		owner = ROS
+		owner = GGR
 		set_state_flag = temperate
 		set_state_flag = basic
 		set_state_flag = small
@@ -21,7 +21,7 @@ state = {
 			fossil_fuel_powerplant = 1
 
 		}
-		add_core_of = ROS
+		add_core_of = GGR
 		set_variable = { coal_amount = 0 }
 
 		set_state_flag = HDI4

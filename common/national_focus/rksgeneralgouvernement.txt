@@ -1,0 +1,784 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = rksgeneralgouvernement_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RGV
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1250 }  
+	initial_show_position = {
+		x = 12
+		y = 0
+	}
+
+	focus = {
+		id = RGV_establish_control
+		icon = GFX_goal_generic_defence
+		#prerequisite = { focus = }
+
+		x = 15
+		y = 0
+		#relative_position_id = 
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.15
+			add_political_power = 75
+			add_country_leader_trait = dictator
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_factory_output
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RGV_establish_control }
+
+		x = -4
+		y = 1
+		relative_position_id = RGV_establish_control
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RGV_forcedlabor
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_industry_krakau
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RGV_factory_output }
+
+		x = 1
+		y = 1
+		relative_position_id = RGV_factory_output
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    88 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}	
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_industry_research
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RGV_factory_output }
+
+		x = -1
+		y = 1
+		relative_position_id = RGV_factory_output
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = RGV_german_industry
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RGV_industry_research }
+
+		x = 0
+		y = 1
+		relative_position_id = RGV_industry_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_steel_factory
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RGV_industry_krakau }
+
+		x = 2
+		y = 1
+		relative_position_id = RGV_industry_krakau
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				add_resource = {
+                type = steel
+                amount = 12
+                }
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = RGV_bigger_industry
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = RGV_military_industry focus = RGV_industry_krakau }
+		
+
+		x = 0
+		y = 2
+		relative_position_id = RGV_industry_krakau
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RGV_bigger_industry }
+		
+
+		x = 0
+		y = 2
+		relative_position_id = RGV_bigger_industry
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    10 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			
+			88 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_lviv_factory
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RGV_factory_output }
+		
+
+		x = -3
+		y = 1
+		relative_position_id = RGV_factory_output
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		RGV = { controls_state = 91 controls_state = 89 }
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    91 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}	
+			}
+			
+			89 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}	
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RGV_segregate_population
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RGV_establish_control }
+
+		x = 4
+		y = 1
+		relative_position_id = RGV_establish_control
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_stability = -0.05
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = RGV_german_business
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = RGV_segregate_population }
+
+		x = -2
+		y = 1
+		relative_position_id = RGV_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_ideas = RGV_consumergoods
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = RGV_invite_settlers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = RGV_german_business }
+
+		x = 1
+		y = 1
+		relative_position_id = RGV_german_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_manpower = 30000
+			add_ideas = RGV_manpower
+		}
+	}
+	
+	focus = {
+		id = RGV_empower_germanmarket
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RGV_german_business }
+
+		x = 0
+		y = 3
+		relative_position_id = RGV_german_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_ideas = RGV_production
+		}
+	}
+	
+	focus = {
+		id = RGV_equipment_german
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RGV_segregate_population }
+
+		x = 2
+		y = 1
+		relative_position_id = RGV_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 3000
+                producer = GER
+            }
+			
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 50
+                producer = GER
+            }
+		}
+	}
+	
+	focus = {
+		id = RGV_army_exp
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RGV_equipment_german }
+
+		x = -1
+		y = 1
+		relative_position_id = RGV_equipment_german
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			army_experience = 10
+			
+			add_doctrine_cost_reduction = {
+				name = ggv_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = RGV_army_buildup
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RGV_army_exp }
+		prerequisite = { focus = RGV_invite_settlers }
+
+		x = -1
+		y = 1
+		relative_position_id = RGV_army_exp
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			add_stability = 0.1
+			
+			division_template = {
+				name = "Garrison Division"
+				priority = 1
+				division_names_group = GER_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+
+		
+				}
+				support = {
+				    engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			
+			88 = {
+				create_unit = {
+					division = "name = \"1. Garrison Division\" division_template = \"Garrison Division\" start_experience_factor = 0.5" 
+					owner = RGV
+				}
+				
+				create_unit = {
+					division = "name = \"2. Garrison Division\" division_template = \"Garrison Division\" start_experience_factor = 0.5" 
+                    owner = RGV
+				}
+				
+			}
+			
+			10 = {
+			    create_unit = {
+					division = "name = \"3. Garrison Division\" division_template = \"Garrison Division\" start_experience_factor = 0.5" 
+					owner = RGV
+				}
+	        }
+			
+			92 = {
+			    create_unit = {
+					division = "name = \"4. Garrison Division\" division_template = \"Garrison Division\" start_experience_factor = 0.5" 
+					owner = RGV
+				}
+	        }
+		}
+	}
+	
+	focus = {
+		id = RGV_equipment_trucks
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RGV_equipment_german }
+
+		x = 1
+		y = 1
+		relative_position_id = RGV_equipment_german
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    army_experience = 10
+		    
+			add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 125
+                producer = GER
+            }
+		}
+	}
+	
+	focus = {
+		id = RGV_fortification
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RGV_equipment_trucks }
+
+		x = 0
+		y = 1
+		relative_position_id = RGV_equipment_trucks
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		    RGV = {
+			    controls_state = 10
+				controls_state = 90
+				controls_state = 88
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_war_support = 0.10
+		
+		    10 = {
+				add_building_construction = {
+				type = bunker
+				province = 11492  
+				level = 1
+				}
+			}
+			10 = {
+				add_building_construction = {
+				type = bunker
+				province = 3544  
+				level = 1
+				}
+			}
+			10 = {
+				add_building_construction = {
+				type = bunker
+				province = 6511  
+				level = 1
+				}
+			}
+			90 = {
+				add_building_construction = {
+				type = bunker
+				province = 3458
+				level = 1
+				}
+			}
+			90 = {
+				add_building_construction = {
+				type = bunker
+				province = 562  
+				level = 1
+				}
+			}
+			90 = {
+				add_building_construction = {
+				type = bunker
+				province = 3497  
+				level = 1
+				}
+			}
+			90 = {
+				add_building_construction = {
+				type = bunker
+				province = 11430  
+				level = 1
+				}
+			}
+			88 = {
+				add_building_construction = {
+				type = bunker
+				province = 9427  
+				level = 1
+				}
+			}
+			88 = {
+				add_building_construction = {
+				type = bunker
+				province = 13205
+				level = 1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RGV_research_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = RGV_army_buildup focus = RGV_fortification }
+
+		x = 1
+		y = 1
+		relative_position_id = RGV_army_buildup
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		   add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = RGV_booming_economy
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RGV_empower_germanmarket }
+		prerequisite = { focus = RGV_research_slot }
+
+		x = -2
+		y = 1
+		relative_position_id = RGV_research_slot
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		   add_ideas = RGV_production2
+		}
+	}
+	
+	focus = {
+		id = RGV_tackle_resistance
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = RGV_infrastructure }
+		prerequisite = { focus = RGV_booming_economy }
+
+
+		x = 3
+		y = 1
+		relative_position_id = RGV_infrastructure
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        remove_ideas = RGV_resistance
+		}
+	}
+	
+	focus = {
+		id = RGV_germanisation
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = {
+		    focus = RGV_tackle_resistance
+		}
+
+
+		x = 0
+		y = 1
+		relative_position_id = RGV_tackle_resistance
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        add_manpower = 50000
+			add_stability = 0.25
+		}
+	}
+}
+
