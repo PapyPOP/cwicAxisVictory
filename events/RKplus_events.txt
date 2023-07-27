@@ -4478,20 +4478,12 @@ country_event = {
 		}
 		RDW = {
 			transfer_state = 218
-			transfer_state = 245
 			transfer_state = 217
-			transfer_state = 265
-			transfer_state = 829
 			transfer_state = 239
-			transfer_state = 401
 			hidden_effect = {
 				add_state_core = 218
-				add_state_core = 245
 				add_state_core = 217
-				add_state_core = 265
-				add_state_core = 829
 				add_state_core = 239
-				add_state_core = 401
 			}
 		}
 		GGR = {
@@ -4507,20 +4499,12 @@ country_event = {
 		}
 		RMK = {
 			transfer_state = 218
-			transfer_state = 245
 			transfer_state = 217
-			transfer_state = 265
-			transfer_state = 829
 			transfer_state = 239
-			transfer_state = 401
 			hidden_effect = {
 				add_state_core = 218
-				add_state_core = 245
 				add_state_core = 217
-				add_state_core = 265
-				add_state_core = 829
 				add_state_core = 239
-				add_state_core = 401
 			}
 		}
 		GGR = {
@@ -4532,24 +4516,16 @@ country_event = {
 		trigger = {
 		}
 		RMK = {
-			transfer_state = 265
-			transfer_state = 829
 			transfer_state = 239
-			transfer_state = 401
 			hidden_effect = {
-				add_state_core = 265
-				add_state_core = 829
 				add_state_core = 239
-				add_state_core = 401
 			}
 		}
 		RKS = {
 			transfer_state = 218
-			transfer_state = 245
 			transfer_state = 217
 			hidden_effect = {
 				add_state_core = 218
-				add_state_core = 245
 				add_state_core = 217
 			}
 		}
