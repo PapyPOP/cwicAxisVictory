@@ -2431,9 +2431,11 @@ country_event = {
 		OBG = {
 			transfer_state = 17
 			transfer_state = 18
+			transfer_state = 20
 			hidden_effect = {
 				add_state_core = 17
 				add_state_core = 18
+				add_state_core = 20
 			}
 		}
 		add_stability = -0.1
