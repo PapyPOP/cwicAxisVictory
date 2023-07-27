@@ -106,30 +106,19 @@ GGR_reichskommissariats_category_europe = {
 				263 = { is_controlled_by_ROOT_or_subject = yes }
 				264 = { is_controlled_by_ROOT_or_subject = yes }
 				210 = { is_controlled_by_ROOT_or_subject = yes }
-				246 = { is_controlled_by_ROOT_or_subject = yes }
+				217 = { is_controlled_by_ROOT_or_subject = yes }
+				218 = { is_controlled_by_ROOT_or_subject = yes }
 				247 = { is_controlled_by_ROOT_or_subject = yes }
-				248 = { is_controlled_by_ROOT_or_subject = yes }
 				242 = { is_controlled_by_ROOT_or_subject = yes }
 				219 = { is_controlled_by_ROOT_or_subject = yes }
-				253 = { is_controlled_by_ROOT_or_subject = yes }
-				243 = { is_controlled_by_ROOT_or_subject = yes }
 				224 = { is_controlled_by_ROOT_or_subject = yes }
 				205 = { is_controlled_by_ROOT_or_subject = yes }
 				223 = { is_controlled_by_ROOT_or_subject = yes }
-				254 = { is_controlled_by_ROOT_or_subject = yes }
-				255 = { is_controlled_by_ROOT_or_subject = yes }
 				222 = { is_controlled_by_ROOT_or_subject = yes }
 				258 = { is_controlled_by_ROOT_or_subject = yes }
 				220 = { is_controlled_by_ROOT_or_subject = yes }
-				257 = { is_controlled_by_ROOT_or_subject = yes }
 				240 = { is_controlled_by_ROOT_or_subject = yes }
 				260 = { is_controlled_by_ROOT_or_subject = yes }
-				
-				252 = { is_controlled_by_ROOT_or_subject = yes }
-				351 = { is_controlled_by_ROOT_or_subject = yes }
-				879 = { is_controlled_by_ROOT_or_subject = yes }
-				880 = { is_controlled_by_ROOT_or_subject = yes }
-				214 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -162,30 +151,19 @@ GGR_reichskommissariats_category_europe = {
 						state = 263
 						state = 264
 						state = 210
-						state = 246
+						state = 217
+						state = 218
 						state = 247
-						state = 248
 						state = 242
 						state = 219
-						state = 253
-						state = 243
 						state = 224
 						state = 205
 						state = 223
-						state = 254
-						state = 255
 						state = 222
 						state = 258
 						state = 220
-						state = 257
 						state = 240
 						state = 260
-						
-						state = 252
-						state = 351
-						state = 879
-						state = 880
-						state = 214
 				    }
 			    }
 
