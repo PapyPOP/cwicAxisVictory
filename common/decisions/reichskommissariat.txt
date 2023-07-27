@@ -105,7 +105,6 @@ GGR_reichskommissariats_category_europe = {
 				209 = { is_controlled_by_ROOT_or_subject = yes }
 				263 = { is_controlled_by_ROOT_or_subject = yes }
 				264 = { is_controlled_by_ROOT_or_subject = yes }
-				210 = { is_controlled_by_ROOT_or_subject = yes }
 				247 = { is_controlled_by_ROOT_or_subject = yes }
 				242 = { is_controlled_by_ROOT_or_subject = yes }
 				219 = { is_controlled_by_ROOT_or_subject = yes }
@@ -148,7 +147,6 @@ GGR_reichskommissariats_category_europe = {
 						state = 209
 						state = 263
 						state = 264
-						state = 210
 						state = 247
 						state = 242
 						state = 219
