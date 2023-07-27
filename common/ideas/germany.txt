@@ -1,5 +1,5 @@
-# ideas = {
-	# country = {
+ideas = {
+	country = {
 		# GER_RESISTANCE_SUPPRESSED = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_RESISTANCE_SUPPRESSED"
@@ -1813,7 +1813,7 @@
 				# army_armor_speed_factor = 0.1
 			# }
 		# }
-		speertard and gobbles (Speer and Goebbels)
+		# speertard and gobbles (Speer and Goebbels)
 		# GER_slave_labor_1 = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_slave_labor_1"
@@ -2502,7 +2502,7 @@
 				# industrial_capacity_factory = -0.1
 			# }
 		# }
-		bore man (Bormann)
+		# bore man (Bormann)
 		# GER_bormann_corruption_1 = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_bormann_corruption_1"
@@ -3008,7 +3008,7 @@
 				# global_building_slots_factor = -0.1
 			# }
 		# }
-		fat man (Goering)
+		# fat man (Goering)
 		# GER_natsoc_with_goering_characteristics = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_natsoc_with_goering_characteristics"
@@ -3710,7 +3710,7 @@
 				# industrial_capacity_dockyard = 0.3
 			# }
 		# }
-		hummler (Himmler)
+		# hummler (Himmler)
 		# GER_central_registery = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_central_registery"
@@ -4023,7 +4023,7 @@
 				# air_paradrop_defence_factor = 0.05
 			# }
 		# }
-		Heer Germany
+		# Heer Germany
 		# GER_symbolic_parliament_1 = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_symbolic_parliament_1"
@@ -4677,7 +4677,7 @@
 				# production_speed_coastal_bunker_factor = 0.25
 			# }
 		# }
-		Council Gormany
+		# Council Gormany
 		# GER_united_agencies = {
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_united_agencies"
@@ -5424,7 +5424,7 @@
 			# }
 		# }
 		# GER_Increase_Production = {
-			essentially just increased mil production to revitalize aka modernize equipment/army
+			# essentially just increased mil production to revitalize aka modernize equipment/army
 			# on_add = {
 				# log = "[GetDateText]: [Root.GetName]: add idea GER_Increase_Production"
 			# }
@@ -5734,5 +5734,5 @@
 				# ai_desired_divisions_factor = 0.3
 			# }
 		# }
-	# }
-# }
+	}
+}
