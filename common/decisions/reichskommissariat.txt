@@ -1886,10 +1886,10 @@ GGR_reichskommissariats_category_europe = {
 			
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.26
-				845 = { is_controlled_by_ROOT_or_subject = yes }
 				3 = { is_controlled_by_ROOT_or_subject = yes }
-				847 = { is_controlled_by_ROOT_or_subject = yes }
 				151 = { is_controlled_by_ROOT_or_subject = yes }
+				1077 = { is_controlled_by_ROOT_or_subject = yes }
+				1074 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -1916,10 +1916,10 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-					   	state = 845
 						state = 3
-						state = 847
 						state = 151
+						state = 1077
+						state = 1074
 
 				    }
 			    }
@@ -2804,6 +2804,7 @@ GGR_reichskommissariats_category_europe = {
 			    tooltip = rksplus.tooltip.44
 				18  = { is_controlled_by_ROOT_or_subject = yes }
 				17  = { is_controlled_by_ROOT_or_subject = yes }
+				20  = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 			country_exists = RFC
@@ -2840,6 +2841,9 @@ GGR_reichskommissariats_category_europe = {
 			    tooltip = rksplus.tooltip.167
 				160  = { is_controlled_by_ROOT_or_subject = yes }
 				159  = { is_controlled_by_ROOT_or_subject = yes }
+				39  = { is_controlled_by_ROOT_or_subject = yes }
+				1048  = { is_controlled_by_ROOT_or_subject = yes }
+				756  = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 		    country_exists = RIT
