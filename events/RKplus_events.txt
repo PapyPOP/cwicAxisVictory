@@ -676,7 +676,7 @@ country_event = {
 		RUA = {
 			transfer_state = 91
 			transfer_state = 89
-			add_state_core = 243
+			transfer_state = 243
 			hidden_effect = {
 				add_state_core = 91
 				add_state_core = 89
@@ -4330,9 +4330,11 @@ country_event = {
 			set_country_flag = RNW_territorial_decision
 			transfer_state = 100
 			transfer_state = 337
+			transfer_state = 1258
 			hidden_effect = {
 				add_state_core = 100
 				add_state_core = 337
+				add_state_core = 1258
 			}
 		}
 	}
@@ -4343,9 +4345,11 @@ country_event = {
 		OIC = {
 			transfer_state = 100
 			transfer_state = 337
+			transfer_state = 1258
 			hidden_effect = {
 				add_state_core = 100
 				add_state_core = 337
+				add_state_core = 1258
 			}
 		}
 		GGR = {
@@ -4365,9 +4369,11 @@ country_event = {
 		GGR = {
 			transfer_state = 100
 			transfer_state = 337
+			transfer_state = 1258
 			hidden_effect = {
 				add_state_core = 100
 				add_state_core = 337
+				add_state_core = 1258
 			}
 		}
 		RNW = {

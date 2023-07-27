@@ -1037,6 +1037,17 @@ GGR_reichskommissariats_category_europe = {
 				142 = { is_controlled_by_ROOT_or_subject = yes }
 				143 = { is_controlled_by_ROOT_or_subject = yes }
 				144 = { is_controlled_by_ROOT_or_subject = yes }
+				722 = { is_controlled_by_ROOT_or_subject = yes }
+				814 = { is_controlled_by_ROOT_or_subject = yes }
+				980 = { is_controlled_by_ROOT_or_subject = yes }
+				1227 = { is_controlled_by_ROOT_or_subject = yes }
+				956 = { is_controlled_by_ROOT_or_subject = yes }
+				998 = { is_controlled_by_ROOT_or_subject = yes }
+				1331 = { is_controlled_by_ROOT_or_subject = yes }
+				1155 = { is_controlled_by_ROOT_or_subject = yes }
+				904 = { is_controlled_by_ROOT_or_subject = yes }
+				957 = { is_controlled_by_ROOT_or_subject = yes }
+				802 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -1067,6 +1078,17 @@ GGR_reichskommissariats_category_europe = {
 						state = 142
 						state = 143
 						state = 144
+						state = 722
+						state = 814
+						state = 980
+						state = 1227
+						state = 956
+						state = 998
+						state = 1331
+						state = 1155
+						state = 904
+						state = 957
+						state = 802
 
 				    }
 			    }
@@ -1230,6 +1252,9 @@ GGR_reichskommissariats_category_europe = {
 			    tooltip = rksplus.tooltip.19
 			    99 = { is_controlled_by_ROOT_or_subject = yes }
 			    37 = { is_controlled_by_ROOT_or_subject = yes }		
+			    776 = { is_controlled_by_ROOT_or_subject = yes }		
+			    1023 = { is_controlled_by_ROOT_or_subject = yes }		
+			    1146 = { is_controlled_by_ROOT_or_subject = yes }		
 			}
 		}
 
@@ -1258,6 +1283,9 @@ GGR_reichskommissariats_category_europe = {
 				    OR = {
 					    state = 99
 						state = 37
+						state = 776		
+						state = 1023		
+						state = 1146	
 
 				    }
 			    }
