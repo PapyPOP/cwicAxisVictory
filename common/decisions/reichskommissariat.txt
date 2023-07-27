@@ -11,29 +11,24 @@ GGR_reichskommissariats_category_europe = {
 			
 			custom_trigger_tooltip = { 
 			    tooltip = rksplus.tooltip.1
+				11 = { is_controlled_by_ROOT_or_subject = yes }
 			    94 = { is_controlled_by_ROOT_or_subject = yes }
 				194 = { is_controlled_by_ROOT_or_subject = yes }
 				95 = { is_controlled_by_ROOT_or_subject = yes }
-				204 = { is_controlled_by_ROOT_or_subject = yes }
 				241 = { is_controlled_by_ROOT_or_subject = yes }
-				206 = { is_controlled_by_ROOT_or_subject = yes }
 				96 = { is_controlled_by_ROOT_or_subject = yes }
 				207 = { is_controlled_by_ROOT_or_subject = yes }
-				784 = { is_controlled_by_ROOT_or_subject = yes }
-				814 = { is_controlled_by_ROOT_or_subject = yes }
-				11 = { is_controlled_by_ROOT_or_subject = yes }
-				815 = { is_controlled_by_ROOT_or_subject = yes }
+				204 = { is_controlled_by_ROOT_or_subject = yes }
 				189 = { is_controlled_by_ROOT_or_subject = yes }
 				190 = { is_controlled_by_ROOT_or_subject = yes }
-				809 = { is_controlled_by_ROOT_or_subject = yes }
-				808 = { is_controlled_by_ROOT_or_subject = yes }
-				810 = { is_controlled_by_ROOT_or_subject = yes }
 				12 = { is_controlled_by_ROOT_or_subject = yes }
-				811 = { is_controlled_by_ROOT_or_subject = yes }
 				13 = { is_controlled_by_ROOT_or_subject = yes }
-				812 = { is_controlled_by_ROOT_or_subject = yes }
-				813 = { is_controlled_by_ROOT_or_subject = yes }
 				191 = { is_controlled_by_ROOT_or_subject = yes }	
+				1042 = { is_controlled_by_ROOT_or_subject = yes }	
+				1049 = { is_controlled_by_ROOT_or_subject = yes }	
+				209 = { is_controlled_by_ROOT_or_subject = yes }	
+				1052 = { is_controlled_by_ROOT_or_subject = yes }	
+				1041 = { is_controlled_by_ROOT_or_subject = yes }	
 			}
 
 		}
@@ -61,29 +56,24 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-					    state = 94
+					    state = 11
+						state = 94
 						state = 194
 						state = 95
-						state = 204
 						state = 241
-						state = 206
 						state = 96
 						state = 207
-						state = 784
-						state = 814
-						state = 11
-						state = 815
+						state = 204
 						state = 189
 						state = 190
-						state = 809
-						state = 808
-						state = 810
 						state = 12
-						state = 811
 						state = 13
-						state = 812
-						state = 813
-						state = 191
+						state = 191	
+						state = 1042	
+						state = 1049	
+						state = 209	
+						state = 1052	
+						state = 1041
 				    }
 			    }
 
