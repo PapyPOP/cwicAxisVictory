@@ -1952,10 +1952,20 @@ GGR_reichskommissariats_category_europe = {
 				162 = { is_controlled_by_ROOT_or_subject = yes }
 				157 = { is_controlled_by_ROOT_or_subject = yes }
 				2 = { is_controlled_by_ROOT_or_subject = yes }
-				849 = { is_controlled_by_ROOT_or_subject = yes }
 				117 = { is_controlled_by_ROOT_or_subject = yes }
 				156 = { is_controlled_by_ROOT_or_subject = yes }
 				115 = { is_controlled_by_ROOT_or_subject = yes }
+				114 = { is_controlled_by_ROOT_or_subject = yes }
+				1189 = { is_controlled_by_ROOT_or_subject = yes }
+				1136 = { is_controlled_by_ROOT_or_subject = yes }
+				159 = { is_controlled_by_ROOT_or_subject = yes }
+				39 = { is_controlled_by_ROOT_or_subject = yes }
+				160 = { is_controlled_by_ROOT_or_subject = yes }
+				1048 = { is_controlled_by_ROOT_or_subject = yes }
+				1257 = { is_controlled_by_ROOT_or_subject = yes }
+				1038 = { is_controlled_by_ROOT_or_subject = yes }
+				1255 = { is_controlled_by_ROOT_or_subject = yes }
+				1256 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -2843,7 +2853,6 @@ GGR_reichskommissariats_category_europe = {
 				159  = { is_controlled_by_ROOT_or_subject = yes }
 				39  = { is_controlled_by_ROOT_or_subject = yes }
 				1048  = { is_controlled_by_ROOT_or_subject = yes }
-				756  = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 		    country_exists = RIT
