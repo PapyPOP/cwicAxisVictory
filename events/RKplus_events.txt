@@ -2410,9 +2410,11 @@ country_event = {
 		RFC = {
 			transfer_state = 17
 			transfer_state = 18
+			transfer_state = 20
 			hidden_effect = {
 				add_state_core = 17
 				add_state_core = 18
+				add_state_core = 20
 			}
 		}
 	}
