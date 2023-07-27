@@ -262,13 +262,12 @@ GGR_reichskommissariats_category_europe = {
 				235 = { is_controlled_by_ROOT_or_subject = yes }
 				232 = { is_controlled_by_ROOT_or_subject = yes }
 				233 = { is_controlled_by_ROOT_or_subject = yes }
-				827 = { is_controlled_by_ROOT_or_subject = yes }
-				826 = { is_controlled_by_ROOT_or_subject = yes }
-				828 = { is_controlled_by_ROOT_or_subject = yes }
-				821 = { is_controlled_by_ROOT_or_subject = yes }
-				231 = { is_controlled_by_ROOT_or_subject = yes }
 				229 = { is_controlled_by_ROOT_or_subject = yes }
-				230 = { is_controlled_by_ROOT_or_subject = yes }
+				932 = { is_controlled_by_ROOT_or_subject = yes }
+				245 = { is_controlled_by_ROOT_or_subject = yes }
+				264 = { is_controlled_by_ROOT_or_subject = yes }
+				265 = { is_controlled_by_ROOT_or_subject = yes }
+				798 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -302,13 +301,12 @@ GGR_reichskommissariats_category_europe = {
 						state = 235
 						state = 232
 						state = 233
-						state = 827
-						state = 826
-						state = 828
-						state = 821
-						state = 231
 						state = 229
-						state = 230
+						state = 932
+						state = 245
+						state = 264
+						state = 265
+						state = 798
 				    }
 			    }
 
