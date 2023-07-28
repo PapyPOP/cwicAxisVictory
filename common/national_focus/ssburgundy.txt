@@ -611,46 +611,58 @@ focus_tree = {
 			
 			
 			    OR = {
-			        GER = {
-					    controls_state = 785
-						controls_state = 29
+			        GGR = {
+						controls_state = 29	
 						controls_state = 6
 						controls_state = 34
+						controls_state = 57
+						controls_state = 1507
+						controls_state = 958
+						controls_state = 735
 					}
 					
 					AND = { 
 					    RFC = {
-						    controls_state = 785
 						    controls_state = 29
+						    controls_state = 735
 						}
 						
 						RBG = {
 						    controls_state = 6
 						    controls_state = 34
+							controls_state = 57
+							controls_state = 1507
+							controls_state = 958
 						}
 					}
 					
 					AND = { 
 					    RFC = {
-						    controls_state = 785
+						    controls_state = 29
 						}
 						
 						RBG = {
-						    controls_state = 29
+						    controls_state = 735
 						    controls_state = 6
 						    controls_state = 34
+							controls_state = 57
+							controls_state = 1507
+							controls_state = 958
 						}
 					}
 					
 					AND = { 
 					    RFC = {
-						    controls_state = 785
+						    controls_state = 29
 						}
 						
-						GER = {
-						    controls_state = 29
+						GGR = {
+						    controls_state = 735
 						    controls_state = 6
 						    controls_state = 34
+							controls_state = 57
+							controls_state = 1507
+							controls_state = 958
 						}
 					}
 				}
@@ -660,7 +672,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-            GER = { country_event = rksplus.64 }
+            GGR = { country_event = rksplus.64 }
 		
 		}
 	}

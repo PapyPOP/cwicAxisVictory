@@ -38,10 +38,11 @@ autonomy_state = {
 		OVERLORD = { original_tag = GGR }
 		### Is Eligable to be an SS-Ordenstaat, mainly for Burgundy, Gotenland and Banat
 		OR = {
-			original_tag = SSB
-			original_tag = SBA
-			original_tag = RGO
-			has_country_flag = is_ss_puppet
+			original_tag = RBA
+			original_tag = OGT
+			original_tag = OIC
+			original_tag = OBG
+			original_tag = OLB
 		}
 	}
 

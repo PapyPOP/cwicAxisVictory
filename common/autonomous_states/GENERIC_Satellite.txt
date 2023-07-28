@@ -40,7 +40,7 @@ autonomy_state = {
 				original_tag = USA
 			}
 		}
-		### NOT The America
+		### NOT The CHINESE
 		NOT = {
 			OVERLORD = {
 				original_tag = CHI

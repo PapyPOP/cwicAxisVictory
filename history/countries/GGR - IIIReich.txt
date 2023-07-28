@@ -225,6 +225,63 @@ create_faction = "Neue Ordnung"
 add_to_faction = GGR
 
 #######################
+# Puppets
+#######################
+set_autonomy = {
+	target = OBG
+	autonomous_state = autonomy_SS_Ordenstaat
+}
+set_autonomy = {
+	target = OIC
+	autonomous_state = autonomy_SS_Ordenstaat
+}
+set_autonomy = {
+	target = OGT
+	autonomous_state = autonomy_SS_Ordenstaat
+}
+set_autonomy = {
+	target = RBM
+	autonomous_state = autonomy_reichsprotectorate
+}
+set_autonomy = {
+	target = RNW
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RDN
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RNT
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RBG
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RGV
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RUA
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = ROT
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RMK
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RKS
+	autonomous_state = autonomy_reichskommissariat
+}
+
+
+#######################
 # Leaders
 #######################
 # National Socialism

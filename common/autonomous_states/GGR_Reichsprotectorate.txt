@@ -1,6 +1,7 @@
 autonomy_state = {
-	id = autonomy_reichskommissariat
+	id = autonomy_reichsprotectorate
 	
+	default = yes
 	is_puppet = yes
 	
 	min_freedom_level = 0.40
@@ -8,17 +9,19 @@ autonomy_state = {
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
-		units_deployed_to_overlord = yes
+		units_deployed_to_overlord = no
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 0.9
+		autonomy_manpower_share = 0.7
 		can_master_build_for_us = 1
-		conscription_factor = -0.5
-		extra_trade_to_overlord_factor = 1.0
-		overlord_trade_cost_factor = -0.9
+		conscription_factor = -0.25
+		extra_trade_to_overlord_factor = 0.6
+		overlord_trade_cost_factor = -0.6
 		cic_to_overlord_factor = 0.25
-		mic_to_overlord_factor = 0.65
 		license_subject_master_purchase_cost = -1
 		autonomy_gain_global_factor = -0.3
 	}
@@ -32,13 +35,23 @@ autonomy_state = {
 	}
 
 	ai_overlord_wants_garrison = {
-		always = yes
+		always = no
 	}
 
 	allowed = {	
 		OVERLORD = { original_tag = GGR }
+		### NOT an SS-Ordenstaat, mainly for Burgundy, Gotenland and Banat
+		NOT = { 
+			OR = { 
+				original_tag = RBA
+				original_tag = OGT
+				original_tag = OIC
+				original_tag = OBG
+				original_tag = OLB 
+			}	
+		}	
 	}
-	
+
 	can_take_level = {
 		#trigger here
 	}

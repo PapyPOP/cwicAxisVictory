@@ -1406,23 +1406,7 @@ units = {
 			}
 		}
 	}
-	division = {
-		name = "110th Gvardeyskaya Artilleriyskaya Diviziya"
-		location = 3656		# Buinaksk, Dagestan
-		division_template = "Artilleriyskaya Diviziya"
-		force_equipment_variants = {
-			motorized_equipment_1 = {
-				owner = "SOV"
-			}
-		}
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-	}
+
 	##### Infantry Divisions ####
 	division = {
 		name = "12nd 'Amur' Strelkovaya Diviziya"
@@ -1444,21 +1428,6 @@ units = {
 		location = 6989
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-			motorized_equipment_1 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
-		name = "19th Strelkovaya Diviziya"
-		location = 6997
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2
 		start_equipment_factor = 1
 		force_equipment_variants = {
 			infantry_equipment_0 = {
@@ -1557,21 +1526,6 @@ units = {
 		}
 	}
 	division = {
-		name = "89th 'Tamanskaya' Strelkovaya Diviziya"
-		location = 3653		### Batumi, Georgia
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-			motorized_equipment_1 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
 		name = "96th Strelkovaya Diviziya"
 		location = 6338		### Kazan, Russia
 		division_template = "Strelkovaya Diviziya"
@@ -1594,36 +1548,6 @@ units = {
 		start_equipment_factor = 1
 		force_equipment_variants = {
 			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
-		name = "164th Strelkovaya Diviziya"
-		location = 12320		### Yerevan, Armenia
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-			motorized_equipment_1 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
-		name = "261st Strelkovaya Diviziya"
-		location = 12441		### Gyumri, Armenia
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-			motorized_equipment_1 = {
 				owner = "SOV"
 			}
 		}
@@ -1759,18 +1683,6 @@ units = {
 	}
 	#### Mountain Divisions ####
 	division = {
-		name = "10th Gvardeyskaya Gornostrelkovaya Diviziya"
-		location = 6669
-		division_template = "Gornostrelkovaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-	}
-	division = {
 		name = "27th Gornostrelkovaya Diviziya"
 		location = 1384
 		division_template = "Gornostrelkovaya Diviziya"
@@ -1890,38 +1802,6 @@ units = {
 		force_equipment_variants = {
 			mechanized_equipment_2 = {
 				owner = "USA"
-			}
-		}
-		force_equipment_variants = {
-			motorized_equipment_1 = {
-				owner = "USA"
-			}
-		}
-		force_equipment_variants = {
-			spaag_equipment_1 = {
-				owner = "USA"
-			}
-		}
-		division_template = "Gvardeyskaya Mekhanizirovanaya Diviziya"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "31st Gvardeyskaya Mekhanizirovanaya Diviziya"
-		location = 1599
-		force_equipment_variants = {
-			infantry_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-		force_equipment_variants = {
-			mbt_equipment_0 = {
-				owner = "SOV"
-			}
-		}
-		force_equipment_variants = {
-			mechanized_equipment_2 = {
-				owner = "SOV"
 			}
 		}
 		force_equipment_variants = {
