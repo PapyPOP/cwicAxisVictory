@@ -4,7 +4,7 @@ state = {
 	name = "STATE_197"
 
 	history = {
-		owner = GGR
+		owner = RUA
 		set_state_flag = temperate
 		set_state_flag = riverlarge
 		set_state_flag = small
@@ -19,7 +19,8 @@ state = {
 			dockyard = 2
 
 		}
-		add_core_of = GGR
+		add_core_of = RUA
+		add_core_of = UKR
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		
