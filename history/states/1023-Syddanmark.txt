@@ -3,12 +3,13 @@ state = {
 	name = "STATE_1023"
 
 	history = {
-		owner = GGR
+		owner = RDN
 		set_state_flag = boreal
 		set_state_flag = lakes
 		set_state_flag = nominal
 		set_state_flag = semideveloped
-		add_core_of = GGR
+		add_core_of = RDN
+		add_core_of = DEN
 		buildings = {
 			infrastructure = 2
 			state_infrastructure = 2
