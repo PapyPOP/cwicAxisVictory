@@ -736,10 +736,19 @@ GGR_reichskommissariats_category_europe = {
 			
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.11
-			    109 = { is_controlled_by_ROOT_or_subject = yes }
+			    736 = { is_controlled_by_ROOT_or_subject = yes }
+				1488 = { is_controlled_by_ROOT_or_subject = yes }
+				1490 = { is_controlled_by_ROOT_or_subject = yes }
+				1493 = { is_controlled_by_ROOT_or_subject = yes }
+				109 = { is_controlled_by_ROOT_or_subject = yes }
+				1491 = { is_controlled_by_ROOT_or_subject = yes }
+				923 = { is_controlled_by_ROOT_or_subject = yes }
+				1492 = { is_controlled_by_ROOT_or_subject = yes }
+				163 = { is_controlled_by_ROOT_or_subject = yes }
+				1487 = { is_controlled_by_ROOT_or_subject = yes }
 				103 = { is_controlled_by_ROOT_or_subject = yes }
 				104 = { is_controlled_by_ROOT_or_subject = yes }
-				804 = { is_controlled_by_ROOT_or_subject = yes }
+				1489 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -766,10 +775,19 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-					    state = 109
+					    state = 736
+						state = 1490
+						state = 1488
+						state = 1493
+						state = 109
+						state = 1491
+						state = 923
+						state = 1492
+						state = 163
+						state = 1487
 						state = 103
 						state = 104
-						state = 804
+						state = 1489
 				    }
 			    }
 
@@ -2566,7 +2584,7 @@ GGR_reichskommissariats_category_europe = {
 			has_government = fascism
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.36
-				802 = { is_controlled_by_ROOT_or_subject = yes }
+				1482 = { is_controlled_by_ROOT_or_subject = yes }
 			    105 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
@@ -2726,7 +2744,8 @@ GGR_reichskommissariats_category_europe = {
 			has_government = fascism
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.40
-				764 = { is_controlled_by_ROOT_or_subject = yes }
+				45 = { is_controlled_by_ROOT_or_subject = yes }
+				1496 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 			OR = {
@@ -2754,46 +2773,6 @@ GGR_reichskommissariats_category_europe = {
 		}
 		timeout_effect = {
 			country_event = rksplus.14
-		}
-	}
-	
-	GGR_rksplus_vojvodina = { #vojvodina
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			custom_trigger_tooltip = {
-			    tooltip = rksplus.tooltip.41
-				45 = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-			OR = {
-			    country_exists = RSB
-				country_exists = RHG
-				country_exists = RBA
-				country_exists = RCR
-			}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = rksplus.15
-		}
-		timeout_effect = {
-			country_event = rksplus.15
 		}
 	}
 	
@@ -7345,7 +7324,8 @@ GGR_rksplus_category_integration = {
 			
 			has_government = fascism
 			controls_state = 102
-			controls_state = 853
+			controls_state = 1494
+			controls_state = 1495
 		}
 
 		cost = 250
@@ -7371,7 +7351,8 @@ GGR_rksplus_category_integration = {
 			GGR = {
 			
 			    add_state_core = 102
-			    add_state_core = 853
+			    add_state_core = 1494
+				add_state_core = 1495
 		    }
 		}
 	}

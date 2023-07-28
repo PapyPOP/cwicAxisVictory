@@ -1117,10 +1117,12 @@ country_event = {
 			country_exists = RAB
 		}
 		RAB = {
-			transfer_state = 802
+			transfer_state = 1482
+			transfer_state = 1483
 			transfer_state = 105
 			hidden_effect = {
-				add_state_core = 802
+				add_state_core = 1482
+				add_state_core = 1483
 				add_state_core = 105
 			}
 		}
@@ -1134,10 +1136,12 @@ country_event = {
 			country_exists = RSB
 		}
 		RSB = {
-			transfer_state = 802
+			transfer_state = 1482
+			transfer_state = 1483
 			transfer_state = 105
 			hidden_effect = {
-				add_state_core = 802
+				add_state_core = 1482
+				add_state_core = 1483
 				add_state_core = 105
 			}
 		}
@@ -1158,9 +1162,11 @@ country_event = {
 			}
 		}
 		RAB = {
-			transfer_state = 802
+			transfer_state = 1482
+			transfer_state = 1483
 			hidden_effect = {
-				add_state_core = 802
+				add_state_core = 1482
+				add_state_core = 1483
 			}
 		}
 		GGR = {
@@ -1219,9 +1225,11 @@ country_event = {
 			country_exists = RSB
 		}
 		RSB = {
-			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 1496
 			hidden_effect = {
-				add_state_core = 764
+				add_state_core = 45
+				add_state_core = 1496
 			}
 		}
 		GGR = {
@@ -1237,9 +1245,11 @@ country_event = {
 			}
 		}
 		RTS = {
-			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 1496
 			hidden_effect = {
-				add_state_core = 764
+				add_state_core = 45
+				add_state_core = 1496
 			}
 		}
 		GGR = {
@@ -1252,9 +1262,11 @@ country_event = {
 			country_exists = RBA
 		}
 		RBA = {
-			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 1496
 			hidden_effect = {
-				add_state_core = 764
+				add_state_core = 45
+				add_state_core = 1496
 			}
 		}
 		GGR = {
@@ -1275,12 +1287,14 @@ country_event = {
 			}
 		}
 		RBA = {
-			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 1496
 			set_capital = {
-				state = 764
+				state = 82
 			}
 			hidden_effect = {
-				add_state_core = 764
+				add_state_core = 45
+				add_state_core = 1496
 			}
 		}
 		GGR = {
@@ -1296,87 +1310,15 @@ country_event = {
 			}
 		}
 		RHG = {
-			transfer_state = 764
+			transfer_state = 45
+			transfer_state = 1496
 			hidden_effect = {
-				add_state_core = 764
+				add_state_core = 45
+				add_state_core = 1496
 			}
 		}
 		GGR = {
 			set_country_flag = GER_westbanat_territorial_decision
-		}
-	}
-}
-
-country_event = {
-	id = rksplus.15
-	title = rksplus.15.t
-	desc = rksplus.15.d
-	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
-	option = {
-		name = rksplus.15.a
-		trigger = {
-			country_exists = RBA
-			RBA = {
-				controls_state = 764
-			}
-		}
-		RBA = {
-			transfer_state = 45
-			hidden_effect = {
-				add_state_core = 45
-			}
-		}
-		GGR = {
-			set_country_flag = GER_vojvodina_territorial_decision
-		}
-	}
-	option = {
-		name = rksplus.15.b
-		trigger = {
-			country_exists = RSB
-			RSB = {
-				controls_state = 764
-			}
-		}
-		RSB = {
-			transfer_state = 45
-			hidden_effect = {
-				add_state_core = 45
-			}
-		}
-		GGR = {
-			set_country_flag = GER_vojvodina_territorial_decision
-		}
-	}
-	option = {
-		name = rksplus.15.c
-		trigger = {
-			country_exists = RHG
-		}
-		RHG = {
-			transfer_state = 45
-			hidden_effect = {
-				add_state_core = 45
-			}
-		}
-		GGR = {
-			set_country_flag = GER_vojvodina_territorial_decision
-		}
-	}
-	option = {
-		name = rksplus.15.e
-		trigger = {
-			country_exists = RCR
-		}
-		RCR = {
-			transfer_state = 45
-			hidden_effect = {
-				add_state_core = 45
-			}
-		}
-		GGR = {
-			set_country_flag = GER_vojvodina_territorial_decision
 		}
 	}
 }
