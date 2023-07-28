@@ -1093,6 +1093,15 @@ GGR_reichskommissariats_category_europe = {
 				38 = { is_controlled_by_ROOT_or_subject = yes }
 				666 = { is_controlled_by_ROOT_or_subject = yes }
 				124 = { is_controlled_by_ROOT_or_subject = yes }
+				928 = { is_controlled_by_ROOT_or_subject = yes }
+				967 = { is_controlled_by_ROOT_or_subject = yes }
+				969 = { is_controlled_by_ROOT_or_subject = yes }
+				970 = { is_controlled_by_ROOT_or_subject = yes }
+				971 = { is_controlled_by_ROOT_or_subject = yes }
+				972 = { is_controlled_by_ROOT_or_subject = yes }
+				973 = { is_controlled_by_ROOT_or_subject = yes }
+				974 = { is_controlled_by_ROOT_or_subject = yes }
+				975 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -1126,6 +1135,15 @@ GGR_reichskommissariats_category_europe = {
 						state = 38
 						state = 666
 						state = 124
+						state = 928
+						state = 967
+						state = 969
+						state = 970
+						state = 971
+						state = 972
+						state = 973
+						state = 974
+						state = 975
 
 				    }
 			    }
