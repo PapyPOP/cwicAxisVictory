@@ -11017,7 +11017,6 @@ GGR_rksplus_category_uniting_rks = {
 				GGR = { has_country_flag = GGR_transylvania_territorial_decision }
 				GGR = { has_country_flag = GGR_banat_territorial_decision }
 				GGR = { has_country_flag = GGR_westbanat_territorial_decision }
-				GGR = { has_country_flag = GGR_vojvodina_territorial_decision }
 				GGR = { has_country_flag = GGR_albania_territorial_decision }
 				GGR = { has_country_flag = GGR_serbia_territorial_decision }
 				GGR = { has_country_flag = GGR_southserbia_territorial_decision }
