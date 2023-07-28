@@ -656,12 +656,19 @@ GGR_reichskommissariats_category_europe = {
 			has_government = fascism
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.10
-			    80 = { is_controlled_by_ROOT_or_subject = yes }
+			    84 = { is_controlled_by_ROOT_or_subject = yes }
 				79 = { is_controlled_by_ROOT_or_subject = yes }
-				78 = { is_controlled_by_ROOT_or_subject = yes }
-				766 = { is_controlled_by_ROOT_or_subject = yes }
+				76 = { is_controlled_by_ROOT_or_subject = yes }
 				46 = { is_controlled_by_ROOT_or_subject = yes }
 				81 = { is_controlled_by_ROOT_or_subject = yes }
+				82 = { is_controlled_by_ROOT_or_subject = yes }
+				83 = { is_controlled_by_ROOT_or_subject = yes }
+				1247 = { is_controlled_by_ROOT_or_subject = yes }
+				1246 = { is_controlled_by_ROOT_or_subject = yes }
+				1245 = { is_controlled_by_ROOT_or_subject = yes }
+				1476 = { is_controlled_by_ROOT_or_subject = yes }
+				927 = { is_controlled_by_ROOT_or_subject = yes }
+				1477 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 			NOT = { has_subject = ROM }
 
@@ -690,12 +697,19 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-					    state = 80
+					    state = 84
 						state = 79
-						state = 78
-						state = 766
+						state = 76
 						state = 46
 						state = 81
+						state = 82
+						state = 83
+						state = 1247
+						state = 1246
+						state = 1245
+						state = 1476
+						state = 927
+						state = 1477
 				    }
 			    }
 
