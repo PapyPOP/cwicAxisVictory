@@ -771,10 +771,8 @@ country_event = {
 			country_exists = RSV
 		}
 		RSV = {
-			transfer_state = 664
 			transfer_state = 73
 			hidden_effect = {
-				add_state_core = 664
 				add_state_core = 73
 			}
 		}
@@ -788,10 +786,8 @@ country_event = {
 			country_exists = RHG
 		}
 		RHG = {
-			transfer_state = 664
 			transfer_state = 73
 			hidden_effect = {
-				add_state_core = 664
 				add_state_core = 73
 			}
 		}
@@ -816,10 +812,18 @@ country_event = {
 			transfer_state = 76
 			transfer_state = 84
 			transfer_state = 83
+			transfer_state = 82
+			transfer_state = 1246
+			transfer_state = 1247
+			transfer_state = 1477
 			hidden_effect = {
 				add_state_core = 76
 				add_state_core = 84
 				add_state_core = 83
+				add_state_core = 82
+				add_state_core = 1246
+				add_state_core = 1247
+				add_state_core = 1477
 			}
 		}
 		GGR = {
@@ -835,10 +839,18 @@ country_event = {
 			transfer_state = 76
 			transfer_state = 84
 			transfer_state = 83
+			transfer_state = 82
+			transfer_state = 1246
+			transfer_state = 1247
+			transfer_state = 1477
 			hidden_effect = {
 				add_state_core = 76
 				add_state_core = 84
 				add_state_core = 83
+				add_state_core = 82
+				add_state_core = 1246
+				add_state_core = 1247
+				add_state_core = 1477
 			}
 		}
 		GGR = {
@@ -854,15 +866,23 @@ country_event = {
 		RRO = {
 			transfer_state = 84
 			transfer_state = 83
+			transfer_state = 82
+			transfer_state = 1477
 			hidden_effect = {
 				add_state_core = 84
 				add_state_core = 83
+				add_state_core = 82
+				add_state_core = 1477
 			}
 		}
 		RHG = {
 			transfer_state = 76
+			transfer_state = 1247
+			transfer_state = 1246
 			hidden_effect = {
 				add_state_core = 76
+				add_state_core = 1247
+				add_state_core = 1246
 			}
 		}
 		GGR = {
@@ -883,10 +903,18 @@ country_event = {
 			transfer_state = 76
 			transfer_state = 84
 			transfer_state = 83
+			transfer_state = 82
+			transfer_state = 1246
+			transfer_state = 1247
+			transfer_state = 1477
 			hidden_effect = {
 				add_state_core = 76
 				add_state_core = 84
 				add_state_core = 83
+				add_state_core = 82
+				add_state_core = 1246
+				add_state_core = 1247
+				add_state_core = 1477
 			}
 		}
 		GGR = {
@@ -908,8 +936,10 @@ country_event = {
 		}
 		RBL = {
 			transfer_state = 77
+			transfer_state = 922
 			hidden_effect = {
 				add_state_core = 77
+				add_state_core = 922
 			}
 		}
 		GGR = {
@@ -923,8 +953,10 @@ country_event = {
 		}
 		RRO = {
 			transfer_state = 77
+			transfer_state = 922
 			hidden_effect = {
 				add_state_core = 77
+				add_state_core = 922
 			}
 		}
 		GGR = {
