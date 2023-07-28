@@ -4,7 +4,7 @@ state = {
 	name = "STATE_57"
 
 	history = {
-		owner = GGR
+		owner = RBG
 		set_state_flag = temperate
 		set_state_flag = river
 		set_state_flag = small
@@ -21,7 +21,7 @@ state = {
 			industrial_complex = 4
 
 		}
-		add_core_of = GGR
+		add_core_of = RBG
 		add_core_of = BEL
 		add_core_of = WAL
 		set_state_flag = HDI5

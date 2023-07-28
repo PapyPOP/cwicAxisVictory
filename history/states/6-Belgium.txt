@@ -3,7 +3,7 @@ state = {
 	name = "STATE_6"
 
 	history = {
-		owner = GGR
+		owner = RBG
 		set_state_flag = temperate
 		set_state_flag = basic
 		set_state_flag = small
@@ -21,7 +21,7 @@ state = {
 		add_core_of = BEL
 		add_core_of = FLA
 		add_core_of = WAL
-		add_core_of = GGR
+		add_core_of = RBG
 		set_state_flag = HDI5
 		set_variable = { tourism_infrastructure = 0 }
 		

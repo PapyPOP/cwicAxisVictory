@@ -3,8 +3,9 @@ state = {
 	name="STATE_1258"
 
 	history={
-		owner = GGR
-		add_core_of = GGR
+		owner = OIC
+		add_core_of = OIC
+		add_core_of = ICE
 		set_state_flag = mountains
 		set_state_flag = freshwatersea
 		set_state_flag = medium
