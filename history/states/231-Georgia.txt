@@ -4,7 +4,7 @@ state = {
 	name = "STATE_231"
 
 	history = {
-		owner = GEO
+		owner = RKS
 		set_state_flag = mountains
 		set_state_flag = river
 		set_state_flag = small
@@ -22,7 +22,7 @@ state = {
 			air_base = 3
 
 		}
-		add_core_of = GEO
+		add_core_of = RKS
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

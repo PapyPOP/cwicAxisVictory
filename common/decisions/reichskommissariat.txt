@@ -234,6 +234,14 @@ GGR_reichskommissariats_category_europe = {
 				798 = { is_controlled_by_ROOT_or_subject = yes }
 				217 = { is_controlled_by_ROOT_or_subject = yes }
 				218 = { is_controlled_by_ROOT_or_subject = yes }
+				231 = { is_controlled_by_ROOT_or_subject = yes }
+				933 = { is_controlled_by_ROOT_or_subject = yes }
+				567 = { is_controlled_by_ROOT_or_subject = yes }
+				934 = { is_controlled_by_ROOT_or_subject = yes }
+				210 = { is_controlled_by_ROOT_or_subject = yes }
+				230 = { is_controlled_by_ROOT_or_subject = yes }
+				560 = { is_controlled_by_ROOT_or_subject = yes }
+				799 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -275,6 +283,14 @@ GGR_reichskommissariats_category_europe = {
 						state = 798
 						state = 217
 						state = 218
+						state = 231
+						state = 933
+						state = 567
+						state = 934
+						state = 210
+						state = 230
+						state = 560
+						state = 799
 				    }
 			    }
 
@@ -8057,110 +8073,6 @@ GGR_rksplus_category_integration = {
 }
 
 GGR_rksplus_category_state_transfer = {
-
-	GGR_rksplus_zara = {
-
-		icon = GFX_decision_border_war
-
-		available = {
-			
-			has_government = fascism
-            custom_trigger_tooltip = { 
-			    tooltip = rksplus.tooltip.115
-			    163 = { is_controlled_by_ROOT_or_subject = yes }
-			}			
-	        country_exists = RCR
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-			163 = { is_controlled_by_ROOT_or_subject = yes }	
-			country_exists = RCR
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-		   
-			every_state = {
-			    limit = {
-				    OR = {
-					    state = 163	
-				    }
-			    }
-
-			    RCR = {
-				
-				    set_country_flag = RCR_territorial_decision
-
-				    transfer_state = PREV
-					
-					hidden_effect = {
-				        add_state_core = PREV
-					}
-
-			    }
-		    }
-		}
-	}
-	
-	GGR_rksplus_istria = {
-
-		icon = GFX_decision_border_war
-
-		available = {
-			
-			has_government = fascism
-			custom_trigger_tooltip = { 
-			    tooltip = rksplus.tooltip.116
-			    852 = { is_controlled_by_ROOT_or_subject = yes }
-			}
-	        country_exists = RCR
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-			852 = { is_controlled_by_ROOT_or_subject = yes }	
-			country_exists = RCR
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-		   
-			every_state = {
-			    limit = {
-				    OR = {
-					    state = 852	
-				    }
-			    }
-
-			    RCR = {
-				
-				    set_country_flag = RCR_territorial_decision1
-
-				    transfer_state = PREV
-					
-					hidden_effect = {
-				        add_state_core = PREV
-					}
-
-			    }
-		    }
-		}
-	}
 	
 	GGR_rksplus_rktransfer_palestinejordan = {
 
@@ -11009,9 +10921,6 @@ GGR_rksplus_category_uniting_rks = {
 		
             custom_trigger_tooltip = { 
 			    tooltip = rksplus.unitetooltip.6
-			    RCR = { has_country_flag = RCR_territorial_decision }
-				RCR = { has_country_flag = RCR_territorial_decision1 }
-				
 				GGR = { has_country_flag = GGR_southern_slovakia_territorial_decision }			
 				GGR = { has_country_flag = GGR_dobrich_territorial_decision }              
 				GGR = { has_country_flag = GGR_transylvania_territorial_decision }

@@ -4,13 +4,12 @@ state = {
 	name = "STATE_934"
 
 	history = {
-		owner = GEO
+		owner = RKS
 		set_state_flag = mountains
 		set_state_flag = basic
 		set_state_flag = micro
 		set_state_flag = poor
-		add_core_of = GEO
-		add_core_of = ABK
+		add_core_of = RKS
 		victory_points = {
 			11617 5 
 		}

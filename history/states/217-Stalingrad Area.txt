@@ -6,7 +6,7 @@ state = {
 	}
 
 	history = {
-		owner = GGR
+		owner = RKS
 		set_state_flag = temperate
 		set_state_flag = riverlarge
 		set_state_flag = large
@@ -38,7 +38,7 @@ state = {
 
 			air_base = 3
 		}
-		add_core_of = GGR
+		add_core_of = RKS
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		
