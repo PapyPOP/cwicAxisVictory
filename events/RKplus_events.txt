@@ -491,8 +491,12 @@ country_event = {
 		}
 		RBL = {
 			transfer_state = 731
+			transfer_state = 106
+			transfer_state = 1484
 			hidden_effect = {
 				add_state_core = 731
+				add_state_core = 106
+				add_state_core = 1484
 			}
 		}
 		GGR = {
@@ -1075,11 +1079,11 @@ country_event = {
 			country_exists = RBL
 		}
 		RBL = {
-			transfer_state = 803
 			transfer_state = 106
+			transfer_state = 1484
 			hidden_effect = {
-				add_state_core = 803
 				add_state_core = 106
+				add_state_core = 1484
 			}
 		}
 		GGR = {
@@ -1092,11 +1096,11 @@ country_event = {
 			country_exists = RSB
 		}
 		RSB = {
-			transfer_state = 803
 			transfer_state = 106
+			transfer_state = 1484
 			hidden_effect = {
-				add_state_core = 803
 				add_state_core = 106
+				add_state_core = 1484
 			}
 		}
 		GGR = {
@@ -1119,11 +1123,11 @@ country_event = {
 		RAB = {
 			transfer_state = 1482
 			transfer_state = 1483
-			transfer_state = 105
+			transfer_state = 1065
 			hidden_effect = {
 				add_state_core = 1482
 				add_state_core = 1483
-				add_state_core = 105
+				add_state_core = 1065
 			}
 		}
 		GGR = {
@@ -1138,11 +1142,11 @@ country_event = {
 		RSB = {
 			transfer_state = 1482
 			transfer_state = 1483
-			transfer_state = 105
+			transfer_state = 1065
 			hidden_effect = {
 				add_state_core = 1482
 				add_state_core = 1483
-				add_state_core = 105
+				add_state_core = 1065
 			}
 		}
 		GGR = {
@@ -1156,9 +1160,9 @@ country_event = {
 			country_exists = RAB
 		}
 		RSB = {
-			transfer_state = 105
+			transfer_state = 1065
 			hidden_effect = {
-				add_state_core = 105
+				add_state_core = 1065
 			}
 		}
 		RAB = {
