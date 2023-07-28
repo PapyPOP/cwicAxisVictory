@@ -8,7 +8,7 @@ state = {
 	buildings_max_level_factor = 1.000
 	state_category = pop5dev1
 	history = {
-		owner = GGR
+		owner = RGV
 		set_state_flag = temperate
 		set_state_flag = riverlarge
 		set_state_flag = nominal
@@ -34,7 +34,8 @@ state = {
 			anti_air_building = 2
 			air_base = 5
 		}
-		add_core_of = GGR
+		add_core_of = RGV
+		add_core_of = POL
 		set_variable = { coal_amount = 0 }
 
 		set_state_flag = HDI4
