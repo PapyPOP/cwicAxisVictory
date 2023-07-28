@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1331"
 
 	history = {
-		owner = GGR
+		owner = RNW
 		set_state_flag = boreal
 		set_state_flag = lakes
 		set_state_flag = small
@@ -17,8 +17,9 @@ state = {
 			infrastructure = 0
 			state_infrastructure = 0
 		}
-		#add_core_of = GGR
-        #add_core_of = SOV
+		add_core_of = RNW
+		add_core_of = NOR
+        add_core_of = SOV
 	}
 
 	provinces = {

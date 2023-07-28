@@ -9,7 +9,7 @@ state = {
 		victory_points = {
 			6115 15 
 		}
-		owner = GGR
+		owner = RNW
 		set_state_flag = boreal
 		set_state_flag = lakes
 		set_state_flag = micro
@@ -31,7 +31,8 @@ state = {
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = GGR
+		add_core_of = RNW
+		add_core_of = NOR
 		set_state_flag = HDI4
 		set_variable = { tourism_infrastructure = 0 }
 		
