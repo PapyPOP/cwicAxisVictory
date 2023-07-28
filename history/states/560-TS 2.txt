@@ -13,6 +13,7 @@ state = {
 		set_state_flag = micro
 		set_state_flag = undeveloped
 		add_core_of = RKS
+		add_core_of = ARM
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1

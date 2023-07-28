@@ -10,6 +10,8 @@ state = {
 		set_state_flag = micro
 		set_state_flag = poor
 		add_core_of = RKS
+		add_core_of = GEO
+		add_core_of = SOS
 		victory_points = {
 			1530 5 
 		}
