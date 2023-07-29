@@ -2161,26 +2161,23 @@ GGR_reichskommissariats_category_europe = {
 
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.28
-				165 = { is_controlled_by_ROOT_or_subject = yes }
-				794 = { is_controlled_by_ROOT_or_subject = yes }
-				166 = { is_controlled_by_ROOT_or_subject = yes }
-				167 = { is_controlled_by_ROOT_or_subject = yes }
-				172 = { is_controlled_by_ROOT_or_subject = yes }
-				176 = { is_controlled_by_ROOT_or_subject = yes }
-				793 = { is_controlled_by_ROOT_or_subject = yes }
-				792 = { is_controlled_by_ROOT_or_subject = yes }
-				791 = { is_controlled_by_ROOT_or_subject = yes }
-				174 = { is_controlled_by_ROOT_or_subject = yes }
-				790 = { is_controlled_by_ROOT_or_subject = yes }
 				171 = { is_controlled_by_ROOT_or_subject = yes }
-				788 = { is_controlled_by_ROOT_or_subject = yes }
+				1540 = { is_controlled_by_ROOT_or_subject = yes }
+				173 = { is_controlled_by_ROOT_or_subject = yes }
+				176 = { is_controlled_by_ROOT_or_subject = yes }
+				172 = { is_controlled_by_ROOT_or_subject = yes }
+				166 = { is_controlled_by_ROOT_or_subject = yes }
+				165 = { is_controlled_by_ROOT_or_subject = yes }
+				177 = { is_controlled_by_ROOT_or_subject = yes }
+				167 = { is_controlled_by_ROOT_or_subject = yes }
+				175 = { is_controlled_by_ROOT_or_subject = yes }
 				41 = { is_controlled_by_ROOT_or_subject = yes }
 				170 = { is_controlled_by_ROOT_or_subject = yes }
-				175 = { is_controlled_by_ROOT_or_subject = yes }
-				168 = { is_controlled_by_ROOT_or_subject = yes }
+				1541 = { is_controlled_by_ROOT_or_subject = yes }
 				169 = { is_controlled_by_ROOT_or_subject = yes }
-				789 = { is_controlled_by_ROOT_or_subject = yes }
-				173 = { is_controlled_by_ROOT_or_subject = yes }
+				168 = { is_controlled_by_ROOT_or_subject = yes }
+				1539 = { is_controlled_by_ROOT_or_subject = yes }
+				174 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -2217,8 +2214,9 @@ GGR_reichskommissariats_category_europe = {
 				180 = { is_controlled_by_ROOT_or_subject = yes }
 				181 = { is_controlled_by_ROOT_or_subject = yes }
 				112 = { is_controlled_by_ROOT_or_subject = yes }
-				795 = { is_controlled_by_ROOT_or_subject = yes }
 				179 = { is_controlled_by_ROOT_or_subject = yes }
+				338 = { is_controlled_by_ROOT_or_subject = yes }
+				1085 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -2248,8 +2246,9 @@ GGR_reichskommissariats_category_europe = {
 					   	state = 180
 						state = 181
 						state = 112
-						state = 795
 						state = 179
+						state = 338
+						state = 1085
 
 				    }
 			    }
