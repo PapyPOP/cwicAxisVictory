@@ -1854,18 +1854,23 @@ GGR_reichskommissariats_category_europe = {
 			
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.24
-				785 = { is_controlled_by_ROOT_or_subject = yes }
-				15 = { is_controlled_by_ROOT_or_subject = yes }
-				16 = { is_controlled_by_ROOT_or_subject = yes }
-				30 = { is_controlled_by_ROOT_or_subject = yes }
+				1 = { is_controlled_by_ROOT_or_subject = yes }
 				14 = { is_controlled_by_ROOT_or_subject = yes }
-				18 = { is_controlled_by_ROOT_or_subject = yes }
-				17 = { is_controlled_by_ROOT_or_subject = yes }
-				27 = { is_controlled_by_ROOT_or_subject = yes }
-				24 = { is_controlled_by_ROOT_or_subject = yes }
+				15 = { is_controlled_by_ROOT_or_subject = yes }
+				30 = { is_controlled_by_ROOT_or_subject = yes }
 				23 = { is_controlled_by_ROOT_or_subject = yes }
 				19 = { is_controlled_by_ROOT_or_subject = yes }
-				806 = { is_controlled_by_ROOT_or_subject = yes }
+				31 = { is_controlled_by_ROOT_or_subject = yes }
+				22 = { is_controlled_by_ROOT_or_subject = yes }
+				21 = { is_controlled_by_ROOT_or_subject = yes }
+				32 = { is_controlled_by_ROOT_or_subject = yes }
+				26 = { is_controlled_by_ROOT_or_subject = yes }
+				25 = { is_controlled_by_ROOT_or_subject = yes }
+				27 = { is_controlled_by_ROOT_or_subject = yes }
+				24 = { is_controlled_by_ROOT_or_subject = yes }
+				16 = { is_controlled_by_ROOT_or_subject = yes }
+				29 = { is_controlled_by_ROOT_or_subject = yes }
+				33 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 			NOT = { RFC = { has_country_flag = RFC_reichskommissariat_united } }
@@ -1895,18 +1900,23 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-					    state = 785
-						state = 15
-						state = 16
-						state = 30
+					    state = 1
 						state = 14
-						state = 18
-						state = 17
-						state = 27
-						state = 24
+						state = 15
+						state = 30
 						state = 23
 						state = 19
-						state = 806
+						state = 31
+						state = 22
+						state = 21
+						state = 32
+						state = 26
+						state = 25
+						state = 27
+						state = 24
+						state = 16
+						state = 29
+						state = 33
 
 				    }
 			    }
@@ -1934,27 +1944,23 @@ GGR_reichskommissariats_category_europe = {
 			
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.25
-				785 = { is_controlled_by_ROOT_or_subject = yes }
-				15 = { is_controlled_by_ROOT_or_subject = yes }
-				16 = { is_controlled_by_ROOT_or_subject = yes }
-				30 = { is_controlled_by_ROOT_or_subject = yes }
+				1 = { is_controlled_by_ROOT_or_subject = yes }
 				14 = { is_controlled_by_ROOT_or_subject = yes }
-				27 = { is_controlled_by_ROOT_or_subject = yes }
-				24 = { is_controlled_by_ROOT_or_subject = yes }
+				15 = { is_controlled_by_ROOT_or_subject = yes }
+				30 = { is_controlled_by_ROOT_or_subject = yes }
 				23 = { is_controlled_by_ROOT_or_subject = yes }
 				19 = { is_controlled_by_ROOT_or_subject = yes }
-				806 = { is_controlled_by_ROOT_or_subject = yes }
-				33 = { is_controlled_by_ROOT_or_subject = yes }
-				25 = { is_controlled_by_ROOT_or_subject = yes }
 				31 = { is_controlled_by_ROOT_or_subject = yes }
+				22 = { is_controlled_by_ROOT_or_subject = yes }
+				21 = { is_controlled_by_ROOT_or_subject = yes }
+				32 = { is_controlled_by_ROOT_or_subject = yes }
 				26 = { is_controlled_by_ROOT_or_subject = yes }
 				25 = { is_controlled_by_ROOT_or_subject = yes }
-				22 = { is_controlled_by_ROOT_or_subject = yes }
-				20 = { is_controlled_by_ROOT_or_subject = yes }
-				32 = { is_controlled_by_ROOT_or_subject = yes }
-				21 = { is_controlled_by_ROOT_or_subject = yes }
-				851 = { is_controlled_by_ROOT_or_subject = yes }
-
+				27 = { is_controlled_by_ROOT_or_subject = yes }
+				24 = { is_controlled_by_ROOT_or_subject = yes }
+				16 = { is_controlled_by_ROOT_or_subject = yes }
+				29 = { is_controlled_by_ROOT_or_subject = yes }
+				33 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 
@@ -1979,25 +1985,23 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-						state = 15
-						state = 16
-						state = 30
+						state = 1
 						state = 14
-						state = 27
-						state = 24
+						state = 15
+						state = 30
 						state = 23
 						state = 19
-						state = 806
-						state = 33
-						state = 25
 						state = 31
+						state = 22
+						state = 21
+						state = 32
 						state = 26
 						state = 25
-						state = 22
-						state = 20
-						state = 32
-						state = 21
-						state = 851
+						state = 27
+						state = 24
+						state = 16
+						state = 29
+						state = 33
 
 				    }
 			    }
