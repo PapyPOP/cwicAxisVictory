@@ -3208,7 +3208,7 @@ GGR_reichskommissariats_category_europe = {
 			has_government = fascism
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.53
-				341  = { is_controlled_by_ROOT_or_subject = yes }
+				937  = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
             OR = {
@@ -3558,25 +3558,30 @@ GGR_reichskommissariats_category_asia = {
 			
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.59
-				347 = { is_controlled_by_ROOT_or_subject = yes }	
-				340 = { is_controlled_by_ROOT_or_subject = yes }	
-				339 = { is_controlled_by_ROOT_or_subject = yes }	
-				343 = { is_controlled_by_ROOT_or_subject = yes }
-				342 = { is_controlled_by_ROOT_or_subject = yes }	
 				49 = { is_controlled_by_ROOT_or_subject = yes }	
-				346 = { is_controlled_by_ROOT_or_subject = yes }	
-				345 = { is_controlled_by_ROOT_or_subject = yes }	
-				356 = { is_controlled_by_ROOT_or_subject = yes }	
-				798 = { is_controlled_by_ROOT_or_subject = yes }	
-				355 = { is_controlled_by_ROOT_or_subject = yes }	
-				348 = { is_controlled_by_ROOT_or_subject = yes }
+				339 = { is_controlled_by_ROOT_or_subject = yes }	
+				340 = { is_controlled_by_ROOT_or_subject = yes }	
+				341 = { is_controlled_by_ROOT_or_subject = yes }
+				342 = { is_controlled_by_ROOT_or_subject = yes }	
+				343 = { is_controlled_by_ROOT_or_subject = yes }	
 				344 = { is_controlled_by_ROOT_or_subject = yes }	
-				349 = { is_controlled_by_ROOT_or_subject = yes }	
-				354 = { is_controlled_by_ROOT_or_subject = yes }	
-				353 = { is_controlled_by_ROOT_or_subject = yes }
+				345 = { is_controlled_by_ROOT_or_subject = yes }	
+				346 = { is_controlled_by_ROOT_or_subject = yes }	
+				347 = { is_controlled_by_ROOT_or_subject = yes }	
+				348 = { is_controlled_by_ROOT_or_subject = yes }	
+				349 = { is_controlled_by_ROOT_or_subject = yes }
 				350 = { is_controlled_by_ROOT_or_subject = yes }	
-				800 = { is_controlled_by_ROOT_or_subject = yes }	
-				352 = { is_controlled_by_ROOT_or_subject = yes }
+				352 = { is_controlled_by_ROOT_or_subject = yes }	
+				353 = { is_controlled_by_ROOT_or_subject = yes }	
+				354 = { is_controlled_by_ROOT_or_subject = yes }
+				355 = { is_controlled_by_ROOT_or_subject = yes }	
+				356 = { is_controlled_by_ROOT_or_subject = yes }	
+				793 = { is_controlled_by_ROOT_or_subject = yes }
+				905 = { is_controlled_by_ROOT_or_subject = yes }
+				931 = { is_controlled_by_ROOT_or_subject = yes }
+				937 = { is_controlled_by_ROOT_or_subject = yes }
+				1081 = { is_controlled_by_ROOT_or_subject = yes }
+				1168 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -3603,25 +3608,30 @@ GGR_reichskommissariats_category_asia = {
 			every_state = {
 			    limit = {
 				    OR = {
-					    state = 347
-						state = 340
-						state = 339
-						state = 343
-						state = 342
-						state = 49
-						state = 346
-						state = 345
-						state = 356
-						state = 798
-						state = 355
-						state = 348
-						state = 344
+					    state = 49	
+						state = 339	
+						state = 340	
+						state = 341
+						state = 342	
+						state = 343	
+						state = 344	
+						state = 345	
+						state = 346	
+						state = 347	
+						state = 348	
 						state = 349
+						state = 350	
+						state = 352	
+						state = 353	
 						state = 354
-						state = 353
-						state = 350
-						state = 800
-						state = 352
+						state = 355	
+						state = 356	
+						state = 793
+						state = 905
+						state = 931
+						state = 937
+						state = 1081
+						state = 1168
 
 				    }
 			    }
