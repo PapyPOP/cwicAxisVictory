@@ -2414,28 +2414,28 @@ GGR_reichskommissariats_category_europe = {
 			
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.32
-				214 = { is_controlled_by_ROOT_or_subject = yes }
-				879 = { is_controlled_by_ROOT_or_subject = yes }
-				880 = { is_controlled_by_ROOT_or_subject = yes }
 				351 = { is_controlled_by_ROOT_or_subject = yes }
-				825 = { is_controlled_by_ROOT_or_subject = yes }
-				262 = { is_controlled_by_ROOT_or_subject = yes }
-				397 = { is_controlled_by_ROOT_or_subject = yes }
-				581 = { is_controlled_by_ROOT_or_subject = yes }
-				400 = { is_controlled_by_ROOT_or_subject = yes }
-				399 = { is_controlled_by_ROOT_or_subject = yes }
-				252 = { is_controlled_by_ROOT_or_subject = yes }
-				833 = { is_controlled_by_ROOT_or_subject = yes }
-				256 = { is_controlled_by_ROOT_or_subject = yes }
-				249 = { is_controlled_by_ROOT_or_subject = yes }
+				214 = { is_controlled_by_ROOT_or_subject = yes }
+				248 = { is_controlled_by_ROOT_or_subject = yes }
+				253 = { is_controlled_by_ROOT_or_subject = yes }
+				254 = { is_controlled_by_ROOT_or_subject = yes }
+				257 = { is_controlled_by_ROOT_or_subject = yes }
+				239 = { is_controlled_by_ROOT_or_subject = yes }
+				255 = { is_controlled_by_ROOT_or_subject = yes }
 				250 = { is_controlled_by_ROOT_or_subject = yes }
-				251 = { is_controlled_by_ROOT_or_subject = yes }
-				
+				256 = { is_controlled_by_ROOT_or_subject = yes }
+				401 = { is_controlled_by_ROOT_or_subject = yes }
 				252 = { is_controlled_by_ROOT_or_subject = yes }
-				351 = { is_controlled_by_ROOT_or_subject = yes }
-				879 = { is_controlled_by_ROOT_or_subject = yes }
-				880 = { is_controlled_by_ROOT_or_subject = yes }
-				214 = { is_controlled_by_ROOT_or_subject = yes }
+				400 = { is_controlled_by_ROOT_or_subject = yes }
+				580 = { is_controlled_by_ROOT_or_subject = yes }
+				397 = { is_controlled_by_ROOT_or_subject = yes }
+				399 = { is_controlled_by_ROOT_or_subject = yes }
+				249 = { is_controlled_by_ROOT_or_subject = yes }
+				398 = { is_controlled_by_ROOT_or_subject = yes }
+				651 = { is_controlled_by_ROOT_or_subject = yes }
+				652 = { is_controlled_by_ROOT_or_subject = yes }
+				251 = { is_controlled_by_ROOT_or_subject = yes }
+				262 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 			
@@ -2460,19 +2460,28 @@ GGR_reichskommissariats_category_europe = {
 			every_state = {
 			    limit = {
 				    OR = {
-						state = 825
-						state = 262
-						state = 397
-						state = 581
-						state = 400
-						state = 399
-						state = 833
-						state = 256
-						state = 249
+						state = 351
+						state = 214
+						state = 248
+						state = 253
+						state = 254
+						state = 257
+						state = 239
+						state = 255
 						state = 250
+						state = 256
+						state = 401
+						state = 252
+						state = 400
+						state = 580
+						state = 397
+						state = 399
+						state = 249
+						state = 398
+						state = 651
+						state = 652
 						state = 251
-
-
+						state = 262
 				    }
 			    }
 
@@ -2494,47 +2503,6 @@ GGR_reichskommissariats_category_europe = {
 			}
 		}
 	}
-	
-	GGR_rksplus_ural = { #ural
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			
-			custom_trigger_tooltip = {
-			    tooltip = rksplus.tooltip.33
-				398 = { is_controlled_by_ROOT_or_subject = yes }
-				651 = { is_controlled_by_ROOT_or_subject = yes }
-				573 = { is_controlled_by_ROOT_or_subject = yes }
-				652 = { is_controlled_by_ROOT_or_subject = yes }
-				582 = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-			RMK = { has_country_flag = RMK_expanded }
-			
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = rksplus.50
-		}
-		timeout_effect = {
-			country_event = rksplus.50
-		}
-	}
 
     GGR_rksplus_stanislau = { #stanislau
 
@@ -2547,6 +2515,7 @@ GGR_reichskommissariats_category_europe = {
 			    tooltip = rksplus.tooltip.34
 				91 = { is_controlled_by_ROOT_or_subject = yes }
 			    89 = { is_controlled_by_ROOT_or_subject = yes }
+			    243 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
             OR = {
@@ -7228,13 +7197,16 @@ GGR_rksplus_category_integration = {
 		available = {
 			
 			has_government = fascism
+			controls_state = 5
+			controls_state = 63
+			controls_state = 66
+			controls_state = 68
 			controls_state = 85
-			controls_state = 807
-			controls_state = 98
 			controls_state = 86
-			controls_state = 87
-			controls_state = 762
 			controls_state = 97
+			controls_state = 795
+			controls_state = 797
+			controls_state = 950
 		}
 
 		cost = 250
@@ -7345,11 +7317,17 @@ GGR_rksplus_category_integration = {
 						}
 						73 = { add_core_of = GGR }
 					}
+
+					if = {
+						limit = {		
+							RSV = { controls_state = 1117 }
+						}
+						1117 = { add_core_of = GGR }
+					}
 				}
 					
 				add_state_core = 70
 				add_state_core = 71
-			
 			
 				annex_country = {
 					target = RSV
@@ -7438,11 +7416,10 @@ GGR_rksplus_category_integration = {
                 transfer_troops = yes
                 }
 				hidden_effect = {
-				add_state_core = 151
-				add_state_core = 3
-				add_state_core = 845
-				add_state_core = 847
-				add_state_core = 846
+					add_state_core = 3
+					add_state_core = 151
+					add_state_core = 1077
+					add_state_core = 1074
 				}
 		    }
 		}
@@ -7488,6 +7465,9 @@ GGR_rksplus_category_integration = {
 				hidden_effect = {
 				add_state_core = 99
 				add_state_core = 37
+				add_state_core = 776		
+				add_state_core = 1023		
+				add_state_core = 1146
 				}
 		    }
 		}
@@ -7532,9 +7512,12 @@ GGR_rksplus_category_integration = {
 				
 				hidden_effect = {
 				
-				add_state_core = 7
-			    add_state_core = 36
+				add_state_core = 36
 				add_state_core = 35
+				add_state_core = 7
+				add_state_core = 1504
+				add_state_core = 1271
+				add_state_core = 1506
 				}
 		    }
 		}
@@ -7579,9 +7562,12 @@ GGR_rksplus_category_integration = {
 				
 				hidden_effect = {
 				
+				add_state_core = 6
 				add_state_core = 34
-			    add_state_core = 6
-				add_state_core = 29
+				add_state_core = 958
+				add_state_core = 1507
+				add_state_core = 735
+				add_state_core = 57
 				}
 		    }
 		}
@@ -7622,29 +7608,24 @@ GGR_rksplus_category_integration = {
 				
 				hidden_effect = {
 				
+				add_state_core = 11
 				add_state_core = 94
 				add_state_core = 194
 				add_state_core = 95
-				add_state_core = 204
 				add_state_core = 241
-				add_state_core = 206
 				add_state_core = 96
 				add_state_core = 207
-				add_state_core = 784
-				add_state_core = 814
-				add_state_core = 11
-				add_state_core = 815
+				add_state_core = 204
 				add_state_core = 189
 				add_state_core = 190
-				add_state_core = 809
-				add_state_core = 808
-				add_state_core = 810
 				add_state_core = 12
-				add_state_core = 811
 				add_state_core = 13
-				add_state_core = 812
-				add_state_core = 813
-				add_state_core = 191
+				add_state_core = 191	
+				add_state_core = 1042	
+				add_state_core = 1049	
+				add_state_core = 209	
+				add_state_core = 1052	
+				add_state_core = 1041
 				}
 				
 				set_country_flag = GGR_annexed_ostland
@@ -7720,6 +7701,13 @@ GGR_rksplus_category_integration = {
 					}
 					89 = { add_core_of = GGR }
 				}
+
+				if = {
+					limit = {		
+						RUA = { controls_state = 243 }
+					}
+					243 = { add_core_of = GGR }
+				}
 				
 				add_state_core = 198
 				add_state_core = 199
@@ -7737,8 +7725,14 @@ GGR_rksplus_category_integration = {
 				add_state_core = 200
 				add_state_core = 227
 				add_state_core = 228
-				add_state_core = 834
+				add_state_core = 1020
+				add_state_core = 80
+				add_state_core = 911
+				add_state_core = 1235
+				add_state_core = 949
+				add_state_core = 78
 				add_state_core = 192
+				add_state_core = 215
 				}
 				
 				set_country_flag = GGR_annexed_ukraine
@@ -7763,7 +7757,6 @@ GGR_rksplus_category_integration = {
 			custom_trigger_tooltip = { 
 			    tooltip = rksplus.tooltip.moskowien
 			    GGR = { has_country_flag = GGR_moskowien_territorial_decision }
-				GGR = { has_country_flag = GGR_ural_territorial_decision }
 			}
 			custom_trigger_tooltip = { 
 			    tooltip = rksplus.tooltip.annexedostlandandukraine
@@ -7800,9 +7793,9 @@ GGR_rksplus_category_integration = {
 				
 				    if = {
 						limit = {		
-							RMK = { controls_state = 146 }
+							RMK = { controls_state = 195 }
 						}
-						146 = { add_core_of = GGR }
+						195 = { add_core_of = GGR }
 				    }
 					
 					if = {
@@ -7814,9 +7807,9 @@ GGR_rksplus_category_integration = {
 					
 					if = {
 						limit = {		
-							RMK = { controls_state = 215 }
+							RMK = { controls_state = 239 }
 						}
-						215 = { add_core_of = GGR }
+						239 = { add_core_of = GGR }
 				    }
 					
 					if = {
@@ -7825,62 +7818,43 @@ GGR_rksplus_category_integration = {
 						}
 						213 = { add_core_of = GGR }
 				    }
-					
-					if = {
-						limit = {		
-							RMK = { controls_state = 652 }
-							RMK = { controls_state = 582 }
-							RMK = { controls_state = 273 }
-							RMK = { controls_state = 573 }
-							RMK = { controls_state = 398 }
-						}
-						652 = { add_core_of = GGR }
-						582 = { add_core_of = GGR }
-						273 = { add_core_of = GGR }
-						573 = { add_core_of = GGR }
-						398 = { add_core_of = GGR }
-				    }
 				
 					add_state_core = 208
 					add_state_core = 244
-					add_state_core = 209
 					add_state_core = 263
-					add_state_core = 264
-					add_state_core = 210
-					add_state_core = 246
 					add_state_core = 247
-					add_state_core = 248
 					add_state_core = 242
 					add_state_core = 219
-					add_state_core = 253
-					add_state_core = 243
 					add_state_core = 224
 					add_state_core = 205
 					add_state_core = 223
-					add_state_core = 254
-					add_state_core = 255
 					add_state_core = 222
 					add_state_core = 258
 					add_state_core = 220
-					add_state_core = 257
 					add_state_core = 240
 					add_state_core = 260
-					add_state_core = 214
-					add_state_core = 879
-					add_state_core = 880
 					add_state_core = 351
-					add_state_core = 825
-					add_state_core = 262
-					add_state_core = 397
-					add_state_core = 581
-					add_state_core = 400
-					add_state_core = 399
-					add_state_core = 252
-					add_state_core = 833
-					add_state_core = 256
-					add_state_core = 249
+					add_state_core = 214
+					add_state_core = 248
+					add_state_core = 253
+					add_state_core = 254
+					add_state_core = 257
+					add_state_core = 239
+					add_state_core = 255
 					add_state_core = 250
+					add_state_core = 256
+					add_state_core = 401
+					add_state_core = 252
+					add_state_core = 400
+					add_state_core = 580
+					add_state_core = 397
+					add_state_core = 399
+					add_state_core = 249
+					add_state_core = 398
+					add_state_core = 651
+					add_state_core = 652
 					add_state_core = 251
+					add_state_core = 262
 				}
 				
 				annex_country = {
@@ -7935,12 +7909,8 @@ GGR_rksplus_category_integration = {
 				hidden_effect = {
 				
 					add_state_core = 218
-					add_state_core = 245
-					add_state_core = 265
 					add_state_core = 217
-					add_state_core = 829
 					add_state_core = 239
-					add_state_core = 401
 				}
 				
 			    set_country_flag = GGR_annexed_donwolga
@@ -8000,72 +7970,27 @@ GGR_rksplus_category_integration = {
 					add_state_core = 235
 					add_state_core = 232
 					add_state_core = 233
-					add_state_core = 827
-					add_state_core = 826
-					add_state_core = 828
-					add_state_core = 821
-					add_state_core = 231
 					add_state_core = 229
+					add_state_core = 932
+					add_state_core = 245
+					add_state_core = 264
+					add_state_core = 265
+					add_state_core = 798
+					add_state_core = 217
+					add_state_core = 218
+					add_state_core = 231
+					add_state_core = 933
+					add_state_core = 567
+					add_state_core = 934
+					add_state_core = 935
+					add_state_core = 210
 					add_state_core = 230
+					add_state_core = 560
+					add_state_core = 799
 				}
 				
 				annex_country = {
                 target = RKS
-                transfer_troops = yes
-                }
-		    }
-		}
-	}
-	
-	GGR_rksplus_ural_integrate = {
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			country_exists = RUL
-
-			custom_trigger_tooltip = { 
-			    tooltip = rksplus.tooltip.annexedmoskowien
-			    GGR = { has_country_flag = GGR_annexed_moskowien }
-			}
-		}
-
-		cost = 500
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-			country_exists = RUL
-		}
-		
-		days_remove = 365
-		
-		fire_only_once = yes
-
-		remove_effect = {
-		    if = {
-			add_political_power = 25
-				add_stability = -0.05
-
-			}
-			GGR = {
-				
-				hidden_effect = {
-				
-					add_state_core = 398
-					add_state_core = 573
-					add_state_core = 651
-					add_state_core = 652
-					add_state_core = 582
-				}
-				
-				annex_country = {
-                target = RUL
                 transfer_troops = yes
                 }
 		    }
