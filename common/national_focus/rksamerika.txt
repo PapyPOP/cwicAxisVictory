@@ -156,11 +156,11 @@ focus_tree = {
 			}
 			
 			add_opinion_modifier = {
-				target = GER
+				target = GGR
 				modifier = offered_support
 			}
 			
-			GER = {
+			GGR = {
 			
 				add_opinion_modifier = {
 					target = RAM
@@ -759,7 +759,7 @@ focus_tree = {
 			custom_effect_tooltip = RAM.tt.ask
 			if = {
 				limit = {
-					GER = {
+					GGR = {
 						has_opinion = {
 							target = RAM
 							value > 50
@@ -1587,11 +1587,11 @@ focus_tree = {
 #			}
 #			
 #			add_opinion_modifier = {
-#				target = GER
+#				target = GGR
 #				modifier = betrayed_guarantee
 #			}
 #			
-#			GER = {
+#			GGR = {
 #			
 #				add_opinion_modifier = {
 #					target = RAM
@@ -1960,7 +1960,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 15000
-				producer = GER
+				producer = GGR
 			}
 			
 			add_popularity = {

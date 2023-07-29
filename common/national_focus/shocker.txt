@@ -355,7 +355,7 @@ focus_tree = {
 
 		completion_reward = {
 		
-			GER = { country_event = rksplus.52 }
+			GGR = { country_event = rksplus.52 }
 		}
 	}
 
@@ -452,8 +452,8 @@ focus_tree = {
 		
 		bypass = {
 		    OR = { 
-				has_war_with = GER
-				NOT = {country_exists = GER }
+				has_war_with = GGR
+				NOT = {country_exists = GGR }
 			}
 		}
 		available = {
@@ -464,7 +464,7 @@ focus_tree = {
 		completion_reward = {
 
 			declare_war_on = { 
-			    target = GER
+			    target = GGR
 				type = annex_everything 
 			}
 			

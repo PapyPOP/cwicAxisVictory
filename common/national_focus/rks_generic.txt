@@ -762,7 +762,7 @@ focus_tree = {
 		    add_equipment_to_stockpile = {
                 type = infantry_equipment
                 amount = 1500
-                producer = GER
+                producer = GGR
             }
 		}
 	}
@@ -1426,13 +1426,13 @@ focus_tree = {
 		    add_equipment_to_stockpile = {
                 type = infantry_equipment
                 amount = 2500
-                producer = GER
+                producer = GGR
             }
 			
 			add_equipment_to_stockpile = {
                 type = artillery_equipment
                 amount = 50
-                producer = GER
+                producer = GGR
             }
 			
 			add_timed_idea = { idea = RKP_buying_stuff days = 180 }

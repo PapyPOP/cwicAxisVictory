@@ -447,13 +447,13 @@ focus_tree = {
 			add_equipment_to_stockpile = {
                 type = infantry_equipment
                 amount = 3000
-                producer = GER
+                producer = GGR
             }
 			
 			add_equipment_to_stockpile = {
                 type = artillery_equipment
                 amount = 50
-                producer = GER
+                producer = GGR
             }
 		}
 	}
@@ -585,7 +585,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
                 type = motorized_equipment
                 amount = 125
-                producer = GER
+                producer = GGR
             }
 		}
 	}

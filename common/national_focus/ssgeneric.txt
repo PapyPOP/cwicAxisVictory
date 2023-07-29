@@ -820,7 +820,7 @@ focus_tree = {
 		    add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 2500
-				producer = GER
+				producer = GGR
 			}
 
 		}
@@ -922,7 +922,7 @@ focus_tree = {
 
 		completion_reward = {
 		
-		    GER = { 
+		    GGR = { 
 				add_opinion_modifier = { 
 					target = ROOT
 					modifier = CHI_mission_to_germany
@@ -956,7 +956,7 @@ focus_tree = {
 		
 		    add_stability = 0.15
 			
-			GER = { 
+			GGR = { 
 				add_opinion_modifier = { 
 					target = ROOT
 					modifier = OSS_german_collaboration

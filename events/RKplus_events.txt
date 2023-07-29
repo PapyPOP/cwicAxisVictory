@@ -2133,17 +2133,8 @@ country_event = {
 				}
 				remove_ideas = rks_resistance_victory
 			}
-			load_focus_tree = generic_focus
+			load_focus_tree = generic_focus_60
 			set_cosmetic_tag = RIT_reichskommissariat_benito
-			create_country_leader = {
-				name = "Benito Mussolini"
-				desc = ""
-				picture = "gfx/leaders/ITA/Portrait_Italy_Benito_Mussolini.dds"
-				expire = "1965.1.1"
-				ideology = neo_nazism
-				traits = {
-				}
-			}
 		}
 		RIT = {
 			transfer_state = 158
