@@ -2978,7 +2978,7 @@ GGR_reichskommissariats_category_europe = {
 			has_government = fascism
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.45
-				736  = { is_controlled_by_ROOT_or_subject = yes }
+				756  = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 			OR = { 
@@ -3006,125 +3006,6 @@ GGR_reichskommissariats_category_europe = {
 		}
 		timeout_effect = {
 			country_event = rksplus.26
-		}
-	}
-	
-	GGR_rksplus_alpine = { #alpine
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			OR = { 
-			    country_exists = RIT
-				country_exists = OLB
-			}
-			custom_trigger_tooltip = {
-			    tooltip = rksplus.tooltip.46
-				39  = { is_controlled_by_ROOT_or_subject = yes }
-				850  = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-			
-			GGR = { has_country_flag = GGR_lombardy_territorial_decision }
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = rksplus.27
-		}
-		timeout_effect = {
-			country_event = rksplus.27
-		}
-	}
-	
-	GGR_rksplus_ticino = { #ticino
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			custom_trigger_tooltip = {
-			    tooltip = rksplus.tooltip.47
-				846  = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-			OR = {
-			    country_exists = RSZ
-				country_exists = RIT
-				country_exists = OLB
-			}
-			GGR = { has_country_flag = GGR_lombardy_territorial_decision }
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = rksplus.51
-		}
-		timeout_effect = {
-			country_event = rksplus.51
-		}
-	}
-	
-	GGR_rksplus_savoy = { #savoy
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			custom_trigger_tooltip = {
-			    tooltip = rksplus.tooltip.48
-				735  = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-			OR = {
-			    country_exists = RFC
-				country_exists = RIT
-			}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = rksplus.28
-		}
-		timeout_effect = {
-			country_event = rksplus.28
 		}
 	}
 	

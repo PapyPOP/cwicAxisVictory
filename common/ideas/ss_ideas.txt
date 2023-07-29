@@ -18,7 +18,6 @@ ideas = {
 		OSS_resistance = {
 			picture = FRA_scw_intervention_republicans_focus
 			allowed = {
-				tag = OSS
 			}
 			available = {
 			}

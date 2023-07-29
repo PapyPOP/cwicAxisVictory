@@ -84,7 +84,6 @@ focus_tree = {
 				original_tag = RTZ
 				original_tag = RZA
 				original_tag = RPE
-				original_tag = RGA
 			}
 		}
 	}

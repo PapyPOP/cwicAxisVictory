@@ -13,8 +13,10 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = OLB
-			tag = OIC
+			OR = {
+			original_tag = OLB
+			original_tag = OIC
+			}
 		}
 	}
 
