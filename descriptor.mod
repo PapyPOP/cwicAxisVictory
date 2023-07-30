@@ -12,5 +12,5 @@ tags={
 	"Map"
 }
 name="Cold War Iron Curtain : Realistic Axis Victory"
-supported_version="1.11.*"
+supported_version="1.12.*"
 replace_path="common/bookmarks"

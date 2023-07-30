@@ -1,0 +1,291 @@
+sub_units = {
+	# 战斗机
+	fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { fighter_equipment = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 24
+	}
+	# 航母战斗机
+	cv_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { cv_fighter_equipment = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 10
+		carrier_air_wing_size = 10
+	}
+	# 侦察机
+	scout_plane = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { scout_plane }
+		need = { scout_plane_equipment = 1 }
+		categories = { category_scout_plane }
+		land_air_wing_size = 24
+	}
+	# 近距支援机
+	cas = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { CAS_equipment = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 24
+	}
+	# 航母近距支援机
+	cv_cas = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { cv_CAS_equipment = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 10
+		carrier_air_wing_size = 10
+	}
+	# 海军轰炸机
+	nav_bomber = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { nav_bomber_equipment = 1 }
+		categories = { category_naval_af }
+		land_air_wing_size = 24
+	}
+	# 火箭截击机
+	rocket_interceptor = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { interceptor }
+		need = { rocket_interceptor_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 自杀式飞机
+	suicide_craft = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { suicide }
+		need = { suicide_craft_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 48
+	}
+	# 战术轰炸机
+	tac_bomber = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber }
+		need = { tac_bomber_equipment = 1 }
+		categories = { category_interdictor }
+		land_air_wing_size = 12
+	}
+	# 重型战斗机
+	heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter interceptor }
+		need = { heavy_fighter_equipment = 1 }
+		categories = { category_asf }
+		land_air_wing_size = 24
+	}
+	# 高速重型战斗机
+	heavy_fighter_highmach = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { fighter interceptor }
+		need = { heavy_fighter_highmach_equipment = 1 }
+		categories = { category_asf }
+		land_air_wing_size = 24
+	}
+	# 战略轰炸机
+	strat_bomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { strat_bomber_equipment = 1 }
+		categories = { category_stratego_bomber }
+		land_air_wing_size = 12
+	}
+	# 核动力战略轰炸机
+	nuclearstratbomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { nuclearstratbomber_equipment = 1 }
+		categories = { category_stratego_bomber }
+		land_air_wing_size = 12
+	}
+	# 运输机
+	transport_plane = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { air_transport }
+		need = { transport_plane_equipment = 1 }
+		categories = { category_af_logistics }
+		land_air_wing_size = 50
+	}
+	
+#### NEW MODELS	
+	# 轻型喷气机
+	jet_light = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { jet_light_equipment = 1 }
+		categories = { category_drone }
+		land_air_wing_size = 24
+	}
+	# 2马赫战略轰炸机
+	mach2stratbomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { mach2stratbomber_equipment = 1 }
+		categories = { category_stratego_bomber }
+		land_air_wing_size = 12
+	}
+	# 3马赫战略轰炸机
+	mach3stratbomber = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { mach3stratbomber_equipment = 1 }
+		categories = { category_stratego_bomber }
+		land_air_wing_size = 12
+	}
+	# 隐形战术轰炸机
+	stealth_tactical_bomber = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = { tactical_bomber }
+		need = { stealth_tactical_bomber_equipment = 1 }
+		categories = { category_interdictor }
+		land_air_wing_size = 12
+	}
+	# 潜射弹道导弹
+	slbm = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { slbm_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 洲际弹道导弹
+	icbm = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { icbm_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 短程弹道导弹
+	srbm = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber }
+		need = { srbm_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 中程弹道导弹
+	irbm = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { tactical_bomber strategic_bomber }
+		need = { irbm_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 垂直起降喷气机
+	jump_jet = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas }
+		need = { jump_jet_equipment = 1 }
+		categories = { category_fighter }
+		categories = { category_naval_af }
+		land_air_wing_size = 24
+		carrier_air_wing_size = 10
+	}
+	# 巡航导弹
+	cruisemissile = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { tactical_bomber  }
+		need = { cruisemissile_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 海防导弹?
+	coastalmissile = {
+		sprite = missile_default
+		priority = 1
+		active = yes
+		type = { naval_bomber  }
+		need = { cruisemissile_equipment = 1 }
+		categories = { category_missile }
+		land_air_wing_size = 24
+	}
+	# 近距支援无人机
+	cas_uav = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { cas_uav_equipment = 1 }
+		categories = { category_drone }
+		land_air_wing_size = 24
+		carrier_air_wing_size = 10
+	}
+	# 海军无人机
+	naval_uav = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { naval_uav_equipment = 1 }
+		categories = { category_drone }
+		land_air_wing_size = 10
+		carrier_air_wing_size = 10
+	}
+	# 海军直升机
+	naval_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { naval_helicopter_equipment = 1 }
+		categories = { category_naval_af }
+		land_air_wing_size = 10
+		carrier_air_wing_size = 10
+	}
+}
