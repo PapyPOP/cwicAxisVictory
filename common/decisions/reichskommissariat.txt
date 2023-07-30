@@ -1573,6 +1573,7 @@ GGR_reichskommissariats_category_europe = {
 				134 = { is_controlled_by_ROOT_or_subject = yes }
 				113 = { is_controlled_by_ROOT_or_subject = yes }
 				135 = { is_controlled_by_ROOT_or_subject = yes }
+				1142 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 		}
 
@@ -1603,6 +1604,7 @@ GGR_reichskommissariats_category_europe = {
 						state = 134
 						state = 113
 						state = 135
+						state = 1142
 
 				    }
 			    }
@@ -2624,44 +2626,6 @@ GGR_reichskommissariats_category_europe = {
 		}
 		timeout_effect = {
 			country_event = rksplus.12
-		}
-	}
-	
-	GGR_rksplus_epirus = { #epirus
-
-		icon = ger_reichskommissariats
-
-		available = {
-			
-			has_government = fascism
-			custom_trigger_tooltip = {
-			    tooltip = rksplus.tooltip.37
-				805 = { is_controlled_by_ROOT_or_subject = yes }
-
-			}
-            OR = {
-			    country_exists = RAB
-				country_exists = RGR
-			}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-			country_event = rksplus.13
-		}
-		timeout_effect = {
-			country_event = rksplus.13
 		}
 	}
 	
@@ -10749,7 +10713,6 @@ GGR_rksplus_category_uniting_rks = {
 				GGR = { has_country_flag = GGR_transylvania_territorial_decision }
 				GGR = { has_country_flag = GGR_banat_territorial_decision }
 				GGR = { has_country_flag = GGR_westbanat_territorial_decision }
-				GGR = { has_country_flag = GGR_albania_territorial_decision }
 				GGR = { has_country_flag = GGR_serbia_territorial_decision }
 				GGR = { has_country_flag = GGR_southserbia_territorial_decision }
 				GGR = { has_country_flag = GGR_macedonia_territorial_decision }

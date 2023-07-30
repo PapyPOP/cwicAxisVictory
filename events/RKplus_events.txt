@@ -1213,44 +1213,6 @@ country_event = {
 }
 
 country_event = {
-	id = rksplus.13
-	title = rksplus.13.t
-	desc = rksplus.13.d
-	picture = GFX_report_event_german_speech
-	is_triggered_only = yes
-	option = {
-		name = rksplus.13.a
-		trigger = {
-			country_exists = RAB
-		}
-		RAB = {
-			transfer_state = 805
-			hidden_effect = {
-				add_state_core = 805
-			}
-		}
-		GGR = {
-			set_country_flag = GGR_albania_territorial_decision
-		}
-	}
-	option = {
-		name = rksplus.13.b
-		trigger = {
-			country_exists = RGR
-		}
-		RGR = {
-			transfer_state = 805
-			hidden_effect = {
-				add_state_core = 805
-			}
-		}
-		GGR = {
-			set_country_flag = GGR_albania_territorial_decision
-		}
-	}
-}
-
-country_event = {
 	id = rksplus.14
 	title = rksplus.14.t
 	desc = rksplus.14.d
