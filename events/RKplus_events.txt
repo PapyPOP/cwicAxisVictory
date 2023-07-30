@@ -1405,12 +1405,17 @@ country_event = {
 				autonomy_state = autonomy_reichskommissariat
 			}
 		}
+		GGR = {
+			transfer_state = 1566
+			hidden_effect = {
+				add_state_core = 1566
+			}
+		}
 		RUK = {
 			set_country_flag = ruk_united_solution
 			transfer_state = 127
 			transfer_state = 126
 			transfer_state = 125
-			transfer_state = 338
 			transfer_state = 123
 			transfer_state = 129
 			transfer_state = 128
@@ -1426,7 +1431,6 @@ country_event = {
 				add_state_core = 127
 				add_state_core = 126
 				add_state_core = 125
-				add_state_core = 338
 				add_state_core = 123
 				add_state_core = 129
 				add_state_core = 128
@@ -1469,13 +1473,18 @@ country_event = {
 				autonomy_state = autonomy_reichskommissariat
 			}
 		}
+		GGR = {
+			transfer_state = 1566
+			hidden_effect = {
+				add_state_core = 1566
+			}
+		}
 		RUK = {
 			set_country_flag = ruk_4_states_solution
 			set_cosmetic_tag = RUK_reichskommissariat_england
 			transfer_state = 127
 			transfer_state = 126
 			transfer_state = 125
-			transfer_state = 338
 			transfer_state = 128
 			transfer_state = 129
 			transfer_state = 132
@@ -1485,7 +1494,6 @@ country_event = {
 				add_state_core = 127
 				add_state_core = 126
 				add_state_core = 125
-				add_state_core = 338
 				add_state_core = 128
 				add_state_core = 129
 				add_state_core = 132
@@ -1534,13 +1542,18 @@ country_event = {
 				autonomy_state = autonomy_reichskommissariat
 			}
 		}
+		GGR = {
+			transfer_state = 1566
+			hidden_effect = {
+				add_state_core = 1566
+			}
+		}
 		RUK = {
 			set_country_flag = ruk_celtic_independence
 			set_cosmetic_tag = RUK_reichskommissariat_england
 			transfer_state = 127
 			transfer_state = 126
 			transfer_state = 125
-			transfer_state = 338
 			transfer_state = 128
 			transfer_state = 129
 			transfer_state = 132
@@ -1550,7 +1563,6 @@ country_event = {
 				add_state_core = 127
 				add_state_core = 126
 				add_state_core = 125
-				add_state_core = 338
 				add_state_core = 128
 				add_state_core = 129
 				add_state_core = 132
@@ -2254,8 +2266,12 @@ country_event = {
 		}
 		RGR = {
 			transfer_state = 183
+			transfer_state = 912
+			transfer_state = 915
 			hidden_effect = {
 				add_state_core = 183
+				add_state_core = 912
+				add_state_core = 915
 			}
 		}
 	}
@@ -2266,8 +2282,12 @@ country_event = {
 		}
 		RTU = {
 			transfer_state = 183
+			transfer_state = 912
+			transfer_state = 915
 			hidden_effect = {
 				add_state_core = 183
+				add_state_core = 912
+				add_state_core = 915
 			}
 		}
 	}
@@ -2278,8 +2298,12 @@ country_event = {
 		}
 		RNH = {
 			transfer_state = 183
+			transfer_state = 912
+			transfer_state = 915
 			hidden_effect = {
 				add_state_core = 183
+				add_state_core = 912
+				add_state_core = 915
 			}
 		}
 	}

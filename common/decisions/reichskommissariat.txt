@@ -1633,7 +1633,6 @@ GGR_reichskommissariats_category_europe = {
 			   	127 = { is_controlled_by_ROOT_or_subject = yes }
 				126 = { is_controlled_by_ROOT_or_subject = yes }
 				125 = { is_controlled_by_ROOT_or_subject = yes }
-				338 = { is_controlled_by_ROOT_or_subject = yes }
 				123 = { is_controlled_by_ROOT_or_subject = yes }
 				129 = { is_controlled_by_ROOT_or_subject = yes }
 				128 = { is_controlled_by_ROOT_or_subject = yes }
@@ -1645,6 +1644,7 @@ GGR_reichskommissariats_category_europe = {
 				133 = { is_controlled_by_ROOT_or_subject = yes }
 				136 = { is_controlled_by_ROOT_or_subject = yes }
 				120 = { is_controlled_by_ROOT_or_subject = yes }
+				1566 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 		}
@@ -4862,6 +4862,8 @@ GGR_reichskommissariats_category_asia = {
 			custom_trigger_tooltip = {
 			    tooltip = rksplus.tooltip.77
 				183 = { is_controlled_by_ROOT_or_subject = yes }	
+				912 = { is_controlled_by_ROOT_or_subject = yes }	
+				915 = { is_controlled_by_ROOT_or_subject = yes }	
 			}
 			OR = {
 			    country_exists = RGR
