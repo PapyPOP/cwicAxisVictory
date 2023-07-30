@@ -3521,17 +3521,23 @@ country_event = {
 	option = {
 		name = rksplus.65.a
 		OBG = {
-			transfer_state = 785
-			transfer_state = 29
+			transfer_state = 29	
 			transfer_state = 6
 			transfer_state = 34
+			transfer_state = 57
+			transfer_state = 1507
+			transfer_state = 958
+			transfer_state = 735
 		}
 		hidden_effect = {
 			OBG = {
-				add_state_core = 785
-				add_state_core = 29
+				add_state_core = 29	
 				add_state_core = 6
 				add_state_core = 34
+				add_state_core = 57
+				add_state_core = 1507
+				add_state_core = 958
+				add_state_core = 735
 			}
 			news_event = {
 				days = 1
