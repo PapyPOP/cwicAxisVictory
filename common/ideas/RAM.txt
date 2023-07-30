@@ -1,0 +1,220 @@
+ideas = {
+	country = {
+		RAM_american_resistance_1 = {
+			picture = chi_war_of_resistance
+			allowed = {
+				tag = RAM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.05
+				fascism_drift = -0.01
+				surrender_limit = -0.1
+				stability_factor = -0.15
+				consumer_goods_factor = 0.05
+				##################
+				### RESISTANCE ###
+				##################
+				resistance_target = 0.25
+				compliance_growth = -0.1
+				resistance_growth = 0.03
+				resistance_decay = -0.02
+				resistance_activity = 0.1
+				# Garrisons
+				required_garrison_factor = 0.05
+				resistance_damage_to_garrison = 0.05
+				##################
+				##################
+			}
+		}
+		RAM_american_resistance_2 = {
+			picture = chi_war_of_resistance2
+			allowed = {
+				tag = RAM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.1
+				fascism_drift = -0.05
+				surrender_limit = -0.25
+				stability_factor = -0.25
+				consumer_goods_factor = 0.15
+				##################
+				### RESISTANCE ###
+				##################
+				resistance_target = 0.5
+				compliance_growth = -0.25
+				resistance_growth = 0.06
+				resistance_decay = -0.04
+				resistance_activity = 0.25
+				# Garrisons
+				required_garrison_factor = 0.15
+				resistance_damage_to_garrison = 0.15
+				##################
+				##################
+			}
+		}
+		RAM_american_resistance_3 = {
+			picture = chi_war_of_resistance3
+			allowed = {
+				tag = RAM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.25
+				fascism_drift = -0.05
+				surrender_limit = -0.5
+				stability_factor = -0.5
+				consumer_goods_factor = 0.3
+				##################
+				### RESISTANCE ###
+				##################
+				resistance_target = 0.75
+				compliance_growth = -0.5
+				resistance_growth = 0.1
+				resistance_decay = -0.05
+				resistance_activity = 0.5
+				# Garrisons
+				required_garrison_factor = 0.25
+				resistance_damage_to_garrison = 0.25
+				##################
+				##################
+			}
+		}
+		RAM_deport_locals = {
+			picture = generic_purge
+			allowed = {
+				tag = RAM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.4
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				hidden_modifier = {
+					land_reinforce_rate = -0.5
+					weekly_manpower = -100
+					training_time_army_factor = 0.1
+					compliance_growth = 0.1
+					required_garrison_factor = 0.25
+					resistance_decay = 0.1
+					monthly_population = -0.8
+					army_org_regain = -0.5
+					own_exiled_divisions_attack_factor = -0.9
+					offence = -0.5
+					defence = -0.25
+				}
+			}
+		}
+		#################
+		### INFLATION ###
+		#################
+		RAM_hyper_inflation_1 = {
+			picture = chi_hyper_inflation
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		RAM_hyper_inflation_2 = {
+			picture = chi_hyper_inflation2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+		RAM_hyper_inflation_3 = {
+			picture = chi_hyper_inflation3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		RAM_hyper_inflation_4 = {
+			picture = chi_hyper_inflation4
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		RAM_hyper_inflation_5 = {
+			picture = chi_hyper_inflation5
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+		############################## 
+		reichsdollar = {
+			picture = new_deal
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 0.5
+				extra_trade_to_overlord_factor = -0.8
+				autonomy_gain_trade_factor = 1
+			}
+		}
+	}
+}

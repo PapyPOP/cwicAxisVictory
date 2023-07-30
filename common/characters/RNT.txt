@@ -1,0 +1,15 @@
+characters={
+	RNT_Leader={
+		name= "Arthur Seyss-Inquart"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Arthur_Seyss-Inquart
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

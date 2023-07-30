@@ -4,11 +4,12 @@ state = {
 	name = "STATE_799"
 
 	history = {
-		owner = ARM
+		owner = RKS
 		set_state_flag = mountainshot
 		set_state_flag = basic
 		set_state_flag = micro
 		set_state_flag = verypoor
+		add_core_of = RKS
 		add_core_of = ARM
 		add_core_of = AZR
 		victory_points = {

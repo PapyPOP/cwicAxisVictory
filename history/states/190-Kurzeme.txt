@@ -4,7 +4,7 @@ state = {
 	name = "STATE_190"
 
 	history = {
-		owner = ROS
+		owner = ROT
 		set_state_flag = boreal
 		set_state_flag = lakes
 		set_state_flag = small
@@ -25,7 +25,7 @@ state = {
 			}
 
 		}
-		add_core_of = ROS
+		add_core_of = ROT
 		add_core_of = LAT
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }

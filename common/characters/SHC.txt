@@ -1,0 +1,275 @@
+characters={
+	SHC_Leader={
+		name= "Great Leader"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Shocker_Great_Leader
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+            traits = { brilliant_strategist harsh_leader }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 3
+        }
+	}
+	SHC_BeardedLizardMan = {
+	    name= "Bearded Lizard Man"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_BeardedLizardMan
+			}
+		}
+		corps_commander={
+			traits={ war_hero trait_reckless }
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+	
+	SHC_Ganikoumoru = {
+	    name= "Ganikoumoru"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Ganikoumoru
+			}
+		}
+		corps_commander={
+			traits={ armor_officer offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+	
+	SHC_Garaganda = {
+	    name= "Garaganda"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Garaganda
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	
+	SHC_Hilchameleon = {
+	    name= "Hilchameleon"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Hilchameleon
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious inflexible_strategist trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=3
+		}
+	}
+	
+	SHC_Ika_Devil = {
+	    name= "Ika Devil"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Ika_Devil
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	
+	SHC_Jaguarman = {
+	    name= "Jaguarman"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Jaguarman
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	
+	SHC_Zanjioh = {
+	    name= "Zanjioh"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Zanjioh
+			}
+		}
+		corps_commander={
+			traits={ commando infantry_officer }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	
+	SHC_KameBazooka = {
+	    name= "KameBazooka"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_KameBazooka
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+		}
+	}
+	
+	SHC_Siomaneking = {
+	    name= "Siomaneking"
+		portraits={
+			army={
+				large=GFX_Portrait_Shocker_Siomaneking
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer seawolf }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=5
+		}
+	}
+	
+	SHC_GeneralShadow = {
+		name = "General Shadow"
+		portraits = {
+			army = {
+				large="GFX_Portrait_BlackSatan_GeneralShadow"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			traits = { trickster }
+			visible = {
+				has_global_flag = generalshadow_called
+			}
+		}
+	}
+	
+	SHC_GeneralJark = {
+		name = "General Jark"
+		portraits = {
+			army = {
+				large="GFX_Portrait_Crisis_Jark"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			traits = { old_guard infantry_officer }
+			visible = {
+				has_global_flag = generaljark_called
+			}
+		}
+	}
+	
+	SHC_ApolloGeist = {
+		name = "Apollo Geist"
+		portraits = {
+			army = {
+				large="GFX_Portrait_GOD_Apollogeist"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+			traits = { war_hero offensive_doctrine }
+			visible = {
+				has_global_flag = apollogeist_called
+			}
+		}
+	}
+	
+	SHC_ShadowMoon = {
+		name = "Shadow Moon"
+		portraits = {
+			army = {
+				large="GFX_Portrait_Gorgom_ShadowMoon"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { war_hero commando }
+			visible = {
+				has_global_flag = shadowmoon_called
+			}
+		}
+	}
+	
+	SHC_Doras = {
+		name = "Doras"
+		portraits = {
+			army = {
+				large="GFX_Portrait_Neonoid_Doras"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			traits = { offensive_doctrine trait_reckless }
+			visible = {
+				has_global_flag = doras_called
+			}
+		}
+	}
+}

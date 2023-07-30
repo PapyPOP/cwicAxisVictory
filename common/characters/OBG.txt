@@ -1,0 +1,15 @@
+characters={
+	OBG_Leader={
+		name= "Heinrich Himmler"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Heinrich_Himmler_rksplus
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

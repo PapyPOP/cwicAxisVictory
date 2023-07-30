@@ -3,12 +3,12 @@ state = {
 	name = "STATE_263"
 
 	history = {
-		owner = RMO
+		owner = RMK
 		set_state_flag = boreal
 		set_state_flag = riverlarge
 		set_state_flag = medium
 		set_state_flag = decent
-		set_demilitarized_zone = yes
+		set_demilitarized_zone = no
 		victory_points = {
 			117 5 
 		}
@@ -23,7 +23,8 @@ state = {
 
 			air_base = 2
 		}
-		add_core_of = RMO
+		add_core_of = RMK
+		add_core_of = SOV
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

@@ -1,0 +1,15 @@
+characters={
+	RPE_Leader={
+		name= "Otto Kumm"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Otto_Kumm
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

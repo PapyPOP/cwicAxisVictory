@@ -1,0 +1,128 @@
+SHC_generals_category = {
+	
+	SHC_call_generalshadow = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SHC
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = SHC_daishocker
+		}
+
+		complete_effect = {
+			set_global_flag = generalshadow_called
+		}
+		
+        cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SHC_call_generaljark = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SHC
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = SHC_daishocker
+		}
+
+		complete_effect = {
+			set_global_flag = generaljark_called
+        }
+
+		cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SHC_call_apollogeist = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SHC
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = SHC_daishocker
+		}
+
+		complete_effect = {
+			set_global_flag = apollogeist_called
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SHC_call_shadowmoon = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SHC
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = SHC_daishocker
+		}
+
+		complete_effect = {
+			set_global_flag = shadowmoon_called
+		}
+		
+
+		cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	SHC_call_doras = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SHC
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = SHC_daishocker
+		}
+
+		complete_effect = {
+			set_global_flag = doras_called
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

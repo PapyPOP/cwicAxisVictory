@@ -8,12 +8,13 @@ state = {
 	}
 
 	history = {
-		owner = GGP
+		owner = RGV
 		set_state_flag = temperate
 		set_state_flag = basic
 		set_state_flag = small
 		set_state_flag = decent
-		add_core_of = GGP
+		add_core_of = RGV
+		add_core_of = POL
 		set_variable = { coal_amount = 0 }
 
 		set_state_flag = HDI4

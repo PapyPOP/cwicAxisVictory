@@ -36,59 +36,676 @@ focus_tree = {
 			focus = NEEU
 		}
 		completion_reward = {
-			SLO = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = JPZ }
+				JPZ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			SBA = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = OGT }
+				OGT = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			ICE = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = OBG }
+				OBG = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			NOR = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = OLB }
+				OLB = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			RGO = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = OIC }
+				OIC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			RKA = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = SHC }
+				SHC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			RMO = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = RBG }
+				RBG = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			ROS = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = RGR }
+				RGR = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			RUK = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = RBL }
+				RBL = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			GGP = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = RNT }
+				RNT = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
-			DEN = {
-				add_dynamic_modifier = {
-					modifier = nazy_europa_economic_union_modifier
+			if = {
+				limit = { country_exists = RDN }
+				RDN = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNW }
+				RNW = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBM }
+				RBM = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGV }
+				RGV = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RUA }
+				RUA = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = ROT }
+				ROT = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMK }
+				RMK = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RDW }
+				RDW = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTK }
+				RTK = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RKS }
+				RKS = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSV }
+				RSV = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RRO }
+				RRO = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTS }
+				RTS = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBA }
+				RBA = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCR }
+				RCR = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSB }
+				RSB = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAB }
+				RAB = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RUK }
+				RUK = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSC }
+				RSC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWL }
+				RWL = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCW }
+				RCW = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RFC }
+				RFC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RIE }
+				RIE = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSW }
+				RSW = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RFD }
+				RFD = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSP }
+				RSP = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBQ }
+				RBQ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAG }
+				RAG = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPT }
+				RPT = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWS }
+				RWS = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RES }
+				RES = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNH }
+				RNH = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTU }
+				RTU = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAR }
+				RAR = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNA }
+				RNA = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMA }
+				RMA = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSF }
+				RSF = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = REF }
+				REF = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMG }
+				RMG = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RIT }
+				RIT = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSZ }
+				RSZ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPR }
+				RPR = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RID }
+				RID = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RIN }
+				RIN = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = ROA }
+				ROA = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = ROZ }
+				ROZ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RQU }
+				RQU = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCD }
+				RCD = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAM }
+				RAM = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCS }
+				RCS = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMK }
+				RMK = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPZ }
+				RPZ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMX }
+				RMX = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCB }
+				RCB = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCL }
+				RCL = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBZ }
+				RBZ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGT }
+				RGT = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = REC }
+				REC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWC }
+				RWC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMO }
+				RMO = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMC }
+				RMC = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RKR }
+				RKR = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RJP }
+				RJP = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPO }
+				RPO = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAD }
+				RAD = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RUL }
+				RUL = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCX }
+				RCX = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = REY }
+				REY = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGL }
+				RGL = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSD }
+				RSD = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWF }
+				RWF = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTZ }
+				RTZ = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RZA }
+				RZA = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPE }
+				RPE = {
+					add_dynamic_modifier = {
+						modifier = nazy_europa_economic_union_modifier
+					}
 				}
 			}
 		}
@@ -105,6 +722,762 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = semi_recognized_state
 				add_idea = un_member
+			}
+			if = {
+				limit = { country_exists = JPZ }
+				JPZ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = OGT }
+				OGT = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = OBG }
+				OBG = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = OLB }
+				OLB = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = OIC }
+				OIC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = SHC }
+				SHC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBG }
+				RBG = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGR }
+				RGR = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBL }
+				RBL = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNT }
+				RNT = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RDN }
+				RDN = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNW }
+				RNW = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBM }
+				RBM = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGV }
+				RGV = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RUA }
+				RUA = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = ROT }
+				ROT = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMK }
+				RMK = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RDW }
+				RDW = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTK }
+				RTK = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RKS }
+				RKS = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSV }
+				RSV = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RRO }
+				RRO = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTS }
+				RTS = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBA }
+				RBA = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCR }
+				RCR = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSB }
+				RSB = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAB }
+				RAB = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RUK }
+				RUK = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSC }
+				RSC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWL }
+				RWL = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCW }
+				RCW = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RFC }
+				RFC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RIE }
+				RIE = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSW }
+				RSW = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RFD }
+				RFD = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSP }
+				RSP = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBQ }
+				RBQ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAG }
+				RAG = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPT }
+				RPT = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWS }
+				RWS = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RES }
+				RES = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNH }
+				RNH = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTU }
+				RTU = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAR }
+				RAR = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RNA }
+				RNA = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMA }
+				RMA = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSF }
+				RSF = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = REF }
+				REF = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMG }
+				RMG = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RIT }
+				RIT = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSZ }
+				RSZ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPR }
+				RPR = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RID }
+				RID = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RIN }
+				RIN = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = ROA }
+				ROA = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = ROZ }
+				ROZ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RQU }
+				RQU = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCD }
+				RCD = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAM }
+				RAM = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCS }
+				RCS = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMK }
+				RMK = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPZ }
+				RPZ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMX }
+				RMX = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCB }
+				RCB = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCL }
+				RCL = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RBZ }
+				RBZ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGT }
+				RGT = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = REC }
+				REC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWC }
+				RWC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMO }
+				RMO = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RMC }
+				RMC = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RKR }
+				RKR = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RJP }
+				RJP = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPO }
+				RPO = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAD }
+				RAD = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RUL }
+				RUL = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RCX }
+				RCX = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = REY }
+				REY = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RGL }
+				RGL = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RSD }
+				RSD = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RWF }
+				RWF = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RTZ }
+				RTZ = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RZA }
+				RZA = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RPE }
+				RPE = {
+					swap_ideas = {
+						remove_idea = semi_recognized_state
+						add_idea = un_member
+					}
+				}
 			}
 		}
 	}

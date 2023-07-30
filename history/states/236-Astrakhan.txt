@@ -7,12 +7,12 @@ state = {
 	}
 
 	history = {
-		owner = RKA
+		owner = RKS
 		set_state_flag = desertlush
 		set_state_flag = riverlarge
 		set_state_flag = nominal
 		set_state_flag = semideveloped
-		set_demilitarized_zone = yes
+		set_demilitarized_zone = no
 		victory_points = {
 			9753 5 
 		}
@@ -24,7 +24,8 @@ state = {
 			fossil_fuel_powerplant = 1
 
 		}
-		add_core_of = RKA
+		add_core_of = RKS
+		add_core_of = SOV
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

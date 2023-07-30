@@ -1,3 +1,4 @@
+GGR	= "countries/IIIReich.txt"
 GER	= "countries/Germany.txt"
 KRD = "countries/KurdistanCommunist.txt"
 ENG = "countries/United Kingdom.txt"

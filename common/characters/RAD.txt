@@ -1,0 +1,15 @@
+characters={
+	RAD_Leader={
+		name= "Anton Grasser"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Anton_Grasser_rksplus
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

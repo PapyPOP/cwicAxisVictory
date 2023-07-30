@@ -4,7 +4,7 @@ state = {
 	name = "STATE_1037"
 
 	history = {
-		owner = RGO
+		owner = GGR
 		victory_points = {
 			3686 10 
 		}
@@ -22,7 +22,7 @@ state = {
 			}
 
 		}
-		add_core_of = RGO
+		add_core_of = GGR
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

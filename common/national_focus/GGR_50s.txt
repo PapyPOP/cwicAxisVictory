@@ -1052,6 +1052,10 @@ focus_tree = {
 			focus = GGR_economy_infra_9
 		}
 		completion_reward = {
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = -100
+			}
 			every_owned_state = {
 				add_extra_state_shared_building_slots = 1
 			}
@@ -1067,6 +1071,10 @@ focus_tree = {
 			focus = GGR_economy_infra_boom
 		}
 		completion_reward = {
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = -100
+			}
 			every_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1087,6 +1095,10 @@ focus_tree = {
 			focus = GGR_economy_infra_boom
 		}
 		completion_reward = {
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = -100
+			}
 			every_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1107,6 +1119,10 @@ focus_tree = {
 			focus = GGR_economy_infra_boom
 		}
 		completion_reward = {
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = -100
+			}
 			every_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1687,8 +1703,11 @@ focus_tree = {
 			focus = GGR_purity_2
 		}
 		completion_reward = {
-			GGP = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = RGV }
+				RGV = {
+					add_stability = -0.05
+				}
 			}
 			10 = {
 				add_manpower = -500000
@@ -1708,8 +1727,11 @@ focus_tree = {
 			focus = GGR_purity_2
 		}
 		completion_reward = {
-			ROS = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = ROT }
+				ROT = {
+					add_stability = -0.05
+				}
 			}
 			204 = {
 				add_manpower = -500000
@@ -1729,8 +1751,11 @@ focus_tree = {
 			focus = GGR_purity_2
 		}
 		completion_reward = {
-			RUK = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = RUA }
+				RUA = {
+					add_stability = -0.05
+				}
 			}
 			202 = {
 				add_manpower = -500000
@@ -1753,8 +1778,11 @@ focus_tree = {
 			focus = GGR_purity_5
 		}
 		completion_reward = {
-			RKA = {
-				add_stability = -0.05
+			if = {
+				limit = { country_exists = RKS }
+				RKS = {
+					add_stability = -0.05
+				}
 			}
 			234 = {
 				add_manpower = -500000
@@ -1777,8 +1805,11 @@ focus_tree = {
 			focus = GGR_purity_5
 		}
 		completion_reward = {
-			RMO = {
-				add_stability = -0.2
+			if = {
+				limit = { country_exists = RMK }
+				RMK = {
+					add_stability = -0.05
+				}
 			}
 			219 = {
 				add_manpower = -500000
@@ -1948,7 +1979,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = GER_funding_the_navy
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = -1000
+			}
 		}
+		
 	}
 	focus = {
 		id = GGR_navy_10
@@ -1962,6 +1998,10 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = GER_funding_the_navy
 			add_ideas = GER_extra_funding_the_navy
+			add_to_variable = {
+				tooltip = increase_money_tt
+				currentMoney = -2500
+			}
 		}
 	}
 }

@@ -1,0 +1,15 @@
+characters={
+	RAB_Leader={
+		name= "Hans-Valentin Hube"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Hans-Valentin_Hube
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

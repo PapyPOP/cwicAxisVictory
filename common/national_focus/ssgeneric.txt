@@ -1,0 +1,1165 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = ssgeneric_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+			original_tag = OLB
+			original_tag = OIC
+			}
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 3000 y = 200 }  
+	initial_show_position = {
+		x = 15
+		y = 0
+	}
+
+	focus = {
+		id = OSS_grant_dictator
+		icon = GFX_goal_generic_defence
+		#prerequisite = { focus = }
+
+		x = 15
+		y = 0
+		#relative_position_id = 
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.05
+			add_political_power = 75
+			add_country_leader_trait = dictator
+		}
+	}
+	
+	focus = {
+		id = OSS_power_of_the_ss
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = OSS_grant_dictator }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_grant_dictator
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		add_political_power = 25
+
+		}
+	}
+	
+	focus = {
+		id = OSS_strengthen_ss
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = OSS_grant_dictator }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OSS_grant_dictator
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_war_support = 0.05
+
+		}
+	}
+	
+	focus = {
+		id = OSS_military_developments
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = OSS_strengthen_ss }
+
+		
+		x = -3
+		y = 1
+		relative_position_id = OSS_strengthen_ss
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OSS_forcedlabor
+
+		}
+	}
+	
+	focus = {
+		id = OSS_civilian_factories_one
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = OSS_military_developments }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_military_developments
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_civilian_factories_two
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = OSS_military_developments }
+
+		
+		x = 2
+		y = 0
+		relative_position_id = OSS_civilian_factories_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_infrastructure_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = OSS_civilian_factories_one focus = OSS_civilian_factories_two }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_civilian_factories_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_dockyard_development
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = OSS_infrastructure_development }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OSS_infrastructure_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		    any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		bypass = {
+			NOT = {
+			    any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+				}
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = OSS_airport_development
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = OSS_dockyard_development }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OSS_dockyard_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_exploit_resources
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = OSS_infrastructure_development }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_infrastructure_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OSS_resource_exploit
+
+		}
+	}
+	
+	focus = {
+		id = OSS_military_industries_one
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = OSS_military_developments  }
+
+		
+		x = -2
+		y = 1
+		relative_position_id = OSS_military_developments
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_military_industries_two
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = OSS_military_developments  }
+
+		
+		x = -4
+		y = 1
+		relative_position_id = OSS_military_developments
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_army_review
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = OSS_military_industries_one focus = OSS_military_industries_two }
+
+		
+		x = 1
+		y = 2
+		relative_position_id = OSS_military_industries_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    army_experience = 25
+
+		}
+	}
+	
+	focus = {
+		id = OSS_equipment_research
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = OSS_army_review }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OSS_army_review
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = OSS_infantry_focus
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = OSS_equipment_research }
+		mutually_exclusive = { focus = OSS_tank_focus }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OSS_equipment_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OSS_infantrybuff
+			
+			137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_tank_research
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = OSS_army_review }
+
+		
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_army_review
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = OSS_tank_focus
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = OSS_tank_research }
+		mutually_exclusive = { focus = OSS_infantry_focus }
+
+		
+		x = 0
+		y = 1
+		relative_position_id = OSS_tank_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OSS_armorbuff
+			
+			137 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_doctrine_army
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = OSS_infantry_focus focus = OSS_tank_focus }
+
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_infantry_focus
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = rkp_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = OSS_research_slot_one
+		icon = GFX_focus_research
+		prerequisite = { focus = OSS_civilian_factories_one }
+		prerequisite = { focus = OSS_military_industries_one }
+
+		
+		x = -1
+		y = 5
+		relative_position_id = OSS_civilian_factories_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_research_slot = 1
+
+		}
+	}
+	
+	focus = {
+		id = OSS_enact_sslaw
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = OSS_power_of_the_ss }
+
+		
+		x = 3
+		y = 1
+		relative_position_id = OSS_power_of_the_ss
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+            add_political_power = 10
+		
+		    add_stability = 0.1
+
+		}
+	}
+	
+	focus = {
+		id = OSS_launch_raid
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = OSS_enact_sslaw }
+
+		
+		x = -3
+		y = 1
+		relative_position_id = OSS_enact_sslaw
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = GGR
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_destroy_resistance
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = OSS_launch_raid }
+
+		
+		x = 0
+		y = 3
+		relative_position_id = OSS_launch_raid
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    remove_ideas = OSS_resistance
+
+		}
+	}
+	
+	focus = {
+		id = OSS_loyalty_schutzstaffel
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = OSS_enact_sslaw }
+		mutually_exclusive = { focus = OSS_loyalty_germany }
+
+		
+		x = 3
+		y = 1
+		relative_position_id = OSS_enact_sslaw
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = 0.15
+			
+			if = {
+			    limit = {
+					country_exists = OBG
+				}
+				OBG = {
+					add_opinion_modifier = { 
+						target = ROOT
+						modifier = OSS_mission_to_burgundy
+					}
+				}
+			}
+			
+			if = {
+			    limit = {
+					country_exists = OGT
+				}
+				OGT = {
+					add_opinion_modifier = { 
+						target = ROOT
+						modifier = OSS_mission_to_gotenland
+					}
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_loyalty_germany
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = OSS_enact_sslaw }
+		mutually_exclusive = { focus = OSS_loyalty_schutzstaffel }
+
+		
+		x = 5
+		y = 1
+		relative_position_id = OSS_enact_sslaw
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    GGR = { 
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = CHI_mission_to_germany
+				}
+			}
+			
+			add_political_power = 50
+
+		}
+	}
+	
+	focus = {
+		id = OSS_expand_loyalty
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = OSS_loyalty_germany }
+
+		
+		x = 0
+		y = 2
+		relative_position_id = OSS_loyalty_germany
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_stability = 0.15
+			
+			GGR = { 
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = OSS_german_collaboration
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_encourage_schutzstaffel
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = OSS_loyalty_schutzstaffel }
+
+		
+		x = 0
+		y = 2
+		relative_position_id = OSS_loyalty_schutzstaffel
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_political_power = 150
+			
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+			
+			if = {
+			    limit = {
+					country_exists = OBG
+				}
+				OBG = {
+					add_opinion_modifier = { 
+						target = ROOT
+						modifier = OSS_schutzstaffel_collaboration
+					}
+				}
+			}
+			
+			if = {
+			    limit = {
+					country_exists = OGT
+				}
+				OGT = {
+					add_opinion_modifier = { 
+						target = ROOT
+						modifier = OSS_schutzstaffel_collaboration
+					}
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = OSS_supresss_locals
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = OSS_enact_sslaw }
+
+		
+		x = 0
+		y = 2
+		relative_position_id = OSS_enact_sslaw
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_stability = -0.05
+			add_manpower = 10000
+
+		}
+	}
+	
+	focus = {
+		id = OSS_forced_language
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = OSS_supresss_locals }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OSS_supresss_locals
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_stability = -0.05
+			add_political_power = 50
+
+		}
+	}
+	
+	focus = {
+		id = OSS_exterminate_undesirable
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = OSS_supresss_locals }
+
+		
+		x = 1
+		y = 1
+		relative_position_id = OSS_supresss_locals
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_timed_idea = { idea = OSS_relocation days = 120 }
+			
+			add_political_power = 50
+
+		}
+	}
+	
+	focus = {
+		id = OSS_aggresive_germanization
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = OSS_exterminate_undesirable }
+		prerequisite = { focus = OSS_forced_language }
+
+		
+		x = -1
+		y = 1
+		relative_position_id = OSS_exterminate_undesirable
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_ideas = OSS_settlers
+			
+			add_political_power = -75
+			add_stability = 0.25
+
+		}
+	}
+	
+	focus = {
+		id = OSS_aryan_state
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = OSS_aggresive_germanization }
+
+		
+		x = 0
+		y = 2
+		relative_position_id = OSS_aggresive_germanization
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    add_stability = 0.25
+			add_political_power = 100
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+			
+			add_research_slot = 1
+			
+			add_ideas = OSS_aryanstate
+		}
+	}
+}
+

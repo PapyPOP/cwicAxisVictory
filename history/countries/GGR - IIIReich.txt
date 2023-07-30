@@ -223,55 +223,63 @@ add_ideas = {
 #######################
 create_faction = "Neue Ordnung"
 add_to_faction = GGR
-create_import = {
-	resource = tungsten
-	factories = 1
-	exporter = SWE
-}
+
+#######################
+# Puppets
+#######################
 set_autonomy = {
-	target = ROS
-	autonomous_state = autonomy_reichskommissariat
-}
-set_autonomy = {
-	target = RUK
-	autonomous_state = autonomy_reichskommissariat
-}
-set_autonomy = {
-	target = RKA
-	autonomous_state = autonomy_reichskommissariat
-}
-set_autonomy = {
-	target = RMO
-	autonomous_state = autonomy_reichskommissariat
-}
-set_autonomy = {
-	target = RGO
+	target = OBG
 	autonomous_state = autonomy_SS_Ordenstaat
 }
 set_autonomy = {
-	target = SBA
+	target = OIC
 	autonomous_state = autonomy_SS_Ordenstaat
 }
 set_autonomy = {
-	target = DEN
+	target = OGT
+	autonomous_state = autonomy_SS_Ordenstaat
+}
+set_autonomy = {
+	target = RBM
 	autonomous_state = autonomy_reichsprotectorate
 }
 set_autonomy = {
-	target = NOR
-	autonomous_state = autonomy_reichsprotectorate
+	target = RNW
+	autonomous_state = autonomy_reichskommissariat
 }
 set_autonomy = {
-	target = SLO
-	autonomous_state = autonomy_reichsprotectorate
+	target = RDN
+	autonomous_state = autonomy_reichskommissariat
 }
 set_autonomy = {
-	target = GGP
-	autonomous_state = autonomy_reichsprotectorate
+	target = RNT
+	autonomous_state = autonomy_reichskommissariat
 }
 set_autonomy = {
-	target = ICE
-	autonomous_state = autonomy_reichsprotectorate
+	target = RBG
+	autonomous_state = autonomy_reichskommissariat
 }
+set_autonomy = {
+	target = RGV
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RUA
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = ROT
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RMK
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = RKS
+	autonomous_state = autonomy_reichskommissariat
+}
+
 
 #######################
 # Leaders

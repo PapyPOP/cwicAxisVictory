@@ -1,0 +1,96 @@
+ideas = {
+	country = {
+		SHC_isolated = {
+			picture = generic_disjointed_gov
+			allowed = {
+				tag = SHC
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				ai_get_ally_desire_factor = -300
+				ai_join_ally_desire_factor = -300
+				join_faction_tension = 0.5
+			}
+		}
+		SHC_experiment = {
+			picture = generic_research_bonus
+			allowed = {
+				tag = SHC
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 1
+				production_speed_buildings_factor = 0.75
+				global_building_slots_factor = 0.3
+				political_power_gain = 0.5
+				stability_factor = 1
+			}
+		}
+		SHC_cyborgarmy = {
+			picture = generic_manpower_bonus
+			allowed = {
+				tag = SHC
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.5
+				army_defence_factor = 0.5
+				army_org_factor = 0.3
+				army_morale_factor = 0.3
+				out_of_supply_factor = -1
+				weekly_manpower = 10000
+				war_support_factor = 1
+			}
+		}
+		SHC_production = {
+			picture = generic_economic_increase
+			allowed = {
+				tag = SHC
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.5
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				industrial_capacity_factory = 1
+				industrial_capacity_dockyard = 1
+			}
+		}
+		SHC_navalboost = {
+			picture = generic_navy_bonus
+			allowed = {
+				tag = SHC
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				naval_invasion_prep_speed = 10
+				naval_invasion_capacity = 100
+			}
+		}
+	}
+}

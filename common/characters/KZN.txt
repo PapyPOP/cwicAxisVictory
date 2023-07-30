@@ -1,0 +1,15 @@
+characters={
+	KZN_Leader={
+		name= "Ilyas Zhansugurov"
+		portraits={
+			civilian={
+				large=GFX_portrait_Ilyas_Zhansugurov
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

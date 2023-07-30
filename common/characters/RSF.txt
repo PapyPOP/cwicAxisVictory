@@ -1,0 +1,15 @@
+characters={
+	RSF_Leader={
+		name= "Wilhelm Ritter von Thoma"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Wilhelm_Ritter_von_Thoma
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

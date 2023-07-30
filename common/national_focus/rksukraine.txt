@@ -1,0 +1,1383 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = rksukraine_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUA
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 1600 y = 1000 }  
+	initial_show_position = {
+		x = 15
+		y = 15
+	}
+
+	focus = {
+		id = RUA_grant_erich_koch
+		icon = GFX_goal_generic_demand_territory
+		#prerequisite = { focus = }
+
+		x = 11
+		y = 0
+		#relative_position_id = 
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.15
+			add_political_power = 75
+			add_country_leader_trait = dictator
+			
+		}
+	}
+	
+	focus = {
+		id = RUA_gather_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RUA_grant_erich_koch }
+
+		x = -4
+		y = 2
+		relative_position_id = RUA_grant_erich_koch
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 6500
+                producer = SOV
+            }
+		}
+	}
+	
+	focus = {
+		id = RUA_determination
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RUA_gather_guns }
+
+		x = 0
+		y = 2
+		relative_position_id = RUA_gather_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_war_support = 0.05
+			
+			add_ideas = RUA_determination_idea
+			
+		}
+	}
+	
+	focus = {
+		id = RUA_army_research_one
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RUA_gather_guns }
+
+		x = -3
+		y = 1
+		relative_position_id = RUA_gather_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    army_experience = 10
+		
+		    add_doctrine_cost_reduction = {
+				name = rua_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = RUA_army_research_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = RUA_army_research_one }
+
+		x = 1
+		y = 1
+		relative_position_id = RUA_army_research_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = RUA_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_army_research_motorized_equipment
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RUA_army_research_one }
+
+		x = -1
+		y = 1
+		relative_position_id = RUA_army_research_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = RUA_motorized_equipment
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_army_buff_attack
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RUA_army_research_artillery }
+		mutually_exclusive = { focus = RUA_army_buff_defense }
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_army_research_artillery
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RUA_attack_buff
+			
+		}
+	}
+	
+	focus = {
+		id = RUA_army_buff_defense
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = RUA_army_research_motorized_equipment }
+		mutually_exclusive = { focus = RUA_army_buff_attack }
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_army_research_motorized_equipment
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RUA_defense_buff
+			
+		}
+	}
+	
+	focus = {
+		id = RUA_army_research_two
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RUA_army_buff_attack focus = RUA_army_buff_defense }
+
+
+		x = -1
+		y = 1
+		relative_position_id = RUA_army_buff_attack
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_doctrine_cost_reduction = {
+				name = rua_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_army_research_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = RUA_army_research_two }
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_army_research_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = RUA_dnieper_defense
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RUA_determination }
+
+
+		x = 0
+		y = 2
+		relative_position_id = RUA_determination
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		    RUA = {
+			    controls_state = 202
+				controls_state = 203
+				controls_state = 226
+				controls_state = 196
+				controls_state = 197
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    custom_effect_tooltip = 1_RUA_tooltip
+			
+			hidden_effect = {
+			    
+				202 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9568
+				    level = 1
+				    }
+			    }
+				
+				202 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3543
+				    level = 1
+				    }
+			    }
+				
+			    202 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 525
+				    level = 1
+				    }
+			    }
+			    
+				202 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3494
+				    level = 1
+				    }
+			    }
+				
+				203 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11454
+				    level = 1
+				    }
+			    }
+				
+			    203 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 488
+				    level = 1
+				    }
+			    }
+				
+			    203 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3468
+				    level = 1
+				    }
+			    }
+			
+			    203 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 6478
+				    level = 1
+				    }
+			    }
+			
+			    226 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9433
+				    level = 1
+				    }
+			    }
+			
+			    226 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11437
+				    level = 1
+				    }
+			    }
+			
+			    226 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11422
+				    level = 1
+				    }
+			    }
+			
+			    226 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9419
+				    level = 1
+				    }
+			    }
+			
+			    196 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11715
+				    level = 1
+				    }
+			    }
+			
+			    197 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 3755
+				    level = 1
+				    }
+			    }
+			
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_stabilise_region
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RUA_grant_erich_koch }
+
+
+		x = 4
+		y = 1
+		relative_position_id = RUA_grant_erich_koch
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = RUA_segregate_population
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RUA_stabilise_region }
+
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_stabilise_region
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = -0.10
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = RUA_invite_german_settlers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = RUA_segregate_population }
+
+
+		x = -2
+		y = 1
+		relative_position_id = RUA_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_manpower = 30000
+			add_ideas = RUA_manpower
+		}
+	}
+	
+	focus = {
+		id = RUA_buy_equipments
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = RUA_gather_guns }
+
+
+		x = 2
+		y = 1
+		relative_position_id = RUA_gather_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = GGR
+            }
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 100
+                producer = GGR
+            }
+			add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 50
+                producer = GGR
+            }
+			
+			add_timed_idea = { idea = RUA_buying_stuff days = 180 }
+		}
+	}
+	
+	focus = {
+		id = RUA_train_professional_army
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = RUA_buy_equipments }
+		prerequisite = { focus = RUA_invite_german_settlers }
+
+
+		x = 2
+		y = 3
+		relative_position_id = RUA_buy_equipments
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_stability = 0.05
+			
+			division_template = {
+				name = "Ukrainisch Division"
+				priority = 1
+				division_names_group = GER_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+
+
+		
+				}
+				support = {
+				    engineer = { x = 0 y = 0 }
+				}
+			}
+			
+			202 = {
+				create_unit = {
+					division = "name = \"1. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+					owner = RUA
+				}
+				
+				create_unit = {
+					division = "name = \"2. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+                    owner = RUA
+				}
+				
+			}
+			
+			226 = {
+			    create_unit = {
+					division = "name = \"3. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+					owner = RUA
+				}
+	        }
+			
+			93 = {
+			    create_unit = {
+					division = "name = \"4. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+					owner = RUA
+				}
+	        }
+			
+			192 = {
+			    create_unit = {
+					division = "name = \"5. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+					owner = RUA
+				}
+				create_unit = {
+					division = "name = \"6. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+					owner = RUA
+				}
+	        }
+			
+			221 = {
+			    create_unit = {
+					division = "name = \"7. Ukrainisch Division\" division_template = \"Ukrainisch Division\" start_experience_factor = 0.5" 
+					owner = RUA
+				}
+	        }
+		}
+	}
+	
+	focus = {
+		id = RUA_work_with_ukrainians
+		icon = GFX_goal_rksplus_allyukraine
+		prerequisite = { focus = RUA_train_professional_army }
+		mutually_exclusive = { focus = RUA_destroy_the_ukrainians }
+
+
+		x = -1
+		y = 1
+		relative_position_id = RUA_train_professional_army
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			swap_ideas = {
+			    remove_idea = RUA_ukrainian_nationalism
+			    add_idea = RUA_ukrainian_nationalism_friendly
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_destroy_the_ukrainians
+		icon = GFX_goal_rksplus_crushukraine
+		prerequisite = { focus = RUA_train_professional_army }
+		mutually_exclusive = { focus = RUA_work_with_ukrainians }
+
+
+		x = 1
+		y = 1
+		relative_position_id = RUA_train_professional_army
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		
+		    swap_ideas = {
+			    remove_idea = RUA_ukrainian_nationalism
+			    add_idea = RUA_destroyed_ukrainian
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_destroy_the_bolsheviks
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = RUA_destroy_the_ukrainians focus = RUA_work_with_ukrainians }
+		
+         
+
+		x = -1
+		y = 1
+		relative_position_id = RUA_destroy_the_ukrainians
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			remove_ideas = RUA_bolshevik_resistance
+		}
+	}
+	
+	focus = {
+		id = RUA_expand_business
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RUA_invite_german_settlers focus = RUA_expand_industries }
+
+
+		x = 0
+		y = 2
+		relative_position_id = RUA_invite_german_settlers
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_ideas = RUA_production
+		}
+	}
+	
+	focus = {
+		id = RUA_serfdom
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUA_segregate_population }
+
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			add_ideas = RUA_forcedlabor
+		}
+	}
+	
+	focus = {
+		id = RUA_expand_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUA_serfdom }
+
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_expand_industries_two
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUA_expand_industries }
+
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_expand_industries
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RUA_expand_milfactories
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RUA_serfdom }
+
+
+		x = 4
+		y = 1
+		relative_position_id = RUA_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RUA_expand_milfactories_two
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RUA_expand_milfactories }
+
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_expand_milfactories
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = RUA_naval_dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RUA_serfdom }
+		
+
+		x = 6
+		y = 1
+		relative_position_id = RUA_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = RUA_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RUA_serfdom }
+		
+
+		x = 2
+		y = 1
+		relative_position_id = RUA_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    202 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			192 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			93 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+			221 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RUA_dnipro_airport
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = RUA_infrastructure }
+		
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_infrastructure
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    226 = {
+				add_building_construction = {
+				type = air_base
+				level = 5
+				instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_breadbasket_europe
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = RUA_expand_industries_two }
+		prerequisite = { focus = RUA_expand_business }
+		
+
+		x = 1
+		y = 4
+		relative_position_id = RUA_expand_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 100
+			add_stability = 0.10
+			
+			add_ideas = RUA_breadbasket
+		}
+	}
+	
+	focus = {
+		id = RUA_empower_the_fascists
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RUA_stabilise_region }
+		
+
+		x = 3
+		y = 1
+		relative_position_id = RUA_stabilise_region
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 25
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+		}
+	}
+	
+	focus = {
+		id = RUA_german_victory
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUA_empower_the_fascists }
+		
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_empower_the_fascists
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		
+		NOT = { has_war_with = SOV }
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 50
+			add_stability = 0.15
+		}
+	}
+	
+	focus = {
+		id = RUA_german_research
+		icon = GFX_focus_research
+		prerequisite = { focus = RUA_dnipro_airport }
+		
+
+		x = 0
+		y = 1
+		relative_position_id = RUA_dnipro_airport
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = RUA_military_state
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = RUA_army_research_slot }
+		prerequisite = { focus = RUA_dnieper_defense }
+		prerequisite = { focus = RUA_destroy_the_bolsheviks }
+		
+
+		x = 3
+		y = 2
+		relative_position_id = RUA_army_research_slot
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.1
+			add_ideas = RUA_military_buff
+			
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = RUA_finalise_plan
+		icon = GFX_goal_rksplus_generalplanost
+		prerequisite = { focus = RUA_military_state }
+		prerequisite = { focus = RUA_breadbasket_europe }
+
+		
+
+		x = 0
+		y = 10
+		relative_position_id = RUA_grant_erich_koch
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = RUA_germanization
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = RUA_finalise_plan }
+
+		
+
+		x = 0
+		y = 2
+		relative_position_id = RUA_finalise_plan
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+	        add_manpower = 75000
+			add_stability = 0.25
+		}
+	}
+}
+

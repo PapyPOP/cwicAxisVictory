@@ -2,7 +2,7 @@ state={
 	id=1504
 	name="STATE_1504"
 	history = {
-		owner = GGR
+		owner = RNT
 		set_state_flag = temperate
 		set_state_flag = freshwatersea
 		set_state_flag = nominal
@@ -22,7 +22,7 @@ state={
 			industrial_complex = 4
 			arms_factory = 1
 		}
-		add_core_of = GGR
+		add_core_of = RNT
 		add_core_of = HOL
 		set_state_flag = HDI4
 		set_variable = { tourism_infrastructure = 0 }

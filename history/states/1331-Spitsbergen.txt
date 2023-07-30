@@ -3,12 +3,12 @@ state = {
 	name = "STATE_1331"
 
 	history = {
-		owner = NOR
+		owner = RNW
 		set_state_flag = boreal
 		set_state_flag = lakes
 		set_state_flag = small
 		set_state_flag = decent
-		set_demilitarized_zone = yes
+		set_demilitarized_zone = no
 		set_variable = { show_demographics_disabled = 1 }
 		#victory_points = {
 		#	13322 1 
@@ -17,8 +17,9 @@ state = {
 			infrastructure = 0
 			state_infrastructure = 0
 		}
-		#add_core_of = NOR
-        #add_core_of = SOV
+		add_core_of = RNW
+		add_core_of = NOR
+        add_core_of = SOV
 	}
 
 	provinces = {

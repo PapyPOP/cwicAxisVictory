@@ -1,0 +1,15 @@
+characters={
+	RMK_Leader={
+		name= "Siegfried Kasche"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Siegfried_Kasche
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,15 @@
+characters={
+	RBZ_Leader={
+		name= "Kurt Student"
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_kurt_student
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

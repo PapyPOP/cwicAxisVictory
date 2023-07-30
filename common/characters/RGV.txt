@@ -1,0 +1,15 @@
+characters={
+	RGV_Leader={
+		name= "Hans Frank"
+		portraits={
+			civilian={
+				large=GFX_Portrait_RGV_Hans_Frank
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

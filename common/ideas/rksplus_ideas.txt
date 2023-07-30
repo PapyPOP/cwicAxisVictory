@@ -1,0 +1,401 @@
+ideas = {
+	country = {
+		rksplus_germanrule = {
+			picture = german_advisors
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.1
+			}
+		}
+		rks_resistance_3 = {
+			picture = chi_war_of_resistance3
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+				surrender_limit = -0.3
+				stability_factor = -0.3
+				state_resources_factor = -0.25
+				local_factories = -0.25
+			}
+		}
+		rks_resistance_2 = {
+			picture = chi_war_of_resistance2
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.3
+				surrender_limit = -0.2
+				stability_factor = -0.2
+				state_resources_factor = -0.1
+				local_factories = -0.1
+			}
+		}
+		rks_resistance_1 = {
+			picture = chi_war_of_resistance
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.15
+				surrender_limit = -0.1
+				stability_factor = -0.1
+				state_resources_factor = -0.05
+				local_factories = -0.05
+			}
+		}
+		rks_resistance_victory = {
+			picture = generic_fascism_drift_bonus
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				state_resources_factor = 0.1
+			}
+		}
+		RKP_forcedlabor = {
+			picture = generic_production_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.1
+			}
+		}
+		RKP_forcedlabor_two = {
+			picture = generic_production_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.05
+			}
+		}
+		RKP_relocation = {
+			picture = generic_purge
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.15
+				stability_factor = -0.05
+			}
+		}
+		RKP_business = {
+			picture = generic_economic_increase
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.025
+				consumer_goods_factor = 0.05
+			}
+		}
+		RKP_business_two = {
+			picture = generic_economic_increase
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		RKP_business_three = {
+			picture = generic_economic_increase
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		RKP_buying_stuff = {
+			picture = generic_goods_red_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		RKP_supporting_germans = {
+			picture = generic_goods_red_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		RKP_manpower_one = {
+			picture = generic_manpower_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 250
+			}
+		}
+		RKP_manpower_two = {
+			picture = generic_manpower_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 350
+			}
+		}
+		RKP_manpower_three = {
+			picture = generic_manpower_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		RKP_resource_exploit = {
+			picture = generic_production_bonus
+			allowed = {
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		rksplus_ideological_fanatism = {
+			picture = generic_morale_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.025
+				drift_defence_factor = 0.05
+			}
+		}
+		RKP_armorbuff = {
+			picture = generic_acquire_tanks
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.1
+			}
+		}
+		RKP_infantrybuff = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		RKP_factory_buff = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.025
+			}
+		}
+		RKP_paramilitarism_focus = {
+			picture = generic_manpower_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+		RKP_military_buff = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		RKP_military_buff_two = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		rksplus_germanrule_collab = {
+			picture = german_advisors
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.1
+			}
+		}
+		SOV_collapsed_state = {
+			picture = great_depression
+			allowed = {
+			}
+			available = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+}

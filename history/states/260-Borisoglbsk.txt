@@ -6,12 +6,12 @@ state = {
 	state_category = pop1dev2
 
 	history = {
-		owner = RUK
+		owner = RMK
 		set_state_flag = temperate
 		set_state_flag = river
 		set_state_flag = nominal
 		set_state_flag = semideveloped
-		set_demilitarized_zone = yes
+		set_demilitarized_zone = no
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1
@@ -30,7 +30,8 @@ state = {
 		victory_points = {
 			413 10
 		}
-		add_core_of = RUK
+		add_core_of = RMK
+		add_core_of = SOV
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

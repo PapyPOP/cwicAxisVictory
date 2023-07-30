@@ -1,0 +1,15 @@
+characters={
+	JPZ_Leader={
+		name= "Isoroku Yamamoto"
+		portraits={
+			civilian={
+				large=GFX_portrait_JAP_isoroku_yamamoto
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

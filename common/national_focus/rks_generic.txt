@@ -1,0 +1,1764 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = rksgeneric_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				original_tag = RBG
+				original_tag = RGR
+				original_tag = RBL
+				original_tag = RNT
+				original_tag = RDN
+				original_tag = RNW
+				original_tag = RTK
+				original_tag = RSV
+				original_tag = RHG
+				original_tag = RRO
+				original_tag = RTS
+				original_tag = RBA
+				original_tag = RCR
+				original_tag = RSB
+				original_tag = RAB
+				original_tag = RUK
+				original_tag = RSC
+				original_tag = RWL
+				original_tag = RCW
+				original_tag = RFC
+				original_tag = RIE
+				original_tag = RSW
+				original_tag = RFD
+				original_tag = RSP
+				original_tag = RBQ
+				original_tag = RAG
+				original_tag = RPT
+				original_tag = RWS
+				original_tag = RES
+				original_tag = RNH
+				original_tag = RTU
+				original_tag = RAR
+				original_tag = RNA
+				original_tag = RMA
+				original_tag = RSF
+				original_tag = REF
+				original_tag = RMG
+				original_tag = RIT
+				original_tag = RSZ
+				original_tag = RPR
+				original_tag = RID
+				original_tag = RIN
+				original_tag = ROA
+				original_tag = ROZ
+				original_tag = RQU
+				original_tag = RCD
+				original_tag = RCS
+				original_tag = RPZ
+				original_tag = RMX
+				original_tag = RCB
+				original_tag = RCL
+				original_tag = RBZ
+				original_tag = RGT
+				original_tag = REC
+				original_tag = RWC
+				original_tag = RMO
+				original_tag = RMC
+				original_tag = RKR
+				original_tag = RJP
+				original_tag = RPO
+				original_tag = RAD
+				original_tag = RUL
+				original_tag = RCX
+				original_tag = REY
+				original_tag = RGL
+				original_tag = RSD
+				original_tag = RWF
+				original_tag = RTZ
+				original_tag = RZA
+				original_tag = RPE
+			}
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1500 }  
+	initial_show_position = {
+		x = 12
+		y = 0
+	}
+
+	focus = {
+		id = RKP_grant_power
+		icon = GFX_goal_generic_demand_territory
+		#prerequisite = { focus = }
+
+		x = 15
+		y = 0
+		#relative_position_id = 
+		cost = 2
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.05
+			add_political_power = 75
+			add_country_leader_trait = dictator
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_deploy_gestapo
+		icon = GFX_focus_generic_secret_service_agency
+		prerequisite = { focus = RKP_grant_power }
+
+		x = 5
+		y = 1
+		relative_position_id = RKP_grant_power
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.05
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_wehrmacht_help
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RKP_grant_power }
+
+		x = -5
+		y = 1
+		relative_position_id = RKP_grant_power
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.05
+            add_war_support = 0.05
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_establish_order
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RKP_grant_power }
+		prerequisite = { focus = RKP_wehrmacht_help focus = RKP_deploy_gestapo }
+
+		x = 0
+		y = 2
+		relative_position_id = RKP_grant_power
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_political_power = 50
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_segregate_population
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RKP_establish_order }
+
+		x = 1
+		y = 1
+		relative_position_id = RKP_establish_order
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = -0.05
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_send_people
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RKP_establish_order }
+
+
+		x = -1
+		y = 1
+		relative_position_id = RKP_establish_order
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_timed_idea = { idea = RKP_relocation days = 365 }
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_implement_serfdom
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RKP_segregate_population }
+		prerequisite = { focus = RKP_send_people }
+
+		x = -1
+		y = 2
+		relative_position_id = RKP_segregate_population
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_forcedlabor
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_clear_spaces
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RKP_deploy_gestapo }
+
+		x = 1
+		y = 3
+		relative_position_id = RKP_deploy_gestapo
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    
+			random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_invite_business
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RKP_clear_spaces }
+
+		x = -1
+		y = 1
+		relative_position_id = RKP_clear_spaces
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_business
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_invite_german
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = RKP_clear_spaces }
+
+		x = 1
+		y = 1
+		relative_position_id = RKP_clear_spaces
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_manpower_one
+
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_exploit_industry
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = RKP_invite_business }
+		prerequisite = { focus = RKP_implement_serfdom }
+
+		x = 0
+		y = 3
+		relative_position_id = RKP_implement_serfdom
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = -50
+		    random_owned_controlled_state = {
+			    add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	
+	
+	focus = {
+		id = RKP_industrial_research
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RKP_exploit_industry }
+
+		x = 2
+		y = 1
+		relative_position_id = RKP_exploit_industry
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			  
+		    }
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_industrial_development_one
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RKP_industrial_research }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_industrial_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_industrial_development_two
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RKP_industrial_development_one }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_industrial_development_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_industrial_development_resource
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RKP_industrial_development_two }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_industrial_development_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_resource_exploit
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_infrastructure_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RKP_industrial_research focus = RKP_militaryindustry_research }
+
+		x = -2
+		y = 1
+		relative_position_id = RKP_industrial_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_empower_business
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = RKP_invite_business }
+		prerequisite = { focus = RKP_invite_german }
+
+		x = -1
+		y = 1
+		relative_position_id = RKP_invite_german
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = RKP_business
+				add_idea = RKP_business_two
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_support_germans
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = RKP_empower_business }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_empower_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.05
+			add_timed_idea = { idea = RKP_supporting_germans days = 365 }
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_german_lebensborn
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = RKP_empower_business }
+
+		x = -2
+		y = 1
+		relative_position_id = RKP_empower_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = RKP_manpower_one
+				add_idea = RKP_manpower_two
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_declare_germanlanguage
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = RKP_empower_business }
+
+		x = 2
+		y = 1
+		relative_position_id = RKP_empower_business
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.1
+			add_political_power = 75
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_ideological_crusade
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = RKP_german_lebensborn }
+		prerequisite = { focus = RKP_support_germans }
+		prerequisite = { focus = RKP_declare_germanlanguage }
+
+		x = 0
+		y = 2
+		relative_position_id = RKP_support_germans
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_war_support = 0.10
+		    add_ideas = rksplus_ideological_fanatism
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_empower_nazism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RKP_ideological_crusade }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_ideological_crusade
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_ensure_stability
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = RKP_empower_nazism }
+
+		x = 0
+		y = 3
+		relative_position_id = RKP_empower_nazism
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.15
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_scavenge_guns
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RKP_wehrmacht_help }
+
+		x = -1
+		y = 3
+		relative_position_id = RKP_wehrmacht_help
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1500
+                producer = GGR
+            }
+		}
+	}
+	
+	focus = {
+		id = RKP_military_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RKP_scavenge_guns }
+
+		x = -3
+		y = 1
+		relative_position_id = RKP_scavenge_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = rkp_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_research_electronics
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = RKP_military_doctrine }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_military_doctrine
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RKP_electronic_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_guns_research
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = RKP_military_doctrine }
+
+		x = -2
+		y = 1
+		relative_position_id = RKP_military_doctrine
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_tanks_research
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = RKP_military_doctrine }
+
+		x = 2
+		y = 1
+		relative_position_id = RKP_military_doctrine
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_buff_infantry
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RKP_guns_research }
+		mutually_exclusive = { focus = RKP_buff_tanks }
+
+		x = 1
+		y = 1
+		relative_position_id = RKP_guns_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_infantrybuff
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_buff_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = RKP_tanks_research }
+		mutually_exclusive = { focus = RKP_buff_infantry }
+
+		x = -1
+		y = 1
+		relative_position_id = RKP_tanks_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_armorbuff
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_military_doctrine_two
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RKP_research_electronics }
+		prerequisite = { focus = RKP_buff_infantry focus = RKP_buff_tanks }
+
+		x = 0
+		y = 2
+		relative_position_id = RKP_research_electronics
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name = rkp_land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_research_slot_one
+		icon = GFX_focus_research
+		prerequisite = { focus = RKP_military_doctrine_two }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_military_doctrine_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_research_slot = 1
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = RKP_scavenge_guns }
+
+		x = 4
+		y = 1
+		relative_position_id = RKP_scavenge_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_aviation_development
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = RKP_aviation_effort }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_aviation_effort
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				category = light_fighter
+				category = cas_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_naval_effort
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = RKP_scavenge_guns }
+
+		x = 2
+		y = 1
+		relative_position_id = RKP_scavenge_guns
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		    any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    navy_experience = 25
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = RKP_naval_development
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RKP_naval_effort }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_naval_effort
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+				category = cl_tech
+				category = ca_tech
+				category = ss_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_naval_doctrine
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = RKP_naval_development }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_naval_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = sub_op_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_aviation_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = RKP_aviation_development }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_aviation_development
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_militaryindustry_research
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RKP_exploit_industry }
+
+		x = -2
+		y = 1
+		relative_position_id = RKP_exploit_industry
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+		    }
+		}
+	}
+	
+	focus = {
+		id = RKP_militaryindustry_development_one
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RKP_militaryindustry_research }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_militaryindustry_research
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_militaryindustry_development_two
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RKP_militaryindustry_development_one }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_militaryindustry_development_one
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_militaryindustry_development_buff
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RKP_militaryindustry_development_two }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_militaryindustry_development_two
+		cost = 8
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_timed_idea = { idea = RKP_factory_buff days = 180 }
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_buy_equipments
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RKP_scavenge_guns }
+
+		x = 0
+		y = 5
+		relative_position_id = RKP_scavenge_guns
+		cost = 8
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2500
+                producer = GGR
+            }
+			
+			add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 50
+                producer = GGR
+            }
+			
+			add_timed_idea = { idea = RKP_buying_stuff days = 180 }
+		}
+	}
+	
+	focus = {
+		id = RKP_deploy_paramilitary
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = RKP_buy_equipments }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_buy_equipments
+		cost = 8
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_war_support = 0.1
+		    add_ideas = RKP_paramilitarism_focus
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_launch_raids
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = RKP_deploy_paramilitary }
+
+		x = 0
+		y = 3
+		relative_position_id = RKP_deploy_paramilitary
+		cost = 10
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = rks_resistance_3
+				add_idea = rks_resistance_2
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_industrialised_state
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RKP_militaryindustry_development_buff focus = RKP_industrial_development_resource }
+
+		x = 2
+		y = 1
+		relative_position_id = RKP_militaryindustry_development_buff
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			swap_ideas = {
+			remove_idea = RKP_forcedlabor
+			add_idea = RKP_forcedlabor_two
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_rootout_resistance
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = RKP_industrialised_state }
+		prerequisite = { focus = RKP_launch_raids }
+		prerequisite = { focus = RKP_ensure_stability }
+
+		x = 0
+		y = 2
+		relative_position_id = RKP_industrialised_state
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = rks_resistance_2
+				add_idea = rks_resistance_1
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_defense_reichskommissariat
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RKP_rootout_resistance }
+
+		x = -2
+		y = 1
+		relative_position_id = RKP_rootout_resistance
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_ideas = RKP_military_buff
+		}
+	}
+	
+	focus = {
+		id = RKP_research_slot_two
+		icon = GFX_focus_research2
+		prerequisite = { focus = RKP_rootout_resistance }
+
+		x = 0
+		y = 1
+		relative_position_id = RKP_rootout_resistance
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_research_slot = 1
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_strong_economy
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = RKP_rootout_resistance }
+
+		x = 2
+		y = 1
+		relative_position_id = RKP_rootout_resistance
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    swap_ideas = {
+		    remove_idea = RKP_business_two
+			add_idea = RKP_business_three
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_militarised_state
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = RKP_defense_reichskommissariat }
+		prerequisite = { focus = RKP_research_slot_two }
+
+		x = 1
+		y = 1
+		relative_position_id = RKP_defense_reichskommissariat
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    army_experience = 25
+			swap_ideas = {
+			remove_idea = RKP_military_buff
+			add_idea = RKP_military_buff_two
+			}
+			if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+					NOT = { has_idea = tot_economic_mobilisation }
+				}
+				add_ideas = war_economy
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_german_dominance
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = RKP_strong_economy }
+		prerequisite = { focus = RKP_research_slot_two }
+
+		x = -1
+		y = 1
+		relative_position_id = RKP_strong_economy
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_political_power = 100
+			swap_ideas = {
+			remove_idea = RKP_manpower_two
+			add_idea = RKP_manpower_three
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = RKP_end_resistance
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = RKP_militarised_state }
+		prerequisite = { focus = RKP_german_dominance }
+
+		x = 1
+		y = 1
+		relative_position_id = RKP_militarised_state
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    swap_ideas = {
+			    remove_idea = rks_resistance_1
+				add_idea = rks_resistance_victory
+			}
+		}
+	}
+	
+	focus = {
+		id = RKP_consolidate_colony
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = RKP_end_resistance }
+
+		x = 0
+		y = 2
+		relative_position_id = RKP_end_resistance
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+		    add_stability = 0.25
+			add_political_power = 100
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.25
+            }
+			
+		}
+	}
+}

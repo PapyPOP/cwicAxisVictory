@@ -5,7 +5,7 @@ state = {
 	state_category = pop1dev2
 
 	history = {
-		owner = RUK
+		owner = RMK
 		set_state_flag = temperate
 		set_state_flag = lakes
 		set_state_flag = small
@@ -21,7 +21,8 @@ state = {
 
 			air_base = 1
 		}
-		add_core_of = RUK
+		add_core_of = RMK
+		add_core_of = SOV
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		

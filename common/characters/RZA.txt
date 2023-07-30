@@ -1,0 +1,15 @@
+characters={
+	RZA_Leader={
+		name= "Günther von Kluge"
+		portraits={
+			civilian={
+				large=GFX_portrait_GER_gunther_von_kluge
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

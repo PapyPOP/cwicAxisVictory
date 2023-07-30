@@ -1,0 +1,11 @@
+
+SHC_generals_category = {
+
+	allowed = {
+		original_tag = SHC
+	}
+
+	visible = {
+		has_completed_focus = SHC_daishocker
+	}
+}

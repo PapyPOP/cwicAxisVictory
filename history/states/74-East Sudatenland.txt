@@ -7,7 +7,7 @@ state = {
 	}
 
 	history = {
-		owner = GGR
+		owner = RBM
 		set_state_flag = temperate
 		set_state_flag = lakes
 		set_state_flag = small
@@ -19,7 +19,7 @@ state = {
 			industrial_complex = 2
 
 		}
-		add_core_of = GGR
+		add_core_of = RBM
 		add_core_of = CZE
 		victory_points = {
 			6590 3 

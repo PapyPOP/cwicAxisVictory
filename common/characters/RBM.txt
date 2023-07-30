@@ -1,0 +1,15 @@
+characters={
+	RBM_Leader={
+		name= "Konstantin von Neurath"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Konstantin_von_Neurath_rkplus
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

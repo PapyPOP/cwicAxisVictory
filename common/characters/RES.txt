@@ -1,0 +1,15 @@
+characters={
+	RES_Leader={
+		name= "Ferdinand Scherner"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Ferdinand_Scherner
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

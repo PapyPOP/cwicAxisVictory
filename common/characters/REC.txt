@@ -1,0 +1,15 @@
+characters={
+	REC_Leader={
+		name= "Alexander von Falkenhausen"
+		portraits={
+			civilian={
+				large=GFX_Portrait_GER_Alexander_von_Falkenhausen
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

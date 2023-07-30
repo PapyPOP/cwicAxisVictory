@@ -1,0 +1,15 @@
+characters={
+	RSW_Leader={
+		name= "Felix Steiner"
+		portraits={
+			civilian={
+				large=GFX_portrait_ger_felix_steiner
+			}
+		}
+		country_leader={
+			ideology=neo_nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

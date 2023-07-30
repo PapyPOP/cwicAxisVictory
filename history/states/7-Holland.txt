@@ -7,12 +7,12 @@ state = {
 	}
 
 	history = {
-		owner = GGR
+		owner = RNT
 		set_state_flag = temperate
 		set_state_flag = riverlarge
 		set_state_flag = small
 		set_state_flag = wealthy
-		add_core_of = GGR
+		add_core_of = RNT
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 3

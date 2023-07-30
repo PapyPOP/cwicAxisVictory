@@ -1572,8 +1572,11 @@ ideas = {
 			}
 			picture = GGR_health
 			modifier = {
-				army_morale_factor = 0.1
-				recruitable_population_factor = -0.05
+				army_morale_factor = 0.25
+				recruitable_population_factor = 0.25
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = 0.25
+				MONTHLY_POPULATION = -0.75
 			}
 		}
 		OGM_has_accepted = {

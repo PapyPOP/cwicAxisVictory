@@ -8,7 +8,7 @@ state = {
 	buildings_max_level_factor = 1.000
 	state_category = pop2dev2
 	history = {
-		owner = GGP
+		owner = RGV
 		set_state_flag = temperate
 		set_state_flag = lakes
 		set_state_flag = small
@@ -26,7 +26,8 @@ state = {
 		victory_points = {
 			9508 1 
 		}
-		add_core_of = GGP
+		add_core_of = RGV
+		add_core_of = POL
 		set_variable = { coal_amount = 0 }
 
 		set_state_flag = HDI4

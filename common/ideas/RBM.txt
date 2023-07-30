@@ -1,0 +1,85 @@
+ideas = {
+	country = {
+		RBM_germanrule = {
+			picture = german_advisors
+			allowed = {
+				tag = RBM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.03
+				consumer_goods_factor = 0.15
+			}
+		}
+		RBM_resistance = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				tag = RBM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.3
+				stability_factor = -0.25
+				conscription_factor = -0.4
+			}
+		}
+		RBM_mobilizationnative = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = RBM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.1
+			}
+		}
+		RBM_inflation = {
+			picture = chi_hyper_inflation3
+			allowed = {
+				tag = RBM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		RBM_settlers = {
+			picture = generic_manpower_bonus
+			allowed = {
+				tag = RBM
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				weekly_manpower = 300
+			}
+		}
+	}
+}
