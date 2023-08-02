@@ -556,6 +556,9 @@ country_event = {
 			transfer_state = 98
 			transfer_state = 87
 			transfer_state = 67
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 243
 			add_stability = -0.1
 			hidden_effect = {
 				add_state_core = 10
@@ -565,6 +568,9 @@ country_event = {
 				add_state_core = 98
 				add_state_core = 87
 				add_state_core = 67
+				add_state_core = 91
+				add_state_core = 89
+				add_state_core = 243
 			}
 			set_country_flag = GGR_annex_poland
 		}
@@ -620,6 +626,9 @@ country_event = {
 			transfer_state = 98
 			transfer_state = 87
 			transfer_state = 67
+			transfer_state = 91
+			transfer_state = 89
+			transfer_state = 243
 			add_stability = -0.05
 			hidden_effect = {
 				add_state_core = 10
@@ -629,19 +638,11 @@ country_event = {
 				add_state_core = 98
 				add_state_core = 87
 				add_state_core = 67
-			}
-			set_country_flag = GGR_annex_poland
-		}
-		RUA = {
-			transfer_state = 91
-			transfer_state = 89
-			transfer_state = 243
-			add_stability = -0.05
-			hidden_effect = {
 				add_state_core = 91
 				add_state_core = 89
 				add_state_core = 243
 			}
+			set_country_flag = GGR_annex_poland
 		}
 	}
 	option = {

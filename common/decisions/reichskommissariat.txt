@@ -7133,6 +7133,7 @@ GGR_rksplus_category_integration = {
 			
 			has_government = fascism
 			country_exists = RSV
+			RSV = { has_completed_focus = RKP_consolidate_colony }
 			custom_trigger_tooltip = { 
 			    tooltip = rksplus.tooltip.slovakia
 			    GGR = { has_country_flag = GGR_annex_bohemia }
@@ -7247,6 +7248,7 @@ GGR_rksplus_category_integration = {
 			
 			has_government = fascism
 			country_exists = RSZ
+			RSZ = { has_completed_focus = RKP_consolidate_colony }
 		}
 
 		cost = 250
@@ -7293,6 +7295,7 @@ GGR_rksplus_category_integration = {
 			
 			has_government = fascism
 			country_exists = RDN
+			RDN = { has_completed_focus = RKP_consolidate_colony }
 		}
 
 		cost = 250
@@ -7341,6 +7344,7 @@ GGR_rksplus_category_integration = {
 			
 			has_government = fascism
 			country_exists = RNT
+			RNT = { has_completed_focus = RKP_consolidate_colony }
 		}
 
 		cost = 250
@@ -7391,6 +7395,7 @@ GGR_rksplus_category_integration = {
 			
 			has_government = fascism
 			country_exists = RBG
+			RBG = { has_completed_focus = RKP_consolidate_colony }
 		}
 
 		cost = 250
@@ -7507,10 +7512,6 @@ GGR_rksplus_category_integration = {
 			has_government = fascism
 			country_exists = RUA
 			RUA = { has_completed_focus = RUA_germanization }
-			custom_trigger_tooltip = { 
-			    tooltip = rksplus.tooltip.ukraine
-			    GGR = { has_country_flag = GGR_odessa_territorial_decision }
-			}
 		}
 
 		cost = 500
@@ -7547,28 +7548,6 @@ GGR_rksplus_category_integration = {
 					}
 					137 = { add_core_of = GGR }
 				}
-				
-				if = {
-					limit = {		
-						RUA = { controls_state = 91 }
-					}
-					91 = { add_core_of = GGR }
-				}
-				
-				if = {
-					limit = {		
-						RUA = { controls_state = 89 }
-					}
-					89 = { add_core_of = GGR }
-				}
-
-				if = {
-					limit = {		
-						RUA = { controls_state = 243 }
-					}
-					243 = { add_core_of = GGR }
-				}
-				
 				add_state_core = 198
 				add_state_core = 199
 				add_state_core = 201
@@ -7593,6 +7572,9 @@ GGR_rksplus_category_integration = {
 				add_state_core = 78
 				add_state_core = 192
 				add_state_core = 215
+				add_state_core = 243
+				add_state_core = 91
+				add_state_core = 89
 				}
 				
 				set_country_flag = GGR_annexed_ukraine
@@ -10303,100 +10285,6 @@ GGR_rksplus_category_state_transfer = {
 		}
 		timeout_effect = {
 			country_event = rksplus.35
-		}
-	}
-	
-	GGR_rksplus_transfer_odessa_romania = {
-
-		icon = GFX_decision_border_war
-
-		available = {
-			
-			has_government = fascism
-			country_exists = ROM
-			NOT = { has_war_with = ROM }
-            NOT = {
-	    	    RUA = { controls_state = 192 }
-				RUA = { controls_state = 834 }
-			}
-
-			custom_trigger_tooltip = { 
-			    tooltip = rksplus.tooltip.160
-				192 = { is_controlled_by_ROOT_or_subject = yes }
-				834 = { is_controlled_by_ROOT_or_subject = yes }	
-			}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-
-		visible = {
-			
-			has_government = fascism
-			country_exists = ROM
-		}
-		
-		fire_only_once = yes
-
-		complete_effect = {
-		   
-			every_state = {
-			    limit = {
-				    OR = {
-					    state = 192
-						state = 834
-						
-				    }
-			    }
-
-			    ROM = {
-					
-					hidden_effect = {
-						if = {
-							limit = {
-								GGR = {
-									controls_state = 80
-									
-								}
-							}
-							transfer_state = 80
-							add_state_core = 80
-						}
-						
-						if = {
-							limit = {
-								GGR = {
-									controls_state = 78
-									
-								}
-							}
-							transfer_state = 78
-							add_state_core = 78
-						}
-						
-						if = {
-							limit = {
-								GGR = {
-									controls_state = 766
-									
-								}
-							}
-							transfer_state = 766
-							add_state_core = 766
-						}
-					}
-				
-
-				    transfer_state = PREV
-					
-					hidden_effect = {
-				        add_state_core = PREV
-					}
-
-			    }
-		    }
 		}
 	}
 	

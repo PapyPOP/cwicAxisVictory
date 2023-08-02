@@ -301,11 +301,10 @@ focus_tree = {
 		}
 		available = {
 		    ROT = {
-			    controls_state = 809
-				controls_state = 96
+			    controls_state = 1052
+				controls_state = 209
 				controls_state = 207
-				controls_state = 206
-				controls_state = 204
+				controls_state = 241
 				controls_state = 194
 			}
 		}
@@ -318,58 +317,90 @@ focus_tree = {
 			
 			hidden_effect = {
 			    
-				809 = {
+				1052 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 6222
+				    province = 4640
 				    level = 1
 				    }
 			    }
 				
-				809 = {
+				209 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 265
+				    province = 9120
 				    level = 1
 				    }
 			    }
 				
-			    809 = {
+			    209 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 3255
+				    province = 3053
 				    level = 1
 				    }
 			    }
 			    
-				809 = {
+				209 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 11358
+				    province = 95
 				    level = 1
 				    }
 			    }
 				
-				96 = {
+				209 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 233
+				    province = 9319
 				    level = 1
 				    }
 			    }
 				
-			    96 = {
+			    209 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 358
+				    province = 11304
 				    level = 1
 				    }
 			    }
 				
+			    209 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9331
+				    level = 1
+				    }
+			    }
+			
+			    209 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11234
+				    level = 1
+				    }
+			    }
+			
+			    209 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 354
+				    level = 1
+				    }
+			    }
+			
+			    209 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 6293
+				    level = 1
+				    }
+			    }
+			
 			    207 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 6371
+				    province = 323
 				    level = 1
 				    }
 			    }
@@ -377,7 +408,7 @@ focus_tree = {
 			    207 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 9241
+				    province = 11241
 				    level = 1
 				    }
 			    }
@@ -385,59 +416,74 @@ focus_tree = {
 			    207 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 3331
+				    province = 11220
 				    level = 1
 				    }
 			    }
 			
-			    206 = {
+			    241 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 9289
-				    level = 1
-				    }
-			    }
-			
-			    206 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 3378
-				    level = 1
-				    }
-			    }
-			
-			    204 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 6373
-				    level = 1
-				    }
-			    }
-			
-			    194 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 6319
-				    level = 1
-				    }
-			    }
-			
-			    194 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 9249
+				    province = 6354
 				    level = 1
 				    }
 			    }
 				
+				241 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 289
+				    level = 1
+				    }
+			    }
+
+				241 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11230
+				    level = 1
+				    }
+			    }
+			
+				241 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 11383
+				    level = 1
+				    }
+			    }
+
+				241 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9396
+				    level = 1
+				    }
+			    }
+
+				241 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9371
+				    level = 1
+				    }
+			    }
+
 				194 = {
 				    add_building_construction = {
 				    type = bunker
-				    province = 3507
+				    province = 11355
 				    level = 1
 				    }
 			    }
-			
+
+				194 = {
+				    add_building_construction = {
+				    type = bunker
+				    province = 9342
+				    level = 1
+				    }
+			    }
 			}
 		}
 	}

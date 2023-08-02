@@ -214,8 +214,6 @@ add_ideas = {
 	GER_nazi_recruitment_system
 	GER_economic_stagnation
 	GER_SS_Infightings
-	
-	fanatical_dictatorship
 }
 
 #######################
@@ -1397,8 +1395,8 @@ if = {
 			fixed_ship_countermeasure_slot = countermeasures_0
 			fixed_ship_engine_slot = capital_engine_ww
 			front_1_custom_slot = ship_armament_heavy_1
-			front_2_custom_slot = countermeasures_0
-			front_3_custom_slot = countermeasures_0
+			front_2_custom_slot = ship_armament_heavy_1
+			front_3_custom_slot = ship_armament_heavy_1
 			mid_1_custom_slot = ship_AA_gun_2
 			mid_2_custom_slot = ship_AA_gun_2
 			mid_3_custom_slot = ship_armament_medium_1
