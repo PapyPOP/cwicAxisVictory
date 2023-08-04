@@ -1,6 +1,128 @@
 
 GGR_reichskommissariats_category_europe = {
 
+	GGR_fight_insurgency = {
+
+		icon = generic_civil_support
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = insurgency_below_five_TT 
+				check_variable = { SOV.ukranian_insurgency > 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				check_variable = { SOV.ukranian_insurgency > 0 }
+			}
+		}
+		visible = {
+			tag = GGR
+		}
+		fire_only_once = yes
+		
+		cost = 100
+		
+		
+		complete_effect = {
+			news_event = UIA_insurgency_options.10
+			clear_variable = SOV.ukranian_insurgency
+			clr_country_flag = ukranian_seccessionism
+			hidden_effect = {
+				93 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl1
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier1 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.05 } }
+				}
+				1020 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl1
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier1 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.05 } }
+				}
+				199 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl1
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier1 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.05 } }
+				}
+
+				243 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl2
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier2 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.15 } }
+				}
+				91 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl2
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier2 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.15 } }
+				}
+				80 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl2
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier2 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.15 } }
+				}
+				89 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl2
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier2 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.15 } }
+				}
+				73 = {
+					clr_state_flag = uia_target
+					clr_state_flag = insurg_lvl2
+					remove_province_modifier = {
+						static_modifiers = { insurgency_tier2 }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_state_modifier = { modifier = { local_factory_sabotage = -0.15 } }
+				}
+			}
+		}
+	}
+
     GGR_reichskommissariat_ostlandrkplus = {
 
 		icon = ger_reichskommissariats

@@ -1,8 +1,17 @@
 neeu_calculator = {
 	if = {
 		limit = {
-			has_dynamic_modifier = {
-				modifier = nazy_europa_economic_union_modifier
+			OR = {
+				has_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
+				}
+				AND = {
+					#### For puppet created after NEEU expansion focus
+					is_puppet_of = GGR
+					GGR = {
+						has_global_flag = NEEU_Leader
+					}
+				}
 			}
 			NOT = {
 				has_country_flag = nazy_europa_economic_union_member
@@ -18,6 +27,21 @@ neeu_calculator = {
 		set_global_flag = NEEU_ResearchGrants
 		set_global_flag = NEEU_Construction
 		set_global_flag = NEEU_Efficiency
+	}
+
+	#### For puppet created after focus NEEU expansion 
+	if = {
+		limit = { 
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = nazy_europa_economic_union_modifier
+				} 
+			}
+			is_puppet_of = GGR
+		}
+		add_dynamic_modifier = {
+			modifier = nazy_europa_economic_union_modifier
+		}
 	}
 	
 	if = {
@@ -97,7 +121,7 @@ neeu_calculator = {
 		limit = {
 			has_global_flag = NEEU_Leader
 		}
-		set_variable = { global.nazy_europa_economic_union_leader_level_increase = 1 } #always 1
+		set_variable = { global.nazy_europa_economic_union_leader_level_increase = 2 } #always 2
 	}
 	
 }

@@ -19,6 +19,7 @@ focus_tree = {
 			add_ideas = NEEU_leader
 			hidden_effect = {
 				set_global_flag = NEEU_Leader
+				add_research_slot = 4
 				add_dynamic_modifier = {
 					modifier = nazy_europa_economic_union_modifier
 				}

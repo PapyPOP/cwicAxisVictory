@@ -292,6 +292,9 @@
  GGR_Join_the_United_Nations:0 "Welcome to United Nations"
  GGR_Join_the_United_Nations_desc:0 "Welcome to United Nations"
 
+## DECISIONS 
+ GGR_fight_insurgency:0 "Stop Ukraine revolt"
+
 ##Focus Tree Names#
  GGR_60s:0 "The next Decade"
  GGR_70s:0 "The next Decade"
@@ -319,6 +322,7 @@
  GER_economic_recovery_2:0 "Economic Recovery"
  GER_economic_recovery_3:0 "Economic Recovery"
  GER_economic_recovery_4:0 "Economic Recovery"
+ NEEU_leader:0 "President of Nazi European Economic Union"
 
 ### NAVY
  GER_naval_boom:0 "Naval Boom"

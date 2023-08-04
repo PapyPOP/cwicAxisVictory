@@ -1,8 +1,9 @@
 technology_sharing_group = {
 	id = NEEU_Research
+	picture = GFX_econ_sphere_icon_GER
 	name = NEEU_Research_name
 	desc = NEEU_Research_desc
-	research_sharing_per_country_bonus = 0.05
+	research_sharing_per_country_bonus = 0.1
 	is_faction_sharing = no
 	available = {
 		has_dynamic_modifier = {
