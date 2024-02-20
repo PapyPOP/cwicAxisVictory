@@ -1245,14 +1245,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-		controls_state = 821
+		controls_state = 798
 		controls_state = 232
 		}
 
 		search_filters = {}
 
 		completion_reward = {
-		    821 = {
+		    798 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery

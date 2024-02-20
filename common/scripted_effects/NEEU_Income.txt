@@ -38,6 +38,9 @@ neeu_calculator = {
 				} 
 			}
 			is_puppet_of = GGR
+			GGR = {
+				has_global_flag = NEEU_Leader
+			}
 		}
 		add_dynamic_modifier = {
 			modifier = nazy_europa_economic_union_modifier

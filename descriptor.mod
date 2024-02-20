@@ -1,7 +1,6 @@
 version="0.1"
 dependencies={
 	"Cold War Iron Curtain: A World Divided"
-	"Cold War Iron Curtain: A Kuomintang Expansion"
 }
 tags={
 	"National Focuses"
@@ -11,6 +10,6 @@ tags={
 	"Gameplay"
 	"Map"
 }
-name="Cold War Iron Curtain : Realistic Axis Victory"
-supported_version="1.12.*"
+name="Cold War Iron Curtain : Realistic Nazi Victory"
+supported_version="1.13.*"
 replace_path="common/bookmarks"

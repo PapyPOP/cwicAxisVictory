@@ -1,7 +1,0 @@
-state_categories = {
-	pop20dev1 = {
-		local_building_slots = 85
-		
-		color = { 179 36 0 }
-	}
-}

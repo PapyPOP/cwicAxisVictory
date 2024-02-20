@@ -301,9 +301,8 @@ focus_tree = {
 		}
 		available = {
 		    RDW = {
-			    controls_state = 217
-				controls_state = 265
-				controls_state = 829
+				controls_state = 217 
+				controls_state = 218
 				controls_state = 239
 
 			}
@@ -337,38 +336,6 @@ focus_tree = {
 				    add_building_construction = {
 				    type = bunker
 				    province = 3555
-				    level = 1
-				    }
-			    }
-			    
-				265 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 6602
-				    level = 1
-				    }
-			    }
-				
-				829 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 6506
-				    level = 1
-				    }
-			    }
-				
-			    829 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 9475
-				    level = 1
-				    }
-			    }
-				
-			    829 = {
-				    add_building_construction = {
-				    type = bunker
-				    province = 6539
 				    level = 1
 				    }
 			    }

@@ -38,14 +38,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = { country_exists = JPZ }
-				JPZ = {
-					add_dynamic_modifier = {
-						modifier = nazy_europa_economic_union_modifier
-					}
-				}
-			}
-			if = {
 				limit = { country_exists = OGT }
 				OGT = {
 					add_dynamic_modifier = {
@@ -723,15 +715,6 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = semi_recognized_state
 				add_idea = un_member
-			}
-			if = {
-				limit = { country_exists = JPZ }
-				JPZ = {
-					swap_ideas = {
-						remove_idea = semi_recognized_state
-						add_idea = un_member
-					}
-				}
 			}
 			if = {
 				limit = { country_exists = OGT }
